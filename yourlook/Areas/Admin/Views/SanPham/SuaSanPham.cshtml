@@ -1,0 +1,280 @@
+﻿@model Data.Models.DbSanPham
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "SuaSanPham";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<div class="col-md-12">
+    <div class="cp0">
+        Sửa Sản Phẩm mới
+    </div>
+    <div class="card">
+        <div class="card-header p-2">
+            <ul class="nav nav-pills">
+                <a asp-action="SanPham"><img style="height:20px" src="\icon\drop left.svg" /> </a>
+                <li class="nav-item"><a class="nav-link active" href="#page1" data-toggle="tab">Thông Tin Chính</a></li>
+                <li class="nav-item"><a class="nav-link" href="#page2" data-toggle="tab">Thông Tin Ảnh</a></li>
+                <li class="nav-item"><a class="nav-link" href="#page3" data-toggle="tab">Thông Tin Khác</a></li>
+            </ul>
+        </div><!-- /.card-header -->
+        @using (Html.BeginForm("SuaSanPham", "SanPham", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true)
+            @Html.HiddenFor(x => x.MaSp)
+            @Html.HiddenFor(x => x.CreateDate)        
+            <div class="card-body">
+                <div class="tab-content">
+                    <div class="active tab-pane" id="page1">
+                        <div class="row">
+                            <div class="col-6">
+                                <label  class="control-label">Danh Mục</label>                               
+                                @Html.DropDownListFor(x => x.MaDm, (SelectList)ViewBag.MaDm , "-Chọn danh mục sản phẩm-", new { @class = "form-control", @placeholder = "Danh Mục" })
+                                @Html.ValidationMessageFor(x => x.MaDm, null, new { @class = "text-danger" })
+                            </div>
+                            <div class="col-6">
+                                <label asp-for="TenSp" class="control-label">Tên Sản Phẩm</label>
+                                @Html.TextBoxFor(x => x.TenSp, new { @class = "form-control", @placeholder = "Tên sản phẩm" })
+                                @Html.ValidationMessageFor(x => x.TenSp, null, new { @class = "text-danger" })
+                            </div>
+                            <div class="col-6">
+                                <label class="control-label">Nhóm</label>
+                                @Html.DropDownListFor(x => x.NhomId, (SelectList)ViewBag.NhomId , "-Chọn nhóm sản phẩm-", new { @class = "form-control", @placeholder = "Nhóm" })
+                                @Html.ValidationMessageFor(x => x.NhomId, null, new { @class = "text-danger" })
+                            </div>
+                            <div class="col-6">
+                                <label asp-for="SoLuongSp" class="control-label"></label>
+                                @Html.TextBoxFor(x => x.SoLuongSp, new { @class = "form-control", @Value = "1" })
+                                @Html.ValidationMessageFor(x => x.SoLuongSp, null, new { @class = "text-danger" })
+                            </div>
+                            <div class="col-6">
+                                <label asp-for="PriceMax" class="control-label"></label>
+                                @Html.TextBoxFor(x => x.PriceMax, new { @class = "", @placeholder = "Giá trc" })
+                                @Html.ValidationMessageFor(x => x.PriceMax, null, new { @class = "text-danger" })
+                            </div>
+                            <div class="col-6">
+                                <label asp-for="GiamGia" class="control-label"></label>
+                                @Html.TextBoxFor(x => x.GiamGia, new { @class = "form-control", @placeholder = "Khuyến mãi" })
+                                @Html.ValidationMessageFor(x => x.GiamGia, null, new { @class = "text-danger" })
+                            </div>
+                            <div class="col-6">
+                                <label asp-for="PriceMin" class="control-label"></label>
+                                @Html.TextBoxFor(x => x.PriceMin, new { @class = "form-control", @placeholder = "Giá sau" })
+                                @Html.ValidationMessageFor(x => x.PriceMin, null, new { @class = "text-danger" })
+                            </div>
+                            <div class="col-12">
+                                <label class="control-label">Mô Tả </label>
+                                @Html.TextAreaFor(x => x.MotaSp, new { @class = "form-control", @id = "txtMota" })
+                                @Html.ValidationMessageFor(x => x.MotaSp, null, new { @class = "text-danger" })
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group">
+
+                                        <div class="custom-control custom-checkbox">
+                                            @Html.CheckBoxFor(x => x.IActive, new { @class = "custom-control-input", @id = "customCheckbox2", @checked = "checked" })
+                                            <label for="customCheckbox2" class="custom-control-label">Hiển thị</label>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <div class="custom-control custom-checkbox">
+                                            @Html.CheckBoxFor(x => x.IHot, new { @class = "custom-control-input", @id = "IsHotCheckbox2" })
+                                            <label for="IsHotCheckbox2" class="custom-control-label">Hot</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <div class="custom-control custom-checkbox">
+                                            @Html.CheckBoxFor(x => x.IFeature, new { @class = "custom-control-input", @id = "IsFeatureCheckbox" })
+                                            <label for="IsFeatureCheckbox" class="custom-control-label">Nổi bật</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <div class="custom-control custom-checkbox">
+                                            @Html.CheckBoxFor(x => x.ISale, new { @class = "custom-control-input", @id = "IsSaleCheckbox" })
+                                            <label for="IsSaleCheckbox" class="custom-control-label">Khuyến mãi</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.tab-pane -->
+                    <div class="tab-pane" id="page2">
+                        <div class="row">
+                            <div class="col-6">
+                                <label class="control-label">Ảnh đại diện</label>
+                                <input asp-for="AnhSp" type="file" class="form-control" multiple />
+                                <span asp-validation-for="AnhSp" class="text-danger"></span>
+                            </div>
+                            <div class="col-12" style="display:flex; justify-content:space-between">
+                                <input type="file" id="fileUpload" multiple />
+                                <div class="flct col-4">
+                                    <button type="button" id="btnUpload" class="">Tải lên</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <table class="table table-bordered" id="imagesTable">
+                                <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Ảnh</th>
+                                        <th>Url</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var img in Model.DbImgs)
+                                    {
+                                        <tr id="trow_@img.Id">
+                                            <td>@img.Id</td>
+                                            <td><img src="@img.Img" width="100"></td>
+                                            <td>@img.Img</td>
+                                            <td><a href="#" data-id="@img.Id" class="btn btn-sm btn-danger btnXoaAnh">Xóa</a></td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                            <input type="hidden" id="ddpicId" value="@Model.DbImgs.Count()" />
+                            <input type="hidden" id="Imgs" name="Imgs" value="@string.Join(";", Model.DbImgs.Select(i => i.Img))" />
+                            <input type="hidden" id="RemovedImgs" name="RemovedImgs" />
+                        </div>
+                    </div>
+                    <!-- /.tab-pane -->
+
+                    <div class="tab-pane" id="page3">
+
+                        <div class="form-group row">
+                            <div class="col-6">
+                                <label asp-for="SaoDanhGia" class="control-label"></label>
+                                <input asp-for="SaoDanhGia" class="form-control" />
+                                <span asp-validation-for="SaoDanhGia" class="text-danger"></span>
+                            </div>
+                            <div class="col-6">
+                                <label asp-for="LuotXem" class="control-label"></label>
+                                <input asp-for="LuotXem" class="form-control" />
+                                <span asp-validation-for="LuotXem" class="text-danger"></span>
+                            </div>
+                            <div class="col-6">
+                                <label asp-for="LuotSold" class="control-label"></label>
+                                <input asp-for="LuotSold" class="form-control" />
+                                <span asp-validation-for="LuotSold" class="text-danger"></span>
+                            </div>
+                            <div class="col-6">
+                                <label asp-for="CreateBy" class="control-label"></label>
+                                <input asp-for="CreateBy" class="form-control" />
+                                <span asp-validation-for="CreateBy" class="text-danger"></span>
+                            </div>
+                            <div class="col-6">
+                                <label asp-for="ModifiedDate" class="control-label"></label>
+                                <input asp-for="ModifiedDate" class="form-control" />
+                                <span asp-validation-for="ModifiedDate" class="text-danger"></span>
+                            </div>
+                            <div class="col-6">
+                                <label asp-for="ModifiedBy" class="control-label"></label>
+                                <input asp-for="ModifiedBy" class="form-control" />
+                                <span asp-validation-for="ModifiedBy" class="text-danger"></span>
+                            </div>
+                            <div class="col-6">
+                                <label asp-for="MetaKeywords" class="control-label"></label>
+                                <input asp-for="MetaKeywords" class="form-control" />
+                                <span asp-validation-for="MetaKeywords" class="text-danger"></span>
+                            </div>
+                            <div class="col-6">
+                                <label asp-for="MetaDescriptions" class="control-label"></label>
+                                <input asp-for="MetaDescriptions" class="form-control" />
+                                <span asp-validation-for="MetaDescriptions" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.tab-pane -->
+                </div>
+                <!-- /.tab-content -->
+            </div>
+
+            <!-- /.card-body -->
+            <div class="h-cp-dow">
+                <div class="bt-ar">
+                    <input type="submit" value="Lưu Thông Tin Sản Phẩm" class="btn-primary" />
+                </div>
+            </div>
+        }
+        </div>    
+    <!-- /.card -->
+</div>
+@section scripts {
+    <script>
+        CKEDITOR.replace('txtMota');
+
+        $(document).ready(function () {
+            $('#btnUpload').click(function () {
+                var files = $('#fileUpload').prop('files');
+                var formData = new FormData();
+
+                var picId = parseInt($('#ddpicId').val());
+                var imgUrls = [];
+
+                for (var i = 0; i < files.length; i++) {
+                    formData.append('files', files[i]);
+                }
+
+                $.ajax({
+                    url: '@Url.Action("UploadImg", "SanPham")',
+                    type: 'POST',
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    success: function (response) {
+                        if (response.success) {
+                            response.filePaths.forEach(function (filePath) {
+                                picId++;
+                                $('#imagesTable tbody').append(
+                                    '<tr id="trow_' + picId + '"> <td>' + picId + '</td> <td><img src="' + filePath + '" width="100"></td> <td>' + filePath + '</td> <td><a href="#" data-id="' + picId + '" class="btn btn-sm btn-danger btnXoaAnh">Xóa</a></td></tr>');
+                                imgUrls.push(filePath);
+                            });
+                            $('#ddpicId').val(picId);
+                            $('#Imgs').val(imgUrls.join(';'));
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        console.error('Lỗi khi tải ảnh lên:', error);
+                    }
+                });
+            });
+
+            // Remove image
+            $('body').on('click', '.btnXoaAnh', function () {
+                var conf = confirm('Bạn có muốn xóa ảnh này không?');
+                if (conf === true) {
+                    var _id = $(this).data('id');
+                    $('#trow_' + _id).fadeTo('fast', 0.5, function () {
+                        $(this).slideUp('fast', function () {
+                            var removedImgs = $('#RemovedImgs').val();
+                            removedImgs += (_id + ";");
+                            $('#RemovedImgs').val(removedImgs);
+                            $(this).remove();
+                            updateImgsInput();
+                        });
+                    });
+                }
+            });
+
+            function updateImgsInput() {
+                var imgUrls = [];
+                $('#imagesTable tbody tr').each(function () {
+                    var imgSrc = $(this).find('td:eq(2)').text();
+                    imgUrls.push(imgSrc);
+                });
+                $('#Imgs').val(imgUrls.join(';'));
+            }
+        });
+    </script>
+}

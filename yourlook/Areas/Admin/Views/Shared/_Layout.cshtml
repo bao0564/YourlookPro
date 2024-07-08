@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/cssAdmin.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap4/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link href="~/css/adminlte.min.css" rel="stylesheet" />
+    <link href="~/css/all.min.css" rel="stylesheet" />
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/css/bootstrap4/bootstrap.bundle.min.js"></script>
+    <script src="~/js/demo.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container-0">
+        <div class="head-top">
+            <div id="header">
+                <div id="logo" class="logo">
+                    <a href="@Url.Action("index","admin")">
+                        <img src="~/logo/logo.png" />
+                    </a>
+                </div>
+                <div class="account">
+                    Tài khoản đăng nhập!
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="menu-ct col-2">
+                <ul style="padding: 0;">
+                    <li><a href="@Url.Action("DonHang","Admin")"> Đơn Hàng</a></li>
+                    <li><a href="@Url.Action("SanPham","Admin")"> Sản Phẩm</a></li>
+                    <li><a href="@Url.Action("DanhMuc","Admin")"> Danh Mục</a></li>
+                    <li><a href="@Url.Action("Group","Admin")">Nhóm</a></li>
+                    <li><a href="@Url.Action("Color","Admin")"> Màu</a></li>
+                    <li><a href="@Url.Action("KhachHang","Admin")"> Khách Hàng</a> </li>
+                    <li><a href="Ad-DoanhThu.html"> Doanh Thu</a></li>
+                    <li><a href="Ad-Setting">Cài Đặt</a></li>
+                </ul>
+            </div>
+            <div class="menu-cp col-10">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+   @*  <script src="~/css/ckeditor/ckeditor.js"></script>
+    <script src="~/css/ckfinder/ckfinder.js"></script> *@
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+

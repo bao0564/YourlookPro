@@ -1,0 +1,204 @@
+﻿@model IEnumerable<yourlook.Models.ShoppingCartItem>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<main class="mar150_container cart" style="margin-bottom:150px" > 
+    <div class="body-cart">
+        <div class="address-cart">
+            @* @await Html.PartialAsync("Partial_Infor_In_Cart")     *@
+
+            <div class="box-cart" style="background-color:#000;color:#fff">
+                <div>
+                    <h3 style="color:#fff">Thông Tin Địa Chỉ </h3>
+                    <div style="color:#fff">vui lòng điền thông tin địa chỉ cần giao hàng của bạn</div>
+                </div>
+                <div class="box-cart" style="background-color:#fff">
+                    <div class="box-cart" style="background-color:#fff">
+                        <div class="space-address">
+                            <div class="box-address"><input type="text" name="TenKh" id="TenKh" placeholder="Tên người nhận" required /></div>
+                            <div class="box-address"><input type="text" name="Sdt" id="Sdt" placeholder="SDT người nhận" required /></div>
+                        </div>
+                        <div class="space-address">
+                            <div class="box-address">
+                                <input type="text" name="City" id="City" placeholder="Thành Phố...">
+                            </div>
+                            <div class="box-address">
+                                <input type="text" name="District" id="District" placeholder="Quận/Huyện...">
+                            </div>
+                            <div class="box-address">
+                                <input type="text" name="Ward" id="Ward" placeholder="Phường/Xã...">
+                            </div>
+                        </div>
+                        <div class="space-address">
+                            <div class="box-address">
+                                <input type="text" name="DiaChi" id="DiaChi" placeholder="Địa chỉ chi tiết" />
+                            </div>
+                        </div>
+                        <div class="space-address">
+                            <div class="box-address">
+                                <input type="text" name="GhiChu" id="GhiChu" placeholder="Ghi chú cho đơn hàng" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-cart" style="background-color:#000;">
+                <div>
+                    <h3 style="color:#fff">Hình Thức Thanh Toán  </h3>
+                    <div style="color:#fff">vui lòng chọn hình thức thanh toán mong muốn của bạn</div>
+                </div>
+                <div class="box-cart" style="background-color:#fff">
+                    <div class="space-pay">
+                        <div class="box-pay">
+                            <div class="pay-title">
+                                <span class="check-box">
+                                    <input type="checkbox" />
+                                </span>
+                                <div class="icon">
+                                    <img src="/icon/truck-fast.svg" alt="">
+                                </div>
+                                <div class="title">Thanh toán khi nhận hàng</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-pay">
+                        <div class="box-pay">
+                            <div class="pay-title">
+                                <span class="check-box">
+                                    <input type="checkbox" />
+                                </span>
+                                <div class="icon">
+                                    <img src="/icon/MoMo.png" alt="">
+                                </div>
+                                <div class="title">Thanh toán Bằng MoMo</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-pay">
+                        <div class="box-pay">
+                            <div class="pay-title">
+                                <span class="check-box">
+                                    <input type="checkbox" />
+                                </span>
+                                <div class="icon">
+                                    <img src="/icon/zalopay.png" alt="">
+                                </div>
+                                <div class="title">Thanh toán bằng ZaloPay</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-pay">
+                        <div class="box-pay">
+                            <div class="pay-title">
+                                <span class="check-box">
+                                    <input type="checkbox" />
+                                </span>
+                                <div class="icon">
+                                    <img src="/icon/vnpay.jpg" alt="">
+                                </div>
+                                <div class="title">Thanh toán bằng VNPay</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order-cart box-cart" style="background-color:#fff;margin:20px 0">
+            <div>
+                <div class="title">
+                    <h3 style="border-bottom:1px solid">Giỏ Hàng </h3>
+                </div>
+                <div id="List-prd-cart">
+                    @* @await Html.PartialAsync("Partial_Product_In_Cart") *@
+
+                    @if (Model != null && Model.Any())
+                    {
+                        foreach (var prd in Model)
+                        {
+                            <div class="box-cart" id="sp-@prd.ProductId">
+                                <div class="cart-container flex-cart">
+                                    <div class="check-box">
+                                        <input type="checkbox" class="cart-checkbox" data-id="@prd.ProductId" data-price="@prd.ProductPrice" data-total="@prd.Total" />
+                                    </div>
+                                    <div class="flex-cart">
+                                        <div class="box-img" style="display:flex; align-items:center">
+                                            <img src="@Url.Content("/img/" + prd.ProductImg)" alt="Product Image" />
+                                        </div>
+                                        <div class="cart-infor">
+                                            <div class="infor-colum">
+                                                <p class="cart-name">@prd.ProductName</p>
+                                                <div class="flex-cart" style="max-width:150px">
+                                                    <div>Màu</div>
+                                                    <div>Size</div>
+                                                </div>
+                                            </div>
+                                            <div class="flex-cart infor-colum">
+                                                <div class="flct product_price" data-price="@prd.ProductPrice">
+                                                    @prd.Total.ToString("N0") VNĐ
+                                                </div>
+                                                <div>
+                                                    <div class="quantity_selector_cart">
+                                                        <span class="minus-cart" data-id="@prd.ProductId"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                                        <span class="quantity_value-cart" id="quantity_@prd.ProductId">@prd.ProductQuantity</span>
+                                                        <span class="plus-cart" data-id="@prd.ProductId"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="check-box">
+                                        <div>
+                                            <input type="button" class="deletebtn" value="xóa" asp-controller="shoppingcart" data-id="@prd.ProductId" />
+                                            @*  <input type="button" class="btnUpdate" value="cập nhật" asp-controller="shoppingcart" data-id="@prd.ProductId" /> *@
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <p style="display:flex;justify-content:center">giỏ hàng trống</p>
+                    }
+
+                </div>
+            </div>
+        </div>
+        <div class="box-pay-all">
+            <div class="box-cart">
+                <div style="display:flex;align-items:center;height:50px">
+                    <div class="" style="display:flex;width:50%">
+                        <div class="infor-payment">phương thức thanh toán</div>
+                        <div class="infor-payment">voucher</div>
+                    </div>
+                    <div style="display:flex;width:50%;justify-content:flex-end">
+                        <div class=" flex2-cart" style="flex-direction: column">
+                            <div>
+                               
+                            </div>
+                            <div class="flex-cart title total-price-container">
+                                Thành Tiền: <div class="flct product_price" style="color:#fff;margin:0 10px" id="totalprice"></div>
+                            </div>
+                        </div>
+                        <div style="width:30%">
+                            <button class="pay-btn">Đặt Hàng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main> 
+@section styles {
+    <style>
+        .footer{
+            display:none;
+        }
+        .super_container{
+            background-color:#2f3640;
+        }
+    </style>
+}
+<script src="../js/addtocart.js"></script>

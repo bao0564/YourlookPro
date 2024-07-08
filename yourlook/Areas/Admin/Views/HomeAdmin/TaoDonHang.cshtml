@@ -1,0 +1,148 @@
+﻿
+@{
+    ViewData["Title"] = "TaoDonHang";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="cp0">
+    Hãy thực hiện đơn hàng tại đây
+</div>
+<div class="h-cp">
+    <div class="h-cp-l">
+        <div style="padding:8px; text-align: center;">Sản Phẩm</div>
+        <div>
+            <input class="form-search" type="text" placeholder="Tìm Kiếm Sản Phẩm . . .">
+        </div>
+        <div class="dl-sp">
+            <table class="h-table">
+                <thead>
+                    <tr>
+                        <th>Mã SP</th>
+                        <th>Tên SP</th>
+                        <th>Ảnh </th>
+                        <th>Số Lượng</th>
+                        <th>Giá</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>Áo MonsterX street wear</td>
+                        <td><img src="img-pd/img-1.jpg" alt=""></td>
+                        <td>
+                            <input class="soluong" type="mumber" value="1" style="max-width: 100px;">
+                        </td>
+                        <td> 400000</td>
+                        <td>
+                            <button>xóa</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="h-cp-r">
+        <div style="padding:8px; text-align: center;">Tạo Thông Tin Đơn Hàng </div>
+        <div class="dl">
+            <div class="dl-n">
+                <div style="margin-left: 10px;"> Mã Đơn Hàng </div>
+                <div>
+                    <input type="text" placeholder="Tự Tạo Khi trống...">
+                </div>
+            </div>
+        </div>
+        <div class="dl">
+            <div class="dl-n">
+                <div> Khách Hàng </div>
+                <div>
+                    <input type="text" placeholder="Mã/Tên...">
+                </div>
+                <div class="dl-n">
+                    <label for="">Tạo mới</label>
+                    <button>+</button>
+                </div>
+            </div>
+        </div>
+        <div class="dl">
+            <div class="dl-n">
+                <div style="margin-left: 10px;"> Số Điện Thoại </div>
+                <div>
+                    <input type="text" placeholder="...">
+                </div>
+            </div>
+        </div>
+        <div class="dl">
+            <div class="dl-n">
+                <div style="margin-left: 10px;"> Tên Sản Phẩm </div>
+                <div>
+                    <input type="text" placeholder="...">
+                </div>
+            </div>
+        </div>
+        <div class="dl">
+            <div class="dl-n">
+                <div style="margin-left: 10px;"> Số Lượng </div>
+                <div>
+                    <input type="text" placeholder="...">
+                </div>
+            </div>
+        </div>
+        <div class="dl">
+            <div class="dl-n">
+                <div style="margin-left: 10px;">Ngày Tạo </div>
+                <div>
+                    <input type="text" placeholder="...">
+                </div>
+            </div>
+        </div>
+        <div class="dl">
+            <div class="dl-n">
+                <div style="margin-left: 10px;"> Nhân Viên </div>
+                <div>
+                    <select name="" id="">
+                        <option value="">--chọn nhân viên---</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="dl">
+            <div class="dl-n">
+                <div style="margin-left: 10px;">Ghi Chú </div>
+                <div>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Ghi chú đơn hàng . . ."></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="dl">
+            <div class="dl-n">
+                <div style="margin-left: 10px;"> Hình thức thanh toán </div>
+                <div>
+                    <select name="" id="">
+                        <option value="">--chọn hình thức---</option>
+                        <option value="">Thanh toán tiền mặt</option>
+                        <option value="">Chuyển khoản</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="dl">
+            <div class="dl-n">
+                <div style="margin-left: 10px;">Tổng tiền đơn hàng</div>
+                <div>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <div class="dl-bt-sp">
+            <div class="dl-bt">
+                <div class="bt-ar">
+                    <button>Tạo Đơn Hàng</button>
+                </div>
+                <div class="bt-ex">
+                    <button>Thoát</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

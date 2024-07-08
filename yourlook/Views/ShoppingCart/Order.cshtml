@@ -1,0 +1,113 @@
+﻿@{
+    ViewData["Title"] = "Order";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using yourlook.Models;
+@model ViewCheckOutItem
+@{
+    var TongTien = Model.CheckOutItems.Sum(X => X.Total).ToString("N0") + "VNĐ";
+    var TongSanPham = Model.CheckOutItems.Sum(Y => Y.ProductQuantity).ToString();
+}
+<main class="mar150_container cart" style="margin-bottom:150px">
+    <div class="breadcrumbs d-flex flex-row align-items-center" style="margin:0">
+        <ul>
+            <li>
+                <a href="@Url.Action("Index","ShoppingCart")">
+                    <i class="fa-solid fa-angle-left fa-xl"
+                       style="color: #000000"></i>Giỏ Hàng
+                </a>
+            </li>
+            <li class="active"><a><i class="fa fa-angle-right" aria-hidden="true"></i>Thanh Toán</a></li>
+        </ul>
+    </div>
+    <div class="body-cart" style="position:relative">   
+        <div class="address-cart" style="">
+            <div class="box-cart">
+                <div style="max-height:500px;overflow-y:auto;scrollbar-width:none">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Ảnh Sản Phẩm</th>
+                                <th>Tên Sản Phẩm</th>
+                                <th>Số lượng</th>
+                                <th>Giá</th>
+                                <th>Tổng tiền</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                           @foreach(var prd in Model.CheckOutItems){
+                                <tr>
+                                    <td class="box-img"><img src="@Url.Content("../img/"+prd.ProductImg)" /></td>
+                                    <td>@prd.ProductName</td>
+                                    <td>@prd.ProductQuantity</td>
+                                    <td>@prd.ProductPrice.ToString("N0") VNĐ</td>
+                                    <td>@prd.Total.ToString("N0") VNĐ</td>
+                                </tr>
+                            }       
+                        </tbody>
+                    </table>
+                </div>
+                <div style="display:flex;justify-content:flex-end">
+                    <div class="flex2-cart flex-cart">
+                        <h5 style="margin:0 10px">Tổng Sản Phẩm:</h5>
+                        <p style="margin:0">@TongSanPham</p>
+                    </div>
+                    <div class="flex2-cart flex-cart">
+                        <h5 style="margin:0 10px">Tổng Thanh Toán:</h5>
+                        <p style="margin:0">@TongTien</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order-cart">
+            @* @await Html.PartialAsync("Order_Infor_In_Cart") *@
+            <div class="box-cart">
+                <h4>Hình thức thanh toán:</h4>
+                <p>Thanh Toán bằng MOMO</p>
+            </div>
+            <div class="box-cart">
+                <h4>Thông tin địa chỉ:</h4>
+                <p>Tên người nhận:@Model.TenKh </p>
+                <p>Số điện thoại:@Model.Sdt</p>
+                <p>@Model.Ward - @Model.District - @Model.City</p>
+                <p>@Model.DiaChi</p>
+                <h5>Ghi chú:</h5>
+                <p>@Model.GhiChu</p>
+            </div>
+
+        </div>
+        <div class="box-pay-all">
+            <div class="box-cart">
+                <div style="display:flex;align-items:center;height:50px">
+                    <div class="" style="display:flex;width:50%">
+                        <div class="infor-payment">phương thức thanh toán</div>
+                        <div class="infor-payment">voucher</div>
+                    </div>
+                    <div style="display:flex;width:50%;justify-content:flex-end">
+                        <div class=" flex2-cart">
+                            <div class="flex-cart title total-price-container">
+                                Thành Tiền: <div class="flct product_price" style="color:#fff;margin:0 10px">@TongTien</div>
+                            </div>
+                            <div></div>
+                        </div>
+                        <div style="width:30%">
+                            <button class="checkout-btn">Đặt Hàng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+@section styles {
+    <style>
+        .footer {
+            display: none;
+        }
+
+        .super_container {
+            background-color:#fff;
+        }
+    </style>
+}
+<script src="../js/addtocart.js"></script>

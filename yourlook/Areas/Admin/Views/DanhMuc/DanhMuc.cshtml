@@ -1,0 +1,72 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using X.PagedList.Mvc.Core;
+@using Data.Models;
+@{
+    ViewData["Title"] = "DanhMuc";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@model X.PagedList.IPagedList<DbDanhMuc>
+<div class="cp0">
+    Danh Sách Danh Mục Sản Phẩm
+</div>
+<div class="h-cp1">
+    <div class="h-cp-f">
+        <div class="h-cp-up">
+            <div class="bt-c"><a href="@Url.Action("TaoDanhMuc","Admin")">Tạo Danh Mục Mới</a></div>
+            <div class="bt-c"><a href="">In dữ liệu </a></div>
+            <div class="bt-c"><a href="">Xuất Excel</a></div>
+            <div class="bt-c"><a href="">Xuất PDF</a></div>
+        </div>
+        <div class="h-cp-mid">
+            <div class="messages">
+                @TempData["Message"]
+            </div>
+            <div>
+                <input class="form-search" type="text" placeholder="Tìm Kiếm Mã Danh Mục/ Tên Danh Mục . . .">
+            </div>
+            <table class="h-table">
+                <thead>
+                    <tr>
+                        <th>Mã Danh Mục</th>
+                        <th>Tên Danh Mục</th>
+                        <th> Ảnh</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Any())
+                    {
+                        foreach (var prd in Model)
+                        {
+                            <tr>
+                                <td>@prd.MaDm</td>
+                                <td>@prd.TenDm</td>
+                                <td><img src="@Url.Content("/img/"+prd.AnhDaiDien)" alt=""></td>
+                                <td>
+                                    <a href="@Url.Action("XoaDanhMuc", new { madm = prd.MaDm })" onclick="deletedm(event)" style="color: #000;">Xóa</a>
+                                    <a asp-action="suadanhmuc" asp-route-madm="@prd.MaDm" style="color: black;">Sửa</a>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <td colspan="4">"Danh mục trống!"</td>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+@Html.PagedListPager(Model, page => Url.Action("DanhMuc", "DanhMuc", new { page = page }))
+<script type="text/javascript">
+    function deletedm(event) {
+        event.preventDefault();
+        var userConfirmed = confirm("Bạn có chắc chắn muốn Danh Mục này?");
+        if (userConfirmed) {
+            var url = event.currentTarget.getAttribute("href");
+            window.location.href = url;
+        }
+    }
+</script>
+

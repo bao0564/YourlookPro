@@ -1,0 +1,74 @@
+﻿@model Data.Models.DbDanhMuc
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "TaoDanhMuc";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<div class="menu-cp">
+    <div class="cp0">
+        Thêm / Tạo Danh Mục mới
+    </div>
+    <div class="h-cp1">
+        <div class="h-cp-up">
+            <div style="display:flex;align-items:center;padding-top:15px">
+                <a asp-action="DanhMuc"><img style="height:20px" src="\icon\drop left.svg" /> </a>
+            </div>
+        </div>
+        @using (Html.BeginForm("TaoDanhMuc", "DanhMuc", FormMethod.Post, new { }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true)
+            <div class="h-cp-mid-1">
+                <div class="mid-c">
+                    <label class="control-label">Tên danh Mục</label>
+                    @Html.TextBoxFor(x => x.TenDm, new { @class = "form-control", @placeholder = "Tên danh mục" })
+                    @Html.ValidationMessageFor(x => x.TenDm, null, new { @class = "text-danger" })                    
+                </div>
+                <div class="mid-c">
+                    <label class="control-label">Ảnh</label>
+                    <input type="file" asp-for="AnhDaiDien" class="form-control" />
+                    <span asp-validation-for="AnhDaiDien" class="text-danger"></span>
+                </div>
+                <div class="mid-c">
+                    <label class="control-label">Thứ tự</label>
+                    @Html.TextBoxFor(x => x.ThuTu, new { @class = "form-control", @Value = "1" })
+                </div>
+                @* <div class="mid-c">
+                    <label asp-for="CreateBy" class="control-label"></label>
+                    <input asp-for="CreateBy" class="form-control" />
+                    <span asp-validation-for="CreateBy" class="text-danger"></span>
+                </div>
+                <div class="mid-c">
+                    <label asp-for="CreateDate" class="control-label"></label>
+                    <input asp-for="CreateDate" class="form-control" />
+                    <span asp-validation-for="CreateDate" class="text-danger"></span>
+                </div>
+                <div class="mid-c">
+                    <label asp-for="ModifiedDate" class="control-label"></label>
+                    <input asp-for="ModifiedDate" class="form-control" />
+                    <span asp-validation-for="ModifiedDate" class="text-danger"></span>
+                </div>
+                <div class="mid-c">
+                    <label asp-for="ModifiedBy" class="control-label"></label>
+                    <input asp-for="ModifiedBy" class="form-control" />
+                    <span asp-validation-for="ModifiedBy" class="text-danger"></span>
+                </div>
+                <div class="mid-c">
+                    <label asp-for="MetaKeywords" class="control-label"></label>
+                    <input asp-for="MetaKeywords" class="form-control" />
+                    <span asp-validation-for="MetaKeywords" class="text-danger"></span>
+                </div>
+                <div class="mid-c">
+                    <label asp-for="MetaDescriptions" class="control-label"></label>
+                    <input asp-for="MetaDescriptions" class="form-control" />
+                    <span asp-validation-for="MetaDescriptions" class="text-danger"></span>
+                </div> *@
+            </div>
+            <div class="h-cp-dow">
+                <div class="bt-ar">
+                    <input type="submit" value="Tạo Danh Mục" class=" btn-primary" />
+                </div>
+            </div>
+        }       
+    </div>
+</div>

@@ -1,0 +1,82 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using X.PagedList.Mvc.Core;
+@using Data.Models
+@{
+    ViewData["Title"] = "SanPham";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@model X.PagedList.IPagedList<DbSanPham>
+<div class="cp0">
+    Danh Sách Sản Phẩm
+</div>
+<div class="h-cp1">
+    <div class="h-cp-f">
+        <div class="h-cp-up">
+            <div class="bt-c"><a href="@Url.Action("TaoSanPham", "Admin")">Tạo sản phẩm mới</a></div>
+            <div class="bt-c"><a href="">In dữ liệu </a></div>
+            <div class="bt-c"><a href="">Xuất Excel</a></div>
+            <div class="bt-c"><a href="">Xuất PDF</a></div>
+        </div>
+        <div class="h-cp-mid">
+             <div class="mesages">
+                @TempData["Message"]
+            </div>
+            <div>
+                <input class="form-search" type="text" placeholder="Tìm Kiếm Mã Sản phẩm/ Tên sản phẩm . . .">
+            </div>
+            <table class="h-table">
+                <thead>
+                    <tr>
+                        <th>Mã SP</th>
+                        <th>Tên SP</th>
+                        <th>Ảnh đại diện </th>
+                        <th>Giá</th>
+                        <th>Danh Mục</th>
+                        <th>Nhóm</th>
+                        <th>Số Lượng</th>
+                        <th>Số lượng Bán</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Any())
+                    {
+                        foreach (var prd in Model)
+                        {
+                            <tr>
+                                <td>@prd.MaSp</td>
+                                <td>@prd.TenSp</td>
+                                <td><img src="@Url.Content("/img/"+prd.AnhSp)" alt=""></td>
+                                <td>@string.Format("{0:N0}", prd.PriceMax)</td>
+                                <td>@prd.MaDm</td>
+                                <td>@prd.NhomId</td>
+                                <td>@prd.SoLuongSp</td>
+                                <td>@prd.LuotSold</td>
+                                <td>
+                                    <a href="@Url.Action("XoaSanPham", new { masp = prd.MaSp })" onclick="deletesp(event)" style="color: #000;">Xóa</a>
+                                    <a asp-action="SuaSanPham" asp-route-masp="@prd.MaSp" style="color: black;">Sửa</a>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <td colspan="10">sản phẩm trống</td>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+@Html.PagedListPager(Model, page => Url.Action("SanPham", "SanPham", new { page = page }))
+
+<script type="text/javascript">
+    function deletesp(event) {
+        event.preventDefault();
+        var userConfirmed = confirm("Bạn có chắc chắn muốn xóa sản phẩm này không?");
+        if (userConfirmed) {
+            var url = event.currentTarget.getAttribute("href");
+            window.location.href = url;
+        }
+    }
+</script>

@@ -1,0 +1,1905 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\adminlte.min.css",
+      "PackagePath": "staticwebassets\\css\\adminlte.min.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\adminlte.min.css.map",
+      "PackagePath": "staticwebassets\\css\\adminlte.min.css.map"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\css\\all.min.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\bootstrap4\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap4\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\bootstrap4\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap4\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\bootstrap4\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap4\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\bootstrap4\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap4\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\bootstrap4\\popper.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap4\\popper.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\categories_responsive.css",
+      "PackagePath": "staticwebassets\\css\\categories_responsive.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\categories_styles.css",
+      "PackagePath": "staticwebassets\\css\\categories_styles.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\contact_responsive.css",
+      "PackagePath": "staticwebassets\\css\\contact_responsive.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\contact_styles.css",
+      "PackagePath": "staticwebassets\\css\\contact_styles.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\cssAdmin.css",
+      "PackagePath": "staticwebassets\\css\\cssAdmin.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\main_styles.css",
+      "PackagePath": "staticwebassets\\css\\main_styles.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\responsive.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\single_responsive.css",
+      "PackagePath": "staticwebassets\\css\\single_responsive.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\single_styles.css",
+      "PackagePath": "staticwebassets\\css\\single_styles.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\fileupload\\3a738e53-22a2-4903-a1ee-bf4af6e88ed8.png",
+      "PackagePath": "staticwebassets\\fileupload\\3a738e53-22a2-4903-a1ee-bf4af6e88ed8.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\fileupload\\48e795e6-b518-48f9-89b1-5b25bf01836f.png",
+      "PackagePath": "staticwebassets\\fileupload\\48e795e6-b518-48f9-89b1-5b25bf01836f.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\fileupload\\6acfb47c-1fb6-42ee-ab07-56c60079f0a3.png",
+      "PackagePath": "staticwebassets\\fileupload\\6acfb47c-1fb6-42ee-ab07-56c60079f0a3.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\fileupload\\c65e9ccc-3089-4e7a-b626-952bab6ffa15.png",
+      "PackagePath": "staticwebassets\\fileupload\\c65e9ccc-3089-4e7a-b626-952bab6ffa15.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\icon\\Facebook.png",
+      "PackagePath": "staticwebassets\\icon\\Facebook.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\icon\\MoMo.png",
+      "PackagePath": "staticwebassets\\icon\\MoMo.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\icon\\cart-shopping.svg",
+      "PackagePath": "staticwebassets\\icon\\cart-shopping.svg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\icon\\drop left.svg",
+      "PackagePath": "staticwebassets\\icon\\drop left.svg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\icon\\dt.svg",
+      "PackagePath": "staticwebassets\\icon\\dt.svg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\icon\\email.svg",
+      "PackagePath": "staticwebassets\\icon\\email.svg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\icon\\facebook.svg",
+      "PackagePath": "staticwebassets\\icon\\facebook.svg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\icon\\google.png",
+      "PackagePath": "staticwebassets\\icon\\google.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\icon\\instagram.svg",
+      "PackagePath": "staticwebassets\\icon\\instagram.svg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\icon\\location.svg",
+      "PackagePath": "staticwebassets\\icon\\location.svg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\icon\\phone.svg",
+      "PackagePath": "staticwebassets\\icon\\phone.svg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\icon\\return-60.svg",
+      "PackagePath": "staticwebassets\\icon\\return-60.svg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\icon\\return.svg",
+      "PackagePath": "staticwebassets\\icon\\return.svg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\icon\\star.svg",
+      "PackagePath": "staticwebassets\\icon\\star.svg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\icon\\tiktok.svg",
+      "PackagePath": "staticwebassets\\icon\\tiktok.svg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\icon\\truck-fast.svg",
+      "PackagePath": "staticwebassets\\icon\\truck-fast.svg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\icon\\vnpay.jpg",
+      "PackagePath": "staticwebassets\\icon\\vnpay.jpg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\icon\\youtube.svg",
+      "PackagePath": "staticwebassets\\icon\\youtube.svg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\icon\\zalopay.png",
+      "PackagePath": "staticwebassets\\icon\\zalopay.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\images\\all.png",
+      "PackagePath": "staticwebassets\\images\\all.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\images\\banner_1.jpg",
+      "PackagePath": "staticwebassets\\images\\banner_1.jpg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\images\\banner_2.jpg",
+      "PackagePath": "staticwebassets\\images\\banner_2.jpg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\images\\banner_3.jpg",
+      "PackagePath": "staticwebassets\\images\\banner_3.jpg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\images\\blog_1.jpg",
+      "PackagePath": "staticwebassets\\images\\blog_1.jpg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\images\\blog_2.jpg",
+      "PackagePath": "staticwebassets\\images\\blog_2.jpg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\images\\blog_3.jpg",
+      "PackagePath": "staticwebassets\\images\\blog_3.jpg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\images\\deal_ofthe_week.png",
+      "PackagePath": "staticwebassets\\images\\deal_ofthe_week.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\images\\desc_1.jpg",
+      "PackagePath": "staticwebassets\\images\\desc_1.jpg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\images\\desc_2.jpg",
+      "PackagePath": "staticwebassets\\images\\desc_2.jpg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\images\\desc_3.jpg",
+      "PackagePath": "staticwebassets\\images\\desc_3.jpg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\images\\dl.png",
+      "PackagePath": "staticwebassets\\images\\dl.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\images\\map_marker.png",
+      "PackagePath": "staticwebassets\\images\\map_marker.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\images\\pk.png",
+      "PackagePath": "staticwebassets\\images\\pk.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\images\\product_1.png",
+      "PackagePath": "staticwebassets\\images\\product_1.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\images\\product_10.png",
+      "PackagePath": "staticwebassets\\images\\product_10.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\images\\product_2.png",
+      "PackagePath": "staticwebassets\\images\\product_2.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\images\\product_3.png",
+      "PackagePath": "staticwebassets\\images\\product_3.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\images\\product_4.png",
+      "PackagePath": "staticwebassets\\images\\product_4.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\images\\product_5.png",
+      "PackagePath": "staticwebassets\\images\\product_5.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\images\\product_6.png",
+      "PackagePath": "staticwebassets\\images\\product_6.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\images\\product_7.png",
+      "PackagePath": "staticwebassets\\images\\product_7.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\images\\product_8.png",
+      "PackagePath": "staticwebassets\\images\\product_8.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\images\\product_9.png",
+      "PackagePath": "staticwebassets\\images\\product_9.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\images\\single_1.jpg",
+      "PackagePath": "staticwebassets\\images\\single_1.jpg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\images\\single_1_thumb.jpg",
+      "PackagePath": "staticwebassets\\images\\single_1_thumb.jpg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\images\\single_2.jpg",
+      "PackagePath": "staticwebassets\\images\\single_2.jpg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\images\\single_2_thumb.jpg",
+      "PackagePath": "staticwebassets\\images\\single_2_thumb.jpg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\images\\single_3.jpg",
+      "PackagePath": "staticwebassets\\images\\single_3.jpg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\images\\single_3_thumb.jpg",
+      "PackagePath": "staticwebassets\\images\\single_3_thumb.jpg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\images\\slider_1.jpg",
+      "PackagePath": "staticwebassets\\images\\slider_1.jpg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\01365d4b-9095-4409-9a0f-3a1316208ba0.png",
+      "PackagePath": "staticwebassets\\img\\01365d4b-9095-4409-9a0f-3a1316208ba0.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\01f5168e-e612-49cb-bd93-bcd81eced4e4.png",
+      "PackagePath": "staticwebassets\\img\\01f5168e-e612-49cb-bd93-bcd81eced4e4.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\023c85e5-9e18-4d82-a48c-22dc07154303.png",
+      "PackagePath": "staticwebassets\\img\\023c85e5-9e18-4d82-a48c-22dc07154303.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\04274449-47dd-4062-afc8-501052aa1b0d.png",
+      "PackagePath": "staticwebassets\\img\\04274449-47dd-4062-afc8-501052aa1b0d.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\0429c196-2bdd-44ef-a8f1-f7cd2f90628a.png",
+      "PackagePath": "staticwebassets\\img\\0429c196-2bdd-44ef-a8f1-f7cd2f90628a.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\06375653-7537-4e17-97a4-a77b7682aecc.png",
+      "PackagePath": "staticwebassets\\img\\06375653-7537-4e17-97a4-a77b7682aecc.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\07e94e5b-03fd-49f6-ba1c-8992c259d29e.png",
+      "PackagePath": "staticwebassets\\img\\07e94e5b-03fd-49f6-ba1c-8992c259d29e.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\08594095-e0bd-4288-a41d-d17fb0f55a1f.png",
+      "PackagePath": "staticwebassets\\img\\08594095-e0bd-4288-a41d-d17fb0f55a1f.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\08a1f99f-9d6d-4d2e-b355-625f2ca5c543.png",
+      "PackagePath": "staticwebassets\\img\\08a1f99f-9d6d-4d2e-b355-625f2ca5c543.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\0900a9e1-85f1-4e67-a8c7-2c03c0fde2b2.png",
+      "PackagePath": "staticwebassets\\img\\0900a9e1-85f1-4e67-a8c7-2c03c0fde2b2.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\093a8b77-be56-41fb-8968-6c402efe0a26.png",
+      "PackagePath": "staticwebassets\\img\\093a8b77-be56-41fb-8968-6c402efe0a26.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\0b76873d-fe68-4c55-a46f-cf42b2a43ce1.png",
+      "PackagePath": "staticwebassets\\img\\0b76873d-fe68-4c55-a46f-cf42b2a43ce1.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\0ddf10f3-2b5c-450e-b28e-2cdbd999f4d7.png",
+      "PackagePath": "staticwebassets\\img\\0ddf10f3-2b5c-450e-b28e-2cdbd999f4d7.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\1027d9ca-06ca-45c6-b14e-eb1661109a64.png",
+      "PackagePath": "staticwebassets\\img\\1027d9ca-06ca-45c6-b14e-eb1661109a64.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\11ecfb3c-65a1-41c8-8421-62c3bc7559aa.png",
+      "PackagePath": "staticwebassets\\img\\11ecfb3c-65a1-41c8-8421-62c3bc7559aa.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\14e69d97-f87b-4028-8417-1dbbda71658e.png",
+      "PackagePath": "staticwebassets\\img\\14e69d97-f87b-4028-8417-1dbbda71658e.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\16ab7812-98d2-4f27-bc3a-e4d116b78473.png",
+      "PackagePath": "staticwebassets\\img\\16ab7812-98d2-4f27-bc3a-e4d116b78473.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\1b23d47c-35e0-4a8c-87f8-9d33286268b0.png",
+      "PackagePath": "staticwebassets\\img\\1b23d47c-35e0-4a8c-87f8-9d33286268b0.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\1c34a21c-6900-45f9-ac2c-95863eb192b7.png",
+      "PackagePath": "staticwebassets\\img\\1c34a21c-6900-45f9-ac2c-95863eb192b7.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\1c46e65f-57f2-4002-97a0-c066009aba01.png",
+      "PackagePath": "staticwebassets\\img\\1c46e65f-57f2-4002-97a0-c066009aba01.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\1de4aa97-6ca8-4533-84c4-40234a952c87.png",
+      "PackagePath": "staticwebassets\\img\\1de4aa97-6ca8-4533-84c4-40234a952c87.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\1ebca6d7-ff5e-48e4-a2ef-171150a76f9b.png",
+      "PackagePath": "staticwebassets\\img\\1ebca6d7-ff5e-48e4-a2ef-171150a76f9b.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\1f428c93-68d3-42cd-90cc-91f09edc4d18.png",
+      "PackagePath": "staticwebassets\\img\\1f428c93-68d3-42cd-90cc-91f09edc4d18.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\1f689285-4408-4f11-9fef-1056cfe0d459.png",
+      "PackagePath": "staticwebassets\\img\\1f689285-4408-4f11-9fef-1056cfe0d459.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\1f8607d8-864c-4b3a-bb2b-a51f402e1196.png",
+      "PackagePath": "staticwebassets\\img\\1f8607d8-864c-4b3a-bb2b-a51f402e1196.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\1ffaed41-f31d-44d2-8c50-ce995cf8027b.png",
+      "PackagePath": "staticwebassets\\img\\1ffaed41-f31d-44d2-8c50-ce995cf8027b.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\21630405-b2c1-4ca9-9fab-811300e20cef.png",
+      "PackagePath": "staticwebassets\\img\\21630405-b2c1-4ca9-9fab-811300e20cef.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\222b7e1d-a099-429a-9300-0ab73aa692f8.png",
+      "PackagePath": "staticwebassets\\img\\222b7e1d-a099-429a-9300-0ab73aa692f8.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\2517a446-50bc-4a9a-a08c-8f316a6e34c7.png",
+      "PackagePath": "staticwebassets\\img\\2517a446-50bc-4a9a-a08c-8f316a6e34c7.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\27171202-e858-45ba-83ad-35f1477a7f65.png",
+      "PackagePath": "staticwebassets\\img\\27171202-e858-45ba-83ad-35f1477a7f65.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\2791e87b-05e4-4165-8d5e-53b2f8241778.png",
+      "PackagePath": "staticwebassets\\img\\2791e87b-05e4-4165-8d5e-53b2f8241778.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\289bc00d-1903-47e5-bb89-7874c2e4d665.png",
+      "PackagePath": "staticwebassets\\img\\289bc00d-1903-47e5-bb89-7874c2e4d665.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\29530a29-f5fa-4017-8f5f-e5824a7aeaa1.png",
+      "PackagePath": "staticwebassets\\img\\29530a29-f5fa-4017-8f5f-e5824a7aeaa1.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\29550fd0-2c91-40f1-be84-254fa44361ce.png",
+      "PackagePath": "staticwebassets\\img\\29550fd0-2c91-40f1-be84-254fa44361ce.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\2acb75c1-b17f-4d76-9fe7-534e72a380cb.png",
+      "PackagePath": "staticwebassets\\img\\2acb75c1-b17f-4d76-9fe7-534e72a380cb.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\3008f323-97f5-4043-98ab-582675dd341c.png",
+      "PackagePath": "staticwebassets\\img\\3008f323-97f5-4043-98ab-582675dd341c.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\313364a1-13d6-41fa-a6b0-f20d870b5ed7.png",
+      "PackagePath": "staticwebassets\\img\\313364a1-13d6-41fa-a6b0-f20d870b5ed7.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\33f1ce9c-0986-4bf0-befb-1e61e647ef28.png",
+      "PackagePath": "staticwebassets\\img\\33f1ce9c-0986-4bf0-befb-1e61e647ef28.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\3f264380-ccba-4d9f-9ceb-470b1b77b39c.png",
+      "PackagePath": "staticwebassets\\img\\3f264380-ccba-4d9f-9ceb-470b1b77b39c.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\3f56374d-4e5c-4ef0-b890-3ef5430ff201.png",
+      "PackagePath": "staticwebassets\\img\\3f56374d-4e5c-4ef0-b890-3ef5430ff201.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\42391da9-2664-4da8-93a1-36d17db1ced4.png",
+      "PackagePath": "staticwebassets\\img\\42391da9-2664-4da8-93a1-36d17db1ced4.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\4434ee99-9ff9-4f24-8c88-2662fd49eb2c.png",
+      "PackagePath": "staticwebassets\\img\\4434ee99-9ff9-4f24-8c88-2662fd49eb2c.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\44b44e2c-7911-4b0d-973a-a4f8ffe21697.png",
+      "PackagePath": "staticwebassets\\img\\44b44e2c-7911-4b0d-973a-a4f8ffe21697.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\473d4e1a-078f-4406-855a-42feef28e7be.png",
+      "PackagePath": "staticwebassets\\img\\473d4e1a-078f-4406-855a-42feef28e7be.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\4a9f3135-92e3-46b0-a1c1-4be19442a8d4.png",
+      "PackagePath": "staticwebassets\\img\\4a9f3135-92e3-46b0-a1c1-4be19442a8d4.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\4b052fc8-ba48-4a25-b3e1-e5dd370a4510.png",
+      "PackagePath": "staticwebassets\\img\\4b052fc8-ba48-4a25-b3e1-e5dd370a4510.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\4cd12f12-7780-48ea-bf58-003e362647bc.png",
+      "PackagePath": "staticwebassets\\img\\4cd12f12-7780-48ea-bf58-003e362647bc.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\4d0b6943-d9e7-450b-9357-154f3a7a3b82.png",
+      "PackagePath": "staticwebassets\\img\\4d0b6943-d9e7-450b-9357-154f3a7a3b82.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\4deabe29-eb04-4b51-88a4-5fbf2f6f5ca7.png",
+      "PackagePath": "staticwebassets\\img\\4deabe29-eb04-4b51-88a4-5fbf2f6f5ca7.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\4f0cb277-592b-45fe-b98c-cd608398bc82.png",
+      "PackagePath": "staticwebassets\\img\\4f0cb277-592b-45fe-b98c-cd608398bc82.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\4ffb92e6-947e-4621-8947-17af3d4fba08.png",
+      "PackagePath": "staticwebassets\\img\\4ffb92e6-947e-4621-8947-17af3d4fba08.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\531246ea-ac34-4147-93ad-ee34c4b4ddb5.png",
+      "PackagePath": "staticwebassets\\img\\531246ea-ac34-4147-93ad-ee34c4b4ddb5.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\56c37b33-6abb-4a94-9bfd-4f596581ef10.png",
+      "PackagePath": "staticwebassets\\img\\56c37b33-6abb-4a94-9bfd-4f596581ef10.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\5a3d0306-40ff-4de6-8355-c49073eccefc.png",
+      "PackagePath": "staticwebassets\\img\\5a3d0306-40ff-4de6-8355-c49073eccefc.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\5ab4ec34-2ade-49d1-9c1c-f45d833c7cb5.png",
+      "PackagePath": "staticwebassets\\img\\5ab4ec34-2ade-49d1-9c1c-f45d833c7cb5.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\5bc70b73-6528-4120-9f3e-b8730f603bbf.png",
+      "PackagePath": "staticwebassets\\img\\5bc70b73-6528-4120-9f3e-b8730f603bbf.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\6019b0f8-2381-434c-8835-782f39dba4e7.png",
+      "PackagePath": "staticwebassets\\img\\6019b0f8-2381-434c-8835-782f39dba4e7.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\628ba9fb-6f7c-402a-92bb-12286e39dcbd.png",
+      "PackagePath": "staticwebassets\\img\\628ba9fb-6f7c-402a-92bb-12286e39dcbd.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\635cf612-e9aa-4790-8b34-914916cc1887.png",
+      "PackagePath": "staticwebassets\\img\\635cf612-e9aa-4790-8b34-914916cc1887.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\64459130-032a-49c1-b8b9-2def30874ad2.png",
+      "PackagePath": "staticwebassets\\img\\64459130-032a-49c1-b8b9-2def30874ad2.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\65e304ee-ee40-46e6-9ab6-66f33d6ae308.png",
+      "PackagePath": "staticwebassets\\img\\65e304ee-ee40-46e6-9ab6-66f33d6ae308.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\68125eb5-c9d4-4d12-9aa9-e1e240a93a93.png",
+      "PackagePath": "staticwebassets\\img\\68125eb5-c9d4-4d12-9aa9-e1e240a93a93.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\683b8314-89c6-4ba9-9b30-007592a53cc3.png",
+      "PackagePath": "staticwebassets\\img\\683b8314-89c6-4ba9-9b30-007592a53cc3.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\69265472-d408-422e-b05b-abf229e22c3f.png",
+      "PackagePath": "staticwebassets\\img\\69265472-d408-422e-b05b-abf229e22c3f.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\6a1bba5f-9920-49ba-afd0-32ad03bc0d4e.png",
+      "PackagePath": "staticwebassets\\img\\6a1bba5f-9920-49ba-afd0-32ad03bc0d4e.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\6a21116a-c7c0-4a9d-b682-d073f936c904.png",
+      "PackagePath": "staticwebassets\\img\\6a21116a-c7c0-4a9d-b682-d073f936c904.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\6a6c063a-46a0-4e61-82ab-4ae9dbb273cf.png",
+      "PackagePath": "staticwebassets\\img\\6a6c063a-46a0-4e61-82ab-4ae9dbb273cf.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\6ad1d97d-d391-40e0-930e-cf5b870341b3.png",
+      "PackagePath": "staticwebassets\\img\\6ad1d97d-d391-40e0-930e-cf5b870341b3.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\6bd63e75-ee7e-43b2-84a0-ebadf4b29395.png",
+      "PackagePath": "staticwebassets\\img\\6bd63e75-ee7e-43b2-84a0-ebadf4b29395.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\6c8df47e-f68f-436b-9024-592496463453.png",
+      "PackagePath": "staticwebassets\\img\\6c8df47e-f68f-436b-9024-592496463453.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\6c99de83-cf81-4673-9601-5d6b5e90cc5c.png",
+      "PackagePath": "staticwebassets\\img\\6c99de83-cf81-4673-9601-5d6b5e90cc5c.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\6cf1dc0b-3c0c-4bf8-b309-591e4d809c18.png",
+      "PackagePath": "staticwebassets\\img\\6cf1dc0b-3c0c-4bf8-b309-591e4d809c18.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\6ff15d79-1adb-46d2-b301-3df08ce62190.png",
+      "PackagePath": "staticwebassets\\img\\6ff15d79-1adb-46d2-b301-3df08ce62190.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\71ee3dbe-cc5d-4b76-92f2-7f00a4cc3d28.png",
+      "PackagePath": "staticwebassets\\img\\71ee3dbe-cc5d-4b76-92f2-7f00a4cc3d28.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\721b2846-2bef-4b70-b579-77ca4bfd4da9.png",
+      "PackagePath": "staticwebassets\\img\\721b2846-2bef-4b70-b579-77ca4bfd4da9.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\7233e79f-d588-4dbc-91a4-4bbe1a7088ba.png",
+      "PackagePath": "staticwebassets\\img\\7233e79f-d588-4dbc-91a4-4bbe1a7088ba.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\74e9b0a6-301c-4962-a4f7-5f7bb41cf6e8.png",
+      "PackagePath": "staticwebassets\\img\\74e9b0a6-301c-4962-a4f7-5f7bb41cf6e8.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\76335c8c-a6b3-4dc2-b629-137a9f8bc926.png",
+      "PackagePath": "staticwebassets\\img\\76335c8c-a6b3-4dc2-b629-137a9f8bc926.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\76db553f-80ca-4ecc-a4fe-443a152c7a13.png",
+      "PackagePath": "staticwebassets\\img\\76db553f-80ca-4ecc-a4fe-443a152c7a13.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\78fc2b27-5ec8-4b6b-b27a-d13e99bc930c.png",
+      "PackagePath": "staticwebassets\\img\\78fc2b27-5ec8-4b6b-b27a-d13e99bc930c.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\794d8503-1c1a-4310-81c7-a951d35c4244.png",
+      "PackagePath": "staticwebassets\\img\\794d8503-1c1a-4310-81c7-a951d35c4244.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\7959e8e9-fd5d-4c48-8639-3bb4856a3cf6.png",
+      "PackagePath": "staticwebassets\\img\\7959e8e9-fd5d-4c48-8639-3bb4856a3cf6.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\7ac83b0a-4a84-4c32-874d-e5d8b03b22a8.png",
+      "PackagePath": "staticwebassets\\img\\7ac83b0a-4a84-4c32-874d-e5d8b03b22a8.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\7bbedb47-f2ec-47e7-b465-0632494fd3a6.png",
+      "PackagePath": "staticwebassets\\img\\7bbedb47-f2ec-47e7-b465-0632494fd3a6.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\7d763125-c447-4c0e-8d4a-652c6178e2c0.png",
+      "PackagePath": "staticwebassets\\img\\7d763125-c447-4c0e-8d4a-652c6178e2c0.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\7dbfd983-0bb1-4767-8056-04ba0f73cee4.png",
+      "PackagePath": "staticwebassets\\img\\7dbfd983-0bb1-4767-8056-04ba0f73cee4.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\7e32c386-c589-438b-82df-d8337d270c2d.png",
+      "PackagePath": "staticwebassets\\img\\7e32c386-c589-438b-82df-d8337d270c2d.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\7e59d3d7-9049-4ff5-ac43-7b3112d9563e.png",
+      "PackagePath": "staticwebassets\\img\\7e59d3d7-9049-4ff5-ac43-7b3112d9563e.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\7ea7b457-3c7b-4aeb-bb77-e23cd8c919bb.png",
+      "PackagePath": "staticwebassets\\img\\7ea7b457-3c7b-4aeb-bb77-e23cd8c919bb.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\80b1608c-b6b0-4eef-b6e3-7385c4bd568b.png",
+      "PackagePath": "staticwebassets\\img\\80b1608c-b6b0-4eef-b6e3-7385c4bd568b.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\811bb8c6-1c6f-441c-964e-a58f19dcd59c.png",
+      "PackagePath": "staticwebassets\\img\\811bb8c6-1c6f-441c-964e-a58f19dcd59c.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\8160f20a-fcb6-471e-91ac-a3ac84221dda.png",
+      "PackagePath": "staticwebassets\\img\\8160f20a-fcb6-471e-91ac-a3ac84221dda.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\81ea5b42-7631-4581-ad2b-a1d8efe7f3f9.png",
+      "PackagePath": "staticwebassets\\img\\81ea5b42-7631-4581-ad2b-a1d8efe7f3f9.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\8458b184-1481-4ca3-8beb-aba532787883.png",
+      "PackagePath": "staticwebassets\\img\\8458b184-1481-4ca3-8beb-aba532787883.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\88a23b70-e0d8-431a-b2ed-d3eaeee2370e.png",
+      "PackagePath": "staticwebassets\\img\\88a23b70-e0d8-431a-b2ed-d3eaeee2370e.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\890da0ba-8395-40e3-9352-bf1296804a0f.png",
+      "PackagePath": "staticwebassets\\img\\890da0ba-8395-40e3-9352-bf1296804a0f.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\8992e0d8-02cf-493c-afd3-9934e6da7c5e.png",
+      "PackagePath": "staticwebassets\\img\\8992e0d8-02cf-493c-afd3-9934e6da7c5e.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\89fa1b7f-f932-4135-910f-36c3e30a7f03.png",
+      "PackagePath": "staticwebassets\\img\\89fa1b7f-f932-4135-910f-36c3e30a7f03.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\8b4c867b-6326-4c5f-ab86-03a93c3779a9.png",
+      "PackagePath": "staticwebassets\\img\\8b4c867b-6326-4c5f-ab86-03a93c3779a9.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\8bf27154-d349-4722-abde-2af7914ab9e6.png",
+      "PackagePath": "staticwebassets\\img\\8bf27154-d349-4722-abde-2af7914ab9e6.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\90298279-c452-463e-8fde-8786ca012204.png",
+      "PackagePath": "staticwebassets\\img\\90298279-c452-463e-8fde-8786ca012204.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\916fdc99-3757-4589-bc40-668d1695a02a.png",
+      "PackagePath": "staticwebassets\\img\\916fdc99-3757-4589-bc40-668d1695a02a.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\9268cf74-f6da-4853-8ffc-a477fb949c51.png",
+      "PackagePath": "staticwebassets\\img\\9268cf74-f6da-4853-8ffc-a477fb949c51.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\94f49342-4859-444f-b39c-216da88bcbf8.png",
+      "PackagePath": "staticwebassets\\img\\94f49342-4859-444f-b39c-216da88bcbf8.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\9511309b-e01e-43cd-97ad-7e82513b798f.png",
+      "PackagePath": "staticwebassets\\img\\9511309b-e01e-43cd-97ad-7e82513b798f.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\95911651-8765-435a-a430-38c2b8d7e4f5.png",
+      "PackagePath": "staticwebassets\\img\\95911651-8765-435a-a430-38c2b8d7e4f5.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\96d2df17-acbf-4d58-a25e-bf6308bef1e2.png",
+      "PackagePath": "staticwebassets\\img\\96d2df17-acbf-4d58-a25e-bf6308bef1e2.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\980da8ad-ee27-4084-bc25-72664e30d8ce.png",
+      "PackagePath": "staticwebassets\\img\\980da8ad-ee27-4084-bc25-72664e30d8ce.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\9864a28f-3582-44bf-b9a9-fd75047e1d40.png",
+      "PackagePath": "staticwebassets\\img\\9864a28f-3582-44bf-b9a9-fd75047e1d40.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\993be47c-43fe-4509-b360-1333b32cc741.png",
+      "PackagePath": "staticwebassets\\img\\993be47c-43fe-4509-b360-1333b32cc741.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\99a1cd92-dc2e-49bc-9e8c-5d4275910c9d.png",
+      "PackagePath": "staticwebassets\\img\\99a1cd92-dc2e-49bc-9e8c-5d4275910c9d.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\9ccce547-deaf-4f05-9a88-7275de416775.png",
+      "PackagePath": "staticwebassets\\img\\9ccce547-deaf-4f05-9a88-7275de416775.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\9d51a9ef-292b-40da-99f7-8a2154230400.png",
+      "PackagePath": "staticwebassets\\img\\9d51a9ef-292b-40da-99f7-8a2154230400.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\9fb90377-4a6e-41d9-b62a-61bb12a92cef.png",
+      "PackagePath": "staticwebassets\\img\\9fb90377-4a6e-41d9-b62a-61bb12a92cef.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\Screenshot_1.png",
+      "PackagePath": "staticwebassets\\img\\Screenshot_1.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\Screenshot_2.png",
+      "PackagePath": "staticwebassets\\img\\Screenshot_2.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\Screenshot_3.png",
+      "PackagePath": "staticwebassets\\img\\Screenshot_3.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\Screenshot_4.png",
+      "PackagePath": "staticwebassets\\img\\Screenshot_4.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\Screenshot_45.png",
+      "PackagePath": "staticwebassets\\img\\Screenshot_45.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\Tím.png",
+      "PackagePath": "staticwebassets\\img\\Tím.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\Vàng.png",
+      "PackagePath": "staticwebassets\\img\\Vàng.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\Xanh.png",
+      "PackagePath": "staticwebassets\\img\\Xanh.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\a517f2ae-e33b-4e67-bd24-1bc871f92732.png",
+      "PackagePath": "staticwebassets\\img\\a517f2ae-e33b-4e67-bd24-1bc871f92732.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\a535a642-01f6-41e2-98c9-16fdab488a09.png",
+      "PackagePath": "staticwebassets\\img\\a535a642-01f6-41e2-98c9-16fdab488a09.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\a72e4fc8-c713-4939-a6f5-9be2091452b3.png",
+      "PackagePath": "staticwebassets\\img\\a72e4fc8-c713-4939-a6f5-9be2091452b3.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\a7566c01-af94-4f62-84bd-4347a2e564c3.png",
+      "PackagePath": "staticwebassets\\img\\a7566c01-af94-4f62-84bd-4347a2e564c3.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\a8f1f195-0a59-4b74-a1b8-6c6f058cac78.png",
+      "PackagePath": "staticwebassets\\img\\a8f1f195-0a59-4b74-a1b8-6c6f058cac78.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\a91ba4a9-0b18-4d5e-b474-bd10ff7b2a6a.png",
+      "PackagePath": "staticwebassets\\img\\a91ba4a9-0b18-4d5e-b474-bd10ff7b2a6a.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\a9b53fec-ee93-4e19-9b39-bc236270a07b.png",
+      "PackagePath": "staticwebassets\\img\\a9b53fec-ee93-4e19-9b39-bc236270a07b.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\ad54de60-6087-4773-a2ef-a76cc6864873.png",
+      "PackagePath": "staticwebassets\\img\\ad54de60-6087-4773-a2ef-a76cc6864873.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\ae348abb-3199-4539-9e58-147c0754f21e.png",
+      "PackagePath": "staticwebassets\\img\\ae348abb-3199-4539-9e58-147c0754f21e.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\ae66edd4-a7d6-4c90-a773-77bc45a82da7.png",
+      "PackagePath": "staticwebassets\\img\\ae66edd4-a7d6-4c90-a773-77bc45a82da7.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\ak1.png",
+      "PackagePath": "staticwebassets\\img\\ak1.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\ak2.png",
+      "PackagePath": "staticwebassets\\img\\ak2.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\ak3.png",
+      "PackagePath": "staticwebassets\\img\\ak3.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\ak4.png",
+      "PackagePath": "staticwebassets\\img\\ak4.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\ak5.png",
+      "PackagePath": "staticwebassets\\img\\ak5.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\ao-nam2.png",
+      "PackagePath": "staticwebassets\\img\\ao-nam2.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\at1.png",
+      "PackagePath": "staticwebassets\\img\\at1.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\at2.png",
+      "PackagePath": "staticwebassets\\img\\at2.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\at3.png",
+      "PackagePath": "staticwebassets\\img\\at3.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\at4.png",
+      "PackagePath": "staticwebassets\\img\\at4.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\at5.png",
+      "PackagePath": "staticwebassets\\img\\at5.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\b0c31b00-2968-4c3a-8a01-81c53f8388ae.png",
+      "PackagePath": "staticwebassets\\img\\b0c31b00-2968-4c3a-8a01-81c53f8388ae.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\b125536c-786c-481a-baf2-815530bb7d22.png",
+      "PackagePath": "staticwebassets\\img\\b125536c-786c-481a-baf2-815530bb7d22.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\b1a09f13-2ac2-4022-9a9d-95768c2df960.png",
+      "PackagePath": "staticwebassets\\img\\b1a09f13-2ac2-4022-9a9d-95768c2df960.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\b3afadf8-95de-4e7a-96d8-01c6c7fcd8ae.png",
+      "PackagePath": "staticwebassets\\img\\b3afadf8-95de-4e7a-96d8-01c6c7fcd8ae.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\b45a5b33-03a3-44ec-be7b-1856b759a1cf.png",
+      "PackagePath": "staticwebassets\\img\\b45a5b33-03a3-44ec-be7b-1856b759a1cf.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\b4e3a8aa-c0e6-465d-8016-35d2310e1992.png",
+      "PackagePath": "staticwebassets\\img\\b4e3a8aa-c0e6-465d-8016-35d2310e1992.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\b54feef7-a839-47ee-ac8a-1a01c9b7fc91.png",
+      "PackagePath": "staticwebassets\\img\\b54feef7-a839-47ee-ac8a-1a01c9b7fc91.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\b5de6057-8d5f-4cb5-8225-22395a56c1c2.png",
+      "PackagePath": "staticwebassets\\img\\b5de6057-8d5f-4cb5-8225-22395a56c1c2.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\b6000a5a-6c0f-4ef0-a5e4-7506dec82769.png",
+      "PackagePath": "staticwebassets\\img\\b6000a5a-6c0f-4ef0-a5e4-7506dec82769.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\b602acc8-81a8-4e26-b2d0-a69e825e1aae.png",
+      "PackagePath": "staticwebassets\\img\\b602acc8-81a8-4e26-b2d0-a69e825e1aae.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\b788fa97-7b69-44d0-80fd-abb5ccda1ca4.png",
+      "PackagePath": "staticwebassets\\img\\b788fa97-7b69-44d0-80fd-abb5ccda1ca4.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\b846ce2d-ebab-4c65-9e47-67ba5c70ec54.png",
+      "PackagePath": "staticwebassets\\img\\b846ce2d-ebab-4c65-9e47-67ba5c70ec54.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\b963307c-0f2f-45ee-8a27-0d16b8eed9de.png",
+      "PackagePath": "staticwebassets\\img\\b963307c-0f2f-45ee-8a27-0d16b8eed9de.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\baa1c3fa-80fb-4838-a698-0d6b90cfa12f.png",
+      "PackagePath": "staticwebassets\\img\\baa1c3fa-80fb-4838-a698-0d6b90cfa12f.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\bb260b5d-c4ee-4c6f-bfa2-8a513b026145.png",
+      "PackagePath": "staticwebassets\\img\\bb260b5d-c4ee-4c6f-bfa2-8a513b026145.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\bbec778b-fd7a-4ac4-ae58-daa6cd3a14e0.png",
+      "PackagePath": "staticwebassets\\img\\bbec778b-fd7a-4ac4-ae58-daa6cd3a14e0.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\bcdf8d13-bd42-41af-9e19-4683d18e877d.png",
+      "PackagePath": "staticwebassets\\img\\bcdf8d13-bd42-41af-9e19-4683d18e877d.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\bd8b9716-2042-4b08-b50a-a4d83c0f3450.png",
+      "PackagePath": "staticwebassets\\img\\bd8b9716-2042-4b08-b50a-a4d83c0f3450.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\be0cd6a2-860e-4c26-80a3-8ebc64fb2327.png",
+      "PackagePath": "staticwebassets\\img\\be0cd6a2-860e-4c26-80a3-8ebc64fb2327.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\bf6dc4e6-1440-47c9-ad08-9bd0613a3bc1.png",
+      "PackagePath": "staticwebassets\\img\\bf6dc4e6-1440-47c9-ad08-9bd0613a3bc1.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\c0a9272b-9470-4729-bf95-c21f057e8792.png",
+      "PackagePath": "staticwebassets\\img\\c0a9272b-9470-4729-bf95-c21f057e8792.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\c2479876-a004-4278-b0e6-8d089c428f13.png",
+      "PackagePath": "staticwebassets\\img\\c2479876-a004-4278-b0e6-8d089c428f13.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\c374658a-c99a-4286-9a0b-d3197837c9a4.png",
+      "PackagePath": "staticwebassets\\img\\c374658a-c99a-4286-9a0b-d3197837c9a4.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\c44ddeea-ce25-4640-9949-bc5f8c026ee0.png",
+      "PackagePath": "staticwebassets\\img\\c44ddeea-ce25-4640-9949-bc5f8c026ee0.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\c4722aba-eeb2-425b-8be0-f44ffca2e03b.png",
+      "PackagePath": "staticwebassets\\img\\c4722aba-eeb2-425b-8be0-f44ffca2e03b.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\c703b7ef-23eb-4c85-878c-20e8fe0e0ad6.png",
+      "PackagePath": "staticwebassets\\img\\c703b7ef-23eb-4c85-878c-20e8fe0e0ad6.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\c70ada33-e983-4c25-9936-988a9632ee29.png",
+      "PackagePath": "staticwebassets\\img\\c70ada33-e983-4c25-9936-988a9632ee29.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\c9535334-9616-48c8-8236-e3b0deeebc7b.png",
+      "PackagePath": "staticwebassets\\img\\c9535334-9616-48c8-8236-e3b0deeebc7b.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\c9d62ba7-7e45-4d40-85f1-c14f6a957d27.png",
+      "PackagePath": "staticwebassets\\img\\c9d62ba7-7e45-4d40-85f1-c14f6a957d27.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\cd610a8c-a35a-4603-bedd-8db4e4698942.png",
+      "PackagePath": "staticwebassets\\img\\cd610a8c-a35a-4603-bedd-8db4e4698942.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\cdb22864-3581-4f27-8ad1-a931fa75d393.png",
+      "PackagePath": "staticwebassets\\img\\cdb22864-3581-4f27-8ad1-a931fa75d393.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\cdc3e610-8ded-4b13-a536-3a133a2899b6.png",
+      "PackagePath": "staticwebassets\\img\\cdc3e610-8ded-4b13-a536-3a133a2899b6.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\ce34b593-a557-4e94-a8a9-84cce9baf41f.png",
+      "PackagePath": "staticwebassets\\img\\ce34b593-a557-4e94-a8a9-84cce9baf41f.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\cecd205a-2179-44ba-a743-9180d96ca85e.png",
+      "PackagePath": "staticwebassets\\img\\cecd205a-2179-44ba-a743-9180d96ca85e.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\cf3bc757-a9eb-49ce-8a35-0be7fbf19b7d.png",
+      "PackagePath": "staticwebassets\\img\\cf3bc757-a9eb-49ce-8a35-0be7fbf19b7d.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\d296cd82-ace2-47b5-937f-0ad74e114eac.png",
+      "PackagePath": "staticwebassets\\img\\d296cd82-ace2-47b5-937f-0ad74e114eac.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\d4152d4b-9bf1-4ab5-94ff-019d7b303114.png",
+      "PackagePath": "staticwebassets\\img\\d4152d4b-9bf1-4ab5-94ff-019d7b303114.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\d4beb48d-ed3a-4f20-81b9-f0dbcb84a519.png",
+      "PackagePath": "staticwebassets\\img\\d4beb48d-ed3a-4f20-81b9-f0dbcb84a519.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\d4e91d80-7891-4cd4-8a69-59cdcab17df0.png",
+      "PackagePath": "staticwebassets\\img\\d4e91d80-7891-4cd4-8a69-59cdcab17df0.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\d762d8c9-b62f-4301-b3c8-d60fd76dc8b2.png",
+      "PackagePath": "staticwebassets\\img\\d762d8c9-b62f-4301-b3c8-d60fd76dc8b2.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\d784aae2-87f8-4e37-9164-11b53c0d9111.png",
+      "PackagePath": "staticwebassets\\img\\d784aae2-87f8-4e37-9164-11b53c0d9111.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\d786d4af-8e5e-4538-8e52-0605bc2c4bd5.png",
+      "PackagePath": "staticwebassets\\img\\d786d4af-8e5e-4538-8e52-0605bc2c4bd5.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\d7c9a1d5-a511-4436-9d8c-0605d4422892.png",
+      "PackagePath": "staticwebassets\\img\\d7c9a1d5-a511-4436-9d8c-0605d4422892.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\d7f5527e-622f-4fe6-b0f1-6cf20742331f.png",
+      "PackagePath": "staticwebassets\\img\\d7f5527e-622f-4fe6-b0f1-6cf20742331f.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\d9608c63-9ee3-45bc-94ba-6b7f8e8f2e77.png",
+      "PackagePath": "staticwebassets\\img\\d9608c63-9ee3-45bc-94ba-6b7f8e8f2e77.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\dbbffbba-5a86-481c-ad0c-4edcdfce3008.png",
+      "PackagePath": "staticwebassets\\img\\dbbffbba-5a86-481c-ad0c-4edcdfce3008.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\dc4787fb-fb7a-4ad5-a7ad-d50d098bb9ca.png",
+      "PackagePath": "staticwebassets\\img\\dc4787fb-fb7a-4ad5-a7ad-d50d098bb9ca.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\dd490ea1-6779-45a1-a709-78e7d2b0f270.png",
+      "PackagePath": "staticwebassets\\img\\dd490ea1-6779-45a1-a709-78e7d2b0f270.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\dd819024-19a7-4c39-a464-86af7868cf45.png",
+      "PackagePath": "staticwebassets\\img\\dd819024-19a7-4c39-a464-86af7868cf45.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\debe9902-4588-4470-9391-a69a5e6c3674.png",
+      "PackagePath": "staticwebassets\\img\\debe9902-4588-4470-9391-a69a5e6c3674.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\e0248e2f-c65b-4ccf-a45e-54fcbdf079ca.png",
+      "PackagePath": "staticwebassets\\img\\e0248e2f-c65b-4ccf-a45e-54fcbdf079ca.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\e27b385b-5e71-41e6-93f5-63ba2dd3fe2d.png",
+      "PackagePath": "staticwebassets\\img\\e27b385b-5e71-41e6-93f5-63ba2dd3fe2d.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\e3602cdc-50df-4728-b26c-975b923bedc9.png",
+      "PackagePath": "staticwebassets\\img\\e3602cdc-50df-4728-b26c-975b923bedc9.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\e42833d5-6640-46e6-836d-49eb4b40fba5.png",
+      "PackagePath": "staticwebassets\\img\\e42833d5-6640-46e6-836d-49eb4b40fba5.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\e45fcc9e-82d5-4bb2-86f3-1b39eb6c7375.png",
+      "PackagePath": "staticwebassets\\img\\e45fcc9e-82d5-4bb2-86f3-1b39eb6c7375.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\e5a05820-86de-4649-a863-fc31565b928d.png",
+      "PackagePath": "staticwebassets\\img\\e5a05820-86de-4649-a863-fc31565b928d.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\e860dbc6-e208-433c-9099-c880e6416770.png",
+      "PackagePath": "staticwebassets\\img\\e860dbc6-e208-433c-9099-c880e6416770.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\ea04bc9c-ccc9-4b36-a53d-6481296d8a9d.png",
+      "PackagePath": "staticwebassets\\img\\ea04bc9c-ccc9-4b36-a53d-6481296d8a9d.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\ec2ebb5c-afb3-4a21-870b-1a0159bb1f05.png",
+      "PackagePath": "staticwebassets\\img\\ec2ebb5c-afb3-4a21-870b-1a0159bb1f05.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\ed97964c-ee17-4f55-b53b-f30207c70f88.png",
+      "PackagePath": "staticwebassets\\img\\ed97964c-ee17-4f55-b53b-f30207c70f88.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\eeddbb9f-1c45-4e4f-ba48-b467db344821.png",
+      "PackagePath": "staticwebassets\\img\\eeddbb9f-1c45-4e4f-ba48-b467db344821.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\eedfc0de-7525-463d-989e-96b52cb95868.png",
+      "PackagePath": "staticwebassets\\img\\eedfc0de-7525-463d-989e-96b52cb95868.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\eee035f7-c4a0-4c92-ab71-8e7edf0e9106.png",
+      "PackagePath": "staticwebassets\\img\\eee035f7-c4a0-4c92-ab71-8e7edf0e9106.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\efaca80c-b251-480b-bcac-af88753d654b.png",
+      "PackagePath": "staticwebassets\\img\\efaca80c-b251-480b-bcac-af88753d654b.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\f2a135dd-edbd-439b-a311-e1951048d489.png",
+      "PackagePath": "staticwebassets\\img\\f2a135dd-edbd-439b-a311-e1951048d489.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\f3af613d-bffa-4722-8c58-c747e97ed311.png",
+      "PackagePath": "staticwebassets\\img\\f3af613d-bffa-4722-8c58-c747e97ed311.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\f3f3a556-4b09-4804-b425-72ce3351bc42.png",
+      "PackagePath": "staticwebassets\\img\\f3f3a556-4b09-4804-b425-72ce3351bc42.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\f49ec89e-31cd-43aa-bde5-6c239e5e09d3.png",
+      "PackagePath": "staticwebassets\\img\\f49ec89e-31cd-43aa-bde5-6c239e5e09d3.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\f4c46b75-e387-45a6-b480-9db8636331ea.png",
+      "PackagePath": "staticwebassets\\img\\f4c46b75-e387-45a6-b480-9db8636331ea.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\f679f507-b317-4a55-9a71-9d62b86b8c80.png",
+      "PackagePath": "staticwebassets\\img\\f679f507-b317-4a55-9a71-9d62b86b8c80.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\f73cfa3c-4300-4033-a124-5ce5bd75abce.png",
+      "PackagePath": "staticwebassets\\img\\f73cfa3c-4300-4033-a124-5ce5bd75abce.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\f958841d-d167-4bbd-8b47-a2342db8abf1.png",
+      "PackagePath": "staticwebassets\\img\\f958841d-d167-4bbd-8b47-a2342db8abf1.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\f9678ddc-b088-4e7d-83b4-b552fb525c5f.png",
+      "PackagePath": "staticwebassets\\img\\f9678ddc-b088-4e7d-83b4-b552fb525c5f.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\fbbbd8c3-7b88-4568-845b-884f20435694.png",
+      "PackagePath": "staticwebassets\\img\\fbbbd8c3-7b88-4568-845b-884f20435694.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\fbc2469d-8667-4c32-a49f-d20d6f5f1ecd.png",
+      "PackagePath": "staticwebassets\\img\\fbc2469d-8667-4c32-a49f-d20d6f5f1ecd.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\fbf2d481-86bd-4442-b0da-f4fae98c9a9d.png",
+      "PackagePath": "staticwebassets\\img\\fbf2d481-86bd-4442-b0da-f4fae98c9a9d.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\fcc88508-6b8a-42b8-a6f5-41c11611ae24.png",
+      "PackagePath": "staticwebassets\\img\\fcc88508-6b8a-42b8-a6f5-41c11611ae24.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\fd024b8b-feaf-4f9c-bf6a-db19cab87096.png",
+      "PackagePath": "staticwebassets\\img\\fd024b8b-feaf-4f9c-bf6a-db19cab87096.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\fe0a3cb1-ee3f-46da-8b0b-ee83329bde74.png",
+      "PackagePath": "staticwebassets\\img\\fe0a3cb1-ee3f-46da-8b0b-ee83329bde74.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\ffa2b601-dd4e-4d3e-988d-eaf3351861bd.png",
+      "PackagePath": "staticwebassets\\img\\ffa2b601-dd4e-4d3e-988d-eaf3351861bd.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\hồng.png",
+      "PackagePath": "staticwebassets\\img\\hồng.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\nâu.png",
+      "PackagePath": "staticwebassets\\img\\nâu.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\q1.png",
+      "PackagePath": "staticwebassets\\img\\q1.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\q2.png",
+      "PackagePath": "staticwebassets\\img\\q2.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\q3.png",
+      "PackagePath": "staticwebassets\\img\\q3.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\qd1.png",
+      "PackagePath": "staticwebassets\\img\\qd1.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\qd2.png",
+      "PackagePath": "staticwebassets\\img\\qd2.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\qd3.png",
+      "PackagePath": "staticwebassets\\img\\qd3.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\qd4.png",
+      "PackagePath": "staticwebassets\\img\\qd4.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\qd5 - Sao chép.png",
+      "PackagePath": "staticwebassets\\img\\qd5 - Sao chép.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\qd5.png",
+      "PackagePath": "staticwebassets\\img\\qd5.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\qd6.png",
+      "PackagePath": "staticwebassets\\img\\qd6.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\qs1.png",
+      "PackagePath": "staticwebassets\\img\\qs1.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\qs2.png",
+      "PackagePath": "staticwebassets\\img\\qs2.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\qs3.png",
+      "PackagePath": "staticwebassets\\img\\qs3.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\qs4.png",
+      "PackagePath": "staticwebassets\\img\\qs4.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\qs5.png",
+      "PackagePath": "staticwebassets\\img\\qs5.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\quan-nam.png",
+      "PackagePath": "staticwebassets\\img\\quan-nam.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\quần dài.png",
+      "PackagePath": "staticwebassets\\img\\quần dài.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\quần short.png",
+      "PackagePath": "staticwebassets\\img\\quần short.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\tesst.jpg",
+      "PackagePath": "staticwebassets\\img\\tesst.jpg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\trắng.png",
+      "PackagePath": "staticwebassets\\img\\trắng.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\ud1.png",
+      "PackagePath": "staticwebassets\\img\\ud1.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\ud2.png",
+      "PackagePath": "staticwebassets\\img\\ud2.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\ud3.png",
+      "PackagePath": "staticwebassets\\img\\ud3.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\ud4.png",
+      "PackagePath": "staticwebassets\\img\\ud4.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\ud5.png",
+      "PackagePath": "staticwebassets\\img\\ud5.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\unwer.png",
+      "PackagePath": "staticwebassets\\img\\unwer.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\áo khoác.png",
+      "PackagePath": "staticwebassets\\img\\áo khoác.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\áo phông.png",
+      "PackagePath": "staticwebassets\\img\\áo phông.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\đen.png",
+      "PackagePath": "staticwebassets\\img\\đen.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\đỏ.png",
+      "PackagePath": "staticwebassets\\img\\đỏ.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\addtocart.js",
+      "PackagePath": "staticwebassets\\js\\addtocart.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\btnquantity.js",
+      "PackagePath": "staticwebassets\\js\\btnquantity.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\categories_custom.js",
+      "PackagePath": "staticwebassets\\js\\categories_custom.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\contact_custom.js",
+      "PackagePath": "staticwebassets\\js\\contact_custom.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\custom.js",
+      "PackagePath": "staticwebassets\\js\\custom.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\demo.js",
+      "PackagePath": "staticwebassets\\js\\demo.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\imgmove.js",
+      "PackagePath": "staticwebassets\\js\\imgmove.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\jquery-3.2.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.2.1.min.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\jquery.min.map",
+      "PackagePath": "staticwebassets\\js\\jquery.min.map"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\move-ad.js",
+      "PackagePath": "staticwebassets\\js\\move-ad.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\single_custom.js",
+      "PackagePath": "staticwebassets\\js\\single_custom.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\swich.js",
+      "PackagePath": "staticwebassets\\js\\swich.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\logo\\ad-1.jpeg",
+      "PackagePath": "staticwebassets\\logo\\ad-1.jpeg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\logo\\ad-10.jpeg",
+      "PackagePath": "staticwebassets\\logo\\ad-10.jpeg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\logo\\ad-11.jpeg",
+      "PackagePath": "staticwebassets\\logo\\ad-11.jpeg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\logo\\ad-12.png",
+      "PackagePath": "staticwebassets\\logo\\ad-12.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\logo\\ad-2.jpeg",
+      "PackagePath": "staticwebassets\\logo\\ad-2.jpeg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\logo\\ad-3.jpeg",
+      "PackagePath": "staticwebassets\\logo\\ad-3.jpeg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\logo\\ad-5.png",
+      "PackagePath": "staticwebassets\\logo\\ad-5.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\logo\\ad-6.png",
+      "PackagePath": "staticwebassets\\logo\\ad-6.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\logo\\ad-7.jpeg",
+      "PackagePath": "staticwebassets\\logo\\ad-7.jpeg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\logo\\ad-8.jpeg",
+      "PackagePath": "staticwebassets\\logo\\ad-8.jpeg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\logo\\ad-9.jpeg",
+      "PackagePath": "staticwebassets\\logo\\ad-9.jpeg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\logo\\ad-ql.jpeg",
+      "PackagePath": "staticwebassets\\logo\\ad-ql.jpeg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\logo\\doitra.png",
+      "PackagePath": "staticwebassets\\logo\\doitra.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\logo\\gif.png",
+      "PackagePath": "staticwebassets\\logo\\gif.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\logo\\hot-product.png",
+      "PackagePath": "staticwebassets\\logo\\hot-product.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\logo\\login.png",
+      "PackagePath": "staticwebassets\\logo\\login.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\logo\\logo.png",
+      "PackagePath": "staticwebassets\\logo\\logo.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\logo\\logo1.png",
+      "PackagePath": "staticwebassets\\logo\\logo1.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\logo\\logo2.png",
+      "PackagePath": "staticwebassets\\logo\\logo2.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\logo\\new-product.png",
+      "PackagePath": "staticwebassets\\logo\\new-product.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\logo\\voucher.png",
+      "PackagePath": "staticwebassets\\logo\\voucher.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\Isotope\\isotope.pkgd.min.js",
+      "PackagePath": "staticwebassets\\plugins\\Isotope\\isotope.pkgd.min.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\OwlCarousel2-2.2.1\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\plugins\\OwlCarousel2-2.2.1\\ajax-loader.gif"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\OwlCarousel2-2.2.1\\animate.css",
+      "PackagePath": "staticwebassets\\plugins\\OwlCarousel2-2.2.1\\animate.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\OwlCarousel2-2.2.1\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\plugins\\OwlCarousel2-2.2.1\\owl.carousel.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\OwlCarousel2-2.2.1\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\plugins\\OwlCarousel2-2.2.1\\owl.carousel.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\OwlCarousel2-2.2.1\\owl.theme.default.css",
+      "PackagePath": "staticwebassets\\plugins\\OwlCarousel2-2.2.1\\owl.theme.default.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\OwlCarousel2-2.2.1\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\plugins\\OwlCarousel2-2.2.1\\owl.video.play.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\easing\\easing.js",
+      "PackagePath": "staticwebassets\\plugins\\easing\\easing.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\HELP-US-OUT.txt",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\HELP-US-OUT.txt"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\css\\font-awesome.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\less\\animated.less",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\less\\animated.less"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\less\\bordered-pulled.less",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\less\\bordered-pulled.less"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\less\\core.less",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\less\\core.less"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\less\\fixed-width.less",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\less\\fixed-width.less"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\less\\font-awesome.less",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\less\\font-awesome.less"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\less\\icons.less",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\less\\icons.less"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\less\\larger.less",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\less\\larger.less"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\less\\list.less",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\less\\list.less"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\less\\mixins.less",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\less\\mixins.less"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\less\\path.less",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\less\\path.less"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\less\\rotated-flipped.less",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\less\\rotated-flipped.less"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\less\\screen-reader.less",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\less\\screen-reader.less"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\less\\stacked.less",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\less\\stacked.less"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\less\\variables.less",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\less\\variables.less"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\scss\\_animated.scss",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\scss\\_animated.scss"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\scss\\_bordered-pulled.scss",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\scss\\_bordered-pulled.scss"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\scss\\_core.scss",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\scss\\_core.scss"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\scss\\_fixed-width.scss",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\scss\\_fixed-width.scss"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\scss\\_icons.scss",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\scss\\_icons.scss"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\scss\\_larger.scss",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\scss\\_larger.scss"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\scss\\_list.scss",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\scss\\_list.scss"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\scss\\_path.scss",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\scss\\_path.scss"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\scss\\_rotated-flipped.scss",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\scss\\_rotated-flipped.scss"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\scss\\_screen-reader.scss",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\scss\\_screen-reader.scss"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\scss\\_stacked.scss",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\scss\\_stacked.scss"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\scss\\_variables.scss"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\font-awesome-4.7.0\\scss\\font-awesome.scss",
+      "PackagePath": "staticwebassets\\plugins\\font-awesome-4.7.0\\scss\\font-awesome.scss"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\jquery-ui-1.12.1.custom\\jquery-ui.css",
+      "PackagePath": "staticwebassets\\plugins\\jquery-ui-1.12.1.custom\\jquery-ui.css"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\jquery-ui-1.12.1.custom\\jquery-ui.js",
+      "PackagePath": "staticwebassets\\plugins\\jquery-ui-1.12.1.custom\\jquery-ui.js"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\themify-icons\\fonts\\themify.eot",
+      "PackagePath": "staticwebassets\\plugins\\themify-icons\\fonts\\themify.eot"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\themify-icons\\fonts\\themify.svg",
+      "PackagePath": "staticwebassets\\plugins\\themify-icons\\fonts\\themify.svg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\themify-icons\\fonts\\themify.ttf",
+      "PackagePath": "staticwebassets\\plugins\\themify-icons\\fonts\\themify.ttf"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\themify-icons\\fonts\\themify.woff",
+      "PackagePath": "staticwebassets\\plugins\\themify-icons\\fonts\\themify.woff"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\plugins\\themify-icons\\themify-icons.css",
+      "PackagePath": "staticwebassets\\plugins\\themify-icons\\themify-icons.css"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.yourlook.props",
+      "PackagePath": "build\\yourlook.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.yourlook.props",
+      "PackagePath": "buildMultiTargeting\\yourlook.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.yourlook.props",
+      "PackagePath": "buildTransitive\\yourlook.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.yourlook.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

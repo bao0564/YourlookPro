@@ -1,0 +1,7 @@
+﻿@using Data.Models;
+
+@model IEnumerable<DbDanhMuc>
+@foreach (var prd in Model)
+{
+	<li><a asp-controller ="Home" asp-action="ProductTipe" asp-route-madm="@prd.MaDm">@prd.TenDm</a></li>
+}  

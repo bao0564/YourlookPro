@@ -1,0 +1,52 @@
+﻿@* @using X.PagedList.Mvc.Core;
+@using Data.Models;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Color";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@model X.PagedList.IPagedList<DbColor>
+<div class="cp0">
+    Danh Sách Màu Sản Phẩm
+</div>
+<div class="h-cp1">
+    <div class="h-cp-f">
+        <div class="h-cp-up">
+            <div class="bt-c"><a href="@Url.Action("TaoMau","Admin")">Tạo Màu Mới</a></div>
+            <div class="bt-c"><a href="">In dữ liệu </a></div>
+            <div class="bt-c"><a href="">Xuất Excel</a></div>
+            <div class="bt-c"><a href="">Xuất PDF</a></div>
+        </div>
+        <div style="clear:both;height:1px ;background-color: #c4c4c4;"></div>
+        <div class="h-cp-mid">
+            <div>
+                <input class="form-search" type="text" placeholder="Tìm Kiếm Mã Màu/ Tên Màu . . .">
+            </div>
+            <table class="h-table">
+                <thead>
+                    <tr>
+                        <th style="width:16%;">Mã Màu</th>
+                        <th style="width: 30%;">Tên Màu</th>
+                        <th>Ảnh Màu</th>
+                        <th style="text-align: center; vertical-align: middle;width:10%;"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var prd in Model)
+                    {
+                        <tr>
+                            <td>@prd.ColorId</td>
+                            <td>@prd.NameColor</td>
+                            <td><img src="@Url.Content("/img/"+ prd.Img)" alt="Alternate Text" /></td>
+                            <td>
+                                <a asp-action="XoaColor" style="color: #000;">Xóa</a>
+                                <a asp-action="SuaColor" asp-route-colorid="@prd.ColorId" style="color: black;">Sửa</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div> *@

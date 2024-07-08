@@ -1,0 +1,17 @@
+﻿@* @using yourlook.Models
+@model OrderInforItem;
+   
+<div class="box-cart">
+    <h4>Hình thức thanh toán:</h4>
+    <p>Thanh Toán bằng MOMO</p>
+</div>
+<div class="box-cart">
+    <h4>Thông tin địa chỉ:</h4>
+        <p>Tên người nhận:@Model.TenKh </p>
+        <p>Số điện thoại:@Model.Sdt</p>
+        <p>@Model.Ward - @Model.District - @Model.City</p>
+        <p>@Model.DiaChi</p>
+        <h5>Ghi chú:</h5>
+        <p>@Model.GhiChu</p>
+</div>
+ *@

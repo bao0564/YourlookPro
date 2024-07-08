@@ -1,0 +1,51 @@
+﻿@using Data.Models;
+@using X.PagedList.Mvc.Core
+@{
+    ViewData["Title"] = "AllProduct";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model X.PagedList.IPagedList<DbSanPham>
+<div class="list-ad mar150_container">
+	<div class="img-ad" style="padding: 0">
+		<img src="/logo/ad-3.jpeg+" style="background-color: #2f3640" alt="" />
+	</div>
+</div>
+<div class="">
+	<div class="row">
+		<div class="col">
+			<div class="product-grid">
+				<div class="box-flex">
+					@foreach(var prd in Model)
+					{
+						<div class="product-item ">
+							@if (prd.GiamGia > 0)
+							{
+								<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>-@prd.GiamGia%</span></div>
+							}
+							else
+							{
+								<div></div>
+							}
+							<div class="product discount ">
+								<div class="product_image">
+                                    <a asp-controller="Home" asp-action="ProductDetail" asp-route-masp="@prd.MaSp"><img src="@Url.Content("/img/"+prd.AnhSp)" alt=""></a>
+								</div>
+								<div class="favorite favorite_left" style="font-size:20px">@prd.SaoDanhGia</div>
+								<div class="product_info">
+									<h6 class="product_name">
+										<a asp-controller="Home" asp-action="ProductDetail" asp-route-masp="@prd.MaSp">@prd.TenSp</a>
+									</h6>
+									<div class="product_price">@string.Format("{0:N0}", prd.PriceMax)<span>@string.Format("{0:N0}", prd.PriceMin)</span></div>
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button">
+								<a class="btnAddToCart" data-id="@prd.MaSp">Thêm Vào Giỏ Hàng</a>
+							</div>
+						</div>
+					}			
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+@Html.PagedListPager(Model, page=>Url.Action("AllProduct","Home",new{page=page}))
