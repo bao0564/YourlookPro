@@ -1,0 +1,77 @@
+﻿@using Data.Models
+@using X.PagedList.Mvc.Core
+@{
+    ViewData["Title"] = "DonHang";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@model X.PagedList.IPagedList<DbDonHang>
+<div class="cp0">
+    Danh sách đơn hàng
+</div>
+<div class="h-cp1">
+    <div class="h-cp-f">
+        <div class="h-cp-up">
+            <div class="bt-c"><a href="@Url.Action("TaoDonHang","Admin")">Tạo đơn hàng mới</a></div>
+            <div class="bt-c"><a href="">In dữ liệu </a></div>
+            <div class="bt-c"><a href="">Xuất Excel</a></div>
+            <div class="bt-c"><a href="">Xuất PDF</a></div>
+            <div class="bt-c"><a href="">Xóa Tất cả</a></div>
+        </div>
+        <div>
+            <input class="form-search" type="text" placeholder="Tìm Kiếm Mã Đơn Hàng / Tên Khách Hàng . . .">
+        </div>
+        <div class="h-cp-mid">
+            <table class="h-table">
+                <thead>
+                    <tr>
+                        <th>Mã đơn hàng</th>
+                        <th>Tên khách hàng - SDT - Địa chỉ</th>
+                        <th>Tổng Số Lượng</th>
+                        <th>tổng tiền</th>
+                        <th>Ngày Đặt</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if(Model!=null && Model.Any()){
+                        foreach (var prd in Model)
+                        {
+                            <tr>
+                                <td>@prd.MaDh</td>
+                                <td>@prd.TenKh - @prd.Sdt - @prd.DiaChi</td>
+                                <td>@prd.soluong</td>
+                                <td>@prd.TongTien</td>
+                                <td>@prd.CreateDate</td>
+                                <td>
+                                    <div style="display:flex;flex-direction:column">
+                                        <a class="btn-ddu" href="@Url.Action("ChiTietDonHang",new {madh=prd.MaDh})" style="border:1px solid #2f3640;">Chi Tiết Đơn Hàng</a>
+                                        <div style="display:flex;justify-content:space-around">
+                                            <a class="btn-ddu btn-de" href="@Url.Action("XoaDonHang",new {madh=prd.MaDh})" onclick="deletedh(event)">Xóa</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="4">Danh sách đơn hàng trống</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+@Html.PagedListPager(Model, page => Url.Action("DonHang", "DonHang", new { page = page }))
+<script type="text/javascript">
+    function deletedh(event) {
+        event.preventDefault();
+        var userConfirmed = confirm("Bạn có chắc chắn muốn xóa Đơn Hàng này?");
+        if (userConfirmed) {
+            var url = event.currentTarget.getAttribute("href");
+            window.location.href = url;
+        }
+    }
+</script>

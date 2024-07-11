@@ -14,11 +14,6 @@ namespace yourlook.Areas.Admin.Controllers
         {
             return View();
         }
-        [Route("donhang")]
-        public IActionResult DonHang()
-        {
-            return View();
-        }
         [Route("taodonhang")]
         public IActionResult TaoDonHang()
         {

@@ -69,3 +69,4 @@ E:\ShopYourLook\yourlook\Data\obj\Debug\net7.0\Data.pdb
 E:\ShopYourLook\yourlook\Data\obj\Debug\net7.0\Data.genruntimeconfig.cache
 E:\ShopYourLook\yourlook\Data\obj\Debug\net7.0\ref\Data.dll
 E:\ShopYourLook\yourlook\Data\bin\Debug\net7.0\Newtonsoft.Json.dll
+E:\ShopYourLook\yourlook\Data\obj\Debug\net7.0\Data.sourcelink.json

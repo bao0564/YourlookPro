@@ -82,9 +82,6 @@ namespace Data.Migrations
                     b.Property<int?>("MaKh")
                         .HasColumnType("int");
 
-                    b.Property<int?>("MaKhNavigationMaKh")
-                        .HasColumnType("int");
-
                     b.Property<string>("ModifiedBy")
                         .HasColumnType("nvarchar(max)");
 
@@ -104,8 +101,6 @@ namespace Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("IdAddress");
-
-                    b.HasIndex("MaKhNavigationMaKh");
 
                     b.ToTable("DbAddres");
                 });
@@ -167,9 +162,6 @@ namespace Data.Migrations
                     b.Property<int>("MaDh")
                         .HasColumnType("int");
 
-                    b.Property<int>("MaDhNavigationMaDh")
-                        .HasColumnType("int");
-
                     b.Property<int>("MaSp")
                         .HasColumnType("int");
 
@@ -190,7 +182,7 @@ namespace Data.Migrations
 
                     b.HasKey("MaCTDH");
 
-                    b.HasIndex("MaDhNavigationMaDh");
+                    b.HasIndex("MaDh");
 
                     b.ToTable("DbChiTietDonHang");
                 });
@@ -336,6 +328,9 @@ namespace Data.Migrations
                     b.Property<string>("Ward")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("soluong")
+                        .HasColumnType("int");
+
                     b.HasKey("MaDh");
 
                     b.HasIndex("DbKhachHangMaKh");
@@ -434,6 +429,10 @@ namespace Data.Migrations
                     b.Property<string>("Addres")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ConfirmPasswords")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("CreateBy")
                         .HasColumnType("nvarchar(max)");
 
@@ -457,12 +456,15 @@ namespace Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Passwords")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Sdt")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TenKh")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("MaKh");
@@ -680,9 +682,6 @@ namespace Data.Migrations
                     b.Property<int>("MaKh")
                         .HasColumnType("int");
 
-                    b.Property<int>("MaKhNavigationMaKh")
-                        .HasColumnType("int");
-
                     b.Property<string>("Mess")
                         .HasColumnType("nvarchar(max)");
 
@@ -703,25 +702,33 @@ namespace Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("MaKhNavigationMaKh");
-
                     b.ToTable("DbTransaction");
                 });
 
-            modelBuilder.Entity("Data.Models.DbAddres", b =>
+            modelBuilder.Entity("Data.Models.ThongKe", b =>
                 {
-                    b.HasOne("Data.Models.DbKhachHang", "MaKhNavigation")
-                        .WithMany("DbAddreses")
-                        .HasForeignKey("MaKhNavigationMaKh");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
 
-                    b.Navigation("MaKhNavigation");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<long>("LuongTruyCap")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("Time")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ThongKe");
                 });
 
             modelBuilder.Entity("Data.Models.DbChiTietDonHang", b =>
                 {
                     b.HasOne("Data.Models.DbDonHang", "MaDhNavigation")
                         .WithMany("DbChiTietDonHangs")
-                        .HasForeignKey("MaDhNavigationMaDh")
+                        .HasForeignKey("MaDh")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -769,17 +776,6 @@ namespace Data.Migrations
                     b.Navigation("Nhom");
                 });
 
-            modelBuilder.Entity("Data.Models.DbTransaction", b =>
-                {
-                    b.HasOne("Data.Models.DbKhachHang", "MaKhNavigation")
-                        .WithMany("DbTransactions")
-                        .HasForeignKey("MaKhNavigationMaKh")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("MaKhNavigation");
-                });
-
             modelBuilder.Entity("Data.Models.DbDanhMuc", b =>
                 {
                     b.Navigation("DbSanPhams");
@@ -797,11 +793,7 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Data.Models.DbKhachHang", b =>
                 {
-                    b.Navigation("DbAddreses");
-
                     b.Navigation("DbDonHangs");
-
-                    b.Navigation("DbTransactions");
                 });
 
             modelBuilder.Entity("Data.Models.DbPayment", b =>

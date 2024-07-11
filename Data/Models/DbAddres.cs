@@ -28,7 +28,7 @@ namespace Data.Models
 
         public string? GhiChu { get; set; }
 
-        public virtual DbKhachHang? MaKhNavigation { get; set; }
+        //public virtual DbKhachHang? MaKhNavigation { get; set; }
     }
 }
 

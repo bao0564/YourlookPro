@@ -16,7 +16,7 @@ namespace Data.Models
         public string? Ward { get; set; }
         public string? DiaChi { get; set; }
         public decimal? TongTien { get; set; }
-
+        public int soluong {  get; set; }
         public int? PaymentId { get; set; }
         public string? GhiChu { get; set; }
 

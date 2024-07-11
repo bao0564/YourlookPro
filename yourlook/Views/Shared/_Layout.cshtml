@@ -65,10 +65,10 @@
 									</a>
 									<ul class="account_selection">
 										<li>
-											<a href="@Url.Action("Login","Home")"><i href="@Url.Action("Login","Home")" class="fa fa-sign-in" aria-hidden="true"></i>Đăng Nhập</a>
+											<a href="@Url.Action("Login","Access")"><i href="@Url.Action("Login","Access")" class="fa fa-sign-in" aria-hidden="true"></i>Đăng Nhập</a>
 										</li>
 										<li>
-											<a href="@Url.Action("Register","Home")"><i href="@Url.Action("Register","Home")" class="fa fa-user-plus" aria-hidden="true"></i>Đăng Ký </a>
+											<a href="@Url.Action("Register","Access")"><i href="@Url.Action("Register","Access")" class="fa fa-user-plus" aria-hidden="true"></i>Đăng Ký </a>
 										</li>
 									</ul>
 								</li>
@@ -113,13 +113,13 @@
 						</div>
 						<nav class="navbar">
 							<div>
-								<div class="form-search">
-									<form action="">
-										<input type="text" name="" class="search-text" placeholder="Tìm Kiếm" />
-										<a>
-											<i class="fa fa-search" aria-hidden="true"></i>
-										</a>
-									</form>
+                                <div class="form-search" style="display:flex;justify-content:center">
+                                    <input style="position:relative" type="text" name="" class="search-text" placeholder="Tìm Kiếm" />
+                                    <a style="position:absolute;right:12%;top:18%">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </a>
+									@* <form action="">
+									</form> *@
 								</div>
 								<ul class="navbar_menu">
 									<li><a href="@Url.Action("Index","Home")">Home</a></li>
@@ -271,7 +271,9 @@
 
 		</header>
 
-		<div class="fs_menu_overlay"></div>
+		<div class="fs_menu_overlay">
+
+		</div>
 		<div class="hamburger_menu">
 			<div class="hamburger_close"><i class="fa fa-times" aria-hidden="true"></i></div>
 			<div class="hamburger_menu_content text-right">

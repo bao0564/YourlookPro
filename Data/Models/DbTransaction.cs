@@ -24,6 +24,6 @@ namespace Data.Models
 
         public string? Mess { get; set; }
 
-        public virtual DbKhachHang MaKhNavigation { get; set; } = null!;
+        //public virtual DbKhachHang MaKhNavigation { get; set; } = null!;
     }
 }

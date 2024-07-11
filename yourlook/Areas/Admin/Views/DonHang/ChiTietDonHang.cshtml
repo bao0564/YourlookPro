@@ -1,0 +1,51 @@
+﻿@using Data.Models
+@{
+    ViewData["Title"] = "ChiTietDonHang";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@model DbDonHang
+<div class="menu-cp">
+    <div class="cp0">
+        Thông tin đơn hàng
+    </div>
+    <div class="h-cp1">
+        <div class="h-cp-up">
+            <div style="display:flex;align-items:center;padding-top:15px">
+                <a href="@Url.Action("DonHang")"><img style="height:20px" src="\icon\drop left.svg" /> </a>
+            </div>
+        </div>
+        <div style="width:100%;display:flex">
+            <div style="width:50%">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Ảnh Sản Phẩm</th>
+                            <th>Tên Sản Phẩm</th>
+                            <th>Số lượng</th>
+                            <th>Giá</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var prd in Model.DbChiTietDonHangs)
+                        {
+                            <tr>
+                                <td class="box-img"><img style="height:100px" src="@Url.Content("../img/"+prd.AnhSp)" /></td>
+                                <td>@prd.TenSp</td>
+                                <td>@prd.SoLuongSp</td>
+                                <td>@prd.Price.ToString("N0") VNĐ</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <div style="width:50%">
+                <p>Tên khách hàng: @Model.TenKh</p>
+                <p>Số điện thoại: @Model.Sdt</p>
+                <p>Địa chỉ: @Model.DiaChi, @Model.Ward, @Model.District, @Model.City</p>
+                <p>Ghi chú: @Model.GhiChu</p>
+                <p>Tổng tiền: @Model.TongTien</p>
+            </div>
+        </div>
+    </div>
+</div>
+

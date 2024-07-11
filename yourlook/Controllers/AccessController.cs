@@ -1,4 +1,5 @@
 ﻿using Data.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace yourlook.Controllers
@@ -29,8 +30,36 @@ namespace yourlook.Controllers
                     HttpContext.Session.SetString("email",i.Email.ToString());
                     return RedirectToAction("Index", "Home");
                 }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "Thông tin đăng nhập không chính xác.");
+                }
             }
+            return View(user);
+        }
+        [HttpGet]
+        public IActionResult Register()
+        {
             return View();
         }
+        [HttpPost]
+        public IActionResult Register(DbKhachHang user )
+        {
+            if (ModelState.IsValid) 
+            { 
+                var emailexit=db.DbKhachHangs.FirstOrDefault(x=>x.Email == user.Email);
+                if (emailexit != null) 
+                {
+                    ModelState.AddModelError("Email", "Email đã được sử dụng.");
+                    return View(user);
+                }
+                user.CreateDate = DateTime.Now;
+                db.DbKhachHangs.Add(user);
+                db.SaveChanges();
+                return RedirectToAction("Login", "Access");
+            }
+            return View(user);
+        }
+
     }
 }

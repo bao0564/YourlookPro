@@ -12,7 +12,7 @@ namespace yourlook.ViewMenukid
         }
         public IViewComponentResult Invoke()
         {
-            var db5SanPhamHot = _spHot.GetAllSanPhamHot().OrderByDescending(X => X.LuotSold).Take(5);
+            var db5SanPhamHot = _spHot.GetAllSanPhamHot().OrderByDescending(X => X.LuotXem).Take(5);
             return View(db5SanPhamHot);
         }
     }

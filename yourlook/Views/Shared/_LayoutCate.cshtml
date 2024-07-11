@@ -63,10 +63,10 @@
 									</a>
 									<ul class="account_selection">
 										<li>
-											<a href="@Url.Action("Login","Home")"><i href="@Url.Action("Login","Home")" class="fa fa-sign-in" aria-hidden="true"></i>Đăng Nhập</a>
+											<a href="@Url.Action("Login","Access")"><i href="@Url.Action("Login","Access")" class="fa fa-sign-in" aria-hidden="true"></i>Đăng Nhập</a>
 										</li>
 										<li>
-											<a href="@Url.Action("Register","Home")"><i href="@Url.Action("Register","Home")" class="fa fa-user-plus" aria-hidden="true"></i>Đăng Ký </a>
+											<a href="@Url.Action("Register","Access")"><i href="@Url.Action("Register","Access")" class="fa fa-user-plus" aria-hidden="true"></i>Đăng Ký </a>
 										</li>
 									</ul>
 								</li>
@@ -269,7 +269,11 @@
 
 		</header>
 
-		<div class="fs_menu_overlay"></div>
+		<div class="fs_menu_overlay">
+			<div id="successMessage" style="display:none; position:fixed; top:20px; right:20px; background-color:green; color:white; padding:10px; z-index:1000;">
+				Thêm sản phẩm thành công!
+			</div>
+		</div>
 		<div class="hamburger_menu">
 			<div class="hamburger_close"><i class="fa fa-times" aria-hidden="true"></i></div>
 			<div class="hamburger_menu_content text-right">

@@ -10,8 +10,8 @@ namespace Data.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int MaKh { get; set; }
-
-        public string? TenKh { get; set; }
+        [Required(ErrorMessage = "Tên không được để trống")]
+        public string TenKh { get; set; }
 
         public string? Img { get; set; }
 
@@ -19,15 +19,25 @@ namespace Data.Models
 
         public string? Addres { get; set; }
 
-        public string? Sdt { get; set; }
 
-        public string Email { get; set; } = null!;
+        [Required(ErrorMessage = "*")]
+        public string Sdt { get; set; }
 
-        public string? Passwords { get; set; }
-        public virtual ICollection<DbAddres> DbAddreses { get; set; } = new List<DbAddres>();
+        [Required(ErrorMessage = "*")]
+        public string Email { get; set; }
+
+        [DataType(DataType.Password)]
+        [Required(ErrorMessage = "*")]
+        public string Passwords { get; set; }
+
+        [Display(Name = "Confirm password")]
+        [Required(ErrorMessage = "*")]
+        [Compare("Passwords", ErrorMessage = "Mật khẩu không đúng.")]
+        public string ConfirmPasswords { get; set; }
 
         public virtual ICollection<DbDonHang> DbDonHangs { get; set; } = new List<DbDonHang>();
+        //public virtual ICollection<DbAddres> DbAddreses { get; set; } = new List<DbAddres>();
 
-        public virtual ICollection<DbTransaction> DbTransactions { get; set; } = new List<DbTransaction>();
+        //public virtual ICollection<DbTransaction> DbTransactions { get; set; } = new List<DbTransaction>();
     }
 }

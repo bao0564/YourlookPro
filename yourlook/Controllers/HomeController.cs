@@ -87,6 +87,12 @@ namespace yourlook.Controllers
 		public IActionResult ProductDetail(int masp)
 		{
 			var lstSanPham = db.DbSanPhams.SingleOrDefault(x => x.MaSp == masp);
+			if(lstSanPham != null) {
+				db.DbSanPhams.Attach(lstSanPham);
+				lstSanPham.LuotXem = lstSanPham.LuotXem + 1;
+				db.Entry(lstSanPham).Property(X=>X.LuotXem).IsModified = true;
+				db.SaveChanges();
+			};
 			var lstImgProduct = db.DbImgs.Where(x => x.MaSp == masp).ToList();
 			ViewBag.ImgProduct = lstImgProduct;
 			return View(lstSanPham);

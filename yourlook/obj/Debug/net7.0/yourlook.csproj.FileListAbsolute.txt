@@ -258,3 +258,4 @@ E:\ShopYourLook\yourlook\yourlook\obj\Debug\net7.0\refint\yourlook.dll
 E:\ShopYourLook\yourlook\yourlook\obj\Debug\net7.0\yourlook.pdb
 E:\ShopYourLook\yourlook\yourlook\obj\Debug\net7.0\yourlook.genruntimeconfig.cache
 E:\ShopYourLook\yourlook\yourlook\obj\Debug\net7.0\ref\yourlook.dll
+E:\ShopYourLook\yourlook\yourlook\obj\Debug\net7.0\yourlook.sourcelink.json

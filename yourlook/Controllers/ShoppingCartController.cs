@@ -7,6 +7,8 @@ using Microsoft.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
+using System.Reflection.PortableExecutable;
 using System.Threading.Tasks.Dataflow;
 using yourlook.Extension;
 using yourlook.Models;
@@ -25,16 +27,6 @@ namespace yourlook.Controllers
             }
             return View();
 		}
-        //partial để tachs sản phẩm trong giỏ hàng và thông tin khách hàng và địa chỉ trong Index
-        //public IActionResult Partial_Product_In_Cart()
-        //{
-        //    var cart = HttpContext.Session.GetJson<ViewShoppingCartItem>("Cart") ?? new ViewShoppingCartItem();            
-        //    return PartialView(cart.Items);
-        //}
-        //public IActionResult Partial_Infor_In_Cart()
-        //{
-        //    return PartialView();
-        //}
         [AllowAnonymous]
 		[HttpPost]
 		public IActionResult AddToCart(int masp,int quantity)
@@ -58,7 +50,7 @@ namespace yourlook.Controllers
 				cart.AddToCart(item, quantity);
 				HttpContext.Session.SetJson("Cart", cart);
 
-				code = new { success = true, msg = "Thêm sản phẩm thành công", code = 0};
+				code = new { success = true, msg = "Sản phẩm đã được thêm vào giỏ hàng", code = 0};
 			}
 			return Json(code);
 		}
@@ -113,10 +105,6 @@ namespace yourlook.Controllers
             };
             return View(item);
         }
-        //public IActionResult Order_Infor_In_Cart()
-        //{
-        //    return PartialView();
-        //}
         [HttpPost]
         public IActionResult PayOrder()
         {
@@ -124,11 +112,9 @@ namespace yourlook.Controllers
             {
                 var selectedItems = HttpContext.Session.GetJson<List<CheckOutItem>>("Order");
                 var orderInfor = HttpContext.Session.GetJson<OrderInforItem>("OrderInfo");
-
-                if (selectedItems == null || orderInfor == null)
-                {
-                    return Json(new { success = false, message = "Session data for Order or OrderInfo is null." });
-                }
+                var tongtien=selectedItems.Sum(x=>x.ProductPrice);
+                var tongsoluong=selectedItems.Sum(x=>x.ProductQuantity);
+                
                 var order = new DbDonHang
                 {
                     TenKh = orderInfor.TenKh,
@@ -138,7 +124,10 @@ namespace yourlook.Controllers
                     Ward = orderInfor.Ward,
                     DiaChi = orderInfor.DiaChi,
                     PaymentId = orderInfor.PaymentId,
-                    GhiChu = orderInfor.GhiChu
+                    GhiChu = orderInfor.GhiChu,
+                    TongTien= tongtien,
+                    soluong=tongsoluong,
+                    CreateDate=DateTime.Now
                 };
                 db.DbDonHangs.Add(order);
                 db.SaveChanges();
@@ -151,23 +140,37 @@ namespace yourlook.Controllers
                         TenSp = item.ProductName,
                         AnhSp = item.ProductImg,
                         SoLuongSp = item.ProductQuantity,
-                        Price = item.ProductPrice
+                        Price = item.ProductPrice,
+                        CreateDate = DateTime.Now
                     };
                     db.DbChiTietDonHangs.Add(productOrder);
                 };
                 db.SaveChanges();
                 HttpContext.Session.Remove("Order");
                 HttpContext.Session.Remove("OrderInfor");
+
+                var cart = HttpContext.Session.GetJson<ViewShoppingCartItem>("Cart") ?? new ViewShoppingCartItem();
+                foreach (var prd in selectedItems)
+                {
+                    var prdmove= cart.Items.FirstOrDefault(x=>x.ProductId == prd.ProductId);
+                    if (prdmove != null)
+                    {
+                        cart.Items.Remove(prdmove);
+                    };
+                };
+                HttpContext.Session.SetJson("Cart",cart);
                 // Trả về view thành công
                 return Json(new { success = true });
             }
             catch (Exception ex)
             {
                 // Log lỗi chi tiết vào console hoặc log file
-                Console.WriteLine(ex.Message);
-                Console.WriteLine(ex.StackTrace);
-
-                return Json(new { success = false, message = ex.Message });
+                var errorMessage = ex.Message;
+                if (ex.InnerException != null)
+                {
+                    errorMessage += " Inner Exception: " + ex.InnerException.Message;
+                }
+                return Json(new { success = false, message = "Có lỗi xảy ra: " + errorMessage });
             }
         }
         public IActionResult PayOrderSuccess()

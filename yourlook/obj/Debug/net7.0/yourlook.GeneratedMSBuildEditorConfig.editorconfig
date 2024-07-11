@@ -30,6 +30,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFuaE11Y1xUYW9EYW5oTXVjLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/ShopYourLook/yourlook/yourlook/Areas/Admin/Views/DonHang/ChiTietDonHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRG9uSGFuZ1xDaGlUaWV0RG9uSGFuZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ShopYourLook/yourlook/yourlook/Areas/Admin/Views/DonHang/DonHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRG9uSGFuZ1xEb25IYW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/ShopYourLook/yourlook/yourlook/Areas/Admin/Views/Group/Group.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR3JvdXBcR3JvdXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -42,16 +50,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXENvbG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/ShopYourLook/yourlook/yourlook/Areas/Admin/Views/HomeAdmin/DonHang.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXERvbkhhbmcuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [E:/ShopYourLook/yourlook/yourlook/Areas/Admin/Views/HomeAdmin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/ShopYourLook/yourlook/yourlook/Areas/Admin/Views/HomeAdmin/TaoDonHang.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXFRhb0RvbkhhbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ShopYourLook/yourlook/yourlook/Areas/Admin/Views/Role/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUm9sZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/ShopYourLook/yourlook/yourlook/Areas/Admin/Views/SanPham/SanPham.cshtml]
@@ -72,6 +80,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/ShopYourLook/yourlook/yourlook/Views/Access/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNzXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ShopYourLook/yourlook/yourlook/Views/Access/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNzXFJlZ2lzdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/ShopYourLook/yourlook/yourlook/Views/Home/AllProduct.cshtml]
@@ -100,10 +112,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/ShopYourLook/yourlook/yourlook/Views/Home/ProductTipe.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0VGlwZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/ShopYourLook/yourlook/yourlook/Views/Home/Register.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/ShopYourLook/yourlook/yourlook/Views/Home/SellProduct.cshtml]

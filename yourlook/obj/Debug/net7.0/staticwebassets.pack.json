@@ -113,6 +113,10 @@
       "PackagePath": "staticwebassets\\icon\\email.svg"
     },
     {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\icon\\eye-solid.svg",
+      "PackagePath": "staticwebassets\\icon\\eye-solid.svg"
+    },
+    {
       "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\icon\\facebook.svg",
       "PackagePath": "staticwebassets\\icon\\facebook.svg"
     },
@@ -357,6 +361,10 @@
       "PackagePath": "staticwebassets\\img\\16ab7812-98d2-4f27-bc3a-e4d116b78473.png"
     },
     {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\199c1473-0dc2-4144-be69-0e52f4a61826.png",
+      "PackagePath": "staticwebassets\\img\\199c1473-0dc2-4144-be69-0e52f4a61826.png"
+    },
+    {
       "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\1b23d47c-35e0-4a8c-87f8-9d33286268b0.png",
       "PackagePath": "staticwebassets\\img\\1b23d47c-35e0-4a8c-87f8-9d33286268b0.png"
     },
@@ -435,6 +443,10 @@
     {
       "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\313364a1-13d6-41fa-a6b0-f20d870b5ed7.png",
       "PackagePath": "staticwebassets\\img\\313364a1-13d6-41fa-a6b0-f20d870b5ed7.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\3207add3-f624-4c8b-b4ec-d9658da23ae2.png",
+      "PackagePath": "staticwebassets\\img\\3207add3-f624-4c8b-b4ec-d9658da23ae2.png"
     },
     {
       "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\33f1ce9c-0986-4bf0-befb-1e61e647ef28.png",
@@ -689,6 +701,10 @@
       "PackagePath": "staticwebassets\\img\\8bf27154-d349-4722-abde-2af7914ab9e6.png"
     },
     {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\90193afb-29b4-4941-8db7-e0ffc69b42da.png",
+      "PackagePath": "staticwebassets\\img\\90193afb-29b4-4941-8db7-e0ffc69b42da.png"
+    },
+    {
       "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\90298279-c452-463e-8fde-8786ca012204.png",
       "PackagePath": "staticwebassets\\img\\90298279-c452-463e-8fde-8786ca012204.png"
     },
@@ -763,6 +779,10 @@
     {
       "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\Screenshot_45.png",
       "PackagePath": "staticwebassets\\img\\Screenshot_45.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\Screenshot_48.png",
+      "PackagePath": "staticwebassets\\img\\Screenshot_48.png"
     },
     {
       "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\Tím.png",
@@ -871,6 +891,10 @@
     {
       "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\b1a09f13-2ac2-4022-9a9d-95768c2df960.png",
       "PackagePath": "staticwebassets\\img\\b1a09f13-2ac2-4022-9a9d-95768c2df960.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\b1ea5f51-90e2-490d-ba90-c47b9d7b81f1.png",
+      "PackagePath": "staticwebassets\\img\\b1ea5f51-90e2-490d-ba90-c47b9d7b81f1.png"
     },
     {
       "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\b3afadf8-95de-4e7a-96d8-01c6c7fcd8ae.png",
@@ -1063,6 +1087,10 @@
     {
       "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\e0248e2f-c65b-4ccf-a45e-54fcbdf079ca.png",
       "PackagePath": "staticwebassets\\img\\e0248e2f-c65b-4ccf-a45e-54fcbdf079ca.png"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\e0ad573f-424f-467d-83ec-6a5cbc04bce4.png",
+      "PackagePath": "staticwebassets\\img\\e0ad573f-424f-467d-83ec-6a5cbc04bce4.png"
     },
     {
       "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\img\\e27b385b-5e71-41e6-93f5-63ba2dd3fe2d.png",

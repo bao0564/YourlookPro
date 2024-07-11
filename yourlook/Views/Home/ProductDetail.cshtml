@@ -49,17 +49,22 @@
 				</div>
 				<div style="display:flex; padding: 20px;justify-content:space-evenly;border-top:1px solid #2f3640 ">
 					<div class="flct original_price "><h5>@string.Format("{0:N0}", Model.PriceMin)</h5></div>
-					<div class=" flct product_price"><h3>@string.Format("{0:N0}", Model.PriceMax)</h3></div>
-                    <ul class="flct star_rating ">
-                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                    </ul>
+                    <div class=" flct product_price"><h3>@string.Format("{0:N0}", Model.PriceMax)</h3></div>
+					<div class="flct" style="margin-bottom:8px">
+						<ul class="star_rating ">
+							<li><i class="fa fa-star" aria-hidden="true"></i></li>
+							<li><i class="fa fa-star" aria-hidden="true"></i></li>
+							<li><i class="fa fa-star" aria-hidden="true"></i></li>
+							<li><i class="fa fa-star" aria-hidden="true"></i></li>
+							<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+						</ul>
+                    </div>
+                    <div class="flct" style="margin-bottom:8px">
+                        <img src="~/icon/eye-solid.svg" style="height:15px" title="Lượt xem" />: @Model.LuotXem
+                    </div>
                 </div>
                 <div class="free_delivery d-flex flex-row align-items-center justify-content-center">
-                    <span class="ti-truck"></span><span>Miễn phí vận chuyển</span>
+					<span class="ti-truck"></span><span>Miễn phí vận chuyển</span>
                 </div>
 				<div class="product_color">
 					<span>Kích cỡ:</span>

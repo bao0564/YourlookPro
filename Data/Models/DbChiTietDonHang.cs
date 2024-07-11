@@ -20,6 +20,8 @@ namespace Data.Models
         public decimal Price { get; set; }
 
         //public virtual DbSanPham? MaSpNavigation { get; set; }
-        public virtual DbDonHang MaDhNavigation { get; set; } = null!;
+
+        [ForeignKey("MaDh")]
+        public virtual DbDonHang MaDhNavigation { get; set; }
     }
 }

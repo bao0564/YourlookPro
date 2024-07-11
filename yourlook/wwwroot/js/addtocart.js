@@ -1,4 +1,5 @@
 ﻿$(document).ready(function () {
+    
     // Thêm vào giỏ hàng
     $('body').on('click', '.btnAddToCart', function (e) {
         e.preventDefault();
@@ -15,8 +16,6 @@
             success: function (rs) {
                 if (rs.success) {
                     alert(rs.msg);
-                    // Reload partial view giỏ hàng
-                    $("#list-prd-cart").load("/ShoppingCart/Partial_Product_In_Cart");
                 } else {
                     alert("Thêm sản phẩm không thành công");
                 }
@@ -91,7 +90,7 @@
             var quantity = parseInt($(this).closest('.cart-container').find('.quantity_value-cart').text());
             total += price * quantity;
         });
-        $('#totalprice').text(total.toLocaleString() + ' VNĐ');
+        $('#TongTien').text(total.toLocaleString() + ' VNĐ');
     }
 
     // Cập nhật giá tiền
@@ -164,27 +163,3 @@
     //        }
     //    });
 //});
-$('.checkout-btn').off('click').on('click', function (e) {
-    e.preventDefault();
-    $.ajax({
-        url: '/shoppingcart/payorder',
-        type: 'POST',
-        success: function (response) {
-            if (response.success) {
-                window.location.href = '/shoppingcart/payordersuccess';
-            } else {
-                var errorMessage = "Có lỗi xảy ra: " + response.message;
-                if (response.innerMessage) {
-                    errorMessage += "\nChi tiết lỗi: " + response.innerMessage;
-                }
-                if (response.stackTrace) {
-                    errorMessage += "\nStack Trace: " + response.stackTrace;
-                }
-                alert(errorMessage);
-            }
-        },
-        error: function (xhr, status, error) {
-            alert("Có lỗi xảy ra: " + error);
-        }
-    });
-});

@@ -612,3 +612,17 @@ input {
 input[type=checkbox]{
     width:20px;
 }
+/*nút bấm hành động*/
+.btn-ddu {
+    border:1px solid #2f3640;
+}
+.btn-de{
+    color:#fff;
+    background-color:red;
+    padding:0 10px;
+}
+.btn-up {
+    color: #000;
+    background-color:white;
+    padding: 0 10px;
+}
