@@ -10,7 +10,7 @@ namespace yourlook.Controllers
         [HttpGet]
         public IActionResult Login()
         {
-            if (HttpContext.Session.GetString("email") == null)
+            if (HttpContext.Session.GetString("user") == null)
             {
                 return View();
             }
@@ -22,12 +22,12 @@ namespace yourlook.Controllers
         [HttpPost]
         public IActionResult Login(DbKhachHang user) 
         {
-            if (HttpContext.Session.GetString("email") == null)
+            if (HttpContext.Session.GetString("user") == null)
             { 
                 var i=db.DbKhachHangs.Where(x=>x.Email.Equals(user.Email) && x.Passwords.Equals(user.Passwords)).FirstOrDefault();
                 if (i !=null)
                 {
-                    HttpContext.Session.SetString("email",i.Email.ToString());
+                    HttpContext.Session.SetString("user",i.Email.ToString());
                     return RedirectToAction("Index", "Home");
                 }
                 else
@@ -60,6 +60,10 @@ namespace yourlook.Controllers
             }
             return View(user);
         }
-
+        public IActionResult LogOut() 
+        {
+            HttpContext.Session.Remove("user");
+            return RedirectToAction("Index", "Home");
+		}
     }
 }

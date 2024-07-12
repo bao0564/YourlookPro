@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\ShopYourLook\yourlook\yourlook
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/ShopYourLook/yourlook/yourlook/Areas/Admin/Views/Add/Ads.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRkXEFkcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/ShopYourLook/yourlook/yourlook/Areas/Admin/Views/DanhMuc/DanhMuc.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFuaE11Y1xEYW5oTXVjLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -58,6 +62,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXFRhb0RvbkhhbmcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/ShopYourLook/yourlook/yourlook/Areas/Admin/Views/Khachhang/KhachHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcS2hhY2hoYW5nXEtoYWNoSGFuZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/ShopYourLook/yourlook/yourlook/Areas/Admin/Views/Role/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUm9sZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -84,6 +92,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/ShopYourLook/yourlook/yourlook/Views/Access/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNzXFJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ShopYourLook/yourlook/yourlook/Views/Home/Ads.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/ShopYourLook/yourlook/yourlook/Views/Home/AllProduct.cshtml]
@@ -176,18 +188,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/ShopYourLook/yourlook/yourlook/Views/ShoppingCart/Order.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XE9yZGVyLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/ShopYourLook/yourlook/yourlook/Views/ShoppingCart/Order_Infor_In_Cart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XE9yZGVyX0luZm9yX0luX0NhcnQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/ShopYourLook/yourlook/yourlook/Views/ShoppingCart/Partial_Infor_In_Cart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XFBhcnRpYWxfSW5mb3JfSW5fQ2FydC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/ShopYourLook/yourlook/yourlook/Views/ShoppingCart/Partial_Product_In_Cart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XFBhcnRpYWxfUHJvZHVjdF9Jbl9DYXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/ShopYourLook/yourlook/yourlook/Views/ShoppingCart/PayOrderSuccess.cshtml]

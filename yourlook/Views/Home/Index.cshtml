@@ -3,11 +3,7 @@
 	Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <div class="list-ad">
-	<div class="img-ad" style="padding: 0">
-		<img src="logo/ad-1.jpeg" alt="" />
-		<img src="logo/ad-2.jpeg" alt="" />
-		<img src="logo/ad-3.jpeg" alt="" />
-	</div>
+	@await Html.PartialAsync("Add")
 	<button class="btn back">
 		<i class="fa-solid fa-angle-left fa-xl"
 		   style="color: #000000"></i>
@@ -310,7 +306,7 @@
 </div>
 <!-- Sản phẩm quần dài -->
 <section class="ad-type" style="margin-top: 30px;">
-	<img width="100%" src="logo/ad-6.png" alt="" />
+	<img src="logo/ad-6.png" alt="" />
 </section>
 <div class="new_arrivals">
 	<div class="">
@@ -338,7 +334,7 @@
 </div>
 <!-- Sản phẩm quần cộc -->
 <section class="ad-type" style="margin-top: 30px;">
-	<img width="100%" src="logo/ad-7.jpeg" alt="" />
+	<img src="logo/ad-7.jpeg" alt="" />
 </section>
 <div class="new_arrivals">
 	<div class="">
@@ -366,7 +362,7 @@
 </div>
 <!-- Sản phẩm áo -->
 <section class="ad-type" style="margin-top: 30px;">
-	<img width="100%" src="logo/ad-8.jpeg" alt="" />
+	<img src="logo/ad-8.jpeg" alt="" />
 </section>
 <div class="new_arrivals">
 	<div class="">
@@ -394,7 +390,7 @@
 </div>
 <!-- Sản phẩm áo khoác -->
 <section class="ad-type">
-	<img width="100%" src="logo/ad-9.jpeg" alt="" />
+	<img  src="logo/ad-9.jpeg" alt="" />
 </section>
 <div class="new_arrivals">
 	<div class="">

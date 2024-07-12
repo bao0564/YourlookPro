@@ -10,20 +10,24 @@ namespace yourlook.Controllers
     public class HomeController : Controller
     {
         YourlookContext db=new YourlookContext();
-        private readonly ILogger<HomeController> _logger;
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
 
         public IActionResult Index()
         {
+			var email = HttpContext.Session.GetString("user");
+			if(email != null)
+			{
+				var user= GetKhachHang(email);
+				ViewBag.TenKH=user.TenKh;
+			}
             return View();
 		}
-		public IActionResult Register()
-		{
-			return View();
-		}
+			private DbKhachHang GetKhachHang(string email)
+			{
+				using (var db = new YourlookContext())
+				{
+					return db.DbKhachHangs.FirstOrDefault(x => x.Email==email);
+				}
+			}
 		public IActionResult AllProduct(int? page)
 		{
 			int pageSize = 25;
@@ -97,6 +101,12 @@ namespace yourlook.Controllers
 			ViewBag.ImgProduct = lstImgProduct;
 			return View(lstSanPham);
 		}
+		public IActionResult Add()
+		{
+			var lstAdd=db.DbAdds.AsNoTracking().Where(x=>x.IsActive == true).OrderBy(x=>x.Id);
+			return PartialView(lstAdd);
+		}
+
 		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

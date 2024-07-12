@@ -58,20 +58,43 @@
 					<div class="col-md-6 text-right">
 						<div class="top_nav_right">
 							<ul class="top_nav_menu">
-								<li class="account">
-									<a href="#">
-										Tài Khoản
-										<i class="fa fa-angle-down"></i>
-									</a>
-									<ul class="account_selection">
-										<li>
-											<a href="@Url.Action("Login","Access")"><i href="@Url.Action("Login","Access")" class="fa fa-sign-in" aria-hidden="true"></i>Đăng Nhập</a>
-										</li>
-										<li>
-											<a href="@Url.Action("Register","Access")"><i href="@Url.Action("Register","Access")" class="fa fa-user-plus" aria-hidden="true"></i>Đăng Ký </a>
-										</li>
-									</ul>
-								</li>
+								@if (Context.Session.GetString("user") !=null)
+								{
+									<li class="account">
+										<a href="#">
+											@* <div style="display:flex;flex-direction:column">
+												<p style="margin:0px;color:#000">Hi!</p>
+												<p style="margin:0px;color:#000"> @ViewBag.TenKH</p>
+											</div> *@
+											Hi! Chào Cậu
+										</a>
+										@* <ul class="account_selection">
+											<li>
+												<a href="@Url.Action("Login","Access")"><i href="@Url.Action("Login","Access")" class="fa fa-sign-in" aria-hidden="true"></i>Tài khoản</a>
+											</li>
+											<li>
+												<a href="@Url.Action("LogOut","Access")"><i href="@Url.Action("Register","Access")" class="fa fa-user-plus" aria-hidden="true"></i>Đăng xuất </a>
+											</li>
+										</ul> *@
+									</li>					
+								}
+								else
+								{
+									<li class="account">
+										<a href="#">
+											Tài Khoản
+											<i class="fa fa-angle-down"></i>
+										</a>
+										<ul class="account_selection">
+											<li>
+												<a href="@Url.Action("Login","Access")"><i href="@Url.Action("Login","Access")" class="fa fa-sign-in" aria-hidden="true"></i>Đăng Nhập</a>
+											</li>
+											<li>
+												<a href="@Url.Action("Register","Access")"><i href="@Url.Action("Register","Access")" class="fa fa-user-plus" aria-hidden="true"></i>Đăng Ký </a>
+											</li>
+										</ul>
+									</li>									
+								}
 								<li class="language">
 									<a href="#">
 										Ngôn Ngữ
@@ -131,12 +154,23 @@
 								</ul>
 							</div>
 							<ul class="navbar_user">
-								<li>
-									<a href="#" onclick="openFL()"><i onclick="openFL()" class="fa fa-user" aria-hidden="true"></i></a>
-								</li>
+								@if (Context.Session.GetString("user")!=null)
+								{
+									<li>
+                                        <div class="" style="border:1px solid #5c5c5c; border-radius:20px">
+                                            <a style="margin:0px;" href="#"><i class="fa fa-user" style="color: #000" aria-hidden="true"></i></a>
+										</div>
+									</li>
+								}
+								else
+								{
+									<li>
+										<a href="#" onclick="openFL()"><i onclick="openFL()" class="fa fa-user" aria-hidden="true"></i></a>
+									</li>
+								}
 								<li class="checkout">
 									<a href="@Url.Action("Index","ShoppingCart")">
-										<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+										<i class="fa fa-shopping-cart" style="color:#000" aria-hidden="true"></i>
 										@* <span id="checkout_items" class="checkout_items">0</span> *@
 									</a>
 								</li>
