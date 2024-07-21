@@ -70,7 +70,7 @@ li {
     width: 300px;
 }
 
-#header .account,.flct {
+#header .account, .flct {
     color: #ffffff;
     display: flex;
     align-items: center;
@@ -621,8 +621,30 @@ input[type=checkbox]{
     background-color:red;
     padding:0 10px;
 }
-.btn-up {
+.btn-dt {
     color: #000;
-    background-color:white;
+    background-color: yellow;
     padding: 0 10px;
+}
+.btn-ud {
+    color: #fff;
+    background-color: forestgreen;
+    padding: 0 10px;
+}
+/*nút theo dõi tình trang đơn hàng */
+.check-od {
+    height: 15px;
+    width: 15px;
+    padding: 0px;
+    border: 1px solid #2f3640;
+    border-radius: 50%;
+    background-color: forestgreen;
+}
+.check-od-none {
+    height: 15px;
+    width: 15px;
+    padding: 0px;
+    border: 1px solid #2f3640;
+    border-radius: 50%;
+    background-color: red;
 }

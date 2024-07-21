@@ -1,0 +1,76 @@
+﻿@model Data.Models.DbDonHang
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "SuaDonHang";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="menu-cp">
+    <div class="cp0">
+        Cập Nhật Tình Trạng Đơn hàng
+    </div>
+    <div class="h-cp1">
+        <div class="h-cp-up">
+            <div style="display:flex;align-items:center;padding-top:15px">
+                <a asp-action="DonHang"><img style="height:20px" src="\icon\drop left.svg" /> </a>
+            </div>
+        </div>
+        @using (Html.BeginForm("SuaDonHang", "DonHang", FormMethod.Post, new { }))
+        {
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="CreateDate" />
+            <input type="hidden" asp-for="MaDh" />
+            <input type="hidden" asp-for="TenKh" />
+            <input type="hidden" asp-for="Sdt" />
+            <input type="hidden" asp-for="City" />
+            <input type="hidden" asp-for="District" />
+            <input type="hidden" asp-for="Ward" />
+            <input type="hidden" asp-for="DiaChi" />
+            <input type="hidden" asp-for="TongTien" />
+            <input type="hidden" asp-for="soluong" />
+            <input type="hidden" asp-for="PaymentId" />
+            <input type="hidden" asp-for="GhiChu" />
+            <div class="row">
+                <div class="col-3">
+                    <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                            @Html.CheckBoxFor(x => x.ODSuccess, new { @class = "custom-control-input", @id = "ODSuccessCheckbox2", @checked = "checked" })
+                            <label for="ODSuccessCheckbox2" class="custom-control-label">Đặt Hàng Thành công</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                            @Html.CheckBoxFor(x => x.ODReadly, new { @class = "custom-control-input", @id = "ODReadlyCheckbox2" })
+                            <label for="ODReadlyCheckbox2" class="custom-control-label">Đang chuẩn bị hàng</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                            @Html.CheckBoxFor(x => x.ODTransported, new { @class = "custom-control-input", @id = "ODTransportedCheckbox" })
+                            <label for="ODTransportedCheckbox" class="custom-control-label">Đang vận chuyển</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                            @Html.CheckBoxFor(x => x.Complete, new { @class = "custom-control-input", @id = "CompleteCheckbox" })
+                            <label for="CompleteCheckbox" class="custom-control-label">Hoàn thành</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn-primary" />
+            </div>
+        }
+    </div>
+</div>
+    </div>
+</div>
+
+

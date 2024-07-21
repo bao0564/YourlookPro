@@ -27,14 +27,14 @@
             <table class="h-table">
                 <thead>
                     <tr>
-                        <th>Mã SP</th>
-                        <th>Tên SP</th>
+                        <th >Mã SP</th>
+                        <th >Tên SP</th>
                         <th>Ảnh đại diện </th>
-                        <th>Giá</th>
-                        <th>Danh Mục</th>
-                        <th>Nhóm</th>
-                        <th>Số Lượng</th>
-                        <th>Số lượng Bán</th>
+                        <th>Giá áp dụng</th>
+                        <th>Giá gốc</th>
+                        <th >Danh Mục</th>
+                        <th >Số Lượng</th>
+                        <th >Số lượng Bán</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -47,9 +47,15 @@
                                 <td>@prd.MaSp</td>
                                 <td>@prd.TenSp</td>
                                 <td><img src="@Url.Content("/img/"+prd.AnhSp)" alt=""></td>
+                                @if(prd.PriceMin != null && prd.PriceMin !=0){
+                                    <td>@string.Format("{0:N0}", prd.PriceMin)</td>
+                                }
+                                else
+                                {
+                                    <td>@string.Format("{0:N0}", prd.PriceMax)</td>
+                                }
                                 <td>@string.Format("{0:N0}", prd.PriceMax)</td>
                                 <td>@prd.MaDm</td>
-                                <td>@prd.NhomId</td>
                                 <td>@prd.SoLuongSp</td>
                                 <td>@prd.LuotSold</td>
                                 <td>

@@ -1,0 +1,45 @@
+﻿@model Data.Models.DbAdd
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "TaoAds";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<div class="menu-cp">
+    <div class="cp0">
+        Thêm / Tạo ads mới
+    </div>
+    <div class="h-cp1">
+        <div class="h-cp-up">
+            <div style="display:flex;align-items:center;padding-top:15px">
+                <a asp-action="Ads"><img style="height:20px" src="\icon\drop left.svg" /> </a>
+            </div>
+        </div>
+        @using (Html.BeginForm("TaoAds", "Ads", FormMethod.Post, new { }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true)
+            <div class="h-cp-mid-1">
+                <div class="mid-c">
+                    <label class="control-label"> Tiêu Đề</label>
+                    @Html.TextBoxFor(x => x.Name, new { @class = "form-control", @placeholder = "TIêu đề" })
+                    @Html.ValidationMessageFor(x => x.Name, null, new { @class = "text-danger" })
+                </div>
+                <div class="mid-c">
+                    <label  class="control-label">Ảnh</label>
+                    <input type="file" asp-for="Img" class="form-control" />
+                    <span asp-validation-for="Img" class="text-danger"></span>
+                </div>
+                <div class="mid-c">
+                    <label class="control-label">Hiển thị</label>
+                    <div class="custom-control custom-checkbox">
+                        @Html.CheckBoxFor(x => x.IsActive, new { @class = "custom-control-input", @id = "customCheckbox2", @checked = "checked" })
+                        <label for="customCheckbox2" class="custom-control-label">Hiển thị</label>
+                    </div>
+                </div>
+            </div>
+            <div class="mid-c" style="display:flex;justify-content:center">
+                <input type="submit" value="Thêm" class="btn-primary" />
+            </div>
+        }
+    </div>
+</div>

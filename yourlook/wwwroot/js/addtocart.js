@@ -147,19 +147,3 @@
     // Tính tổng tiền ban đầu khi tải trang
     calculateTotal();
 });
-
-    //đặt hàng thành công
-    //$('.checkout-btn').off('click').on('click', function (e) {
-    //    e.preventDefault();
-    //    $.ajax({
-    //        url: '/shoppingcart/payorder',
-    //        type: 'POST',
-    //        success: function (response) {
-    //            if (response.success) {
-    //                window.location.href = '/shoppingcart/payordersuccess';
-    //            } else {
-    //                alert('Có lỗi xảy ra khi xử lý đơn hàng của bạn. Vui lòng thử lại.');
-    //            }
-    //        }
-    //    });
-//});

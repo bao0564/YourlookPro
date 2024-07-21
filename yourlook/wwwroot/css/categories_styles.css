@@ -837,6 +837,7 @@ COLOR PALETTE
 .pagination{
 	display:flex;
 	justify-content:center;
+	margin-bottom:15px;
 }
 .pagination .active {
 	background-color: #2f3640;

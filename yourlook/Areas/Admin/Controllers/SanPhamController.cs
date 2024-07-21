@@ -15,7 +15,7 @@ namespace yourlook.Areas.Admin.Controllers
     [Route("admin")]
     public class SanPhamController : Controller
     {
-        YourlookContext db = new YourlookContext();        
+        YourlookContext db = new YourlookContext();
         private readonly IWebHostEnvironment _webHostEnvironment;
         private readonly ILogger<SanPhamController> _logger;
 
@@ -30,7 +30,7 @@ namespace yourlook.Areas.Admin.Controllers
         {
             int pageSize = 20;
             int pageNumber = page ?? 1;
-            var lstSanPham = db.DbSanPhams.AsNoTracking().OrderByDescending(x => x.CreateDate);
+            var lstSanPham = db.DbSanPhams.Include(p => p.MaDanhMucsMaDm).OrderByDescending(x => x.CreateDate).ToList();
             PagedList<DbSanPham> lst = new PagedList<DbSanPham>(lstSanPham, pageNumber, pageSize);
             return View(lst);
         }
@@ -46,13 +46,13 @@ namespace yourlook.Areas.Admin.Controllers
         [Route("taosanpham")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> TaoSanPham(DbSanPham sanPham, string Imgs, IFormFile AnhSpFile)
+        public async Task<IActionResult> TaoSanPham(DbSanPham sanPham, string Imgs,IFormFile AnhSpFile)
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 sanPham.CreateDate = DateTime.Now;
 
-                // Xử lý tải ảnh đại diện
+                // xử lý tải ảnh đại diện
                 if (AnhSpFile != null && AnhSpFile.Length > 0)
                 {
                     string uploadDir = Path.Combine(_webHostEnvironment.WebRootPath, "img");
@@ -71,7 +71,6 @@ namespace yourlook.Areas.Admin.Controllers
                 db.DbSanPhams.Add(sanPham);
                 await db.SaveChangesAsync();
 
-
                 if (!string.IsNullOrEmpty(Imgs))
                 {
                     string[] imagePaths = Imgs.Split(';');
@@ -83,10 +82,8 @@ namespace yourlook.Areas.Admin.Controllers
                             Img = imagePath
                         });
                     }
-
                     await db.SaveChangesAsync();
                 }
-
                 return RedirectToAction("SanPham");
             }
 
@@ -106,7 +103,7 @@ namespace yourlook.Areas.Admin.Controllers
         [Route("suasanpham")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> SuaSanPham(DbSanPham sanPham, string Imgs, string RemovedImgs)
+        public async Task<IActionResult> SuaSanPham(DbSanPham sanPham, string Imgs, IFormFile AnhSpFile)
         {
             if (ModelState.IsValid)
             {
@@ -114,37 +111,32 @@ namespace yourlook.Areas.Admin.Controllers
                 db.DbSanPhams.Attach(sanPham);
                 db.Entry(sanPham).State = EntityState.Modified;
 
-                //if (!string.IsNullOrEmpty(RemovedImgs))
-                //{
-                //    string[] removedImageIds = RemovedImgs.Split(';', StringSplitOptions.RemoveEmptyEntries);
-                //    foreach (var id in removedImageIds)
-                //    {
-                //        if (int.TryParse(id, out int imgId))
-                //        {
-                //            var imgToRemove = db.DbImgs.FirstOrDefault(img => img.Id == imgId);
-                //            if (imgToRemove != null)
-                //            {
-                //                db.DbImgs.Remove(imgToRemove);
-                //            }
-                //        }
-                //    }
-                //}
-                //if (!string.IsNullOrEmpty(Imgs))
-                //{
-                //    string[] imagePaths = Imgs.Split(';');
-                //    foreach (var imagePath in imagePaths)
-                //    {
-                //        // Ensure we only add new images
-                //        if (!db.DbImgs.Any(img => img.MaSp == sanPham.MaSp && img.Img == imagePath))
-                //        {
-                //            db.DbImgs.Add(new DbImg
-                //            {
-                //                MaSp = sanPham.MaSp,
-                //                Img = imagePath
-                //            });
-                //        }
-                //    }
-                //}
+                if (AnhSpFile !=null && AnhSpFile.Length >0)
+                {
+                    string uploadDir = Path.Combine(_webHostEnvironment.WebRootPath, "img");
+                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(AnhSpFile.FileName);
+                    string filePath = Path.Combine(uploadDir, fileName);
+
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await AnhSpFile.CopyToAsync(fileStream);
+                    }
+
+                    sanPham.AnhSp = "" + fileName;
+                }
+                if (!string.IsNullOrEmpty(Imgs))
+                {
+                    string[] imagePaths = Imgs.Split(';');
+                    foreach (var imagePath in imagePaths)
+                    {
+                        db.DbImgs.Add(new DbImg
+                        {
+                            MaSp = sanPham.MaSp,
+                            Img = imagePath
+                        });
+                    }
+                    await db.SaveChangesAsync();
+                }
                 await db.SaveChangesAsync();
                 return RedirectToAction("SanPham");
             }
@@ -153,7 +145,7 @@ namespace yourlook.Areas.Admin.Controllers
             ViewBag.NhomId = new SelectList(db.DbGroups.ToList(), "NhomId", "GroupName");
             return View(sanPham);
         }
-       // Xóa Sản Phẩm
+        // Xóa Sản Phẩm
         [Route("xoasanpham")]
         [HttpGet]
         public IActionResult XoaSanPham(int masp)

@@ -52,7 +52,7 @@ namespace yourlook.Controllers
                 {
                     ModelState.AddModelError("Email", "Email đã được sử dụng.");
                     return View(user);
-                }
+                }  
                 user.CreateDate = DateTime.Now;
                 db.DbKhachHangs.Add(user);
                 db.SaveChanges();
@@ -62,6 +62,7 @@ namespace yourlook.Controllers
         }
         public IActionResult LogOut() 
         {
+
             HttpContext.Session.Remove("user");
             return RedirectToAction("Index", "Home");
 		}

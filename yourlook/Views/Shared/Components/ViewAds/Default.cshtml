@@ -1,0 +1,7 @@
+﻿@model IEnumerable<Data.Models.DbAdd>
+<div class="img-ad" style="padding: 0">
+    @foreach ( var prd in Model)
+    {
+        <img src="@Url.Content("/logo/" + prd.Img)" alt="Ad Image" />
+    }
+</div>

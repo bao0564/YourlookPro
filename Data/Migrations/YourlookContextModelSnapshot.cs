@@ -39,7 +39,7 @@ namespace Data.Migrations
                     b.Property<string>("Img")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool?>("IsActive")
+                    b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
                     b.Property<string>("ModifiedBy")
@@ -56,7 +56,7 @@ namespace Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("DbAdds");
+                    b.ToTable("DbAdd");
                 });
 
             modelBuilder.Entity("Data.Models.DbAddres", b =>
@@ -292,6 +292,9 @@ namespace Data.Migrations
                     b.Property<string>("City")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("Complete")
+                        .HasColumnType("bit");
+
                     b.Property<string>("CreateBy")
                         .HasColumnType("nvarchar(max)");
 
@@ -315,6 +318,15 @@ namespace Data.Migrations
 
                     b.Property<DateTime?>("ModifiedDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<bool>("ODReadly")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("ODSuccess")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("ODTransported")
+                        .HasColumnType("bit");
 
                     b.Property<int?>("PaymentId")
                         .HasColumnType("int");
@@ -588,7 +600,7 @@ namespace Data.Migrations
                     b.Property<int?>("MaDanhMucsMaDmMaDm")
                         .HasColumnType("int");
 
-                    b.Property<int>("MaDm")
+                    b.Property<int?>("MaDm")
                         .HasColumnType("int");
 
                     b.Property<string>("MetaDescriptions")
@@ -604,6 +616,7 @@ namespace Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("MotaSp")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("NhomId")
@@ -622,6 +635,7 @@ namespace Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("TenSp")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("MaSp");

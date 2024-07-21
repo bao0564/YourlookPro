@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 using X.PagedList;
 using yourlook.Models;
+using static Microsoft.Extensions.Logging.EventSource.LoggingEventSource;
 
 namespace yourlook.Controllers
 {
@@ -28,6 +29,24 @@ namespace yourlook.Controllers
 					return db.DbKhachHangs.FirstOrDefault(x => x.Email==email);
 				}
 			}
+        public IActionResult UserDetail()
+        {
+            var email = HttpContext.Session.GetString("user");
+            if (email != null)
+            {
+                var user = GetKhachHang(email);
+				return View(user);
+            }
+            return View();
+        }
+        public IActionResult KeyWord(int? page,string word)
+		{
+            int pageSize = 25;
+            int pageNumber = page ?? 1;
+            var lst = db.DbSanPhams.AsNoTracking().Where(x => x.TenSp.Contains(word)).OrderBy(x => x.CreateDate).ToList();
+            PagedList<DbSanPham> lstsp = new PagedList<DbSanPham>(lst, pageNumber, pageSize);
+            return View(lstsp);
+		}
 		public IActionResult AllProduct(int? page)
 		{
 			int pageSize = 25;
@@ -101,12 +120,6 @@ namespace yourlook.Controllers
 			ViewBag.ImgProduct = lstImgProduct;
 			return View(lstSanPham);
 		}
-		public IActionResult Add()
-		{
-			var lstAdd=db.DbAdds.AsNoTracking().Where(x=>x.IsActive == true).OrderBy(x=>x.Id);
-			return PartialView(lstAdd);
-		}
-
 		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

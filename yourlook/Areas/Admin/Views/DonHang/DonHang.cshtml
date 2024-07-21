@@ -29,6 +29,10 @@
                         <th>Tổng Số Lượng</th>
                         <th>tổng tiền</th>
                         <th>Ngày Đặt</th>
+                        <th>Đặt Hàng Thành công</th>
+                        <th>Đang chuẩn bị hàng</th>
+                        <th>Đang vận chuyển</th>
+                        <th>Thành công</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -42,10 +46,58 @@
                                 <td>@prd.soluong</td>
                                 <td>@prd.TongTien</td>
                                 <td>@prd.CreateDate</td>
+                                @if(prd.ODSuccess ==true){
+                                    <td>
+                                        <div class="check-od"></div>
+                                    </td>
+                                }
+                                else
+                                {
+                                    <td>
+                                        <div class="check-od-none"></div>
+                                    </td>
+                                }
+                                @if (prd.ODReadly == true)
+                                {
+                                    <td>
+                                        <div  class="check-od"></div>
+                                    </td>
+                                }
+                                else
+                                {
+                                    <td>
+                                        <div class="check-od-none"></div>
+                                    </td>
+                                }
+                                @if (prd.ODTransported == true)
+                                {
+                                    <td>
+                                        <div  class="check-od"></div>
+                                    </td>
+                                }
+                                else
+                                {
+                                    <td>
+                                        <div class="check-od-none"></div>
+                                    </td>
+                                }
+                                @if (prd.Complete == true)
+                                {
+                                    <td>
+                                        <div  class="check-od"></div>
+                                    </td>
+                                }
+                                else
+                                {
+                                    <td>
+                                        <div class="check-od-none"></div>
+                                    </td>
+                                }
                                 <td>
                                     <div style="display:flex;flex-direction:column">
-                                        <a class="btn-ddu" href="@Url.Action("ChiTietDonHang",new {madh=prd.MaDh})" style="border:1px solid #2f3640;">Chi Tiết Đơn Hàng</a>
-                                        <div style="display:flex;justify-content:space-around">
+                                        <a class="btn-ddu btn-dt" href="@Url.Action("ChiTietDonHang",new {madh=prd.MaDh})" style="border:1px solid #2f3640;">Chi Tiết Đơn Hàng</a>
+                                        <div style="display:flex;justify-content:space-between">
+                                            <a class="btn-ddu btn-ud" href="@Url.Action("SuaDonHang",new {madh=prd.MaDh})">Update</a>
                                             <a class="btn-ddu btn-de" href="@Url.Action("XoaDonHang",new {madh=prd.MaDh})" onclick="deletedh(event)">Xóa</a>
                                         </div>
                                     </div>

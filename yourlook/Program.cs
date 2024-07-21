@@ -25,6 +25,7 @@ builder.Services.AddSession(options =>
 builder.Services.AddScoped<ISanPhamHot, SanPhamHot>();
 builder.Services.AddScoped<ICategory, Category>();
 builder.Services.AddScoped<ISanPhamNew, SanPhamNew>();
+builder.Services.AddScoped<IAds, Ads>();
 builder.Services.AddScoped<IPage1, Page1>();
 builder.Services.AddScoped<IPage2, Page2>();
 builder.Services.AddScoped<IPage3, Page3>();

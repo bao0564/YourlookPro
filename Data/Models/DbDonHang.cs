@@ -19,7 +19,10 @@ namespace Data.Models
         public int soluong {  get; set; }
         public int? PaymentId { get; set; }
         public string? GhiChu { get; set; }
-
+        public bool ODSuccess { get; set; }
+        public bool ODReadly { get; set; }
+        public bool ODTransported { get; set; }
+        public bool Complete { get; set; }
         public virtual ICollection<DbChiTietDonHang> DbChiTietDonHangs { get; set; } = new List<DbChiTietDonHang>();
 
         //public virtual DbKhachHang? MaKhNavigation { get; set; }

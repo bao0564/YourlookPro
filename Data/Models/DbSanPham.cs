@@ -9,18 +9,20 @@ namespace Data.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int MaSp { get; set; }
 
-        public int MaDm { get; set; }
+        public int? MaDm { get; set; }
 
+        [Required(ErrorMessage = "*")]
         public string? TenSp { get; set; }
 
         public int SaoDanhGia { get; set; }
 
         public int NhomId { get; set; }
-
         public string? AnhSp { get; set; }
 
-		public int SoLuongSp { get; set; }
+        [Required(ErrorMessage = "*")]
+        public int SoLuongSp { get; set; }
 
+        [Required(ErrorMessage = "*")]
         public decimal PriceMax { get; set; }
 
         public int GiamGia { get; set; }
@@ -30,7 +32,9 @@ namespace Data.Models
         public int LuotXem { get; set; }
 
         public int LuotSold { get; set; }
-        public string? MotaSp { get; set; }
+
+        [Required(ErrorMessage = "*")]
+        public string MotaSp { get; set; }
 
         public bool IActive {  get; set; }
         public bool IFeature {  get; set; }
@@ -40,8 +44,6 @@ namespace Data.Models
         public string? MetaKeywords { get; set; }
 
         public string? MetaDescriptions { get; set; }
-
-
 
         public virtual ICollection<DbImg> DbImgs { get; set; } = new List<DbImg>();
 
