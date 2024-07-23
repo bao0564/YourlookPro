@@ -3,20 +3,120 @@
   "WorkspaceRootPath": "E:\\ShopYourLook\\yourlook\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2BCB4FB1-7CD7-4228-8161-775ADFC145AE}|Data\\Data.csproj|e:\\shopyourlook\\yourlook\\data\\migrations\\20240723174120_sql23.7.1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BCB4FB1-7CD7-4228-8161-775ADFC145AE}|Data\\Data.csproj|solutionrelative:data\\migrations\\20240723174120_sql23.7.1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\areas\\admin\\views\\donhang\\suadonhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\areas\\admin\\views\\donhang\\suadonhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2BCB4FB1-7CD7-4228-8161-775ADFC145AE}|Data\\Data.csproj|e:\\shopyourlook\\yourlook\\data\\models\\dbsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BCB4FB1-7CD7-4228-8161-775ADFC145AE}|Data\\Data.csproj|solutionrelative:data\\models\\dbsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\areas\\admin\\views\\danhmuc\\suadanhmuc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\areas\\admin\\views\\danhmuc\\suadanhmuc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\home\\allproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\home\\allproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\home\\favoriteproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\home\\favoriteproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\home\\userdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\home\\userdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\wwwroot\\js\\categories_custom.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\wwwroot\\js\\categories_custom.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\wwwroot\\js\\custom.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\wwwroot\\js\\custom.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\home\\productcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\home\\productcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\home\\newproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\home\\newproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\shared\\_layoutcate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\shared\\_layoutcate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\wwwroot\\js\\favoriteproduct.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\wwwroot\\js\\favoriteproduct.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\wwwroot\\js\\addtocart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\wwwroot\\js\\addtocart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\home\\productdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\home\\productdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\controllers\\accesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\controllers\\accesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BCB4FB1-7CD7-4228-8161-775ADFC145AE}|Data\\Data.csproj|e:\\shopyourlook\\yourlook\\data\\models\\dbfavoriteproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BCB4FB1-7CD7-4228-8161-775ADFC145AE}|Data\\Data.csproj|solutionrelative:data\\models\\dbfavoriteproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\areas\\admin\\views\\donhang\\donhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\areas\\admin\\views\\donhang\\donhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BCB4FB1-7CD7-4228-8161-775ADFC145AE}|Data\\Data.csproj|e:\\shopyourlook\\yourlook\\data\\models\\yourlookcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BCB4FB1-7CD7-4228-8161-775ADFC145AE}|Data\\Data.csproj|solutionrelative:data\\models\\yourlookcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\areas\\admin\\views\\donhang\\chitietdonhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\areas\\admin\\views\\donhang\\chitietdonhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\models\\viewshoppingcartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\models\\viewshoppingcartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\models\\viewcheckoutitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\models\\viewcheckoutitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\wwwroot\\js\\swich.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\wwwroot\\js\\swich.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\shoppingcart\\order.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\shoppingcart\\order.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\areas\\admin\\views\\danhmuc\\danhmuc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\areas\\admin\\views\\danhmuc\\danhmuc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\areas\\admin\\views\\danhmuc\\suadanhmuc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\areas\\admin\\views\\danhmuc\\suadanhmuc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\areas\\admin\\controllers\\donhangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,20 +127,8 @@
       "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\wwwroot\\css\\cssadmin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BCB4FB1-7CD7-4228-8161-775ADFC145AE}|Data\\Data.csproj|e:\\shopyourlook\\yourlook\\data\\models\\dbsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BCB4FB1-7CD7-4228-8161-775ADFC145AE}|Data\\Data.csproj|solutionrelative:data\\models\\dbsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\areas\\admin\\controllers\\danhmuccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\areas\\admin\\controllers\\danhmuccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\areas\\admin\\views\\danhmuc\\danhmuc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\areas\\admin\\views\\danhmuc\\danhmuc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\areas\\admin\\controllers\\sanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\areas\\admin\\controllers\\sanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\areas\\admin\\views\\sanpham\\sanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -55,76 +143,28 @@
       "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\areas\\admin\\controllers\\homeadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\areas\\admin\\views\\donhang\\chitietdonhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\areas\\admin\\views\\donhang\\chitietdonhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\models\\viewcheckoutitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\models\\viewcheckoutitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\shoppingcart\\order.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\shoppingcart\\order.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\access\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\access\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\controllers\\accesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\controllers\\accesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\access\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\access\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2BCB4FB1-7CD7-4228-8161-775ADFC145AE}|Data\\Data.csproj|e:\\shopyourlook\\yourlook\\data\\models\\dbkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BCB4FB1-7CD7-4228-8161-775ADFC145AE}|Data\\Data.csproj|solutionrelative:data\\models\\dbkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\shared\\_layoutcate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\shared\\_layoutcate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\wwwroot\\css\\categories_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\wwwroot\\css\\categories_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\home\\productcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\home\\productcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\home\\keyword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\home\\keyword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\wwwroot\\js\\findprd.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\wwwroot\\js\\findprd.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\wwwroot\\js\\addtocart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\wwwroot\\js\\addtocart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\wwwroot\\js\\swich.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\wwwroot\\js\\swich.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\wwwroot\\js\\btnquantity.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -135,20 +175,12 @@
       "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\areas\\admin\\controllers\\adscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\home\\hotproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\home\\hotproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\areas\\admin\\views\\ads\\taoads.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\areas\\admin\\views\\ads\\taoads.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2BCB4FB1-7CD7-4228-8161-775ADFC145AE}|Data\\Data.csproj|e:\\shopyourlook\\yourlook\\data\\models\\dbadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BCB4FB1-7CD7-4228-8161-775ADFC145AE}|Data\\Data.csproj|solutionrelative:data\\models\\dbadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BCB4FB1-7CD7-4228-8161-775ADFC145AE}|Data\\Data.csproj|e:\\shopyourlook\\yourlook\\data\\models\\yourlookcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BCB4FB1-7CD7-4228-8161-775ADFC145AE}|Data\\Data.csproj|solutionrelative:data\\models\\yourlookcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\areas\\admin\\views\\khachhang\\khachhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -169,14 +201,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2BCB4FB1-7CD7-4228-8161-775ADFC145AE}|Data\\Data.csproj|e:\\shopyourlook\\yourlook\\data\\models\\dbtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BCB4FB1-7CD7-4228-8161-775ADFC145AE}|Data\\Data.csproj|solutionrelative:data\\models\\dbtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\home\\productdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\home\\productdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\home\\newproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\home\\newproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\areas\\admin\\views\\role\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -218,11 +242,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 580,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 37,
               "Title": "Login.cshtml",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Access\\Login.cshtml",
               "RelativeDocumentMoniker": "yourlook\\Views\\Access\\Login.cshtml",
@@ -235,81 +259,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SanPhamController.cs",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Controllers\\SanPhamController.cs",
-              "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Controllers\\SanPhamController.cs",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Controllers\\SanPhamController.cs",
-              "RelativeToolTip": "yourlook\\Areas\\Admin\\Controllers\\SanPhamController.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAowHAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T12:15:55.103Z",
+              "DocumentIndex": 6,
+              "Title": "custom.js",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\custom.js",
+              "RelativeDocumentMoniker": "yourlook\\wwwroot\\js\\custom.js",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\custom.js",
+              "RelativeToolTip": "yourlook\\wwwroot\\js\\custom.js",
+              "ViewState": "AQIAAOkAAAAAAAAAAADwv/kAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-07-23T16:39:50.139Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "findprd.js",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\findprd.js",
-              "RelativeDocumentMoniker": "yourlook\\wwwroot\\js\\findprd.js",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\findprd.js",
-              "RelativeToolTip": "yourlook\\wwwroot\\js\\findprd.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAUAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-07-16T13:09:52.901Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "cssAdmin.css",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\cssAdmin.css",
-              "RelativeDocumentMoniker": "yourlook\\wwwroot\\css\\cssAdmin.css",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\cssAdmin.css",
-              "RelativeToolTip": "yourlook\\wwwroot\\css\\cssAdmin.css",
-              "ViewState": "AQIAAGcCAAAAAAAAAAAAAIcCAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-21T17:01:02.073Z",
+              "Title": "categories_custom.js",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\categories_custom.js",
+              "RelativeDocumentMoniker": "yourlook\\wwwroot\\js\\categories_custom.js",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\categories_custom.js",
+              "RelativeToolTip": "yourlook\\wwwroot\\js\\categories_custom.js",
+              "ViewState": "AQIAALcAAAAAAAAAAAAkwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-07-23T16:53:20.292Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DonHangController.cs",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Controllers\\DonHangController.cs",
-              "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Controllers\\DonHangController.cs",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Controllers\\DonHangController.cs",
-              "RelativeToolTip": "yourlook\\Areas\\Admin\\Controllers\\DonHangController.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAA9wC0AAAA9AAAA",
+              "DocumentIndex": 0,
+              "Title": "20240723174120_sql23.7.1.cs",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\Data\\Migrations\\20240723174120_sql23.7.1.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20240723174120_sql23.7.1.cs",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\Data\\Migrations\\20240723174120_sql23.7.1.cs",
+              "RelativeToolTip": "Data\\Migrations\\20240723174120_sql23.7.1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T16:06:53.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SuaDanhMuc.cshtml",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\DanhMuc\\SuaDanhMuc.cshtml",
-              "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Views\\DanhMuc\\SuaDanhMuc.cshtml",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\DanhMuc\\SuaDanhMuc.cshtml",
-              "RelativeToolTip": "yourlook\\Areas\\Admin\\Views\\DanhMuc\\SuaDanhMuc.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-21T16:30:49.276Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SuaDonHang.cshtml",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\DonHang\\SuaDonHang.cshtml",
-              "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Views\\DonHang\\SuaDonHang.cshtml",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\DonHang\\SuaDonHang.cshtml",
-              "RelativeToolTip": "yourlook\\Areas\\Admin\\Views\\DonHang\\SuaDonHang.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-21T16:29:55.208Z",
+              "WhenOpened": "2024-07-23T17:41:21.407Z",
               "EditorCaption": ""
             },
             {
@@ -322,124 +308,252 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DonHang.cshtml",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\DonHang\\DonHang.cshtml",
-              "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Views\\DonHang\\DonHang.cshtml",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\DonHang\\DonHang.cshtml",
-              "RelativeToolTip": "yourlook\\Areas\\Admin\\Views\\DonHang\\DonHang.cshtml",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAYwFkAAAAkAAAA",
+              "DocumentIndex": 4,
+              "Title": "UserDetail.cshtml",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\UserDetail.cshtml",
+              "RelativeDocumentMoniker": "yourlook\\Views\\Home\\UserDetail.cshtml",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\UserDetail.cshtml",
+              "RelativeToolTip": "yourlook\\Views\\Home\\UserDetail.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAAD8AAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-08T16:03:24.066Z",
+              "WhenOpened": "2024-07-22T10:26:50.777Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
+              "Title": "FavoriteProduct.cshtml",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\FavoriteProduct.cshtml",
+              "RelativeDocumentMoniker": "yourlook\\Views\\Home\\FavoriteProduct.cshtml",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\FavoriteProduct.cshtml",
+              "RelativeToolTip": "yourlook\\Views\\Home\\FavoriteProduct.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T10:16:15.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "yourlook\\Controllers\\HomeController.cs",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "yourlook\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAIwD4AAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T10:26:25.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AllProduct.cshtml",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\AllProduct.cshtml",
+              "RelativeDocumentMoniker": "yourlook\\Views\\Home\\AllProduct.cshtml",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\AllProduct.cshtml",
+              "RelativeToolTip": "yourlook\\Views\\Home\\AllProduct.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABwAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T13:49:29.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NewProduct.cshtml",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\NewProduct.cshtml",
+              "RelativeDocumentMoniker": "yourlook\\Views\\Home\\NewProduct.cshtml",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\NewProduct.cshtml",
+              "RelativeToolTip": "yourlook\\Views\\Home\\NewProduct.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACAAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-10T15:33:40.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductCategory.cshtml",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\ProductCategory.cshtml",
+              "RelativeDocumentMoniker": "yourlook\\Views\\Home\\ProductCategory.cshtml",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\ProductCategory.cshtml",
+              "RelativeToolTip": "yourlook\\Views\\Home\\ProductCategory.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABkAAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-16T11:29:50.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "DbSanPham.cs",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\Data\\Models\\DbSanPham.cs",
               "RelativeDocumentMoniker": "Data\\Models\\DbSanPham.cs",
               "ToolTip": "E:\\ShopYourLook\\yourlook\\Data\\Models\\DbSanPham.cs",
               "RelativeToolTip": "Data\\Models\\DbSanPham.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAUwCoAAAAAAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAwCMAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-19T13:07:03.664Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DanhMucController.cs",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Controllers\\DanhMucController.cs",
-              "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Controllers\\DanhMucController.cs",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Controllers\\DanhMucController.cs",
-              "RelativeToolTip": "yourlook\\Areas\\Admin\\Controllers\\DanhMucController.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAA8wA8AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T16:51:05.379Z",
+              "DocumentIndex": 10,
+              "Title": "_LayoutCate.cshtml",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Shared\\_LayoutCate.cshtml",
+              "RelativeDocumentMoniker": "yourlook\\Views\\Shared\\_LayoutCate.cshtml",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Shared\\_LayoutCate.cshtml",
+              "RelativeToolTip": "yourlook\\Views\\Shared\\_LayoutCate.cshtml",
+              "ViewState": "AQIAAGsBAAAAAAAAAAAAAHQBAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-09T15:54:19.944Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "yourlook\\Views\\Home\\Index.cshtml",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "yourlook\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAABsBAAAAAAAAAAAAAB8AAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-16T13:13:46.297Z",
+              "DocumentIndex": 17,
+              "Title": "DbFavoriteProduct.cs",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\Data\\Models\\DbFavoriteProduct.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\DbFavoriteProduct.cs",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\Data\\Models\\DbFavoriteProduct.cs",
+              "RelativeToolTip": "Data\\Models\\DbFavoriteProduct.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T08:59:42.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AccessController.cs",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Controllers\\AccessController.cs",
+              "RelativeDocumentMoniker": "yourlook\\Controllers\\AccessController.cs",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Controllers\\AccessController.cs",
+              "RelativeToolTip": "yourlook\\Controllers\\AccessController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACAAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T08:37:50.189Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "SuaSanPham.cshtml",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\SanPham\\SuaSanPham.cshtml",
-              "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Views\\SanPham\\SuaSanPham.cshtml",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\SanPham\\SuaSanPham.cshtml",
-              "RelativeToolTip": "yourlook\\Areas\\Admin\\Views\\SanPham\\SuaSanPham.cshtml",
-              "ViewState": "AQIAAIIAAAAAAAAAAAAQwBsAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-21T12:01:54.378Z",
+              "Title": "FavoriteProduct.js",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\FavoriteProduct.js",
+              "RelativeDocumentMoniker": "yourlook\\wwwroot\\js\\FavoriteProduct.js",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\FavoriteProduct.js",
+              "RelativeToolTip": "yourlook\\wwwroot\\js\\FavoriteProduct.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-07-23T14:07:16.329Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DanhMuc.cshtml",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\DanhMuc\\DanhMuc.cshtml",
-              "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Views\\DanhMuc\\DanhMuc.cshtml",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\DanhMuc\\DanhMuc.cshtml",
-              "RelativeToolTip": "yourlook\\Areas\\Admin\\Views\\DanhMuc\\DanhMuc.cshtml",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAADQAAAAVAAAA",
+              "DocumentIndex": 14,
+              "Title": "ProductDetail.cshtml",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\ProductDetail.cshtml",
+              "RelativeDocumentMoniker": "yourlook\\Views\\Home\\ProductDetail.cshtml",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\ProductDetail.cshtml",
+              "RelativeToolTip": "yourlook\\Views\\Home\\ProductDetail.cshtml",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAG0AAABOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-14T18:20:51.706Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SanPham.cshtml",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\SanPham\\SanPham.cshtml",
-              "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Views\\SanPham\\SanPham.cshtml",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\SanPham\\SanPham.cshtml",
-              "RelativeToolTip": "yourlook\\Areas\\Admin\\Views\\SanPham\\SanPham.cshtml",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAADAAAABbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-21T10:07:14.493Z",
+              "WhenOpened": "2024-07-10T10:30:53.339Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "ChiTietDonHang.cshtml",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\DonHang\\ChiTietDonHang.cshtml",
-              "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Views\\DonHang\\ChiTietDonHang.cshtml",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\DonHang\\ChiTietDonHang.cshtml",
-              "RelativeToolTip": "yourlook\\Areas\\Admin\\Views\\DonHang\\ChiTietDonHang.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-09T08:32:46.26Z",
+              "Title": "addtocart.js",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\addtocart.js",
+              "RelativeDocumentMoniker": "yourlook\\wwwroot\\js\\addtocart.js",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\addtocart.js",
+              "RelativeToolTip": "yourlook\\wwwroot\\js\\addtocart.js",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAmwJMAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-07-08T14:14:22.074Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "HomeAdminController.cs",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Controllers\\HomeAdminController.cs",
-              "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Controllers\\HomeAdminController.cs",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Controllers\\HomeAdminController.cs",
-              "RelativeToolTip": "yourlook\\Areas\\Admin\\Controllers\\HomeAdminController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "yourlook\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "yourlook\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAOEBAAAAAAAAAAAAAPQBAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-15T10:54:21.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DonHang.cshtml",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\DonHang\\DonHang.cshtml",
+              "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Views\\DonHang\\DonHang.cshtml",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\DonHang\\DonHang.cshtml",
+              "RelativeToolTip": "yourlook\\Areas\\Admin\\Views\\DonHang\\DonHang.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAFkAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-08T16:03:24.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "YourlookContext.cs",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\Data\\Models\\YourlookContext.cs",
+              "RelativeDocumentMoniker": "Data\\Models\\YourlookContext.cs",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\Data\\Models\\YourlookContext.cs",
+              "RelativeToolTip": "Data\\Models\\YourlookContext.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAiwDcAAABQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T16:10:51.194Z",
+              "WhenOpened": "2024-07-10T08:40:30.185Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
+              "Title": "ShoppingCartController.cs",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Controllers\\ShoppingCartController.cs",
+              "RelativeDocumentMoniker": "yourlook\\Controllers\\ShoppingCartController.cs",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Controllers\\ShoppingCartController.cs",
+              "RelativeToolTip": "yourlook\\Controllers\\ShoppingCartController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T10:55:45.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ViewShoppingCartItem.cs",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Models\\ViewShoppingCartItem.cs",
+              "RelativeDocumentMoniker": "yourlook\\Models\\ViewShoppingCartItem.cs",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Models\\ViewShoppingCartItem.cs",
+              "RelativeToolTip": "yourlook\\Models\\ViewShoppingCartItem.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAUwFEAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-22T11:01:05.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ChiTietDonHang.cshtml",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\DonHang\\ChiTietDonHang.cshtml",
+              "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Views\\DonHang\\ChiTietDonHang.cshtml",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\DonHang\\ChiTietDonHang.cshtml",
+              "RelativeToolTip": "yourlook\\Areas\\Admin\\Views\\DonHang\\ChiTietDonHang.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACkAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-09T08:32:46.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "ViewCheckOutItem.cs",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Models\\ViewCheckOutItem.cs",
               "RelativeDocumentMoniker": "yourlook\\Models\\ViewCheckOutItem.cs",
@@ -447,12 +561,155 @@
               "RelativeToolTip": "yourlook\\Models\\ViewCheckOutItem.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T09:26:51.17Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-21T09:26:51.17Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "yourlook\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "yourlook\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAC0BAAAAAAAAAAAAAB0AAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-16T13:13:46.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\ShoppingCart\\Index.cshtml",
+              "RelativeDocumentMoniker": "yourlook\\Views\\ShoppingCart\\Index.cshtml",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\ShoppingCart\\Index.cshtml",
+              "RelativeToolTip": "yourlook\\Views\\ShoppingCart\\Index.cshtml",
+              "ViewState": "AQIAAKAAAAAAAAAAAAAAALwAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-17T14:58:09.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Order.cshtml",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\ShoppingCart\\Order.cshtml",
+              "RelativeDocumentMoniker": "yourlook\\Views\\ShoppingCart\\Order.cshtml",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\ShoppingCart\\Order.cshtml",
+              "RelativeToolTip": "yourlook\\Views\\ShoppingCart\\Order.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-17T14:56:35.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "swich.js",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\swich.js",
+              "RelativeDocumentMoniker": "yourlook\\wwwroot\\js\\swich.js",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\swich.js",
+              "RelativeToolTip": "yourlook\\wwwroot\\js\\swich.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAA+wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-07-16T13:09:10.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DanhMuc.cshtml",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\DanhMuc\\DanhMuc.cshtml",
+              "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Views\\DanhMuc\\DanhMuc.cshtml",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\DanhMuc\\DanhMuc.cshtml",
+              "RelativeToolTip": "yourlook\\Areas\\Admin\\Views\\DanhMuc\\DanhMuc.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAADQAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-14T18:20:51.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "SuaSanPham.cshtml",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\SanPham\\SuaSanPham.cshtml",
+              "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Views\\SanPham\\SuaSanPham.cshtml",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\SanPham\\SuaSanPham.cshtml",
+              "RelativeToolTip": "yourlook\\Areas\\Admin\\Views\\SanPham\\SuaSanPham.cshtml",
+              "ViewState": "AQIAAIIAAAAAAAAAAAAQwBsAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-21T12:01:54.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "DanhMucController.cs",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Controllers\\DanhMucController.cs",
+              "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Controllers\\DanhMucController.cs",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Controllers\\DanhMucController.cs",
+              "RelativeToolTip": "yourlook\\Areas\\Admin\\Controllers\\DanhMucController.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAA8wA8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T16:51:05.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "SuaDanhMuc.cshtml",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\DanhMuc\\SuaDanhMuc.cshtml",
+              "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Views\\DanhMuc\\SuaDanhMuc.cshtml",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\DanhMuc\\SuaDanhMuc.cshtml",
+              "RelativeToolTip": "yourlook\\Areas\\Admin\\Views\\DanhMuc\\SuaDanhMuc.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-21T16:30:49.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "DonHangController.cs",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Controllers\\DonHangController.cs",
+              "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Controllers\\DonHangController.cs",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Controllers\\DonHangController.cs",
+              "RelativeToolTip": "yourlook\\Areas\\Admin\\Controllers\\DonHangController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAA9wC0AAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T16:06:53.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "cssAdmin.css",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\cssAdmin.css",
+              "RelativeDocumentMoniker": "yourlook\\wwwroot\\css\\cssAdmin.css",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\cssAdmin.css",
+              "RelativeToolTip": "yourlook\\wwwroot\\css\\cssAdmin.css",
+              "ViewState": "AQIAAGcCAAAAAAAAAAAAAIcCAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-21T17:01:02.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "SanPham.cshtml",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\SanPham\\SanPham.cshtml",
+              "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Views\\SanPham\\SanPham.cshtml",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\SanPham\\SanPham.cshtml",
+              "RelativeToolTip": "yourlook\\Areas\\Admin\\Views\\SanPham\\SanPham.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADAAAABbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-21T10:07:14.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "HomeAdminController.cs",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Controllers\\HomeAdminController.cs",
+              "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Controllers\\HomeAdminController.cs",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Controllers\\HomeAdminController.cs",
+              "RelativeToolTip": "yourlook\\Areas\\Admin\\Controllers\\HomeAdminController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T16:10:51.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "yourlook\\Models\\ErrorViewModel.cs",
@@ -460,37 +717,11 @@
               "RelativeToolTip": "yourlook\\Models\\ErrorViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-21T09:26:50.3Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-21T09:26:50.3Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ShoppingCartController.cs",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Controllers\\ShoppingCartController.cs",
-              "RelativeDocumentMoniker": "yourlook\\Controllers\\ShoppingCartController.cs",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Controllers\\ShoppingCartController.cs",
-              "RelativeToolTip": "yourlook\\Controllers\\ShoppingCartController.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAEwMUAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-07T10:55:45.627Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AccessController.cs",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Controllers\\AccessController.cs",
-              "RelativeDocumentMoniker": "yourlook\\Controllers\\AccessController.cs",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Controllers\\AccessController.cs",
-              "RelativeToolTip": "yourlook\\Controllers\\AccessController.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAYwC8AAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-18T08:37:50.189Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 36,
               "Title": "Register.cshtml",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Access\\Register.cshtml",
               "RelativeDocumentMoniker": "yourlook\\Views\\Access\\Register.cshtml",
@@ -502,31 +733,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Order.cshtml",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\ShoppingCart\\Order.cshtml",
-              "RelativeDocumentMoniker": "yourlook\\Views\\ShoppingCart\\Order.cshtml",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\ShoppingCart\\Order.cshtml",
-              "RelativeToolTip": "yourlook\\Views\\ShoppingCart\\Order.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-17T14:56:35.084Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\ShoppingCart\\Index.cshtml",
-              "RelativeDocumentMoniker": "yourlook\\Views\\ShoppingCart\\Index.cshtml",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\ShoppingCart\\Index.cshtml",
-              "RelativeToolTip": "yourlook\\Views\\ShoppingCart\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAG4AAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-17T14:58:09.205Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 39,
               "Title": "categories_styles.css",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\categories_styles.css",
               "RelativeDocumentMoniker": "yourlook\\wwwroot\\css\\categories_styles.css",
@@ -538,7 +745,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 38,
               "Title": "DbKhachHang.cs",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\Data\\Models\\DbKhachHang.cs",
               "RelativeDocumentMoniker": "Data\\Models\\DbKhachHang.cs",
@@ -550,31 +757,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "swich.js",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\swich.js",
-              "RelativeDocumentMoniker": "yourlook\\wwwroot\\js\\swich.js",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\swich.js",
-              "RelativeToolTip": "yourlook\\wwwroot\\js\\swich.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-07-16T13:09:10.221Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "yourlook\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "yourlook\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAJEAAAAAAAAAAAAAAKcAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-15T10:54:21.664Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 40,
               "Title": "KeyWord.cshtml",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\KeyWord.cshtml",
               "RelativeDocumentMoniker": "yourlook\\Views\\Home\\KeyWord.cshtml",
@@ -586,43 +769,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "ProductCategory.cshtml",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\ProductCategory.cshtml",
-              "RelativeDocumentMoniker": "yourlook\\Views\\Home\\ProductCategory.cshtml",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\ProductCategory.cshtml",
-              "RelativeToolTip": "yourlook\\Views\\Home\\ProductCategory.cshtml",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAADAAAABbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-16T11:29:50.387Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "_LayoutCate.cshtml",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Shared\\_LayoutCate.cshtml",
-              "RelativeDocumentMoniker": "yourlook\\Views\\Shared\\_LayoutCate.cshtml",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Shared\\_LayoutCate.cshtml",
-              "RelativeToolTip": "yourlook\\Views\\Shared\\_LayoutCate.cshtml",
-              "ViewState": "AQIAAJMAAAAAAAAAAAAAAKsAAABlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-09T15:54:19.944Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "addtocart.js",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\addtocart.js",
-              "RelativeDocumentMoniker": "yourlook\\wwwroot\\js\\addtocart.js",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\addtocart.js",
-              "RelativeToolTip": "yourlook\\wwwroot\\js\\addtocart.js",
-              "ViewState": "AQIAACsAAAAAAAAAAAAkwJMAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-07-08T14:14:22.074Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 41,
               "Title": "btnquantity.js",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\btnquantity.js",
               "RelativeDocumentMoniker": "yourlook\\wwwroot\\js\\btnquantity.js",
@@ -634,7 +781,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 42,
               "Title": "AdsController.cs",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Controllers\\AdsController.cs",
               "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Controllers\\AdsController.cs",
@@ -646,7 +793,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 43,
               "Title": "TaoAds.cshtml",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\Ads\\TaoAds.cshtml",
               "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Views\\Ads\\TaoAds.cshtml",
@@ -658,7 +805,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 44,
               "Title": "DbAdd.cs",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\Data\\Models\\DbAdd.cs",
               "RelativeDocumentMoniker": "Data\\Models\\DbAdd.cs",
@@ -670,31 +817,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "HotProduct.cshtml",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\HotProduct.cshtml",
-              "RelativeDocumentMoniker": "yourlook\\Views\\Home\\HotProduct.cshtml",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\HotProduct.cshtml",
-              "RelativeToolTip": "yourlook\\Views\\Home\\HotProduct.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-10T11:42:23.355Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "YourlookContext.cs",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\Data\\Models\\YourlookContext.cs",
-              "RelativeDocumentMoniker": "Data\\Models\\YourlookContext.cs",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\Data\\Models\\YourlookContext.cs",
-              "RelativeToolTip": "Data\\Models\\YourlookContext.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAYwDYAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T08:40:30.185Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 45,
               "Title": "KhachHang.cshtml",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\Khachhang\\KhachHang.cshtml",
               "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Views\\Khachhang\\KhachHang.cshtml",
@@ -706,7 +829,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 46,
               "Title": "PayOrderSuccess.cshtml",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\ShoppingCart\\PayOrderSuccess.cshtml",
               "RelativeDocumentMoniker": "yourlook\\Views\\ShoppingCart\\PayOrderSuccess.cshtml",
@@ -718,7 +841,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 47,
               "Title": "Group.cshtml",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\Group\\Group.cshtml",
               "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Views\\Group\\Group.cshtml",
@@ -730,7 +853,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 48,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\HomeAdmin\\Index.cshtml",
               "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Views\\HomeAdmin\\Index.cshtml",
@@ -742,7 +865,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 49,
               "Title": "DbTransaction.cs",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\Data\\Models\\DbTransaction.cs",
               "RelativeDocumentMoniker": "Data\\Models\\DbTransaction.cs",
@@ -754,7 +877,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 53,
               "Title": "ViewSPHot.cs",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\ViewMenukid\\ViewSPHot.cs",
               "RelativeDocumentMoniker": "yourlook\\ViewMenukid\\ViewSPHot.cs",
@@ -766,19 +889,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "ProductDetail.cshtml",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\ProductDetail.cshtml",
-              "RelativeDocumentMoniker": "yourlook\\Views\\Home\\ProductDetail.cshtml",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\ProductDetail.cshtml",
-              "RelativeToolTip": "yourlook\\Views\\Home\\ProductDetail.cshtml",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAAD4AAABhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-10T10:30:53.339Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 52,
               "Title": "ThongKe.cs",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\Data\\Models\\ThongKe.cs",
               "RelativeDocumentMoniker": "Data\\Models\\ThongKe.cs",
@@ -790,7 +901,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 51,
               "Title": "RoleController.cs",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Controllers\\RoleController.cs",
               "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Controllers\\RoleController.cs",
@@ -802,7 +913,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 50,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\Role\\Index.cshtml",
               "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Views\\Role\\Index.cshtml",
@@ -814,19 +925,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "NewProduct.cshtml",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\NewProduct.cshtml",
-              "RelativeDocumentMoniker": "yourlook\\Views\\Home\\NewProduct.cshtml",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\NewProduct.cshtml",
-              "RelativeToolTip": "yourlook\\Views\\Home\\NewProduct.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-10T15:33:40.049Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 54,
               "Title": "20240710102930_sql10.7.cs",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\Data\\Migrations\\20240710102930_sql10.7.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20240710102930_sql10.7.cs",
@@ -838,7 +937,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 55,
               "Title": "SessionExtensions.cs",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Extension\\SessionExtensions.cs",
               "RelativeDocumentMoniker": "yourlook\\Extension\\SessionExtensions.cs",
@@ -850,7 +949,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 56,
               "Title": "TaoNhom.cshtml",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\Group\\TaoNhom.cshtml",
               "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Views\\Group\\TaoNhom.cshtml",
@@ -862,7 +961,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 57,
               "Title": "DbChiTietDonHang.cs",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\Data\\Models\\DbChiTietDonHang.cs",
               "RelativeDocumentMoniker": "Data\\Models\\DbChiTietDonHang.cs",

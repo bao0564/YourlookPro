@@ -9,6 +9,8 @@ namespace Data.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int MaDh { get; set; }
+        public int MaKh { get; set; }
+        public string EmailKh {  get; set; }
         public string? TenKh { get; set; }
         public string? Sdt { get; set; }
         public string? City {  get; set; }
@@ -25,7 +27,7 @@ namespace Data.Models
         public bool Complete { get; set; }
         public virtual ICollection<DbChiTietDonHang> DbChiTietDonHangs { get; set; } = new List<DbChiTietDonHang>();
 
-        //public virtual DbKhachHang? MaKhNavigation { get; set; }
+        public virtual DbKhachHang? MaKhNavigation { get; set; }
 
         public virtual DbPayment? Payment { get; set; }
     }

@@ -164,6 +164,41 @@
                 </div>
             </div>
         </div>
+        <div id="form-yc-login" class="form-login">
+            <div class="fa-login" id="fa-login" style="z-index:10">
+                <div class="creen-login">
+                    <div class="box-login box" style="width:700px">
+                        <span class="close-login" onclick="ClLable()">✕</span>
+                        <div class="login-left" style="background-color:#2f3640;border-radius:10px">
+                            <div style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
+                                <form action="" id="dangnhap">
+                                    <div class="title">
+                                        <p class="login">Đăng Nhập</p>
+                                    </div>
+                                    <div class="sm-title" style="color:#fff">
+                                        Bạn chưa đăng nhập, hãy đăng nhập tại đây!
+                                    </div>
+                                    <div class="btn-swich btn">
+                                        <a href="@Url.Action("Login","Access")" style="display:flex;align-items:center;background-color:#000;border-radius:5px"><p>Đăng Nhập</p></a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="login-right">
+                            <div style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
+                                <img src="/logo/login.png" alt="" />
+                                <div class="sm-title">
+                                    Bạn chưa có tài khoản.Hãy tạo ở đây!
+                                </div>
+                                <div class="btn-swich btn">
+                                    <a href="@Url.Action("Register","Access")" style="display:flex;align-items:center;background-color:#000;border-radius:5px"><p>Đăng Ký Tài Khoản</p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="box-pay-all">
             <div class="box-cart">
                 <div style="display:flex;align-items:center;height:50px">
@@ -181,7 +216,14 @@
                             </div>
                         </div>
                         <div style="width:30%">
-                            <button class="pay-btn">Đặt Hàng</button>
+                            @if(Context.Session.GetString("user") !=null)
+                            {
+                                <button class="pay-btn">Đặt Hàng</button>
+                            }
+                            else
+                            {
+                                <button id="pay-btn-none" class="pay-btn-none" onclick="OpLable()">Đặt Hàng</button>
+                            }
                         </div>
                     </div>
                 </div>
@@ -198,5 +240,14 @@
             background-color:#2f3640;
         }
     </style>
+    <script>
+        function OpLable(){
+            document.getElementById("form-yc-login").style.display = "block";
+            document.getElementById("form-register").style.display = "none";
+        }
+        function ClLable() {
+            document.getElementById("form-yc-login").style.display = "none";
+        }
+    </script>
 }
 <script src="../js/addtocart.js"></script>

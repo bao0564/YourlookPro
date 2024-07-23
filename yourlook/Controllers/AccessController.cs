@@ -1,4 +1,5 @@
 ﻿using Data.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -22,12 +23,13 @@ namespace yourlook.Controllers
         [HttpPost]
         public IActionResult Login(DbKhachHang user) 
         {
-            if (HttpContext.Session.GetString("user") == null)
+            if (HttpContext.Session.GetString("user") == null && HttpContext.Session.GetInt32("userid") ==null)
             { 
                 var i=db.DbKhachHangs.Where(x=>x.Email.Equals(user.Email) && x.Passwords.Equals(user.Passwords)).FirstOrDefault();
                 if (i !=null)
                 {
                     HttpContext.Session.SetString("user",i.Email.ToString());
+                    HttpContext.Session.SetInt32("userid",i.MaKh);
                     return RedirectToAction("Index", "Home");
                 }
                 else
@@ -45,7 +47,7 @@ namespace yourlook.Controllers
         [HttpPost]
         public IActionResult Register(DbKhachHang user )
         {
-            if (ModelState.IsValid) 
+            if (ModelState.IsValid)  
             { 
                 var emailexit=db.DbKhachHangs.FirstOrDefault(x=>x.Email == user.Email);
                 if (emailexit != null) 

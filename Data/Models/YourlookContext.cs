@@ -53,6 +53,7 @@ namespace Data.Models
         public virtual DbSet<DbTransaction> DbTransactions { get; set; }
 
         public virtual DbSet<DbPayment> Payments { get; set; }
+        public virtual DbSet<DbFavoriteProduct> DbFavoriteProducts { get; set; }
 		public virtual DbSet<ThongKe> ThongKes { get; set; }
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

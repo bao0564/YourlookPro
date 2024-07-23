@@ -15,13 +15,23 @@
 			<div class="product_image">
                 <a asp-controller="Home" asp-action="ProductDetail" asp-route-masp="@prd.MaSp"><img src="@Url.Content("/img/"+prd.AnhSp)" alt=""></a>
             </div>
-			<div class="favorite favorite_left"></div>
+            <div class="favorite favorite_left" onclick="addToFavorites('@prd.MaSp')"></div>
 			@* <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span></span></div> *@
-			<div class="product_info">
-				<h6 class="product_name"><a asp-controller="Home" asp-action="ProductDetail" asp-route-masp="@prd.MaSp">@prd.TenSp</a></h6>
-				<div class="product_price">@string.Format("{0:N0}", prd.PriceMax)<span>@string.Format("{0:N0}", prd.PriceMin)</span></div>
-			</div>
-		</div>
+            @if (prd.PriceMin != prd.PriceMax)
+            {
+                <div class="product_info">
+                    <h6 class="product_name"><a asp-controller="Home" asp-action="ProductDetail" asp-route-masp="@prd.MaSp">@prd.TenSp</a></h6>
+                    <div class="product_price">@string.Format("{0:N0}", prd.PriceMin)<span>@string.Format("{0:N0}", prd.PriceMax)</span></div>
+                </div>
+            }
+            else
+            {
+                <div class="product_info">
+                    <h6 class="product_name"><a asp-controller="Home" asp-action="ProductDetail" asp-route-masp="@prd.MaSp">@prd.TenSp</a></h6>
+                    <div class="product_price">@string.Format("{0:N0}", prd.PriceMax)</div>
+                </div>
+            }
+        </div>
         <div class="red_button add_to_cart_button"><a class="btnAddToCart" data-id="@prd.MaSp" asp-action="Add" asp-controller="ShoppingCart" asp-route-Id="@prd.MaSp">Thêm Vào Giỏ Hàng</a></div>
     </div>
 }

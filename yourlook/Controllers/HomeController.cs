@@ -1,5 +1,6 @@
 ﻿using Data.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 using X.PagedList;
@@ -11,34 +12,43 @@ namespace yourlook.Controllers
     public class HomeController : Controller
     {
         YourlookContext db=new YourlookContext();
-
+		//trang chủ 
         public IActionResult Index()
         {
 			var email = HttpContext.Session.GetString("user");
 			if(email != null)
 			{
-				var user= GetKhachHang(email);
+				var user= GetEmailKhachHang(email);
 				ViewBag.TenKH=user.TenKh;
 			}
             return View();
 		}
-			private DbKhachHang GetKhachHang(string email)
+			private DbKhachHang GetEmailKhachHang(string email)
 			{
 				using (var db = new YourlookContext())
 				{
 					return db.DbKhachHangs.FirstOrDefault(x => x.Email==email);
 				}
 			}
-        public IActionResult UserDetail()
+			private DbKhachHang GetIdKhachHang(int id)
+			{
+				using (var db = new YourlookContext())
+				{
+					return db.DbKhachHangs.FirstOrDefault(x => x.MaKh == id);
+				}
+			}
+		//thông tin tài khoản 
+		public IActionResult UserDetail()
         {
             var email = HttpContext.Session.GetString("user");
             if (email != null)
             {
-                var user = GetKhachHang(email);
+                var user = GetEmailKhachHang(email);
 				return View(user);
             }
             return View();
         }
+		//tìm từ khóa
         public IActionResult KeyWord(int? page,string word)
 		{
             int pageSize = 25;
@@ -46,6 +56,33 @@ namespace yourlook.Controllers
             var lst = db.DbSanPhams.AsNoTracking().Where(x => x.TenSp.Contains(word)).OrderBy(x => x.CreateDate).ToList();
             PagedList<DbSanPham> lstsp = new PagedList<DbSanPham>(lst, pageNumber, pageSize);
             return View(lstsp);
+		}
+		//sản phẩm yêu thích
+		[HttpGet]		
+		public IActionResult FavoriteProduct()
+		{
+			return View();
+		}
+
+        [HttpPost]		
+		public IActionResult FavoriteProduct(int masp)
+		{
+			var idkh = HttpContext.Session.GetInt32("userid");
+
+            if (idkh !=null)
+			{
+				var user = GetIdKhachHang(idkh.Value);
+				var FavoritePrd = new DbFavoriteProduct
+				{
+					MaKh = idkh.Value,
+					MaSp = masp,
+					CreatDate = DateTime.Now
+				};
+				db.DbFavoriteProducts.Add(FavoritePrd);
+				db.SaveChanges();
+				return Json(new {success =true});
+			}
+			return Json(new { success = false });
 		}
 		public IActionResult AllProduct(int? page)
 		{

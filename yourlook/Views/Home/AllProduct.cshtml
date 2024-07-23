@@ -5,12 +5,12 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @model X.PagedList.IPagedList<DbSanPham>
-<div class="list-ad mar150_container">
+<div class="list-ad mar150_container" ">
 	<div class="img-ad" style="padding: 0">
-		<img src="/logo/ad-3.jpeg+" style="background-color: #2f3640" alt="" />
+		<img src="/logo/hot-product.png" style="background-color: #2f3640" alt="" />
 	</div>
 </div>
-<div class="">
+<div class="" style="margin:0 10%">
 	<div class="row">
 		<div class="col">
 			<div class="product-grid">
@@ -30,7 +30,7 @@
 								<div class="product_image">
                                     <a asp-controller="Home" asp-action="ProductDetail" asp-route-masp="@prd.MaSp"><img src="@Url.Content("/img/"+prd.AnhSp)" alt=""></a>
 								</div>
-								<div class="favorite favorite_left" style="font-size:20px">@prd.SaoDanhGia</div>
+								<div class="favorite favorite_left" onclick="addToFavorites('@prd.MaSp')" style="font-size:20px"></div>
 								<div class="product_info">
 									<h6 class="product_name">
 										<a asp-controller="Home" asp-action="ProductDetail" asp-route-masp="@prd.MaSp">@prd.TenSp</a>
@@ -39,7 +39,7 @@
 								</div>
 							</div>
 							<div class="red_button add_to_cart_button">
-								<a class="btnAddToCart" data-id="@prd.MaSp">Thêm Vào Giỏ Hàng</a>
+								<a class="btnAddToCart" style="color:#fff" data-id="@prd.MaSp">Thêm Vào Giỏ Hàng</a>
 							</div>
 						</div>
 					}			

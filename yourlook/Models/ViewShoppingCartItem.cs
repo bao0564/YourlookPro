@@ -77,6 +77,8 @@ namespace yourlook.Models
         //lưu thông tin địa chỉ của khách hàng
     public class OrderInforItem
     {
+        public int MaKh {  get; set; }
+        public string EmailKh { get; set; }
         public string? TenKh { get; set; }
         public string? Sdt { get; set; }
         public string? City { get; set; }

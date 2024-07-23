@@ -301,17 +301,24 @@ namespace Data.Migrations
                     b.Property<DateTime?>("CreateDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("DbKhachHangMaKh")
-                        .HasColumnType("int");
-
                     b.Property<string>("DiaChi")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("District")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("EmailKh")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("GhiChu")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("MaKh")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("MaKhNavigationMaKh")
+                        .HasColumnType("int");
 
                     b.Property<string>("ModifiedBy")
                         .HasColumnType("nvarchar(max)");
@@ -348,11 +355,43 @@ namespace Data.Migrations
 
                     b.HasKey("MaDh");
 
-                    b.HasIndex("DbKhachHangMaKh");
+                    b.HasIndex("MaKhNavigationMaKh");
 
                     b.HasIndex("PaymentId");
 
                     b.ToTable("DbDonHang");
+                });
+
+            modelBuilder.Entity("Data.Models.DbFavoriteProduct", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+
+                    b.Property<DateTime>("CreatDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("KhachhangMaKh")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MaKh")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MaSp")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("SanphamMaSp")
+                        .HasColumnType("int");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("KhachhangMaKh");
+
+                    b.HasIndex("SanphamMaSp");
+
+                    b.ToTable("DbFavoriteProduct");
                 });
 
             modelBuilder.Entity("Data.Models.DbGroup", b =>
@@ -582,6 +621,9 @@ namespace Data.Migrations
                     b.Property<bool>("IActive")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("IFavorite")
+                        .HasColumnType("bit");
+
                     b.Property<bool>("IFeature")
                         .HasColumnType("bit");
 
@@ -754,15 +796,32 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Data.Models.DbDonHang", b =>
                 {
-                    b.HasOne("Data.Models.DbKhachHang", null)
+                    b.HasOne("Data.Models.DbKhachHang", "MaKhNavigation")
                         .WithMany("DbDonHangs")
-                        .HasForeignKey("DbKhachHangMaKh");
+                        .HasForeignKey("MaKhNavigationMaKh");
 
                     b.HasOne("Data.Models.DbPayment", "Payment")
                         .WithMany("DbDonHangs")
                         .HasForeignKey("PaymentId");
 
+                    b.Navigation("MaKhNavigation");
+
                     b.Navigation("Payment");
+                });
+
+            modelBuilder.Entity("Data.Models.DbFavoriteProduct", b =>
+                {
+                    b.HasOne("Data.Models.DbKhachHang", "Khachhang")
+                        .WithMany()
+                        .HasForeignKey("KhachhangMaKh");
+
+                    b.HasOne("Data.Models.DbSanPham", "Sanpham")
+                        .WithMany()
+                        .HasForeignKey("SanphamMaSp");
+
+                    b.Navigation("Khachhang");
+
+                    b.Navigation("Sanpham");
                 });
 
             modelBuilder.Entity("Data.Models.DbImg", b =>

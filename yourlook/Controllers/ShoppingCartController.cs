@@ -114,9 +114,12 @@ namespace yourlook.Controllers
                 var orderInfor = HttpContext.Session.GetJson<OrderInforItem>("OrderInfo");
                 var tongtien=selectedItems.Sum(x=>x.ProductPrice);
                 var tongsoluong=selectedItems.Sum(x=>x.ProductQuantity);
-                
+                var emailkh = HttpContext.Session.GetString("user");
+                var idkh = HttpContext.Session.GetInt32("userid");
                 var order = new DbDonHang
                 {
+                    MaKh = idkh.Value,
+                    EmailKh = emailkh,
                     TenKh = orderInfor.TenKh,
                     Sdt = orderInfor.Sdt,
                     City = orderInfor.City,
@@ -125,10 +128,11 @@ namespace yourlook.Controllers
                     DiaChi = orderInfor.DiaChi,
                     PaymentId = orderInfor.PaymentId,
                     GhiChu = orderInfor.GhiChu,
-                    TongTien= tongtien,
-                    soluong=tongsoluong,
-                    CreateDate=DateTime.Now
+                    TongTien = tongtien,
+                    soluong = tongsoluong,
+                    CreateDate = DateTime.Now
                 };
+                
                 db.DbDonHangs.Add(order);
                 db.SaveChanges();
                 foreach (var item in selectedItems)
