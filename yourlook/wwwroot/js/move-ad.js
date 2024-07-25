@@ -28,4 +28,4 @@
  });
  document.addEventListener("DOMContentLoaded", updateSliderImg); // Initial position
  document.querySelector(".next").addEventListener("click", nextSlideImg);
- document.querySelector(".back").addEventListener("click", backSlideImg);
+document.querySelector(".back").addEventListener("click", backSlideImg);

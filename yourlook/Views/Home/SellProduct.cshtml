@@ -30,7 +30,16 @@
 								<div class="product_image">
                                     <a asp-controller="Home" asp-action="ProductDetail" asp-route-masp="@prd.MaSp"><img src="@Url.Content("/img/"+ prd.AnhSp)" alt=""></a>
 								</div>
-								<div class="favorite favorite_left" onclick="addToFavorites('@prd.MaSp')"></div>
+								<div class="favorite" data-id="@prd.MaSp" style="font-size:20px">
+									@if (prd.IFavorite == true)
+									{
+										<i class="fa-solid fa-heart" style="color: #2f3640;"></i>
+									}
+									else
+									{
+										<i class="fa-regular fa-heart" style="color: #2f3640;"></i>
+									}
+								</div>
 								<div class="product_info">
 									<h6 class="product_name"><a asp-controller="Home" asp-action="ProductDetail" asp-route-masp="@prd.MaSp">@prd.TenSp</a></h6>
 									<div class="product_price">@string.Format("{0:N0}", prd.PriceMax)<span>@string.Format("{0:N0}", prd.PriceMin)</span></div>

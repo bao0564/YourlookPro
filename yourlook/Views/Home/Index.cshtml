@@ -281,21 +281,37 @@
 		</div>
 		<div class="row">			
 			<div class="col" id="prd-hot">
-				<div class="product-grid" data-isotope='{ "itemSelector": ".product-item", "layoutMode": "fitRows" }'>
-                    <div>
+				<div class="prd-grid" style="">
+					<div class="productContainer" id="productContainer">
                         @await Component.InvokeAsync("ViewSPHot")
 					</div>
 				</div>
+				<button onclick="prevProducts()" class="btn btn-primary" style="position:absolute;top:40%;">
+					<i class="fa-solid fa-angle-left fa-xl"
+					   style="color: #000000"></i>
+				</button>
+				<button onclick="nextProducts()" class="btn btn-primary" style="position:absolute;top:40%; right:10px">
+					<i class="fa-solid fa-angle-right fa-xl"
+					   style="color: #0d0d0d"></i>
+				</button>
 				<div class="prd-btn">
 					<button class="btn prd-next"><a href="@Url.Action("HotProduct","Home")">Xem Thêm<i class="fa-solid fa-angle-right" style="color: #000000;"></i></a></button>
 				</div>
             </div>
 			<div class="col" id="prd-new">
-                <div class="product-grid" data-isotope='{ "itemSelector": ".product-item", "layoutMode": "fitRows" }'>
-                    <div>
+				<div class="prd-grid" style="">
+					<div class="productContainer" id="productContainer">
                         @await Component.InvokeAsync("ViewSPNew")						
                     </div>
-                </div>
+				</div>
+				<button onclick="prevProducts()" class="btn btn-primary" style="position:absolute;top:40%;">
+					<i class="fa-solid fa-angle-left fa-xl"
+					   style="color: #000000"></i>
+				</button>
+				<button onclick="nextProducts()" class="btn btn-primary" style="position:absolute;top:40%; right:10px">
+					<i class="fa-solid fa-angle-right fa-xl"
+					   style="color: #0d0d0d"></i>
+				</button>
                 <div class="prd-btn">
                     <button class="btn prd-next"><a href="@Url.Action("NewProduct","Home")">Xem Thêm<i class="fa-solid fa-angle-right" style="color: #000000;"></i></a></button>
                 </div>
@@ -304,6 +320,7 @@
 		<script src="js/swich.js"></script>
 	</div>
 </div>
+
 <!-- Sản phẩm quần dài -->
 <section class="ad-type" style="margin-top: 30px;">
 	<img style="width:100%" src="logo/ad-6.png" alt="" />
@@ -319,8 +336,8 @@
 		</div>
 		<div class="row">
 			<div class="col">
-				<div class="product-grid" data-isotope='{ "itemSelector": ".product-item", "layoutMode": "fitRows" }'>
-					<div>
+				<div class="prd-grid" style="">
+					<div class="productContainer" id="productContainer">
 						@await Component.InvokeAsync("ViewPage1")
 					</div>
 				</div>
@@ -347,8 +364,8 @@
 		</div>
 		<div class="row">
 			<div class="col">
-				<div class="product-grid" data-isotope='{ "itemSelector": ".product-item", "layoutMode": "fitRows" }'>
-					<div>
+				<div class="prd-grid" style="">
+					<div class="productContainer" id="productContainer">
 						@await Component.InvokeAsync("ViewPage2")
 					</div>
 				</div>
@@ -375,8 +392,8 @@
 		</div>
 		<div class="row">
 			<div class="col">
-				<div class="product-grid" data-isotope='{ "itemSelector": ".product-item", "layoutMode": "fitRows" }'>
-					<div>
+				<div class="prd-grid" style="">
+					<div class="productContainer" id="productContainer">
 						@await Component.InvokeAsync("ViewPage3")
 					</div>
 				</div>
@@ -403,8 +420,8 @@
 		</div>
 		<div class="row">
 			<div class="col">
-				<div class="product-grid" data-isotope='{ "itemSelector": ".product-item", "layoutMode": "fitRows" }'>
-					<div>
+				<div class="prd-grid" style="">
+					<div class="productContainer" id="productContainer">
 						@await Component.InvokeAsync("ViewPage4")
 					</div>
 				</div>
@@ -567,3 +584,6 @@
 		</div>
 	</div>
 </div>
+<script src="../js/product-move.js"></script>
+@section scripts{
+}

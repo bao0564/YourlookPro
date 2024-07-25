@@ -85,12 +85,9 @@
 
 @media only screen and (max-width: 991px)
 {
-	h1{font-size: 48px;}
+	/*h1{font-size: 48px;}
 	h2{font-size: 36px;}
-	.top_nav
-	{
-		display: none;
-	}
+	
 	.navbar_menu
 	{
 		display: none;
@@ -174,7 +171,7 @@
 		height: auto;
 		margin-top: 20px;
 		margin-bottom: 65px;
-	}
+	}*/
 }
 
 /************

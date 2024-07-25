@@ -1,18 +1,26 @@
-﻿function addToFavorites(masp){
-    $.ajax({
-        url: '/Home/FavoriteProduct/',
-        type: 'POST',
-        data: { masp: masp },
-        success: function (Response) {
-            if (Response.success) {
-                alert('Sản Phẩm thêm vào yêu thích thành công');
+﻿$(document).ready(function () {
+    $('.favorite').click(function () {
+        var prdid = $(this).data('id');
+        var icon = $(this).find('i');
+        $.ajax({
+            url: '/Home/FavoriteProduct/',
+            type: 'POST',
+            data: { masp: prdid },
+            success: function (response) {
+                if (response.success) {
+                    if (icon.hasClass('fa-regular')) {
+                        icon.removeClass('fa-regular fa-heart').addClass('fa-solid fa-heart'); 
+                    } else {                         
+                        icon.removeClass('fa-solid fa-heart').addClass('fa-regular fa-heart');  
+                    }
+                    alert(response.message);
+                }else {
+                    alert(response.message);
+                }
+            },
+            error: function () {
+                alert('Có lỗi xảy ra khi thêm sản phẩm vào yêu thích.');
             }
-            else {
-                alert('Bạn chưa đăng nhập nên không thể thực hiện thao tác này');
-            }
-        },
-        error: function () {
-            alert('Có lỗi xảy ra khi thêm sản phẩm vào yêu thích.');
-        }
+        });
     });
-}
+});

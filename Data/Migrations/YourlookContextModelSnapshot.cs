@@ -816,7 +816,7 @@ namespace Data.Migrations
                         .HasForeignKey("KhachhangMaKh");
 
                     b.HasOne("Data.Models.DbSanPham", "Sanpham")
-                        .WithMany()
+                        .WithMany("DbFavorites")
                         .HasForeignKey("SanphamMaSp");
 
                     b.Navigation("Khachhang");
@@ -879,6 +879,8 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Data.Models.DbSanPham", b =>
                 {
+                    b.Navigation("DbFavorites");
+
                     b.Navigation("DbImgs");
                 });
 #pragma warning restore 612, 618

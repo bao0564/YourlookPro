@@ -14,9 +14,9 @@ namespace yourlook.ViewMenukid
 		}
 		public IViewComponentResult Invoke(int maSP)
 		{
-			DateTime prdNew = DateTime.Now.AddDays(-30);
+			DateTime prdNew = DateTime.Now.AddDays(-50);
 			var db5SanPhamNew = _spNew.GetAllSanPhamNew().Where(x => x.CreateDate >= prdNew && x.CreateDate <= DateTime.Now)
-				.OrderByDescending(X => X.CreateDate).Take(5);
+				.OrderByDescending(X => X.CreateDate).Take(10);
 			return View(db5SanPhamNew);
 		}
 	}

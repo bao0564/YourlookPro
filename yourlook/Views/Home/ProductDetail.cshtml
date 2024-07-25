@@ -50,8 +50,8 @@
 				<div style="display:flex; padding: 20px;justify-content:space-evenly;border-top:1px solid #2f3640 ">
 					@if (Model.PriceMin != Model.PriceMax)
 					{
-						<div class="flct original_price "><h5>@string.Format("{0:N0}", Model.PriceMin)</h5></div>
-						<div class=" flct product_price"><h3>@string.Format("{0:N0}", Model.PriceMax)</h3></div>
+						<div class="flct original_price "><h5>@string.Format("{0:N0}", Model.PriceMax)</h5></div>
+						<div class=" flct product_price"><h3>@string.Format("{0:N0}", Model.PriceMin)</h3></div>
 					}
 					else
 					{

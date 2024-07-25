@@ -398,7 +398,9 @@ section
 .login-right img {
 	width: 100%;
 }
-
+.btn-primary:hover{
+	background-color:#2f3640;
+}
 .btn-swich {
 	display: flex;
 	justify-content: center;
@@ -636,8 +638,7 @@ section
 3. Home
 *********************************/
 .header {
-	position: fixed;
-	top: 0;
+	position: absolute;
 	left: 0;
 	width: 100%;
 	background: #FFFFFF;
@@ -650,9 +651,7 @@ section
 }
 .top_nav_left
 {
-	height: 50px;
-	padding-left: 10px;
-	line-height: 50px;
+	margin-left:20px;
 	font-size: 13px;
 	color: #b5aec4;
 	text-transform: uppercase;
@@ -675,6 +674,8 @@ section
 }
 .top_nav_menu{
 	display: flex;
+	height:50px;
+	align-items:center;
 }
 /*********************************
 3.1 Currency
@@ -775,7 +776,6 @@ section
 	display: block;
 	color: #000000;
 	font-weight: 400;
-	height: 50px;
 	font-size: 13px;
 }
 .language > a > i
@@ -852,7 +852,6 @@ section
 	display: block;
 	color: #000000;
 	font-weight: 400;
-	height: 50px;
 	font-size: 13px;
 }
 .account > a > i
@@ -928,10 +927,13 @@ section
 .navbar
 {
 	width: auto;
-	height: 100px;
 	float: right;
 	padding-left: 0px;
 	padding-right: 10px;
+}
+.form-search {
+	display: flex;
+	justify-content: center;
 }
 .form-search form{
 	position: relative;
@@ -953,8 +955,12 @@ section
     border: none;
 	background-color: #ffffff00;
 }
-.navbar_menu li
-{
+#searchButton {
+	position: absolute;
+	right: 12%;
+	top: 23%;
+}
+.navbar_menu li {
 	display: inline-block;
 }
 .navbar_menu li a
@@ -1044,7 +1050,6 @@ section
 .hamburger_container
 {
 	display: none;
-	margin-left: 40px;
 }
 .hamburger_container i
 {
@@ -1445,18 +1450,25 @@ section
 5.2 New Arrivals Products Grid
 *********************************/
 
-.product-grid
+.prd-grid 
 {
+	overflow: hidden;
+	position: relative;
+	margin: auto;
 	width: 100%;
-	margin-top: 57px;
 }
-.product-item {
+.productContainer {
+	display: flex;
+	margin: 10px 0;
+	transition: transform 0.5s ease;
+}
+.prd-item {
 	width: 20%;
-	height: 380px;
 	cursor: pointer;
 	padding: 0 10px;
+	position:relative;
 }
-.product-item::after
+.prd-item::after
 {
 	display: block;
 	position: absolute;
@@ -1474,22 +1486,19 @@ section
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
-.product-item:hover::after
+.prd-item:hover::after
 {
 	box-shadow: 0 25px 29px rgba(63, 78, 100, 0.15);
 	border: solid 2px rgba(235,235,235,1);
 }
 .product {
 	width: 100%;
-	height: 340px;
 }
 .product_image {
 	position:relative;
 }
 .product_image img
 {
-	width: 100%;
-	padding:15px;
 }
 .product_info {
 	text-align: center;
@@ -1497,6 +1506,7 @@ section
 	padding-right: 10px;
 	position: absolute;
 	bottom: 0;
+	width: 350px;
 }
 .product_name {
 	margin-top: 27px;
@@ -1615,42 +1625,8 @@ section
 .favorite
 {
 	position: absolute;
-	top: 15px;
-	right: 15px;
-	color: #b9b4c7;
-	width: 17px;
-	height: 17px;
-	visibility: hidden;
-	opacity: 0;
-}
-.favorite_left
-{
-	left: 15px;
-}
-.favorite.active
-{
-	visibility: visible;
-	opacity: 1;
-}
-.product-item:hover .favorite
-{
-	visibility: visible;
-	opacity: 1;
-}
-.favorite.active::after
-{
-	font-family: 'FontAwesome';
-	content:'\f004';
-	color: #fe4c50;
-}
-.favorite::after
-{
-	font-family: 'FontAwesome';
-	content:'\f08a';
-}
-.favorite:hover::after
-{
-	color: #fe4c50;
+	top: 5px;
+	left: 5px;
 }
 
 /*********************************

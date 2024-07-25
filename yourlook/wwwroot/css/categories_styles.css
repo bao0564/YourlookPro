@@ -1,4 +1,4 @@
-@charset "utf-8";
+/*@charset "utf-8";*/
 /* CSS Document */
 
 /******************************
@@ -36,7 +36,7 @@ COLOR PALETTE
 1. Fonts
 ***********/
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900');
+/*@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900');*/
 
 /*********************************
 2. Body and some general stuff
@@ -50,34 +50,34 @@ COLOR PALETTE
 /*********************************
 3.4 Main Navigation
 *********************************/
-.main_content {
+/*.main_content {
 	float: left;
 	width: calc(100% - 200px);
 	padding-left: 34px;
-}
+}*/
 
 /*********************************
 3.5 Hamburger Menu
 *********************************/
-
+/*
 .hamburger_container {
 	display: none;
 	margin-left: 40px;
+}*/
+
+/*.hamburger_container i {
+	font-size: 24px;
+	color: #1e1e27;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
 }
 
-	.hamburger_container i {
-		font-size: 24px;
-		color: #1e1e27;
-		-webkit-transition: all 300ms ease;
-		-moz-transition: all 300ms ease;
-		-ms-transition: all 300ms ease;
-		-o-transition: all 300ms ease;
-		transition: all 300ms ease;
-	}
-
-	.hamburger_container:hover i {
-		color: #b5aec4;
-	}
+.hamburger_container:hover i {
+	color: #b5aec4;
+}
 
 .hamburger_menu {
 	position: fixed;
@@ -216,13 +216,13 @@ COLOR PALETTE
 
 		.menu_selection li:last-child a {
 			border-bottom: none;
-		}
+		}*/
 
 /*********************************
 3.6 Logo
 *********************************/
 
-.logo_container {
+/*.logo_container {
 	position: absolute;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
@@ -247,13 +247,13 @@ COLOR PALETTE
 .shop_now_button {
 	width: 140px;
 	margin-top: 32px;
-}
+}*/
 
 /*********************************
 4. Products
 *********************************/
 
-.products_iso {
+/*.products_iso {
 	width: 100%;
 }
 
@@ -280,7 +280,7 @@ COLOR PALETTE
 		height: 5px;
 		background: #fe4c50;
 		content: '';
-	}
+	}*/
 
 /*********************************
 3.6 Logo
@@ -294,7 +294,7 @@ COLOR PALETTE
 4.1 Product Sorting
 *********************************/
 
-.product_sorting_container_bottom
+/*.product_sorting_container_bottom
 {
 	margin-top: 24px;
 }
@@ -507,13 +507,13 @@ COLOR PALETTE
 	line-height: 40px;
 	float: right;
 	margin-right: 34px;
-}
+}*/
 
 /*********************************
 5. Breadcrumbs
 *********************************/
 
-.breadcrumbs
+/*.breadcrumbs
 {
 	width: 100%;
 	height: 60px;
@@ -536,13 +536,13 @@ COLOR PALETTE
 .breadcrumbs ul li a
 {
 	color: #51545f;
-}
+}*/
 
 /*********************************
 6. Sidebar
 *********************************/
 
-.product_section_container
+/*.product_section_container
 {
 	margin-top: 150px;
 }
@@ -682,7 +682,7 @@ COLOR PALETTE
 .show_more span:first-child
 {
 	margin-right: 11px;
-}
+}*/
 
 /*********************************
 7. Main Content
@@ -692,7 +692,7 @@ COLOR PALETTE
 8. Benefit
 *********************************/
 
-.benefit
+/*.benefit
 {
 	margin-top: 74px;
 }
@@ -739,13 +739,13 @@ COLOR PALETTE
 	line-height: 18px;
 	margin-bottom: 0px;
 	color: #51545f;
-}
+}*/
 
 /*********************************
 9. Newsletter
 *********************************/
 
-.newsletter
+/*.newsletter
 {
 	width: 100%;
 	background: #f2f2f2;
@@ -793,14 +793,14 @@ COLOR PALETTE
 	font-weight: 400;
 	color: #b9b4c7 !important;
 }
-#newsletter_email:-moz-placeholder /* older Firefox*/
-{
+#newsletter_email:-moz-placeholder*/ /* older Firefox*/
+/*{
 	font-size: 14px !important;
 	font-weight: 400;
 	color: #b9b4c7 !important;
 }
-#newsletter_email::-moz-placeholder /* Firefox 19+ */
-{
+#newsletter_email::-moz-placeholder*/ /* Firefox 19+ */
+/*{
 	font-size: 14px !important;
 	font-weight: 400;
 	color: #b9b4c7 !important;
@@ -848,4 +848,4 @@ COLOR PALETTE
 	border: 1px solid;
 	padding: 5px 10px;
 	margin: 0 5px;
-}
+}*/

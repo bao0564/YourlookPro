@@ -1,6 +1,7 @@
 ﻿using Data.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis;
+using Microsoft.DotNet.Scaffolding.Shared.Messaging;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 using X.PagedList;
@@ -68,21 +69,30 @@ namespace yourlook.Controllers
 		public IActionResult FavoriteProduct(int masp)
 		{
 			var idkh = HttpContext.Session.GetInt32("userid");
-
-            if (idkh !=null)
+			if (idkh==null)
 			{
-				var user = GetIdKhachHang(idkh.Value);
-				var FavoritePrd = new DbFavoriteProduct
+				return Json(new { success = false, message = "Hãy đăng nhập để sử dụng thao tác này" });
+			}
+			var user= GetIdKhachHang(idkh.Value);
+			var isFvr = db.DbFavoriteProducts.FirstOrDefault(x => x.MaKh == user.MaKh && x.MaSp == masp);
+			if (isFvr == null) 
+			{
+				isFvr = new DbFavoriteProduct
 				{
-					MaKh = idkh.Value,
 					MaSp = masp,
+					MaKh = user.MaKh,
 					CreatDate = DateTime.Now
 				};
-				db.DbFavoriteProducts.Add(FavoritePrd);
+				db.DbFavoriteProducts.Add(isFvr);
 				db.SaveChanges();
-				return Json(new {success =true});
+				return Json(new { success = true, message = "Đã thêm vào mục yêu thích" });
 			}
-			return Json(new { success = false });
+			else
+			{
+				db.DbFavoriteProducts.Remove(isFvr);
+				db.SaveChanges();
+				return Json(new { success = true, message = "Đã xóa khỏi mục yêu thích" });
+			}
 		}
 		public IActionResult AllProduct(int? page)
 		{
