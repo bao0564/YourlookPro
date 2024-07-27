@@ -286,11 +286,11 @@
                         @await Component.InvokeAsync("ViewSPHot")
 					</div>
 				</div>
-				<button onclick="prevProducts()" class="btn btn-primary" style="position:absolute;top:40%;">
+				<button onclick="prevProducts()" class="btn btn-primary-prev">
 					<i class="fa-solid fa-angle-left fa-xl"
 					   style="color: #000000"></i>
 				</button>
-				<button onclick="nextProducts()" class="btn btn-primary" style="position:absolute;top:40%; right:10px">
+				<button onclick="nextProducts()" class="btn btn-primary-next">
 					<i class="fa-solid fa-angle-right fa-xl"
 					   style="color: #0d0d0d"></i>
 				</button>
@@ -300,15 +300,15 @@
             </div>
 			<div class="col" id="prd-new">
 				<div class="prd-grid" style="">
-					<div class="productContainer" id="productContainer">
+					<div class="productContainer" id="productcontainer">
                         @await Component.InvokeAsync("ViewSPNew")						
                     </div>
 				</div>
-				<button onclick="prevProducts()" class="btn btn-primary" style="position:absolute;top:40%;">
+				<button onclick="prevProductsN()" class="btn btn-primary-prev">
 					<i class="fa-solid fa-angle-left fa-xl"
 					   style="color: #000000"></i>
 				</button>
-				<button onclick="nextProducts()" class="btn btn-primary" style="position:absolute;top:40%; right:10px">
+				<button onclick="nextProductsN()" class="btn btn-primary-next">
 					<i class="fa-solid fa-angle-right fa-xl"
 					   style="color: #0d0d0d"></i>
 				</button>
@@ -585,5 +585,6 @@
 	</div>
 </div>
 <script src="../js/product-move.js"></script>
+<script src="../js/productnew-move.js"></script>
 @section scripts{
 }
