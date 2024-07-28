@@ -2116,6 +2116,10 @@ section
 }
 .footer .none{
 	padding-top: 30px;
+	justify-content:space-around;
+}
+.footer .row{
+	justify-content:space-around;
 }
 .footer h4{
 	color: #000;
@@ -2125,7 +2129,11 @@ section
 	justify-content: center;
 }
 .ft-logo{
-	height:80px;
+	height:auto;
+	margin: 10px;
+}
+.ft-logo img{
+	height: 80px;
 	margin: 10px;
 }
 .ft-logo2{

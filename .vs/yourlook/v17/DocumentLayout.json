@@ -11,12 +11,32 @@
       "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\wwwroot\\css\\categories_responsive.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\wwwroot\\css\\main_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\wwwroot\\css\\main_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\home\\sellproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\home\\sellproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\home\\allproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\home\\allproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\home\\hotproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\home\\hotproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\wwwroot\\css\\categories_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\wwwroot\\css\\categories_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\wwwroot\\css\\single_responsive.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -25,14 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\wwwroot\\css\\single_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\wwwroot\\css\\single_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\wwwroot\\css\\categories_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\wwwroot\\css\\categories_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 735,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Document",
@@ -52,7 +64,7 @@
               "RelativeDocumentMoniker": "yourlook\\wwwroot\\css\\main_styles.css",
               "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\main_styles.css",
               "RelativeToolTip": "yourlook\\wwwroot\\css\\main_styles.css",
-              "ViewState": "AQIAAFgJAAAAAAAAAAAAAGQJAAANAAAA",
+              "ViewState": "AQIAADoIAAAAAAAAAAAawFYIAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-07-24T09:03:10.492Z",
               "IsPinned": true,
@@ -60,28 +72,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "yourlook\\Views\\Home\\Index.cshtml",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "yourlook\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAwCABAABCAAAA",
+              "DocumentIndex": 5,
+              "Title": "SellProduct.cshtml",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\SellProduct.cshtml",
+              "RelativeDocumentMoniker": "yourlook\\Views\\Home\\SellProduct.cshtml",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\SellProduct.cshtml",
+              "RelativeToolTip": "yourlook\\Views\\Home\\SellProduct.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-27T12:57:22.811Z",
+              "WhenOpened": "2024-07-28T16:07:32.944Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "single_responsive.css",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\single_responsive.css",
-              "RelativeDocumentMoniker": "yourlook\\wwwroot\\css\\single_responsive.css",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\single_responsive.css",
-              "RelativeToolTip": "yourlook\\wwwroot\\css\\single_responsive.css",
-              "ViewState": "AQIAABsBAAAAAAAAAAAawCwBAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-27T12:24:01.422Z",
+              "DocumentIndex": 7,
+              "Title": "HotProduct.cshtml",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\HotProduct.cshtml",
+              "RelativeDocumentMoniker": "yourlook\\Views\\Home\\HotProduct.cshtml",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\HotProduct.cshtml",
+              "RelativeToolTip": "yourlook\\Views\\Home\\HotProduct.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-28T16:06:54.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AllProduct.cshtml",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\AllProduct.cshtml",
+              "RelativeDocumentMoniker": "yourlook\\Views\\Home\\AllProduct.cshtml",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\AllProduct.cshtml",
+              "RelativeToolTip": "yourlook\\Views\\Home\\AllProduct.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-28T16:06:28.343Z",
               "EditorCaption": ""
             },
             {
@@ -94,19 +119,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "yourlook\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "yourlook\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACABAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-27T12:57:22.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "single_responsive.css",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\single_responsive.css",
+              "RelativeDocumentMoniker": "yourlook\\wwwroot\\css\\single_responsive.css",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\single_responsive.css",
+              "RelativeToolTip": "yourlook\\wwwroot\\css\\single_responsive.css",
+              "ViewState": "AQIAABsBAAAAAAAAAAAawCwBAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-27T12:24:01.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "yourlook\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "yourlook\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAXAAAA",
+              "ViewState": "AQIAAJkBAAAAAAAAAAAAAK4BAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-25T16:36:07.334Z"
+              "WhenOpened": "2024-07-25T16:36:07.334Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "single_styles.css",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\single_styles.css",
               "RelativeDocumentMoniker": "yourlook\\wwwroot\\css\\single_styles.css",
@@ -114,20 +165,20 @@
               "RelativeToolTip": "yourlook\\wwwroot\\css\\single_styles.css",
               "ViewState": "AQIAADIBAAAAAAAAAAAAAEABAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-25T07:59:31.541Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-25T07:59:31.541Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "categories_styles.css",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\categories_styles.css",
               "RelativeDocumentMoniker": "yourlook\\wwwroot\\css\\categories_styles.css",
               "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\categories_styles.css",
               "RelativeToolTip": "yourlook\\wwwroot\\css\\categories_styles.css",
-              "ViewState": "AQIAADcDAAAAAAAAAAAiwEQDAAAMAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEQDAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-25T07:55:40.425Z"
+              "WhenOpened": "2024-07-25T07:55:40.425Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -137,7 +188,7 @@
               "RelativeDocumentMoniker": "yourlook\\wwwroot\\css\\categories_responsive.css",
               "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\categories_responsive.css",
               "RelativeToolTip": "yourlook\\wwwroot\\css\\categories_responsive.css",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAAADQAAAABAAAA",
+              "ViewState": "AQIAAHwAAAAAAAAAAAAAAJUAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-07-24T18:04:20.794Z",
               "EditorCaption": ""
@@ -150,7 +201,7 @@
               "RelativeDocumentMoniker": "yourlook\\wwwroot\\css\\responsive.css",
               "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\responsive.css",
               "RelativeToolTip": "yourlook\\wwwroot\\css\\responsive.css",
-              "ViewState": "AQIAAEwBAAAAAAAAAAAAwFoBAAACAAAA",
+              "ViewState": "AQIAAHcBAAAAAAAAAAAAAJUBAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-07-24T16:52:16.79Z",
               "EditorCaption": ""

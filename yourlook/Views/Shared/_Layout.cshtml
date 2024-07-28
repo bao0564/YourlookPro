@@ -377,11 +377,11 @@
 			<div class="row">
 				<div class="col-lg-4">
 					<div class="ft-logo">
-						<img class="ft-logo" src="/logo/logo.png" alt="">
+						<img class="" src="/logo/logo.png" alt="">
 						<p class="letter">Luôn sẵn sàng mang đến cho bạn những sản phẩm chất lượng</p>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-3">
 					<div class="cha">
 						<div class="con">
 							<div class="ft-infor">
@@ -520,4 +520,10 @@
 			window.location.href = url;
 		}
 	}
+	$(document).ready(function () {
+		var $grid = $('.product-grid').isotope({
+			itemSelector: '.product-item',
+			layoutMode: 'fitRows' // Bạn có thể thay đổi 'fitRows' thành 'masonry', 'vertical', hoặc 'packery'
+		});
+	});
 </script>
