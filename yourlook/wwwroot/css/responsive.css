@@ -178,6 +178,9 @@
 		left: 10px;
 		font-size: 14px !important;
 	}
+	.sm-title {
+		font-size: 11px;
+	}
 }
 
 /************
@@ -225,8 +228,11 @@
 	.hamburger_menu_content .form-search{
 		display:none;
 	}
-	.footer .col-lg-3{
-		display:none;
+	.footer .col-lg-3 {
+		display: none;
+	}
+	.sm-title{
+		font-size:10px
 	}
 	/*product*/
 
@@ -344,6 +350,9 @@
 	.favorite {
 		left: 20px;
 	}
+	#form-login, #form-register{
+		display:none !important;
+	}
 }
 
 /************
@@ -397,7 +406,7 @@
 		display: none;
 	}
 	.row {
-		flex-wrap: wrap;
+		flex-wrap: nowrap;
 	}
 	.footer .none{
 		display:none;

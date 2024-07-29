@@ -323,7 +323,15 @@ section
 	background-color: #2f3640;
 	color: #ccc;
 }
-
+.box-login-right {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
 .fa-login form {
 	font-family: Verdana;
 	padding: 0 10px;
@@ -397,6 +405,7 @@ section
 
 .login-right img {
 	width: 100%;
+	padding:10px;
 }
 .btn-primary-next:hover,.btn-primary-prev:hover{
 	background-color:#2f3640;
@@ -471,6 +480,8 @@ section
 	background-color: #2f3640;
 	border-radius: 10px;
 	color: #ccc;
+	display:flex;
+	align-items:center;
 }
 
 .fa-register form {
@@ -2549,6 +2560,29 @@ section
 #newsletter_email::input-placeholder {
 	font-size: 12px !important;
 	padding-left: 0px;
+}
+/*phân trang*/
+.pagination {
+	display: flex;
+	justify-content: center;
+}
+
+.pagination li {
+	display:flex;
+	align-items:center;
+	border: 1px solid;
+	margin: 0 5px;
+}
+
+.pagination .active {
+	background-color: #2f3640;
+	padding: 5px 10px;
+	color: #fff;
+}
+
+.pagination li a {
+	padding: 5px 10px;
+	color: black;
 }
 
 .footer_nav_container {

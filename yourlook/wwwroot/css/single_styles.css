@@ -841,7 +841,12 @@
 	background: #FE7C7F;
 }
 
+	.quanti-box, .cart-box {
+		display: flex;
+		align-items: center;
+	}
 /*********************************
+	
 11. Footer
 *********************************/
 

@@ -34,8 +34,8 @@
 			<!-- Top Navigation -->
 
 			<div class="top_nav">
-				<div class="row">
-					<div class="col-md-6">
+				<div class="row" style="justify-content:space-between">
+					<div class="">
 						<div class="top_nav_left">
 							<ul class="top_nav_menu">
 								<li title="Facebook">
@@ -53,7 +53,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-md-6 text-right">
+					<div class=" text-right">
 						<div class="top_nav_right">
 							<ul class="top_nav_menu">
 								@if (Context.Session.GetString("user") != null)
@@ -133,20 +133,18 @@
 			<div class="main_nav_container">
 				<div class="row">
 					<div class="col-lg-12 text-right">
-						<div class="logo_container">
+						<div class="logo_container ">
 							<a href="@Url.Action("Index","Home")">
 								<img class="logo" src="/logo/logo.png" alt="">
 							</a>
 						</div>
 						<nav class="navbar">
-							<div>
-								<div class="form-search" style="display:flex;justify-content:center">
+							<div class="" style="display:flex;flex-direction:column">
+								<div class="form-search" style="">
 									<input style="position:relative" type="text" name="" class="search-text" id="searchKeyword" placeholder="Tìm Kiếm" />
-									<a id="searchButton" style="position:absolute;right:12%;top:18%">
+									<a id="searchButton">
 										<i id="searchButton" class="fa fa-search" aria-hidden="true"></i>
 									</a>
-									@* <form action="">
-									</form> *@
 								</div>
 								<ul class="navbar_menu">
 									<li><a href="@Url.Action("Index","Home")">Home</a></li>
@@ -157,28 +155,30 @@
 									<li><a href="#">Foreign body</a></li>
 								</ul>
 							</div>
-							<ul class="navbar_user">
-								@if (Context.Session.GetString("user") != null)
-								{
-									<li>
-										<div class="" style="border:1px solid #5c5c5c; border-radius:20px">
-											<a style="margin:0px;" href="#"><i class="fa fa-user" style="color: #000" aria-hidden="true"></i></a>
-										</div>
+							<div class="">
+								<ul class="navbar_user">
+									@if (Context.Session.GetString("user") != null)
+									{
+										<li>
+											<div class="" style="border:1px solid #5c5c5c; border-radius:20px">
+												<a style="margin:0px;" href="@Url.Action("UserDetail","Home")"><i class="fa fa-user" style="color: #000" aria-hidden="true"></i></a>
+											</div>
+										</li>
+									}
+									else
+									{
+										<li>
+											<a href="#" onclick="openFL()"><i onclick="openFL()" class="fa fa-user" style="color: #000" aria-hidden="true"></i></a>
+										</li>
+									}
+									<li class="checkout">
+										<a href="@Url.Action("Index","ShoppingCart")">
+											<i class="fa fa-shopping-cart" style="color:#000" aria-hidden="true"></i>
+											@* <span id="checkout_items" class="checkout_items">0</span> *@
+										</a>
 									</li>
-								}
-								else
-								{
-									<li>
-										<a href="#" onclick="openFL()"><i onclick="openFL()" class="fa fa-user" style="color: #000" aria-hidden="true"></i></a>
-									</li>
-								}
-								<li class="checkout">
-									<a href="@Url.Action("Index","ShoppingCart")">
-										<i class="fa fa-shopping-cart" style="color:#000" aria-hidden="true"></i>
-										@* <span id="checkout_items" class="checkout_items">0</span> *@
-									</a>
-								</li>
-							</ul>
+								</ul>
+							</div>
 							<div class="hamburger_container">
 								<i class="fa fa-bars" aria-hidden="true"></i>
 							</div>
@@ -221,8 +221,8 @@
 								</form>
 							</div>
 							<div class="login-right">
-								<div style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
-									<img src="logo/login.png" alt="" />
+								<div class="box-login-right">
+									<img src="/logo/login.png" alt="" />
 									<div class="sm-title">
 										Bạn chưa có tài khoản.Hãy tạo ở đây!
 									</div>
@@ -282,10 +282,10 @@
 								</form>
 							</div>
 							<div class="register-right">
-								<div style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
-									<img src="logo/login.png" alt="" />
+								<div class="box-register-right">
+									<img src="/logo/login.png" alt="" />
 									<div class="sm-title">
-										Bạn đã có tài khoản.Hãy đăng nhập ở đây!
+										Bạn đã có tài khoản!
 									</div>
 									<div class="btn-swich btn">
 										<button onclick="openFL()"><p>Đăng Nhập</p></button>
@@ -310,30 +310,46 @@
 		</header>
 
 		<div class="fs_menu_overlay">
-			<div id="successMessage" style="display:none; position:fixed; top:20px; right:20px; background-color:green; color:white; padding:10px; z-index:1000;">
-				Thêm sản phẩm thành công!
-			</div>
 		</div>
 		<div class="hamburger_menu">
 			<div class="hamburger_close"><i class="fa fa-times" aria-hidden="true"></i></div>
 			<div class="hamburger_menu_content text-right">
+				<div class="form-search" style="">
+					<input style="position:relative;border:1px solid #2f3640" type="text" name="" class="search-text" id="searchKeyword" placeholder="Tìm Kiếm" />
+					<a id="searchButton" style="right:12%">
+						<i id="searchButton" class="fa fa-search" aria-hidden="true"></i>
+					</a>
+				</div>
 				<ul class="menu_top_nav">
 					<li class="menu_item has-children">
-						<a href="#">
-							Tài Khoản
-							<i class="fa fa-angle-down"></i>
-						</a>
-						<ul class="menu_selection">
-							<li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>Đăng Nhập</a></li>
-							<li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>Tạo Tài Khoản</a></li>
-						</ul>
+						@if (Context.Session.GetString("user") != null)
+						{
+							<a href="#">
+								Xin Chào: @ViewBag.TenKh
+								<i class="fa fa-angle-down"></i>
+							</a>
+							<ul class="menu_selection">
+								<li><a href="@Url.Action("UserDetail","Home")"><i class="fa fa-sign-in" aria-hidden="true"></i>Thông Tin Tài Khoản</a></li>
+							</ul>
+						}
+						else
+						{
+							<a href="#">
+								Tài Khoản
+								<i class="fa fa-angle-down"></i>
+							</a>
+							<ul class="menu_selection">
+								<li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>Đăng Nhập</a></li>
+								<li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>Tạo Tài Khoản</a></li>
+							</ul>
+						}
 					</li>
-					<li class="menu_item"><a href="#">home</a></li>
-					<li class="menu_item"><a href="#">shop</a></li>
-					<li class="menu_item"><a href="#">promotion</a></li>
-					<li class="menu_item"><a href="#">pages</a></li>
-					<li class="menu_item"><a href="#">blog</a></li>
-					<li class="menu_item"><a href="#">contact</a></li>
+					<li class="menu_item"><a href="@Url.Action("Index","Home")">home</a></li>
+					<li class="menu_item"><a href="@Url.Action("SellProduct","Home")">Sản Phẩm Sell</a></li>
+					<li class="menu_item"><a href="@Url.Action("NewProduct","Home")">Sản Phẩm Mới</a></li>
+					<li class="menu_item"><a href="@Url.Action("HotProduct","Home")">Sản Phẩm Hot</a></li>
+					<li class="menu_item"><a href="@Url.Action("UnderProduct","Home")">Đồ Lót</a></li>
+					<li class="menu_item"><a href="#">Liên Hệ Với Chúng Tôi</a></li>
 					<li class="menu_item has-children">
 						<a href="#">
 							Ngôn Ngữ
@@ -346,22 +362,11 @@
 							<li><a href="#">Spanish</a></li>
 						</ul>
 					</li>
-					<li class="menu_item has-children">
-						<a href="#">
-							<i class="fa-solid fa-gear" style="color: #2f3640"></i>
-						</a>
-						<ul class="menu_selection">
-							<li><a href="#">Thông Báo</a></li>
-							<li><a href="#">Cộng Đồng</a></li>
-							<li><a href="#">Liên Hệ</a></li>
-							<li><a href="#">Hỗ Trợ</a></li>
-						</ul>
-					</li>
 				</ul>
 			</div>
 		</div>
 
-		<div class=" product_section_container" style="margin-left: 100px;margin-right:100px">
+		<div class="product_section_container cate" style="margin-left: 100px;margin-right:100px">
 			<div class="row">
 				<div class="col product_section clearfix">
 
