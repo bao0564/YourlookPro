@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YC9tLSjtvEWeMziTaZg8TRJloza4jpNUzVcxX1eH7wM=",
+  "Hash": "wo6Oylp2TODnQ+GTLi2rVQjcAA5kuFJa3uso1le91RQ=",
   "Source": "yourlook",
   "BasePath": "_content/yourlook",
   "Mode": "Default",
@@ -5672,6 +5672,25 @@
       "OriginalItemSpec": "wwwroot\\js\\swich.js"
     },
     {
+      "Identity": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\userdetail.js",
+      "SourceId": "yourlook",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\",
+      "BasePath": "_content/yourlook",
+      "RelativePath": "js/userdetail.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\userdetail.js"
+    },
+    {
       "Identity": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "yourlook",
       "SourceType": "Discovered",
@@ -7152,6 +7171,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\logo\\new-product.png"
+    },
+    {
+      "Identity": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\logo\\Untitled_Export_V4.jpeg",
+      "SourceId": "yourlook",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\",
+      "BasePath": "_content/yourlook",
+      "RelativePath": "logo/Untitled_Export_V4.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logo\\Untitled_Export_V4.jpeg"
     },
     {
       "Identity": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\logo\\voucher.png",

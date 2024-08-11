@@ -54,7 +54,13 @@ namespace yourlook.Controllers
 			}
 			return Json(code);
 		}
-
+        //hiển thị địa chỉ
+        public IActionResult addressUser()
+        {
+			var idkh = HttpContext.Session.GetInt32("userid");			
+			var adress = db.DbAddreses.Where(X => X.MaKh == idkh.Value).ToList();
+            return PartialView("addressUser",adress);
+		}
         [HttpPost]
         public IActionResult Checkout([FromBody] CheckoutRequest request)
         {

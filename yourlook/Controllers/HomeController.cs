@@ -47,7 +47,10 @@ namespace yourlook.Controllers
                 var user = GetEmailKhachHang(email);
 				return View(user);
             }
-            return View();
+			else
+			{
+				return RedirectToAction("Login", "Access");
+			}
         }
 		//tìm từ khóa
         public IActionResult KeyWord(int? page,string word)
@@ -62,7 +65,13 @@ namespace yourlook.Controllers
 		[HttpGet]		
 		public IActionResult FavoriteProduct()
 		{
-			return View();
+			var idkh = HttpContext.Session.GetInt32("userid");
+			if (idkh ==null)
+			{
+				return RedirectToAction("Login", "Access");
+			}
+			var favoriteProducts = db.GetFavoriteProducts(idkh.Value);
+			return View(favoriteProducts);
 		}
 
         [HttpPost]		
@@ -73,7 +82,7 @@ namespace yourlook.Controllers
 			{
 				return Json(new { success = false, message = "Hãy đăng nhập để sử dụng thao tác này" });
 			}
-			var user= GetIdKhachHang(idkh.Value);
+			var user = GetIdKhachHang(idkh.Value);
 			var isFvr = db.DbFavoriteProducts.FirstOrDefault(x => x.MaKh == user.MaKh && x.MaSp == masp);
 			if (isFvr == null) 
 			{
@@ -98,15 +107,35 @@ namespace yourlook.Controllers
 		{
 			int pageSize = 25;
 			int pageNumber = page ?? 1;
-			var lstAllSanPham = db.DbSanPhams.AsNoTracking().Where(x=>x.IActive==true).OrderBy(x => x.TenSp);
+			var idkh = HttpContext.Session.GetInt32("userid");
+			var idFvrPrd=new List<int>();
+			if (idkh !=null)
+			{
+                idFvrPrd = db.DbFavoriteProducts.Where(x=>x.MaKh==idkh.Value).Select(x=>x.MaSp).ToList();
+			}
+			var lstAllSanPham = db.DbSanPhams.AsNoTracking().Where(x=>x.IActive==true).OrderBy(x => x.TenSp).ToList();
+			foreach (var prd in lstAllSanPham)
+			{
+				prd.IFavorite = idFvrPrd.Contains(prd.MaSp);
+            }
 			PagedList<DbSanPham> lstsp = new PagedList<DbSanPham>(lstAllSanPham, pageNumber, pageSize);
 			return View(lstsp);
 		}
         public IActionResult SellProduct(int? page)
         {
 			int pageSize = 25;
-			int pageNumber = page ?? 1;
-			var lstSellSanPham = db.DbSanPhams.AsNoTracking().Where(x => x.ISale == true).OrderBy(x => x.TenSp);
+			int pageNumber = page ?? 1; 
+			var idkh = HttpContext.Session.GetInt32("userid");
+            var idFvrPrd = new List<int>();
+            if (idkh != null)
+            {
+                idFvrPrd = db.DbFavoriteProducts.Where(x => x.MaKh == idkh.Value).Select(x => x.MaSp).ToList();
+            }
+            var lstSellSanPham = db.DbSanPhams.AsNoTracking().Where(x => x.ISale == true).OrderBy(x => x.TenSp).ToList();
+            foreach (var prd in lstSellSanPham)
+            {
+                prd.IFavorite = idFvrPrd.Contains(prd.MaSp);
+            }            
 			PagedList<DbSanPham> lstsp = new PagedList<DbSanPham>(lstSellSanPham, pageNumber, pageSize);
 			return View(lstsp);
         }
@@ -115,9 +144,19 @@ namespace yourlook.Controllers
 			int pageSize = 25;
 			int pageNumber = page ?? 1;
 			DateTime prdNew = DateTime.Now.AddDays(-30);
-			var lstNewProduct = db.DbSanPhams.AsNoTracking()
-				.Where(x => x.CreateDate >= prdNew && x.CreateDate <= DateTime.Now)
-				.OrderByDescending(x => x.CreateDate);
+            var idkh = HttpContext.Session.GetInt32("userid");
+            var idFvrPrd = new List<int>();
+            if (idkh != null)
+            {
+                idFvrPrd = db.DbFavoriteProducts.Where(x => x.MaKh == idkh.Value).Select(x => x.MaSp).ToList();
+            }
+            var lstNewProduct = db.DbSanPhams.AsNoTracking()
+                .Where(x => x.CreateDate >= prdNew && x.CreateDate <= DateTime.Now)
+                .OrderByDescending(x => x.CreateDate).ToList();
+            foreach (var prd in lstNewProduct)
+            {
+                prd.IFavorite = idFvrPrd.Contains(prd.MaSp);
+            }
 			PagedList<DbSanPham> lstNew = new PagedList<DbSanPham>(lstNewProduct, pageNumber, pageSize);
 			return View(lstNew);
 		}
@@ -125,15 +164,35 @@ namespace yourlook.Controllers
 		{
 			int pageSize = 25;
 			int pageNumber = page ?? 1;
-			var lstHotProduct = db.DbSanPhams.AsNoTracking().Where(x=>x.IHot==true).OrderByDescending(x => x.LuotSold);
+            var idkh = HttpContext.Session.GetInt32("userid");
+            var idFvrPrd = new List<int>();
+            if (idkh != null)
+            {
+                idFvrPrd = db.DbFavoriteProducts.Where(x => x.MaKh == idkh.Value).Select(x => x.MaSp).ToList();
+            }
+            var lstHotProduct = db.DbSanPhams.AsNoTracking().Where(x => x.IHot == true).OrderByDescending(x => x.LuotSold).ToList();
+            foreach (var prd in lstHotProduct)
+            {
+                prd.IFavorite = idFvrPrd.Contains(prd.MaSp);
+            }            
 			PagedList<DbSanPham> lstHot = new PagedList<DbSanPham>(lstHotProduct, pageNumber, pageSize);
 			return View(lstHot);
 		}
 		public IActionResult UnderProduct(int? page)
 		{
 			int pageSize = 25;
-			int pageNumber = page ?? 1;			
-			var lstUnderProduct = db.DbSanPhams.AsNoTracking().Where(x=>x.MaDm==2).OrderByDescending(x => x.MaSp);
+			int pageNumber = page ?? 1;
+            var idkh = HttpContext.Session.GetInt32("userid");
+            var idFvrPrd = new List<int>();
+            if (idkh != null)
+            {
+                idFvrPrd = db.DbFavoriteProducts.Where(x => x.MaKh == idkh.Value).Select(x => x.MaSp).ToList();
+            }
+            var lstUnderProduct = db.DbSanPhams.AsNoTracking().Where(x => x.MaDm == 2).OrderByDescending(x => x.MaSp).ToList();
+            foreach (var prd in lstUnderProduct)
+            {
+                prd.IFavorite = idFvrPrd.Contains(prd.MaSp);
+            }
 			PagedList<DbSanPham> lstNew = new PagedList<DbSanPham>(lstUnderProduct, pageNumber, pageSize);
 			return View(lstNew);
 		}
@@ -141,7 +200,17 @@ namespace yourlook.Controllers
 		{
             int pageSize = 15;
             int pageNumber = page ?? 1;
-            var lstcateSanPham = db.DbSanPhams.AsNoTracking().Where(x => x.IActive == true).OrderBy(x => x.TenSp);
+            var idkh = HttpContext.Session.GetInt32("userid");
+            var idFvrPrd = new List<int>();
+            if (idkh != null)
+            {
+                idFvrPrd = db.DbFavoriteProducts.Where(x => x.MaKh == idkh.Value).Select(x => x.MaSp).ToList();
+            }
+            var lstcateSanPham = db.DbSanPhams.AsNoTracking().Where(x => x.IActive == true).OrderBy(x => x.TenSp).ToList();
+            foreach (var prd in lstcateSanPham)
+            {
+                prd.IFavorite = idFvrPrd.Contains(prd.MaSp);
+            }            
             PagedList<DbSanPham> lstcatesp = new PagedList<DbSanPham>(lstcateSanPham, pageNumber, pageSize);
             return View(lstcatesp);
         }
@@ -149,7 +218,17 @@ namespace yourlook.Controllers
 		{
 			int pageSize = 25;
 			int pageNumber = page ?? 1;
-			List<DbSanPham> lstProductTipe= db.DbSanPhams.AsNoTracking().Where(x=>x.MaDm==madm).OrderBy(x=>x.TenSp).ToList();
+            var idkh = HttpContext.Session.GetInt32("userid");
+            var idFvrPrd = new List<int>();
+            if (idkh != null)
+            {
+                idFvrPrd = db.DbFavoriteProducts.Where(x => x.MaKh == idkh.Value).Select(x => x.MaSp).ToList();
+            }
+            List<DbSanPham> lstProductTipe = db.DbSanPhams.AsNoTracking().Where(x => x.MaDm == madm).OrderBy(x => x.TenSp).ToList(); ;
+            foreach (var prd in lstProductTipe)
+            {
+                prd.IFavorite = idFvrPrd.Contains(prd.MaSp);
+            }            
 			ViewBag.Madm = madm;
 			PagedList<DbSanPham> lstprdbytipe = new PagedList<DbSanPham>(lstProductTipe, pageNumber,pageSize);
 			return View(lstprdbytipe);
@@ -165,6 +244,14 @@ namespace yourlook.Controllers
 			};
 			var lstImgProduct = db.DbImgs.Where(x => x.MaSp == masp).ToList();
 			ViewBag.ImgProduct = lstImgProduct;
+			var idkh=HttpContext.Session.GetInt32("userid");
+			bool isFavorite = false;
+			if (idkh != null)
+			{
+				isFavorite = db.DbFavoriteProducts.Any(x => x.MaKh == idkh.Value && x.MaSp == masp);
+			}
+			ViewBag.FvrPrd = isFavorite;
+
 			return View(lstSanPham);
 		}
 		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -1,64 +1,38 @@
 ﻿@using Data.Models
 @{
     ViewData["Title"] = "UserDetail";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_LayoutUD.cshtml";
 }
 @model DbKhachHang
-<main class="mar150_container customer" style="margin:150px 10% 0">
-    <div class="body-customer dpf">
-        <div class="inf-customer box-customer" style="">
-            <div class="title" style="padding-bottom:20px">
-                <div class="img-customer" style="">
-                    @if (Model.Img != null)
-                    {
-                        <img style="" src="@Url.Content("/logo/"+Model.Img)" />
-                    }
-                    else
-                    {
-                        <img style="" src="@Url.Content("../logo/images (11).jpg")" />
-                    }
-                </div>
-                <div>
-                    <h4>Thông Tin Khách Hàng</h4>
-                    <h5 class="customer-name" style="">@Model.TenKh</h5>
-                </div>
+<div class="inf-customer"  style="">
+    <div class="box-customer" style="background-color:#fff">
+        <div class="title" style="padding-bottom:20px">
+            <div class="img-customer" style="">
+                @if (Model.Img != null)
+                {
+                    <img style="" src="@Url.Content("/logo/"+Model.Img)" />
+                }
+                else
+                {
+                    <img style="" src="@Url.Content("../logo/images (11).jpg")" />
+                }
             </div>
-            <div class="dpf jcc" style="">
-                <div style="width:80%">
-                    <div class="customer-title"><h5>Họ Tên :</h5>@Model.TenKh</div>
-                    <div class="customer-title"><h5>Ngày sinh :</h5>20/11/2002</div>
-                    <div class="customer-title"><h5>Giới Tính :</h5>@Model.GioiTinh</div>
-                    <div class="customer-title"><h5>Email :</h5>@Model.Email</div>
-                    <div class="customer-title"><h5>Số điện thoại:</h5>@Model.Sdt</div>
-                </div>
+            <div>
+                <h4>Thông Tin Khách Hàng</h4>
+                <h5 class="customer-name" style="">@Model.TenKh</h5>
             </div>
-           @*  <div class="new-inf" style="">
-                <a style="padding:10px">Sửa thông tin ></a>
-            </div> *@
         </div>
-        <div class="address-customer">
-            <div class="box-customer" style="background-color:#000;color:#fff">
-                <div class="space-address" style="justify-content:space-between">
-                    <div>Chỉnh Sửa Thông Tin</div>
-                    <div><i class="fa fa-angle-right" aria-hidden="true"></i></div>
-                </div>
-                <div class="space-address" style="justify-content:space-between">
-                    <div>Thông Tin địa chỉ</div>
-                    <div><i class="fa fa-angle-right" aria-hidden="true"></i></div>
-                </div>
-                <div class="space-address" style="justify-content:space-between">
-                    <div>Sản Phẩm Yêu Thích</div>
-                    <div><i class="fa fa-angle-right" aria-hidden="true"></i></div>
-                </div>
-                <div class="space-address" style="justify-content:space-between">
-                    <div>Sản Phẩm Đã Mua</div>
-                    <div><i class="fa fa-angle-right" aria-hidden="true"></i></div>
-                </div>
-                <div class="space-address" style="justify-content:space-between">
-                    <div>Đánh Giá Của Bạn</div>
-                    <div><i class="fa fa-angle-right" aria-hidden="true"></i></div>
-                </div>
+        <div class="dpf jcc" style="">
+            <div class="box-inforcustomer">
+                <div class="customer-title"><h5>Họ Tên :</h5>@Model.TenKh</div>
+                <div class="customer-title"><h5>Ngày sinh :</h5>20/11/2002</div>
+                <div class="customer-title"><h5>Giới Tính :</h5>@Model.GioiTinh</div>
+                <div class="customer-title"><h5>Email :</h5>@Model.Email</div>
+                <div class="customer-title"><h5>Số điện thoại:</h5>@Model.Sdt</div>
             </div>
+        </div>
+        <div class="new-inf" style="">
+            <a style="padding:10px">Sửa thông tin ></a>
         </div>
     </div>
-</main>
+</div>

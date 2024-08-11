@@ -37,6 +37,7 @@ namespace Data.Models
         public string MotaSp { get; set; }
 
         public bool IActive {  get; set; }
+        [NotMapped]
         public bool IFavorite {  get; set; }
 		public bool IFeature {  get; set; }
         public bool IHot {  get; set; }

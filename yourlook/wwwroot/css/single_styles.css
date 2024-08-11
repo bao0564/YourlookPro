@@ -99,22 +99,9 @@
 		content: '\f004';
 		color: #fe4c50;
 	}
-.original_price {	
-	text-decoration: line-through;
-}
-.space-address .box-address, .box-pay, .inp {
-	position: relative;
-	flex-grow: 1;
-	display: flex;
-	align-items: center;
-	margin-left: 10px;
-	height: 50px;
-	border: 2px solid #252424;
-	border-radius: 20px;
-}.space-address, .space-pay {
-    display: flex;
-    margin: 20px 10px 20px 0;
-}
+	.original_price {	
+		text-decoration: line-through;
+	}
 	.space-address input, .inp input {
 		position: absolute;
 		right: 5px;
@@ -125,7 +112,7 @@
 	/*********************************
 7. Tabs
 *********************************/
-		.tabs_section_container {
+.tabs_section_container {
 	width: 100%;
 	padding-bottom: 80px;
 	border-bottom: solid 1px #ebebeb;

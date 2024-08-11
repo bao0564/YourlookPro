@@ -68,9 +68,11 @@ namespace Data.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdAddress"));
 
                     b.Property<string>("Addres")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("City")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CreateBy")
@@ -82,7 +84,13 @@ namespace Data.Migrations
                     b.Property<string>("GhiChu")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("MaKh")
+                    b.Property<bool>("Idefault")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("MaKh")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("MaKhNavigationMaKh")
                         .HasColumnType("int");
 
                     b.Property<string>("ModifiedBy")
@@ -92,18 +100,24 @@ namespace Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("PhuongXa")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("QuanHuyen")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Sdt")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TenNguoiNhan")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("IdAddress");
+
+                    b.HasIndex("MaKhNavigationMaKh");
 
                     b.ToTable("DbAddres");
                 });
@@ -484,7 +498,6 @@ namespace Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ConfirmPasswords")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CreateBy")
@@ -503,6 +516,9 @@ namespace Data.Migrations
                     b.Property<string>("Img")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsExternalAccount")
+                        .HasColumnType("bit");
+
                     b.Property<string>("ModifiedBy")
                         .HasColumnType("nvarchar(max)");
 
@@ -510,11 +526,9 @@ namespace Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Passwords")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Sdt")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TenKh")
@@ -619,9 +633,6 @@ namespace Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<bool>("IActive")
-                        .HasColumnType("bit");
-
-                    b.Property<bool>("IFavorite")
                         .HasColumnType("bit");
 
                     b.Property<bool>("IFeature")
@@ -783,6 +794,15 @@ namespace Data.Migrations
                     b.ToTable("ThongKe");
                 });
 
+            modelBuilder.Entity("Data.Models.DbAddres", b =>
+                {
+                    b.HasOne("Data.Models.DbKhachHang", "MaKhNavigation")
+                        .WithMany("DbAddreses")
+                        .HasForeignKey("MaKhNavigationMaKh");
+
+                    b.Navigation("MaKhNavigation");
+                });
+
             modelBuilder.Entity("Data.Models.DbChiTietDonHang", b =>
                 {
                     b.HasOne("Data.Models.DbDonHang", "MaDhNavigation")
@@ -869,6 +889,8 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Data.Models.DbKhachHang", b =>
                 {
+                    b.Navigation("DbAddreses");
+
                     b.Navigation("DbDonHangs");
                 });
 

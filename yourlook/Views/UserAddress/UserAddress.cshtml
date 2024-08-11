@@ -1,0 +1,57 @@
+﻿@using Data.Models;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "UserAddress";
+    Layout = "~/Views/Shared/_LayoutUD.cshtml";
+}
+@model List<DbAddres>
+<div class="inf-customer" style="">
+    <div class="box-customer" style="background-color:#fff">
+        <div style="display:flex;justify-content:space-between;border-bottom:1px solid #2f3640">
+            <h4>Danh Bạ Địa Chỉ</h4>
+            <div>
+                <a href="@Url.Action("Add","UserAddress")"><i class="fa-solid fa-plus" style="color: #000000;"></i></a>
+            </div>
+        </div>
+        <div class="messages">
+           @*  @TempData["Message"] *@
+        </div>
+        <div>
+            @if (Model !=null && Model.Any())
+            {
+                foreach (var prd in Model)
+                {
+                    <div class="lst-address-ct" style="">
+                        <div>
+                            @if(prd.Idefault==true){
+                               <div style="display:flex;">
+                                    <h5>@prd.TenNguoiNhan -@prd.Sdt </h5>
+                                    <h6 style="color:#0097e6;margin-left:10px"> Địa Chỉ Mặc định</h6>
+                                </div>
+                            }
+                            else
+                            {
+                                <h5>@prd.TenNguoiNhan- @prd.Sdt</h5>
+                            }
+                            <div>@prd.PhuongXa,@prd.QuanHuyen,@prd.City</div>
+                            <div>@prd.Addres</div>
+                        </div>
+                        <div class="flct" style="">
+                            <form asp-action="Delete" method="post" style="display:inline;" onsubmit="return confirm('Bạn có chắc muốn xóa địa chỉ này không?');">
+                                <input type="hidden" name="idaddress" value="@prd.IdAddress" />
+                                <button type="submit" class="btn-action">Xóa</button>
+                            </form>
+                            <a class="btn-action" asp-action="Edit" asp-route-idaddress="@prd.IdAddress">Sửa</a>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div style="display:flex;justify-content:center;margin-top:50px">
+                    <div>DANH BẠ ĐỊA CHỈ TRỐNG</div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

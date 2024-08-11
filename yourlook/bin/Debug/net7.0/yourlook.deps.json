@@ -9,6 +9,7 @@
       "yourlook/1.0.0": {
         "dependencies": {
           "Data": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.Google": "7.0.19",
           "Microsoft.EntityFrameworkCore": "7.0.19",
           "Microsoft.EntityFrameworkCore.Design": "7.0.19",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.19",
@@ -598,6 +599,14 @@
         }
       },
       "jQuery/3.7.1": {},
+      "Microsoft.AspNetCore.Authentication.Google/7.0.19": {
+        "runtime": {
+          "lib/net7.0/Microsoft.AspNetCore.Authentication.Google.dll": {
+            "assemblyVersion": "7.0.19.0",
+            "fileVersion": "7.0.1924.22306"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Razor.Language/6.0.11": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Language.dll": {
@@ -2916,6 +2925,13 @@
       "sha512": "sha512-rF8hnQxmBMlIspf8VN72bALtmIpKx6hKRpUdTOkp/8JzfF8KgNqHut5lOy9kFGvFIStumCqJ+PBxpI9gxpRYfQ==",
       "path": "jquery/3.7.1",
       "hashPath": "jquery.3.7.1.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authentication.Google/7.0.19": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0ZkYxh2/5nrDEqWdaZQaqXjXOMMJHgT3Yeq7seYaTIIsoHry5f4cxALQGdKgXEnA98+KrXm3w2w/u/1zKo+G+g==",
+      "path": "microsoft.aspnetcore.authentication.google/7.0.19",
+      "hashPath": "microsoft.aspnetcore.authentication.google.7.0.19.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Razor.Language/6.0.11": {
       "type": "package",

@@ -219,6 +219,9 @@
 	.product_details h4{
 		font-size:23px;
 	}
+	.single_product_pics .row{
+		flex-wrap:nowrap;
+	}
 }
 
 /************
@@ -240,6 +243,9 @@
 	.single_product_image_background {
 		height: 480px !important;
 		background-size: auto !important;
+	}
+	.box-single-prd .row{
+		flex-wrap:nowrap;
 	}
 }
 
@@ -613,11 +619,6 @@
 	.footer_nav
 	{
 		margin-bottom: 20px;
-	}
-	.footer_social
-	{
-		margin-top: 5px;
-		margin-bottom: 30px;
 	}
 }
 

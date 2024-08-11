@@ -1,4 +1,6 @@
 using Data.Models;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.EntityFrameworkCore;
 using yourlook.MenuKid;
 
@@ -6,8 +8,20 @@ var builder = WebApplication.CreateBuilder(args);
 //
 builder.Services.AddDbContext<YourlookContext>(options =>
 {
-    //options.UseSqlServer(builder.Configuration["ConnectionStrings:ConnectedDb"]);
     options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectedDb"));
+});
+
+builder.Services.AddAuthentication(options =>
+{
+	options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+	options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+	options.DefaultChallengeScheme = GoogleDefaults.AuthenticationScheme;
+})
+.AddCookie()
+.AddGoogle(options =>
+{
+	options.ClientId = "834180802158-c18fs2qk244bpi3349rrs84jeo9datlu.apps.googleusercontent.com";
+	options.ClientSecret = "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";
 });
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -44,6 +58,7 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
+app.UseAuthentication();
 app.UseAuthorization();
 app.UseSession();
 app.MapControllerRoute(

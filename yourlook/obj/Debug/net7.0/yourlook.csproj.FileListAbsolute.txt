@@ -13,6 +13,7 @@ E:\ShopYourLook\yourlook\yourlook\bin\Debug\net7.0\yourlook.pdb
 E:\ShopYourLook\yourlook\yourlook\bin\Debug\net7.0\Azure.Core.dll
 E:\ShopYourLook\yourlook\yourlook\bin\Debug\net7.0\Azure.Identity.dll
 E:\ShopYourLook\yourlook\yourlook\bin\Debug\net7.0\Humanizer.dll
+E:\ShopYourLook\yourlook\yourlook\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.Google.dll
 E:\ShopYourLook\yourlook\yourlook\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
 E:\ShopYourLook\yourlook\yourlook\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
 E:\ShopYourLook\yourlook\yourlook\bin\Debug\net7.0\Microsoft.Build.dll
@@ -244,6 +245,7 @@ E:\ShopYourLook\yourlook\yourlook\obj\Debug\net7.0\yourlook.MvcApplicationPartsA
 E:\ShopYourLook\yourlook\yourlook\obj\Debug\net7.0\yourlook.MvcApplicationPartsAssemblyInfo.cache
 E:\ShopYourLook\yourlook\yourlook\obj\Debug\net7.0\yourlook.RazorAssemblyInfo.cache
 E:\ShopYourLook\yourlook\yourlook\obj\Debug\net7.0\yourlook.RazorAssemblyInfo.cs
+E:\ShopYourLook\yourlook\yourlook\obj\Debug\net7.0\yourlook.sourcelink.json
 E:\ShopYourLook\yourlook\yourlook\obj\Debug\net7.0\staticwebassets.build.json
 E:\ShopYourLook\yourlook\yourlook\obj\Debug\net7.0\staticwebassets.development.json
 E:\ShopYourLook\yourlook\yourlook\obj\Debug\net7.0\staticwebassets\msbuild.yourlook.Microsoft.AspNetCore.StaticWebAssets.props
@@ -258,4 +260,3 @@ E:\ShopYourLook\yourlook\yourlook\obj\Debug\net7.0\refint\yourlook.dll
 E:\ShopYourLook\yourlook\yourlook\obj\Debug\net7.0\yourlook.pdb
 E:\ShopYourLook\yourlook\yourlook\obj\Debug\net7.0\yourlook.genruntimeconfig.cache
 E:\ShopYourLook\yourlook\yourlook\obj\Debug\net7.0\ref\yourlook.dll
-E:\ShopYourLook\yourlook\yourlook\obj\Debug\net7.0\yourlook.sourcelink.json

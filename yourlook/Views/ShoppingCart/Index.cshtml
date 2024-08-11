@@ -1,5 +1,4 @@
 ﻿@model IEnumerable<yourlook.Models.ShoppingCartItem>
-
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -8,9 +7,23 @@
     <div class="body-cart">
         <div class="address-cart">
             <div class="box-cart" style="background-color:#000;color:#fff">
-                <div>
-                    <h3 style="color:#fff">Thông Tin Địa Chỉ </h3>
-                    <div style="color:#fff">vui lòng điền thông tin địa chỉ cần giao hàng của bạn</div>
+                <div class="flct" style="display:flex;justify-content:space-between">
+                    <div>
+                        <h3 style="color:#fff">Thông Tin Địa Chỉ </h3>
+                        <div style="color:#fff">vui lòng điền thông tin địa chỉ cần giao hàng của bạn</div>
+                    </div>
+                    @if(Context.Session.GetInt32("userid")!=null){
+                        <div>
+                            <a onclick="openAD()"><i onclick="openAD()" class="fa-solid fa-plus fa-lg" style="color: #fff;"></i></a>
+                        </div>
+                    }
+                    else
+                    {
+                        <div></div>
+                    }
+                </div>
+                <div id="form-address" class="form-address">
+                    @* push here *@
                 </div>
                 <div class="box-cart" style="background-color:#fff">
                     <div class="box-cart" style="background-color:#fff">
@@ -232,6 +245,7 @@
     </div>
 </main> 
 @section styles {
+
     <style>
         .footer{
             display:none;
@@ -247,6 +261,13 @@
         }
         function ClLable() {
             document.getElementById("form-yc-login").style.display = "none";
+        }
+        //đóng mở form chọn địa chỉ
+        function openAD() {
+            document.getElementById("form-address").style.display = "block";
+        }
+        function closeAD() {
+            document.getElementById("form-address").style.display = "none";
         }
     </script>
 }

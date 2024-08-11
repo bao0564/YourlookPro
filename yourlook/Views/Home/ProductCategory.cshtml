@@ -24,7 +24,7 @@
                     <a asp-controller="Home" asp-action="ProductDetail" asp-route-masp="@prd.MaSp"><img src="@Url.Content("/img/"+prd.AnhSp)" alt=""></a>
                 </div>
                 <div class="favorite" data-id="@prd.MaSp" style="font-size:20px">
-                    @if (prd.IFavorite == true)
+                    @if (prd.IFavorite)
                     {
                         <i class="fa-solid fa-heart" style="color: #2f3640;"></i>
                     }

@@ -20,23 +20,22 @@ namespace Data.Models
         public string? Addres { get; set; }
 
 
-        [Required(ErrorMessage = "*")]
-        public string Sdt { get; set; }
+        //[Required(ErrorMessage = "*")]
+        public string? Sdt { get; set; }
 
         [Required(ErrorMessage = "*")]
         public string Email { get; set; }
 
         [DataType(DataType.Password)]
-        [Required(ErrorMessage = "*")]
-        public string Passwords { get; set; }
+        public string? Passwords { get; set; }
 
         [Display(Name = "Confirm password")]
-        [Required(ErrorMessage = "*")]
         [Compare("Passwords", ErrorMessage = "Mật khẩu không đúng.")]
-        public string ConfirmPasswords { get; set; }
+        public string? ConfirmPasswords { get; set; }
 
+        public bool IsExternalAccount { get; set; }
         public virtual ICollection<DbDonHang> DbDonHangs { get; set; } = new List<DbDonHang>();
-        //public virtual ICollection<DbAddres> DbAddreses { get; set; } = new List<DbAddres>();
+        public virtual ICollection<DbAddres> DbAddreses { get; set; } = new List<DbAddres>();
 
         //public virtual ICollection<DbTransaction> DbTransactions { get; set; } = new List<DbTransaction>();
     }

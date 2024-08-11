@@ -49,6 +49,10 @@ COLOR PALETTE
 	display: flex;
 	align-items: center;
 }
+.fljct {
+	display: flex;
+	justify-content:center;
+}
 .no-scrollbar {
 	scrollbar-width: none; /* Firefox */
 }
@@ -256,13 +260,13 @@ section
 {
 	height: 100%;
 }
-.super_container
-{
+.super_container {
 	width: 100%;
 	overflow: hidden;
+	background-color: #FFFFFF;
 }
 /* form đăng nhập/đăng ký */
-.form-login {
+.form-login, .form-address {
 	display: none;
 	font-size: 13px;
 	transition: 0.5s;
@@ -279,20 +283,20 @@ section
 	transition: 0.5s;
 }
 
-	.fa-login .box-login {
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		background-color: #ffffff;
-		transform: translate(-50%, -50%);
-		display: flex;
-		border-radius: 10px;
-	}
+.fa-login .box-login {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	background-color: #ffffff;
+	transform: translate(-50%, -50%);
+	display: flex;
+	border-radius: 10px;
+}
 
-		.fa-login .box-login.box {
-			width: auto;
-			height: 450px;
-		}
+.fa-login .box-login.box {
+	width: auto;
+	height: 450px;
+}
 
 .close-login {
 	display: flex;
@@ -1483,7 +1487,6 @@ section
 	transition: transform 0.5s ease;
 }
 .prd-item {
-	width: 20%;
 	cursor: pointer;
 	padding: 0 10px;
 	position:relative;
@@ -2259,6 +2262,19 @@ section
 	display:flex;
 	align-items:center;
 }
+.space-address {
+	border-radius: 10px;
+	padding: 10px;
+	background-color:#fff
+}
+.space-address a{
+	font-size:1.2rem;
+	font-weight:500;
+}
+.space-address i {
+	font-size: 18px;
+	margin-right: 15px;
+}
 .space-address, .space-pay {
 	display: flex;
 	margin: 20px 10px 20px 0;
@@ -2362,20 +2378,37 @@ section
 .dpf {
 	display: flex;
 }
-.jcc{
+.jcc {
 	justify-content: center;
+	margin-bottom: 50px;
+}
+.body-customer {
+	display: flex;
+	flex-wrap:wrap;
 }
 .body-customer .inf-customer {
-	width: 40%;
-	padding: 10px;
-	max-height: 860px;
+	width: 70%;
+	padding: 75px 50px;
+	position: relative;
+	transition: width 0.3s ease;
+}
+.inf-customer .box-customer {
 	background-color: #fff;
-	margin: 20px 0;
-	position: relative
+	max-height: 750px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.body-customer .inf-customer .product_image img {
+	height: 250px;
+	width: auto;
 }
 .body-customer .address-customer {
-	width: 60%;
-	padding: 10px;
+	width: 30%;
+	padding: 50px;
+	transition: width 0.3s ease;
+}
+.body-customer .address-customer a{
+	color:#000;
 }
 .body-customer .title {
 	display: flex;
@@ -2383,7 +2416,7 @@ section
 	justify-content: center;
 }
 .box-customer {
-	border: 1px solid #2f3640;
+	min-height:500px;
 	border-radius: 10px;
 	padding: 10px;
 	margin: 10px;
@@ -2402,7 +2435,8 @@ section
 }
 .customer-name {
 	border-bottom: 1px solid;
-	text-align: center
+	text-align: center;
+	padding:10px;
 }
 .customer-title {
 	display: flex;
@@ -2414,14 +2448,44 @@ section
 .inf-customer .new-inf {
 	position: absolute;
 	bottom: 10px;
-	left: 40%;
-	border: 1px solid #000
+	left: 45%;
+}
+.box-inforcustomer{
+	width:30%;
+}
+.lst-address-ct {
+	display: flex;
+	justify-content: space-between;
+	background-color: #bdc3c7;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 10px;
+}
+.address-customer .display-none{
+	display:none;
+}
+.box-adr div {
+	padding: 10px;
+	padding: 10px;
+}
+.box-adr input {
+	border-radius: 15px
+}
+.btn-action {
+	color:#fff;
+	padding: 5px;
+	margin:0 5px;
+	border:none;
+	border-radius: 10px;
+	background-color: #2f3640;
+}
+.btn-action:hover {
+	color:#000;
 }
 /*????*/
-
 .product-item {
 	height: auto;
-	padding:10px
+	padding: 10px
 }
 
 .product {

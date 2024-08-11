@@ -1,0 +1,17 @@
+﻿@using Data.Models;
+@model List<DbAddres>
+<div class="fa-login" id="fa-login">
+	<div class="creen-login">
+		<div class="box-login box">
+			<span class="close-login" onclick="closeAD()">✕</span>
+			@foreach (var prd in Model)
+			{
+				<div>
+					<h5>@prd.TenNguoiNhan -@prd.Sdt </h5>
+					<div>@prd.PhuongXa,@prd.QuanHuyen,@prd.City</div>
+					<div>@prd.Addres</div>
+				</div>
+			}
+		</div>
+	</div>
+</div>

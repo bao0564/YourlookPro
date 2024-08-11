@@ -21,8 +21,20 @@ namespace Data.Models
                 .OnDelete(DeleteBehavior.Cascade);
 
             base.OnModelCreating(modelBuilder);
-        }
-        public virtual DbSet<DbAdd> DbAdds { get; set; }
+		}
+		// sản phẩm yêu thích
+		public List<DbSanPham> GetFavoriteProducts(int maKh)
+		{
+			var favoriteProductIds = DbFavoriteProducts
+				.Where(fp => fp.MaKh == maKh)
+				.Select(fp => fp.MaSp)
+				.ToList();
+
+			return DbSanPhams
+				.Where(sp => favoriteProductIds.Contains(sp.MaSp))
+				.ToList();
+		}
+		public virtual DbSet<DbAdd> DbAdds { get; set; }
         public virtual DbSet<DbAddres> DbAddreses { get; set; }
         public virtual DbSet<DbAdmin> DbAdmins { get; set; }
 

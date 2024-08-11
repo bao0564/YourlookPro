@@ -14,7 +14,9 @@
         <p style="border-top:1px solid #000">Bằng:</p>
         <div class="title">
             <div style="display:flex;align-items:center;justify-content:space-between">
-                <button><img src="/icon/google.png" alt="" /></button>
+                <form asp-action="ExternalLogin" method="post">
+                    <button type="submit" name="provider" value="Google"><img src="/icon/google.png" alt="" /></button>
+                </form>
                 <button><img src="/icon/Facebook.png" alt="" /></button>
             </div>
             <div class="logo-login">

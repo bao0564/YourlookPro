@@ -1,6 +1,62 @@
 ﻿@using Data.Models
 @{
-    ViewData["Title"] = "FavoriteProduct";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+	ViewData["Title"] = "FavoriteProduct";
+	Layout = "~/Views/Shared/_LayoutUD.cshtml";
 }
-@model IEnumerable<DbFavoriteProduct>
+@model List<DbSanPham>
+<div class="inf-customer" style="">
+	<div class="box-customer" style="">
+	<div class="row">
+		<div class="col">
+			<div class="product-grid" data-isotope='{ "itemSelector": ".product-item", "layoutMode": "fitRows" }' style="margin-top:10px;">
+				<div class="box-flex">
+					@foreach (var prd in Model)
+					{
+						<div class="product-item ">
+							@if (prd.GiamGia > 0)
+							{
+								<div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>-@prd.GiamGia%</span></div>
+							}
+							else
+							{
+								<div></div>
+							}
+							<div class="product discount ">
+								<div class="product_image">
+									<a asp-controller="Home" asp-action="ProductDetail" asp-route-masp="@prd.MaSp"><img src="@Url.Content("/img/"+prd.AnhSp)" alt=""></a>
+								</div>
+								<div class="favorite" data-id="@prd.MaSp" style="font-size:20px">
+									@if (prd.IFavorite == true)
+									{
+										<i class="fa-regular fa-heart" style="color: #2f3640;"></i>
+									}
+									else
+									{
+										<i class="fa-solid fa-heart" style="color: #2f3640;"></i>
+									}
+								</div>
+								<div class="product_info">
+									<h6 class="product_name">
+										<a asp-controller="Home" asp-action="ProductDetail" asp-route-masp="@prd.MaSp">@prd.TenSp</a>
+									</h6>
+									@if (prd.PriceMax == prd.PriceMin)
+									{
+										<div class="product_price">@string.Format("{0:N0}", prd.PriceMax)</div>
+									}
+									else
+									{
+										<div class="product_price">@string.Format("{0:N0}", prd.PriceMin)<span>@string.Format("{0:N0}", prd.PriceMax)</span></div>
+									}
+								</div>
+							</div>
+							<div class="red_button add_to_cart_button">
+								<a class="btnAddToCart" style="color:#fff" data-id="@prd.MaSp">Thêm Vào Giỏ Hàng</a>
+							</div>
+						</div>
+					}
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>

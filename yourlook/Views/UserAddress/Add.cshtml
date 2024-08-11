@@ -1,0 +1,78 @@
+﻿@model Data.Models.DbAddres
+
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Views/Shared/_LayoutUD.cshtml";
+}
+<div class="inf-customer" style="">
+    <div class="box-customer" style="background-color:#fff">
+        <div style="display:flex;align-items:center;padding-top:15px">
+            <a asp-action="UserAddress"><img style="height:15px" src="\icon\drop left.svg" /></a>
+        </div>
+        @using (Html.BeginForm("Add", "UserAddress", FormMethod.Post, new { }))
+            {
+                <div class="row" style="display:block">
+                    <form asp-action="Add">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="box-adr col-12" style="display:flex">
+                            <div class="col-6">
+                                <label class="control-label">Tên Người Nhận:</label>
+                                <input style="" asp-for="TenNguoiNhan" class="form-control" />
+                                <span asp-validation-for="TenNguoiNhan" class="text-danger"></span>
+                            </div>
+                            <div class="col-6">
+                                <label class="control-label">Số Điện Thoại:</label>
+                                <input asp-for="Sdt" class="form-control" />
+                                <span asp-validation-for="Sdt" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="box-adr col-12" style="display:flex">
+                            <div class="col-4">
+                                <label class="control-label">Thành Phố:</label>
+                                <input asp-for="City" class="form-control" />
+                                <span asp-validation-for="City" class="text-danger"></span>
+                            </div>
+                            <div class="col-4">
+                                <label  class="control-label">Quận/Huyện:</label>
+                                <input asp-for="QuanHuyen" class="form-control" />
+                                <span asp-validation-for="QuanHuyen" class="text-danger"></span>
+                            </div>
+                            <div class="col-4">
+                                <label class="control-label">Phường/Xã:</label>
+                                <input asp-for="PhuongXa" class="form-control" />
+                                <span asp-validation-for="PhuongXa" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="box-adr col-12" style="display:flex">
+                            <div class="col-9">
+                                <label class="control-label">Địa chỉ Chi Tiết:</label>
+                                <input asp-for="Addres" class="form-control" />
+                                <span asp-validation-for="Addres" class="text-danger"></span>
+                            </div>
+                            <div class="col-3" style="display:flex;justify-content:center;align-items:end">
+                                <div class="">
+                                    <div class="custom-control custom-checkbox">
+                                        @Html.CheckBoxFor(x => x.Idefault, new { @class = "custom-input", @id = "customCheckbox2", @checked = "checked" })
+                                        <label style="margin:0 0 0 15px" for="customCheckbox2" class="custom-control-label">Đặt làm Mặc Định</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" style="display:flex;justify-content:center">
+                           <div style="border:1px solid #000;border-radius:10px">
+                                <input type="submit" style="color:#000" value="Lưu Địa Chỉ" class="btn btn-primary" />
+                           </div>
+                        </div>
+                    </form>
+                </div>
+            }
+    </div>
+</div>
+@section scripts {
+    <style>
+        .btn-primary:hover{
+            background-color:#2f3640;
+            border-radius:10px;
+        }
+    </style>
+}
