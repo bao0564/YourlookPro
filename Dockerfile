@@ -4,13 +4,13 @@ FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 # Đặt thư mục làm việc trong container
 WORKDIR /app
 
-# Sao chép tệp csproj của dự án Data và yourlook vào thư mục làm việc
-COPY yourlook/yourlook.csproj yourlook/
+# Sao chép tệp solution và các tệp csproj vào thư mục làm việc
+COPY yourlook.sln ./
 COPY Data/Data.csproj Data/
+COPY yourlook/yourlook.csproj yourlook/
 
 # Khôi phục các gói cho các dự án
-RUN dotnet restore yourlook/yourlook.csproj
-RUN dotnet restore Data/Data.csproj
+RUN dotnet restore yourlook.sln
 
 # Sao chép toàn bộ mã nguồn vào thư mục làm việc
 COPY . ./
@@ -28,4 +28,3 @@ EXPOSE 5089
 
 # Chạy ứng dụng
 ENTRYPOINT ["dotnet", "yourlook.dll"]
-
