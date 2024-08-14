@@ -1,22 +1,31 @@
-# Sử dụng hình ảnh .NET Core SDK để xây dựng ứng dụng
+# Sử dụng hình ảnh cơ sở cho .NET SDK
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 
-# Thiết lập thư mục làm việc
+# Đặt thư mục làm việc trong container
 WORKDIR /app
 
-# Sao chép tệp csproj và khôi phục các gói NuGet
-COPY *.csproj ./
-RUN dotnet restore
+# Sao chép tệp csproj của dự án Data và yourlook vào thư mục làm việc
+COPY yourlook/yourlook.csproj yourlook/
+COPY Data/Data.csproj Data/
 
-# Sao chép mã nguồn và xây dựng ứng dụng
+# Khôi phục các gói cho các dự án
+RUN dotnet restore yourlook/yourlook.csproj
+RUN dotnet restore Data/Data.csproj
+
+# Sao chép toàn bộ mã nguồn vào thư mục làm việc
 COPY . ./
-RUN dotnet publish -c Release -o out
 
-# Sử dụng hình ảnh .NET Core Runtime để chạy ứng dụng
+# Xây dựng và xuất bản ứng dụng
+RUN dotnet publish yourlook/yourlook.csproj -c Release -o out
+
+# Sử dụng hình ảnh cơ sở cho .NET runtime để chạy ứng dụng
 FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS runtime
 WORKDIR /app
 COPY --from=build /app/out .
 
-# Cấu hình ứng dụng để chạy trên cổng 5089
+# Cổng mà ứng dụng sẽ lắng nghe
 EXPOSE 5089
+
+# Chạy ứng dụng
 ENTRYPOINT ["dotnet", "yourlook.dll"]
+
