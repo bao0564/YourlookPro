@@ -5,7 +5,10 @@ using Microsoft.EntityFrameworkCore;
 using yourlook.MenuKid;
 
 var builder = WebApplication.CreateBuilder(args);
-//
+builder.WebHost.ConfigureKestrel(serverOptions =>
+{
+	serverOptions.ListenAnyIP(5089); // L?ng nghe trên c?ng 5089
+});
 builder.Services.AddDbContext<YourlookContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectedDb"));

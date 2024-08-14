@@ -23,7 +23,7 @@ namespace yourlook.ViewMenukid
 			{
 				idFvrPrd=_context.DbFavoriteProducts.AsNoTracking().Where(x=>x.MaKh==idkh.Value).Select(x=>x.MaSp).ToList();
 			}
-			DateTime prdNew = DateTime.Now.AddDays(-50);
+			DateTime prdNew = DateTime.Now.AddDays(-100);
 			var db5SanPhamNew = _spNew.GetAllSanPhamNew().Where(x => x.CreateDate >= prdNew && x.CreateDate <= DateTime.Now)
 				.OrderByDescending(X => X.CreateDate).Take(10);
 			foreach( var prd in db5SanPhamNew)

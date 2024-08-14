@@ -40,6 +40,10 @@ COLOR PALETTE
 1. Fonts
 ***********/
 
+:root {
+	--gray-a: #2f3640;
+	--gray-d: #bdc3c7;
+}
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900');
 
 /*********************************
@@ -122,7 +126,6 @@ p a:active
 p a:hover
 {
 	color: #FF6347;
-	background: #fde0db;
 }
 p a:hover::after
 {
@@ -130,7 +133,6 @@ p a:hover::after
 }
 ::selection
 {
-	background: #fde0db;
 	color: #FF6347;
 }
 p::selection
@@ -419,14 +421,14 @@ section
 	justify-content: center;
 }
 
-	.btn-swich button {
-		height: 30px;
-		width: auto;
-		background-color: #000;
-		color: #ccc;
-		border: none;
-		border-radius: 5px;
-	}
+.btn-swich button {
+	height: 30px;
+	width: auto;
+	background-color: #000;
+	color: #ccc;
+	border: none;
+	border-radius: 5px;
+}
 
 .form-register {
 	display: none;
@@ -645,8 +647,8 @@ section
 /*********************************
 3. Home
 *********************************/
-.header {
-	position: absolute;
+#headerr {
+	position: fixed;
 	left: 0;
 	width: 100%;
 	background: #FFFFFF;
@@ -685,17 +687,18 @@ section
 	height:50px;
 	align-items:center;
 }
+.mxh li:hover{
+	transform:scale(1.3);
+	transition:0.5s;
+}
 /*********************************
 3.1 Currency
 *********************************/
-
-.currency
-{
+.currency {
 	display: inline-block;
 	position: relative;
 	min-width: 50px;
 	padding-right: 20px;
-	padding-left: 20px;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -708,33 +711,36 @@ section
 	font-size: 19px;
 	text-transform: uppercase;
 }
+.currency i:hover{
+	transform:rotate(360deg);
+	transition:1s;
+}
 .currency > a > i
 {
+	padding:0 10px;
 	margin-left: 0px;
 }
-.currency:hover .currency_selection
-{
+.currency:hover .currency_selection,
+.currency_selection:hover {
 	visibility: visible;
 	opacity: 1;
 	top: 100%;
+	pointer-events: auto;
 }
-.currency_selection
-{
+.currency_selection {
 	display: block;
 	position: absolute;
 	right: 0;
 	top: 120%;
 	margin: 0;
 	background: #FFFFFF;
+	border-radius: 10px;
 	visibility: hidden;
 	opacity: 0;
 	z-index: 1;
 	box-shadow: 0 0 25px rgba(63, 78, 100, 0.15);
-	-webkit-transition: opacity 0.3s ease;
-	-moz-transition: opacity 0.3s ease;
-	-ms-transition: opacity 0.3s ease;
-	-o-transition: opacity 0.3s ease;
 	transition: all 0.3s ease;
+	pointer-events: none;
 }
 .currency_selection li
 {
@@ -790,30 +796,28 @@ section
 {
 	margin-left: 8px;
 }
-.language:hover .language_selection
-{
+.language:hover .language_selection,
+.language_selection:hover {
 	visibility: visible;
 	opacity: 1;
 	top: 100%;
+	pointer-events: auto;
 }
-.language_selection
-{
+
+.language_selection {
 	display: block;
 	position: absolute;
 	right: 0;
-	top: 120%;
 	margin: 0;
 	width: 100%;
 	background: #FFFFFF;
+	border-radius:10px;
 	visibility: hidden;
 	opacity: 0;
 	z-index: 1;
 	box-shadow: 0 0 25px rgba(63, 78, 100, 0.15);
-	-webkit-transition: opacity 0.3s ease;
-	-moz-transition: opacity 0.3s ease;
-	-ms-transition: opacity 0.3s ease;
-	-o-transition: opacity 0.3s ease;
 	transition: all 0.3s ease;
+	pointer-events: none; /* Ngăn chặn sự kiện chuột khi không hover */
 }
 .language_selection li
 {
@@ -866,28 +870,25 @@ section
 {
 	margin-left: 8px;
 }
-.account:hover .account_selection
-{
+.account:hover .account_selection,
+.account_selection:hover {
 	visibility: visible;
 	opacity: 1;
 	top: 100%;
+	pointer-events: auto;
 }
-.account_selection
-{
+.account_selection {
 	display: block;
 	position: absolute;
-	right: 0;
-	top: 120%;
+	right: -10px;
 	margin: 0;
+	border-radius: 10px;
 	background: #FFFFFF;
 	visibility: hidden;
 	opacity: 0;
 	z-index: 1;
 	box-shadow: 0 0 25px rgba(63, 78, 100, 0.15);
-	-webkit-transition: opacity 0.3s ease;
-	-moz-transition: opacity 0.3s ease;
-	-ms-transition: opacity 0.3s ease;
-	-o-transition: opacity 0.3s ease;
+	pointer-events: none;
 	transition: all 0.3s ease;
 }
 .account_selection li
@@ -968,6 +969,10 @@ section
 	right: 12%;
 	top: 23%;
 }
+.navbar_menu{
+	gap:1.2rem;
+	list-style:none;
+}
 .navbar_menu li {
 	display: inline-block;
 }
@@ -979,18 +984,28 @@ section
 	font-weight: 500;
 	text-transform: uppercase;
 	padding: 20px;
-	-webkit-transition: color 0.3s ease;
-	-moz-transition: color 0.3s ease;
-	-ms-transition: color 0.3s ease;
-	-o-transition: color 0.3s ease;
-	transition: color 0.3s ease;
 }
 .navbar_menu li a:hover
 {
-	color: #b5aec4;
+	color: #fff;
 }
-.navbar_user
-{
+/*.link {
+	padding:0.5rem;
+	color:#fff;
+	text-decoration:none;
+	position:relative;
+}
+.link::before{
+	content:"";
+	position:absolute;
+	width:100%;
+	height:2px;
+	background:#fff;
+	border-radius:5px;
+	transform:scaleX(0);
+	transition:all 0.6s ease;
+}*/
+.navbar_user {
 	margin: 0 37px;
 }
 .navbar_user li
@@ -1351,8 +1366,7 @@ section
 	width: 100%;
 	margin-top: 30px;
 }
-.banner_item
-{
+.banner_item {
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -1363,19 +1377,25 @@ section
 	align-items: center;
 	height: 265px;
 	background-repeat: no-repeat;
-	background-size: cover;
 	background-position: center center;
+	background-size: cover;
 }
-.banner_category
-{
+.banner_item:hover {
+}
+.banner_category {
 	height: 50px;
 	background: #FFFFFF;
 	min-width: 180px;
 	padding-left: 25px;
 	padding-right: 25px;
+	border-radius:0px;
+	transition:border-radius 0.3s ease-in-out;
 }
-.banner_category a
-{
+.banner_category:hover {
+	background: var(--gray-d);
+	border-radius: 10px;
+}
+.banner_category a {
 	display: block;
 	color: #1e1e27;
 	text-transform: uppercase;
@@ -1392,7 +1412,7 @@ section
 }
 .banner_category a:hover
 {
-	color: #b5aec4;
+	color: var(--gray-a);
 }
 
 /*********************************
@@ -1832,12 +1852,21 @@ section
 	display: flex;
 	justify-content: center;
   }
-  #prd-hot {
+#prd-hot {
 	display: block;
-  }
-  #prd-new {
+}
+#prd-new {
 	display: none;
-  }
+}
+.prd-next{
+	background-color:var(--gray-a);
+}
+.prd-next a{
+	color:#fff;
+}
+.prd-next a i {
+	padding-left:5px;
+}
 /*********************************
 7.1 Slider Nav
 *********************************/
@@ -2265,7 +2294,6 @@ section
 .space-address {
 	border-radius: 10px;
 	padding: 10px;
-	background-color:#fff
 }
 .space-address a{
 	font-size:1.2rem;

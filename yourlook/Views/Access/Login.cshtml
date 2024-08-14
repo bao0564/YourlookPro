@@ -8,10 +8,10 @@
     <div class="font-login">
         <div style="display:flex; justify-content:space-around;align-items:center">
             <div>
-                <h2>Đăng Nhập</h2>
+                <h2>LOGIN</h2>
             </div>
         </div>
-        <p style="border-top:1px solid #000">Bằng:</p>
+        <p>With:</p>
         <div class="title">
             <div style="display:flex;align-items:center;justify-content:space-between">
                 <form asp-action="ExternalLogin" method="post">
@@ -24,18 +24,16 @@
                 <p>Luôn mang đến cho bạn nhứng sản phẩm chất lượng</p>
             </div>
         </div>
-        <p>Hoặc:</p>
+        <p>Or:</p>
         @using (Html.BeginForm("Login", "Access", FormMethod.Post))
         {
             <div class="space-address">
                 <div class="inp">
-                   @*  <input type="text" name="" id="" placeholder="Email/SĐT..." /> *@
                     @Html.TextBoxFor(x => x.Email, new {@class="input", placeholder = "Email/SĐT...", type = "text",required="required",autofocus="autofocus" })
                 </div>
             </div>
             <div class="space-address">
                 <div class="inp">
-                    @* <input type="text" name="" id="" placeholder="Mật Khẩu..." /> *@
                     @Html.TextBoxFor(x => x.Passwords, new { @class = "input", placeholder = "Mật Khẩu...", type = "text", required = "required", autofocus = "autofocus" })
                 </div>
             </div>

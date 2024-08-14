@@ -8,10 +8,10 @@
     <div class="font-login">
         <div style="display:flex; justify-content:space-around;align-items:center">
             <div>
-                <h2>Đăng Ký</h2>
+                <h2>REGISTER</h2>
             </div>
         </div>
-        <p style="border-top:1px solid #000">Bằng:</p>
+        <p style="border-top:1px solid #000">With:</p>
         <div class="title">
             <div style="display:flex;align-items:center;justify-content:space-between">
                 <form asp-action="ExternalLogin" method="post">
@@ -24,7 +24,7 @@
                 <p>Luôn mang đến cho bạn nhứng sản phẩm chất lượng</p>
             </div>
         </div>
-        <p>Hoặc:</p>
+        <p>Or:</p>
         @using (Html.BeginForm("Register", "Access", FormMethod.Post,new{}))
         {
             <div class="space-address">

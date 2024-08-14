@@ -118,7 +118,7 @@ namespace yourlook.Controllers
             {
                 var selectedItems = HttpContext.Session.GetJson<List<CheckOutItem>>("Order");
                 var orderInfor = HttpContext.Session.GetJson<OrderInforItem>("OrderInfo");
-                var tongtien=selectedItems.Sum(x=>x.ProductPrice);
+                var tongtien=selectedItems.Sum(x=>x.Total);//dm
                 var tongsoluong=selectedItems.Sum(x=>x.ProductQuantity);
                 var emailkh = HttpContext.Session.GetString("user");
                 var idkh = HttpContext.Session.GetInt32("userid");

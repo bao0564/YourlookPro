@@ -28,11 +28,12 @@
                     <tbody>
                         @foreach (var prd in Model.DbChiTietDonHangs)
                         {
+                            var tongtiensp = Convert.ToInt32(prd.SoLuongSp * prd.Price);
                             <tr>
                                 <td class="box-img"><img style="height:100px" src="@Url.Content("../img/"+prd.AnhSp)" /></td>
                                 <td>@prd.TenSp</td>
                                 <td>@prd.SoLuongSp</td>
-                                <td>@prd.Price.ToString("N0") VNĐ</td>
+                                <td>@tongtiensp.ToString("N0") VNĐ</td>
                             </tr>
                         }
                     </tbody>

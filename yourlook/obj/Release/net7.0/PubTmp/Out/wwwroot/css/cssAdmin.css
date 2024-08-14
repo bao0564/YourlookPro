@@ -1,0 +1,650 @@
+﻿body {
+    font-family: Tahoma, sans-serif;
+    background: #ffffff;
+    color: #ffffff;
+}
+
+::-webkit-scrollbar {
+    background-color: none;
+    border-radius: 10px;
+}
+
+input {
+    margin-bottom: 0 !important;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+    li:hover {
+        background-color: #576574;
+        font-size: 20px;
+    }
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 10px 0 0 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.container-0 {
+    margin: 0;
+}
+
+.messages {
+    color: red;
+    font-size: 20px;
+    display: flex;
+    justify-content: center
+}
+/*header*/
+.head-top {
+    background: #1e272e;
+    clear: both;
+    border-radius: 10px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden
+}
+
+    #header .logo {
+        text-transform: uppercase;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+.logo img {
+    width: 300px;
+}
+
+#header .account, .flct {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    height: 700px;
+    display: flex;
+    border-top: none;
+}
+
+.menu .menu-ct li a {
+    padding: 20px 40px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu-ct {
+    min-width: 250px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    background-color: #1e272e;
+}
+
+    .menu-ct li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 18px;
+        border-radius: 5px;
+        box-shadow: 4px 3px 4px #1f2325;
+    }
+
+.nav-pills .nav-item{
+    display:flex;
+    align-items:center;
+    background-color:#ffffff;
+}
+/* cp -trang index */
+.cp0 {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    color: #cd6133;
+    text-transform: uppercase;
+    background-color: rgb(235, 191, 115);
+    border-radius: 10px;
+}
+
+.menu-cp {
+    min-width: 1200px;
+    border: 1px solid #cd6133;
+    border-radius: 10px;
+    overflow-y: scroll;
+    background-color: #f0eaea;
+    color: black;
+}
+
+.menu .cp {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-cp .cp-0 {
+    width: 200px;
+    height: 250px;
+    background-color: #ffffff;
+    margin: 20px 10px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px #cac6c6;
+}
+
+.menu-cp .cp-1 {
+    width: 400px;
+    height: 250px;
+    background-color: #ffffff;
+    margin-left: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px #cac6c6;
+    text-align: center;
+}
+
+.menu-cp .cp-bieudo {
+    width: 100%;
+    height: 500px;
+    background-color: #ffffff;
+    margin-left: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px #cac6c6;
+    text-align: center;
+}
+
+.cp-0:hover {
+    width: 210px;
+    height: 260px;
+    background-color: #ffffff;
+    margin: 20px 10px 20px 20px;
+    border-radius: 15px;
+    box-shadow: 7px 7px 5px #cac6c6;
+}
+
+.cp-1:hover {
+    width: 410px;
+    height: 260px;
+    background-color: #ffffff;
+    margin-left: 20px;
+    border-radius: 15px;
+    box-shadow: 7px 7px 5px #cac6c6;
+}
+
+.cp-0 {
+    display: inline;
+}
+
+    .cp-0 .cp-i {
+        justify-content: center;
+        margin: 80px 0 0 7px;
+    }
+
+    .cp-0 .cp-ii {
+        justify-content: center;
+        margin: 100px 0 0 7px;
+    }
+
+    .cp-0 img {
+        float: left;
+        width: 50%;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    .cp-0 .cp-n {
+        text-align: center;
+    }
+
+.cp a {
+    color: #000000;
+    text-decoration: none;
+}
+/* cp-trang */
+.h-cp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.h-cp-l {
+    background-color: #ffffff;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.h-cp-r {
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 550px;
+    overflow-y: scroll;
+}
+
+.h-cp-l .form-search {
+    background-color: #cac6c6;
+    width: 95%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+th {
+    background-color: #9b9898;
+}
+
+table,
+th {
+    border: 1px solid #b77b02;
+    border-collapse: collapse;
+    padding: 10px 10px;
+    margin: 0;
+    text-align: center;
+}
+
+td {
+    border: 1px solid #b77b02;
+    border-collapse: collapse;
+    padding: 10px 5px;
+    margin: 0;
+    text-align: center;
+}
+
+.dl-sp {
+    margin: 0 10px 10px 20px;
+    font-size: 80%;
+}
+
+    .dl-sp img {
+        justify-content: center;
+        width: 50px;
+        height: auto;
+    }
+
+.dl-dh {
+    font-size: 90%;
+    font-weight: bold;
+    display: flex;
+    border-radius: 10px;
+}
+
+.dl-ct {
+    display: flex;
+    border-radius: 10px;
+}
+
+    .dl-ct input {
+        margin: 10px;
+        height: 30px;
+        width: 90%;
+    }
+
+.dl-nct {
+    float: right;
+    text-align: center;
+    border-radius: 10px;
+}
+
+    .dl-nct button {
+        margin-top: 13px;
+    }
+
+.dl-n {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+    .dl-n select {
+        margin: 10px;
+        height: 30px;
+        width: 230px;
+    }
+
+.dl {
+    padding: 0;
+    font-size: 90%;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+    .dl textarea {
+        margin: 10px;
+        height: 75px;
+        width: 230px;
+    }
+
+    .dl input {
+        height: 30px;
+        width: 230px;
+    }
+
+    .dl .dl-mn {
+        margin-left: 10px;
+    }
+
+.dl-bt {
+    display: flex;
+    margin: 10px 10px 40px 10px;
+    justify-content: center;
+}
+
+    .dl-bt button {
+        height: 40px;
+        background-color: #d6815d;
+        border-radius: 5px;
+    }
+
+        .dl-bt button:hover {
+            height: 35px;
+            background-color: #c14008;
+            border-radius: 7px;
+        }
+
+.dl-bt-sp button {
+    height: 40px;
+    background-color: #d6815d;
+    border-radius: 5px;
+}
+
+    .dl-bt-sp button:hover {
+        height: 35px;
+        background-color: #c14008;
+        border-radius: 7px;
+    }
+
+.bt-ar {
+    margin-right: 20px;
+}
+
+.bt-ex {
+    margin-left: 20px;
+}
+
+/*Trang đơn hàng*/
+.h-cp-f {
+    display: block;
+    font-size: 85%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 98%;
+    margin: 10px;
+}
+
+.h-cp-up {
+    display: flex;
+}
+
+    .h-cp-up .bt-c {
+        border-radius: 10px;
+        margin: 15px;
+        padding: 8px;
+        background-color: #e6e5e5;
+    }
+
+    .h-cp-up a {
+        color: #000000;
+    }
+
+.h-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .h-table th, .h-table td {
+        width: auto;
+    }
+
+.form-search {
+    background-color: #cac6c6;
+    width: 95%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+}
+
+.h-table img {
+    width: 100px;
+    height: auto;
+}
+
+/*trang tạo đơn hàng */
+.h-cp-mid-1 {
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+.h-cp-f .mid-c {
+    margin: 10px;
+    padding: 10px;
+    min-width: fit-content;
+}
+
+.mid-c input,
+.mid-c select {
+    height: 40px;
+    width: 250px;
+}
+
+.mid-c textarea {
+    width: 380px;
+    height: 100px;
+}
+
+.h-cp-dow {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.h-cp-dow input{
+    height: 40px;
+    background-color: #d6815d;
+    border-radius: 5px;
+}
+
+.h-cp-dow input:hover{
+    height: 35px;
+    background-color: #c14008;
+    border-radius: 7px;
+}
+
+/* hộp thoại */
+.dialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px #d6815d;
+    padding: 10px;
+    color: #000000;
+    width: 40%;
+    height: auto;
+    overflow-y: scroll;
+}
+
+    .dialog input {
+        background-color: #cac6c6;
+        width: 100%;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+        margin: 20px 15px 15px 20px;
+    }
+
+    .dialog select {
+        background-color: #cac6c6;
+        width: 190px;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+        margin: 20px 15px 15px 20px;
+    }
+
+    .dialog .mid-c {
+        margin: 10px;
+    }
+
+.dialog-1 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px #d6815d;
+    padding: 10px;
+    color: #000000;
+    width: 60%;
+    height: 550px;
+    overflow-y: scroll;
+}
+
+    .dialog-1 input {
+        background-color: #cac6c6;
+        width: 190px;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+        margin: 10px;
+    }
+
+    .dialog-1 select {
+        background-color: #cac6c6;
+        width: 190px;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+        margin: 20px 15px 15px 20px;
+    }
+
+    .dialog-1 .mid-c {
+        margin: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+/* trang login admin */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+div {
+    padding: 10px;
+}
+
+.body-ad-login {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-login {
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 2rem;
+    border: 1px solid;
+    width: 350px;
+    height: auto;
+}
+
+.title, .place-hole, .box-btn, .btn {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1px solid #576574;
+    background-color: #ffffff;
+}
+/*phân trang*/
+.pagination {
+    display:flex;
+    justify-content: center;
+}
+
+.pagination li {
+    border: 1px solid;
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+.pagination .active {
+    background-color: #2f3640;
+    color: #fff;
+}
+.pagination li a{
+    padding: 0;
+    color:black;
+}
+input[type=checkbox]{
+    width:20px;
+}
+/*nút bấm hành động*/
+.btn-ddu {
+    border:1px solid #2f3640;
+}
+.btn-de{
+    color:#fff;
+    background-color:red;
+    padding:0 10px;
+}
+.btn-dt {
+    color: #000;
+    background-color: yellow;
+    padding: 0 10px;
+}
+.btn-ud {
+    color: #fff;
+    background-color: forestgreen;
+    padding: 0 10px;
+}
+/*nút theo dõi tình trang đơn hàng */
+.check-od {
+    height: 15px;
+    width: 15px;
+    padding: 0px;
+    border: 1px solid #2f3640;
+    border-radius: 50%;
+    background-color: forestgreen;
+}
+.check-od-none {
+    height: 15px;
+    width: 15px;
+    padding: 0px;
+    border: 1px solid #2f3640;
+    border-radius: 50%;
+    background-color: red;
+}

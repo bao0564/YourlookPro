@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="E:\ShopYourLook\yourlook\yourlook\obj\Debug\net7.0\PubTmp\Out\" />
+  <dbfullsql path="E:\ShopYourLook\yourlook\yourlook\obj\Debug\net7.0\PubTmp\EFSQLScripts\Data.Models.YourlookContext.sql" />
+</sitemanifest>
