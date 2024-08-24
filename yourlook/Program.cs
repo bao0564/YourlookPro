@@ -7,7 +7,11 @@ using yourlook.MenuKid;
 var builder = WebApplication.CreateBuilder(args);
 builder.WebHost.ConfigureKestrel(serverOptions =>
 {
-	serverOptions.ListenAnyIP(5089); // L?ng nghe trên c?ng 5089
+    serverOptions.ListenAnyIP(5089); // HTTP port
+    serverOptions.ListenAnyIP(7078, listenOptions => // HTTPS port
+    {
+        listenOptions.UseHttps();
+    });
 });
 builder.Services.AddDbContext<YourlookContext>(options =>
 {
@@ -16,15 +20,15 @@ builder.Services.AddDbContext<YourlookContext>(options =>
 
 builder.Services.AddAuthentication(options =>
 {
-	options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-	options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-	options.DefaultChallengeScheme = GoogleDefaults.AuthenticationScheme;
+    options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = GoogleDefaults.AuthenticationScheme;
 })
 .AddCookie()
 .AddGoogle(options =>
 {
-	options.ClientId = "834180802158-c18fs2qk244bpi3349rrs84jeo9datlu.apps.googleusercontent.com";
-	options.ClientSecret = "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";
+    options.ClientId = "834180802158-c18fs2qk244bpi3349rrs84jeo9datlu.apps.googleusercontent.com";
+    options.ClientSecret = "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";
 });
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -33,9 +37,9 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
-	options.IdleTimeout = TimeSpan.FromMinutes(30); // Session timeout
-	options.Cookie.HttpOnly = true;
-	options.Cookie.IsEssential = true;
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // Session timeout
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
 });
 
 //builder ViewComponent

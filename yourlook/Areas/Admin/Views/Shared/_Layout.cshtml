@@ -23,9 +23,24 @@
                         <img src="~/logo/logo.png" />
                     </a>
                 </div>
-                <div class="account">
-                    Tài khoản đăng nhập!
-                </div>
+                @if (Context.Session.GetString("EmailAdmin")!=null)
+                {
+                    <div class="account">
+                        Xin Chào: @Context.Session.GetString("EmailAdmin")
+                    </div>                   
+                }
+                else if (Context.Session.GetString("NameAdmin") != null)
+                {
+                    <div class="account">
+                        Xin Chào: @Context.Session.GetString("NameAdmin")
+                    </div>
+                }
+                else
+                {
+                    <div class="account">
+                        Tài khoản đăng nhập!
+                    </div>
+                }
             </div>
         </div>
         <div class="menu">
@@ -38,7 +53,8 @@
                     <li><a href="@Url.Action("Color","Admin")"> Màu</a></li>
                     <li><a href="@Url.Action("KhachHang","Admin")"> Khách Hàng</a> </li>
                     <li><a href="@Url.Action("Ads","Admin")"> Ads</a></li>
-                    <li><a href="Ad-Setting">Cài Đặt</a></li>
+                    <li><a href="@Url.Action("Admin","Admin")">Admin</a></li>
+                    <li><a href="@Url.Action("Logout","HomeAdmin")" onclick="logout(event)">Đăng Xuất</a></li>
                 </ul>
             </div>
             <div class="menu-cp col-10">
@@ -51,4 +67,14 @@
     @RenderSection("scripts", required: false)
 </body>
 </html>
+<script type="text/javascript">
+    function logout(event) {
+        event.preventDefault();
+        var userConfirmed = confirm("Bạn chắc chắn muốn đăng xuất?");
+        if (userConfirmed) {
+            var url = event.currentTarget.getAttribute("href");
+            window.location.href = url;
+        }
+    }
+</script>
 

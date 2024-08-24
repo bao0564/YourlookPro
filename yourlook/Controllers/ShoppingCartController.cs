@@ -1,5 +1,5 @@
 ﻿
-using Data.Migrations;
+//using Data.Migrations;
 using Data.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 namespace Data.Models
 {
     [Table("DbAdd")]
-    public class DbAdd:CmAbstract
+    public class DbAdd : CmAbstract
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

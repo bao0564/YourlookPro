@@ -133,8 +133,8 @@ namespace yourlook.Controllers
 
         public IActionResult LogOut() 
         {
-
             HttpContext.Session.Remove("user");
+            HttpContext.Session.Remove("userid");
             return RedirectToAction("Index", "Home");
 		}
     }

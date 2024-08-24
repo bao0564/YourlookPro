@@ -140,6 +140,13 @@ namespace Data.Migrations
                     b.Property<DateTime?>("CreateDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("EmailDn")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsExternalAccount")
+                        .HasColumnType("bit");
+
                     b.Property<string>("ModifiedBy")
                         .HasColumnType("nvarchar(max)");
 
@@ -147,11 +154,13 @@ namespace Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("NameDn")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PasswordDn")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Quyen")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
