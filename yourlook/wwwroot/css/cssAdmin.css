@@ -91,7 +91,6 @@ li {
 .menu-ct {
     min-width: 250px;
     border-radius: 10px;
-    overflow-y: scroll;
     background-color: #1e272e;
 }
 
@@ -125,15 +124,16 @@ li {
     min-width: 1200px;
     border: 1px solid #cd6133;
     border-radius: 10px;
-    overflow-y: scroll;
+    margin-left:10px;
     background-color: #f0eaea;
     color: black;
+    overflow-y:scroll;
 }
 
 .menu .cp {
     padding: 20px;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
 .menu-cp .cp-0 {

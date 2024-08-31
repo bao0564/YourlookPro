@@ -1,5 +1,8 @@
 ﻿using Data.Models;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace yourlook.Areas.Admin.Controllers
 {
@@ -12,9 +15,8 @@ namespace yourlook.Areas.Admin.Controllers
         [Route("index")]
         public IActionResult Index()
         {
-            var email = HttpContext.Session.GetString("EmailAdmin");
             var name = HttpContext.Session.GetString("NameAdmin");
-            if (email == null && name ==null)
+            if (name == null)
             {
                 return RedirectToAction("Login","HomeAdmin");
             }
@@ -24,7 +26,7 @@ namespace yourlook.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult Login()
         {
-            if (HttpContext.Session.GetString("EmailAdmin")!=null)
+            if (HttpContext.Session.GetString("NameAdmin")!=null)
             {
                 return RedirectToAction("Index","HomeAdmin");
             }
@@ -38,13 +40,14 @@ namespace yourlook.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Login(DbAdmin admin)
         {
-            if(HttpContext.Session.GetString("EmailAdmin") == null && HttpContext.Session.GetString("NameAdmin")==null)
+            if(HttpContext.Session.GetString("NameAdmin")==null)
             {
+                //tìm 
                 var e = db.DbAdmins.Where(x => x.EmailDn.Equals(admin.EmailDn) && (x.PasswordDn.Equals(admin.PasswordDn))).FirstOrDefault();
                 var n = db.DbAdmins.Where(x => x.NameDn.Equals(admin.NameDn) && (x.PasswordDn.Equals(admin.PasswordDn))).FirstOrDefault();
                 if(e != null)
                 {
-                    HttpContext.Session.SetString("EmailAdmin",e.EmailDn.ToString());
+                    HttpContext.Session.SetString("NameAdmin",e.NameDn.ToString());
                     return RedirectToAction("Index", "HomeAdmin");
                 }
                 else if (n!=null)
@@ -68,12 +71,6 @@ namespace yourlook.Areas.Admin.Controllers
         }
         [Route("taodonhang")]
         public IActionResult TaoDonHang()
-        {
-            return View();
-        }
-        //Color
-        [Route("color")]
-        public IActionResult Color(int? page)
         {
             return View();
         }

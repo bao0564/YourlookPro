@@ -15,5 +15,6 @@ namespace Data.Models
         public string? NameColor { get; set; }
 
         public string? Img { get; set; }
+        public string? MaMau { get; set; }
     }
 }

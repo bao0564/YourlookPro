@@ -1,16 +1,14 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Index";
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
 }
-
 <div class="cp0">
     Chào Mừng Đến Với Trang Quản Trị!
 </div>
 <div class="cp">
     <div class="cp-0" style="background-color: #a5e492;border: 1px solid #27a101;">
         <div>
-            <a href="@Url.Action("TaoDonHang","Admin")"><h2 class="cp-n">Thêm Đơn Đặt Hàng</h2></a>
+            <a href="@Url.Action("Index","Home")"><h2 class="cp-n">Thêm Đơn Đặt Hàng</h2></a>
         </div>
         <div class="cp-i">
             <img src="icon/lg-sp.png" alt="">
@@ -30,15 +28,13 @@
             .....
         </a>
     </div>
-</div>
-<div class="cp">
     <div class="cp-1">
         <h2>Tình trạng đơn hàng gần nhất</h2>
         <a href=""></a>
     </div>
     <div class="cp-0" style="background-color: #fa7272;border: 1px solid #a00000;">
         <div>
-            <a href="Ad-DanhMuc.html"><h2 class="cp-n"> Danh Mục </h2></a>
+            <a href="@Url.Action("DanhMuc","Admin")"><h2 class="cp-n">Danh Mục </h2></a>
         </div>
         <div class="cp-i">
             <img src="icon/lg-dm.png" alt="">
@@ -46,7 +42,7 @@
     </div>
     <div class="cp-0" style="background-color: #fabf72;border: 1px solid #885800;">
         <div>
-            <a href="Ad-QuangCao.html"><h2 class="cp-n"> Quảng Cáo</h2></a>
+            <a href="@Url.Action("Ads","Admin")"><h2 class="cp-n"> Quảng Cáo</h2></a>
         </div>
         <div class="cp-i">
             <img src="icon/lg-qc.png" alt="">

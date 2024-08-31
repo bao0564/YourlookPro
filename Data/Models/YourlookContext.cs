@@ -40,7 +40,7 @@ namespace Data.Models
 
         public virtual DbSet<DbChiTietDonHang> DbChiTietDonHangs { get; set; }
 
-        public virtual DbSet<DbChiTietImg> DbChiTietImgs { get; set; }
+        public virtual DbSet<DbChiTietSanPham> DbChiTietSanPhams { get; set; }
 
         public virtual DbSet<DbColor> DbColors { get; set; }
 

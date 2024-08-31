@@ -23,6 +23,13 @@
 	<link rel="stylesheet" type="text/css" href="/css/categories_styles.css">
 	<link rel="stylesheet" type="text/css" href="/css/categories_responsive.css">
 	<link rel="stylesheet" type="text/css" href="/plugins/jquery-ui-1.12.1.custom/jquery-ui.css">
+	@* map *@
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	@* font *@
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&subset=latin,vietnamese&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 	@RenderSection("styles", required: false)
 </head>
 
@@ -669,9 +676,9 @@
 						<h4>Địa chỉ</h4>
 						<ul class="inf-con" id="inf-con-5">
 							<li>Hà Nội:</li>
-							<li><p>số nhà 55 ngõ 62 Thị Trấn Trâu Quỳ Thành Phố Hà Nội</p></li>
+							<li><a href="@Url.Action("Map","Contact")">số nhà 55 ngõ 62 Thị Trấn Trâu Quỳ Thành Phố Hà Nội</a></li>
 							<li>HCM</li>
-							<li><p>số nhà 55 quận 2 Trâu Quỳ Thành Phố Hồ Chí Minh</p></li>
+							<li><a>số nhà 55 quận 2 Trâu Quỳ Thành Phố Hồ Chí Minh</a></li>
 						</ul>
 					</div>
 				</div>

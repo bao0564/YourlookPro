@@ -1137,6 +1137,10 @@
       "PackagePath": "staticwebassets\\js\\FavoriteProduct.js"
     },
     {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\Map.js",
+      "PackagePath": "staticwebassets\\js\\Map.js"
+    },
+    {
       "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\addtocart.js",
       "PackagePath": "staticwebassets\\js\\addtocart.js"
     },
@@ -1433,8 +1437,16 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\logo\\Screenshot_3.png",
+      "PackagePath": "staticwebassets\\logo\\Screenshot_3.png"
+    },
+    {
       "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\logo\\Untitled_Export_V4.jpeg",
       "PackagePath": "staticwebassets\\logo\\Untitled_Export_V4.jpeg"
+    },
+    {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\logo\\abus.png",
+      "PackagePath": "staticwebassets\\logo\\abus.png"
     },
     {
       "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\logo\\ad-1.jpeg",

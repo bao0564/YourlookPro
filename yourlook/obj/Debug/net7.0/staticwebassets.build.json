@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "STgezYt4baagO9XytgwmFgK5ghlcGqNkebh3pjK5B6k=",
+  "Hash": "VYxZcD0jp2E9xWlN1cj2h5/DXujCAgPunDtxsJ9G4EE=",
   "Source": "yourlook",
   "BasePath": "_content/yourlook",
   "Mode": "Default",
@@ -5634,6 +5634,25 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery-3.2.1.min.js"
     },
     {
+      "Identity": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\Map.js",
+      "SourceId": "yourlook",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\",
+      "BasePath": "_content/yourlook",
+      "RelativePath": "js/Map.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Map.js"
+    },
+    {
       "Identity": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\move-ad.js",
       "SourceId": "yourlook",
       "SourceType": "Discovered",
@@ -6831,6 +6850,25 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
+      "Identity": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\logo\\abus.png",
+      "SourceId": "yourlook",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\",
+      "BasePath": "_content/yourlook",
+      "RelativePath": "logo/abus.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logo\\abus.png"
+    },
+    {
       "Identity": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\logo\\ad-1.jpeg",
       "SourceId": "yourlook",
       "SourceType": "Discovered",
@@ -7228,6 +7266,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\logo\\new-product.png"
+    },
+    {
+      "Identity": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\logo\\Screenshot_3.png",
+      "SourceId": "yourlook",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\",
+      "BasePath": "_content/yourlook",
+      "RelativePath": "logo/Screenshot_3.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logo\\Screenshot_3.png"
     },
     {
       "Identity": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\logo\\Untitled_Export_V4.jpeg",

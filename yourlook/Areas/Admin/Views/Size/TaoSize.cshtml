@@ -1,0 +1,37 @@
+﻿@model Data.Models.DbSize
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "TaoSize";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="menu-cp">
+    <div class="cp0">
+        Thêm / Tạo Size mới
+    </div>
+    <div class="h-cp1">
+        <div class="h-cp-up">
+            <div style="display:flex;align-items:center;padding-top:15px">
+                <a asp-action="Size"><img style="height:20px" src="\icon\drop left.svg" /> </a>
+            </div>
+        </div>
+        @using (Html.BeginForm("TaoSize", "Size", FormMethod.Post, new { }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true)
+            <div class="h-cp-mid-1">
+                <div class="mid-c">
+                    <label class="control-label">Tên Size</label>
+                    @Html.TextBoxFor(x => x.NameSize, new { @class = "form-control", @placeholder = "Tên size" })
+                    @Html.ValidationMessageFor(x => x.NameSize, null, new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="h-cp-dow">
+                <div class="bt-ar">
+                    <input type="submit" value="Tạo size" class="btn-primary" />
+                </div>
+            </div>
+        }
+    </div>
+</div>
+

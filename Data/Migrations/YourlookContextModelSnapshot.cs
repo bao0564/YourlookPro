@@ -213,24 +213,44 @@ namespace Data.Migrations
                     b.ToTable("DbChiTietDonHang");
                 });
 
-            modelBuilder.Entity("Data.Models.DbChiTietImg", b =>
+            modelBuilder.Entity("Data.Models.DbChiTietSanPham", b =>
                 {
-                    b.Property<int>("MaChiTietSp")
+                    b.Property<int>("MaSpChiTiet")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaChiTietSp"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaSpChiTiet"));
 
-                    b.Property<string>("Img")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("ColorId")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Place")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("MaMau")
+                        .HasColumnType("int");
 
-                    b.HasKey("MaChiTietSp");
+                    b.Property<int>("MaSize")
+                        .HasColumnType("int");
 
-                    b.ToTable("DbChiTietImg");
+                    b.Property<int>("MaSp")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SanPhamMaSp")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SizeId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SoLuongTon")
+                        .HasColumnType("int");
+
+                    b.HasKey("MaSpChiTiet");
+
+                    b.HasIndex("ColorId");
+
+                    b.HasIndex("SanPhamMaSp");
+
+                    b.HasIndex("SizeId");
+
+                    b.ToTable("DbChiTietSanPham");
                 });
 
             modelBuilder.Entity("Data.Models.DbColor", b =>
@@ -248,6 +268,9 @@ namespace Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Img")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MaMau")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ModifiedBy")
@@ -821,6 +844,33 @@ namespace Data.Migrations
                         .IsRequired();
 
                     b.Navigation("MaDhNavigation");
+                });
+
+            modelBuilder.Entity("Data.Models.DbChiTietSanPham", b =>
+                {
+                    b.HasOne("Data.Models.DbColor", "Color")
+                        .WithMany()
+                        .HasForeignKey("ColorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Data.Models.DbSanPham", "SanPham")
+                        .WithMany()
+                        .HasForeignKey("SanPhamMaSp")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Data.Models.DbSize", "Size")
+                        .WithMany()
+                        .HasForeignKey("SizeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Color");
+
+                    b.Navigation("SanPham");
+
+                    b.Navigation("Size");
                 });
 
             modelBuilder.Entity("Data.Models.DbDonHang", b =>

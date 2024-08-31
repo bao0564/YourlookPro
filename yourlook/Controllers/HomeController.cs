@@ -53,11 +53,23 @@ namespace yourlook.Controllers
 			}
         }
 		//tìm từ khóa
-        public IActionResult KeyWord(int? page,string word)
+		public IActionResult KeyWord(int? page, string keyword)
 		{
             int pageSize = 25;
             int pageNumber = page ?? 1;
-            var lst = db.DbSanPhams.AsNoTracking().Where(x => x.TenSp.Contains(word)).OrderBy(x => x.CreateDate).ToList();
+			var item = from sp in db.DbSanPhams
+					   join dm in db.DbDanhMucs on sp.MaDm equals dm.MaDm
+					   where (string.IsNullOrEmpty(keyword) || sp.TenSp.Contains(keyword) || dm.TenDm.Contains(keyword))
+					   select new DbSanPham
+					   {
+						   MaSp = sp.MaSp,
+						   TenSp = sp.TenSp,
+						   GiamGia= sp.GiamGia,
+						   AnhSp = sp.AnhSp,
+						   PriceMax = sp.PriceMax,
+						   PriceMin = sp.PriceMin,
+					   };
+            var lst = item.ToList();
             PagedList<DbSanPham> lstsp = new PagedList<DbSanPham>(lst, pageNumber, pageSize);
             return View(lstsp);
 		}
