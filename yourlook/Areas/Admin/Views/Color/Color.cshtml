@@ -12,7 +12,7 @@
 <div class="h-cp1">
     <div class="h-cp-f">
         <div class="h-cp-up">
-            <div class="bt-c"><a href="@Url.Action("TaoSize","Admin")">Thêm Màu Mới</a></div>
+            <div class="bt-c"><a href="@Url.Action("TaoColor","Admin")">Thêm Màu Mới</a></div>
             <div class="bt-c"><a href="">In dữ liệu </a></div>
             <div class="bt-c"><a href="">Xuất Excel</a></div>
             <div class="bt-c"><a href="">Xuất PDF</a></div>
@@ -45,8 +45,8 @@
                                 <td>@prd.MaMau</td>
                                 <td>@prd.Img</td>
                                 <td>
-                                    <a href="@Url.Action("XoaSize", new { idsize = prd.ColorId })" onclick="deletec(event)" style="color: #000;">Xóa</a>
-                                    <a asp-action="suasize" asp-route-idsize="@prd.ColorId" style="color: black;">Sửa</a>
+                                    <a href="@Url.Action("XoaColor", new { colorid = prd.ColorId })" onclick="deletec(event)" style="color: #000;">Xóa</a>
+                                    <a asp-action="suacolor" asp-route-colorid="@prd.ColorId" style="color: black;">Sửa</a>
                                 </td>
                             </tr>
                         }
@@ -62,6 +62,7 @@
         </div>
     </div>
 </div>
+@Html.PagedListPager(Model, page => Url.Action("Color", "Color", new { page = page }))
 <script type="text/javascript">
     function deletec(event) {
         event.preventDefault();

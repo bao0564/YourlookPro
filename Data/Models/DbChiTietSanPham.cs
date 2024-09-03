@@ -11,8 +11,8 @@ namespace Data.Models
 		public int MaSpChiTiet { get; set; }
 
 		public int MaSp { get; set; } 
-		public int MaSize { get; set; } 
-		public int MaMau { get; set; }  
+		public int SizeId { get; set; } 
+		public int ColorId { get; set; }  
 		public int SoLuongTon { get; set; }
 
 		public virtual DbSanPham SanPham { get; set; }

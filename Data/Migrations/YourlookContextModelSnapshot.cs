@@ -224,16 +224,7 @@ namespace Data.Migrations
                     b.Property<int>("ColorId")
                         .HasColumnType("int");
 
-                    b.Property<int>("MaMau")
-                        .HasColumnType("int");
-
-                    b.Property<int>("MaSize")
-                        .HasColumnType("int");
-
                     b.Property<int>("MaSp")
-                        .HasColumnType("int");
-
-                    b.Property<int>("SanPhamMaSp")
                         .HasColumnType("int");
 
                     b.Property<int>("SizeId")
@@ -246,7 +237,7 @@ namespace Data.Migrations
 
                     b.HasIndex("ColorId");
 
-                    b.HasIndex("SanPhamMaSp");
+                    b.HasIndex("MaSp");
 
                     b.HasIndex("SizeId");
 
@@ -849,19 +840,19 @@ namespace Data.Migrations
             modelBuilder.Entity("Data.Models.DbChiTietSanPham", b =>
                 {
                     b.HasOne("Data.Models.DbColor", "Color")
-                        .WithMany()
+                        .WithMany("DbChiTietSanPhams")
                         .HasForeignKey("ColorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Data.Models.DbSanPham", "SanPham")
-                        .WithMany()
-                        .HasForeignKey("SanPhamMaSp")
+                        .WithMany("DbChiTietSanPhams")
+                        .HasForeignKey("MaSp")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Data.Models.DbSize", "Size")
-                        .WithMany()
+                        .WithMany("DbChiTietSanPhams")
                         .HasForeignKey("SizeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -931,6 +922,11 @@ namespace Data.Migrations
                     b.Navigation("Nhom");
                 });
 
+            modelBuilder.Entity("Data.Models.DbColor", b =>
+                {
+                    b.Navigation("DbChiTietSanPhams");
+                });
+
             modelBuilder.Entity("Data.Models.DbDanhMuc", b =>
                 {
                     b.Navigation("DbSanPhams");
@@ -960,9 +956,16 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Data.Models.DbSanPham", b =>
                 {
+                    b.Navigation("DbChiTietSanPhams");
+
                     b.Navigation("DbFavorites");
 
                     b.Navigation("DbImgs");
+                });
+
+            modelBuilder.Entity("Data.Models.DbSize", b =>
+                {
+                    b.Navigation("DbChiTietSanPhams");
                 });
 #pragma warning restore 612, 618
         }

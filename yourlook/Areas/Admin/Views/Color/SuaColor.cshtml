@@ -1,0 +1,47 @@
+﻿@model Data.Models.DbColor;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "SuaColor";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<div class="menu-cp">
+    <div class="cp0">
+        Sửa Màu sắc
+    </div>
+    <div class="h-cp1">
+        <div class="h-cp-up">
+            <div style="display:flex;align-items:center;padding-top:15px">
+                <a asp-action="Color"><img style="height:20px" src="\icon\drop left.svg" /> </a>
+            </div>
+        </div>
+        @using (Html.BeginForm("SuaColor", "Color", FormMethod.Post, new { }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true)
+            @Html.HiddenFor(x => x.ColorId)
+            @Html.HiddenFor(x => x.CreateDate)
+            <div class="h-cp-mid-1">
+                <div class="mid-c">
+                    <label class="control-label">Tên Màu</label>
+                    @Html.TextBoxFor(x => x.NameColor, new { @class = "form-control", @placeholder = "Tên màu" })
+                    @Html.ValidationMessageFor(x => x.NameColor, null, new { @class = "text-danger" })
+                </div>
+                <div class="mid-c">
+                    <label class="control-label">Tên Màu Hex</label>
+                    @Html.TextBoxFor(x => x.MaMau, new { @class = "form-control", @placeholder = "Tên hex" })
+                    @Html.ValidationMessageFor(x => x.MaMau, null, new { @class = "text-danger" })
+                </div>
+                <div class="col-c">
+                    <label class="control-label">Ảnh màu</label>
+                    <input asp-for="Img" type="file" class="form-control" name="AnhSpFile" />
+                    <span asp-validation-for="Img" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="h-cp-dow">
+                <div class="bt-ar">
+                    <input type="submit" value="Tạo size" class="btn-primary" />
+                </div>
+            </div>
+        }
+    </div>
+</div>

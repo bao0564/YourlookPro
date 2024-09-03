@@ -1,4 +1,4 @@
-﻿@model Data.Models.DbSanPham
+﻿@model yourlook.Areas.Admin.Models.ProductViewModel;
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
     ViewData["Title"] = "SuaSanPham";
@@ -21,8 +21,7 @@
         {
             @Html.AntiForgeryToken()
             @Html.ValidationSummary(true)
-            @Html.HiddenFor(x => x.MaSp)
-            @Html.HiddenFor(x => x.CreateDate)
+            <input type="hidden" asp-for="MaSp" />
             <div class="card-body">
                 <div class="tab-content">
                     <div class="active tab-pane" id="page1">
@@ -62,6 +61,32 @@
                                 <label asp-for="PriceMin" class="control-label"></label>
                                 <input asp-for="PriceMin" id="GiaMin" type="text" placeholder="Giá Min..." class="form-control" readonly />
                                 @Html.ValidationMessageFor(x => x.PriceMin, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="col-12">
+                                <label>Chọn Size:</label>
+                                <div style="display:flex">
+                                    @foreach (var size in Model.SizeList)
+                                    {
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" name="SelectedSizes" value="@size.SizeId"
+                                            @(Model.SelectedSizes.Contains(size.SizeId) ? "checked" : "") />
+                                            <label class="form-check-label"for="size-@size.SizeId">@size.NameSize</label>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label>Chọn Màu Sắc:</label>
+                                <div style="display:flex">
+                                    @foreach (var color in Model.ColorList)
+                                    {
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" name="SelectedColors" value="@color.ColorId"
+                                            @(Model.SelectedColors.Contains(color.ColorId) ? "checked" : "") />
+                                            <label class="form-check-label" style="white-space:nowrap" for="color-@color.ColorId">@color.NameColor</label>
+                                        </div>
+                                    }
+                                </div>
                             </div>
                             <div class="col-12">
                                 <label class="control-label">Mô Tả </label>
@@ -108,7 +133,7 @@
                         <div class="row">
                             <div style="color:red;display:flex;align-items:center">Vui lòng chọn ảnh mới để thay thế:</div>
                             <div>
-                                @foreach(var prd in Model.DbImgs)
+                                @foreach(var prd in Model.Imgs)
                                 {
                                     <img style="height:100px" src="@prd.Img" />
                                 }

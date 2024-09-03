@@ -1,29 +1,63 @@
 ﻿@model Data.Models.DbAdmin
 
 <div style="position:relative">
-    <di style="position:fixed; top:50%;left:50%;transform:translate(-50%,-50%)">
-        <div style="border:1px solid #2f3640;padding:50px;border-radius:10px;background-color:#5e565645">
-            <h2 style="display:flex;justify-content:center">admin login</h2>
+    <div class="login-admin">
+        <div class="box-login-admin">
+            <h2 class="fljct">Admin login</h2>
             @using (Html.BeginForm("Login", "HomeAdmin", FormMethod.Post))
             {
-                <div style="margin:10px;padding:10px">
-                    <label>username</label>
+                <div class="box-infor">
+                    <label>Tên Đăng Nhập:</label>
                     @Html.TextBoxFor(x => x.EmailDn, new { @class = "input", placeholder = "Email/SĐT...", type = "text", required = "required", autofocus = "autofocus" })
                 </div>
-                <div style="margin:10px;padding:10px">
-                    <label>password</label>
-                @Html.TextBoxFor(x => x.PasswordDn, new { @class = "input", placeholder = "Mật Khẩu...", type = "text", required = "required", autofocus = "autofocus" })
+                <div class="box-infor">
+                    <label>Mật Khẩu:</label>
+                    @Html.TextBoxFor(x => x.PasswordDn, new { @class = "input", placeholder = "Mật Khẩu...", type = "text", required = "required", autofocus = "autofocus" })
                 </div>
                 @if (!ViewData.ModelState.IsValid)
                 {
-                    <div class="text-danger" style="display:flex;justify-content:center">
+                    <div class="text-danger fljct">
                         @Html.ValidationSummary(true)
                     </div>
                 }
-                <div style="display:flex;justify-content:center">
-                    <button type="submit">login</button>
+                <div class="fljct">
+                    <button style="padding:5px 10px" type="submit">Đăng Nhập</button>
                 </div>
             }
         </div>
-    </di>
+    </div>
 </div>
+<style>
+
+    /*login*/
+    .login-admin {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%)
+    }
+
+    .box-login-admin {
+        border: 1px solid #2f3640;
+        padding: 50px;
+        border-radius: 10px;
+        background-color: #5e565645
+    }
+
+    .box-infor{
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+
+    .box-infor input{
+        border-radius:10px;
+        padding: 10px;
+    }
+    .fljct {
+        display: flex;
+        justify-content: center;
+    }
+</style>

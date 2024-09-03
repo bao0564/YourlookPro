@@ -30,6 +30,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29sb3JcQ29sb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/ShopYourLook/yourlook/yourlook/Areas/Admin/Views/Color/SuaColor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29sb3JcU3VhQ29sb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ShopYourLook/yourlook/yourlook/Areas/Admin/Views/Color/TaoColor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29sb3JcVGFvQ29sb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/ShopYourLook/yourlook/yourlook/Areas/Admin/Views/DanhMuc/DanhMuc.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFuaE11Y1xEYW5oTXVjLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

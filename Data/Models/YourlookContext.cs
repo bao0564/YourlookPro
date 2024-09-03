@@ -14,13 +14,35 @@ namespace Data.Models
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<DbSanPham>()
+            base.OnModelCreating(modelBuilder);
+
+			// Cấu hình quan hệ giữa DbSanPham và Dbimg
+			modelBuilder.Entity<DbSanPham>()
                 .HasMany(sp => sp.DbImgs)
                 .WithOne(img => img.MaSpNavigation)
                 .HasForeignKey(img => img.MaSp)
                 .OnDelete(DeleteBehavior.Cascade);
 
-            base.OnModelCreating(modelBuilder);
+			// Cấu hình quan hệ giữa DbChiTietSanPham và DbSanPham
+			modelBuilder.Entity<DbChiTietSanPham>()
+				.HasOne(ctsp => ctsp.SanPham)
+				.WithMany(sp => sp.DbChiTietSanPhams)
+				.HasForeignKey(ctsp => ctsp.MaSp)
+				.OnDelete(DeleteBehavior.Cascade);
+
+			// Cấu hình quan hệ giữa DbChiTietSanPham và DbColor
+			modelBuilder.Entity<DbChiTietSanPham>()
+				.HasOne(ctsp => ctsp.Color)
+				.WithMany(c => c.DbChiTietSanPhams)
+				.HasForeignKey(ctsp => ctsp.ColorId)
+				.OnDelete(DeleteBehavior.Cascade);
+
+			// Cấu hình quan hệ giữa DbChiTietSanPham và DbSize
+			modelBuilder.Entity<DbChiTietSanPham>()
+				.HasOne(ctsp => ctsp.Size)
+				.WithMany(s => s.DbChiTietSanPhams)
+				.HasForeignKey(ctsp => ctsp.SizeId)
+				.OnDelete(DeleteBehavior.Cascade);
 		}
 		// sản phẩm yêu thích
 		public List<DbSanPham> GetFavoriteProducts(int maKh)

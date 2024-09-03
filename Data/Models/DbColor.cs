@@ -16,5 +16,7 @@ namespace Data.Models
 
         public string? Img { get; set; }
         public string? MaMau { get; set; }
-    }
+
+		public virtual ICollection<DbChiTietSanPham> DbChiTietSanPhams { get; set; } = new List<DbChiTietSanPham>();
+	}
 }

@@ -1,4 +1,4 @@
-﻿@model Data.Models.DbSanPham
+﻿@model yourlook.Models.ProductDetailViewModel;
 @{
     ViewData["Title"] = "ProductDetail";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -23,9 +23,9 @@
 							<div class="single_product_thumbnails">
 								<ul>
 									<li class="active">
-										<img src="@Url.Content("/img/" + Model.AnhSp)" alt="" data-image="@Url.Content("/img/" + Model.AnhSp)">
+										<img src="@Url.Content("/img/" + Model.SanPham.AnhSp)" alt="" data-image="@Url.Content("/img/" + Model.SanPham.AnhSp)">
 									</li>
-									@foreach (var prd in ViewBag.ImgProduct)
+									@foreach (var prd in Model.ImgProduct)
 									{
 										<li>
 											<img data-image="@Url.Content(prd.Img)" src="@Url.Content(prd.Img)" alt="">
@@ -36,7 +36,7 @@
 						</div>
 						<div class="col-lg-9 image_col order-lg-2 order-1">
 							<div class="single_product_image">
-								<div class="single_product_image_background" style="background-image:url('@Url.Content("/img/" + Model.AnhSp)')"></div>
+								<div class="single_product_image_background" style="background-image:url('@Url.Content("/img/" + Model.SanPham.AnhSp)')"></div>
 							</div>
 						</div>
 					</div>
@@ -45,17 +45,17 @@
 			<div class="col-lg-5 prd-detail">
 				<div class="product_details">
 					<div class="product_details_title">
-						<h4>@Model.TenSp</h4>
+						<h4>@Model.SanPham.TenSp</h4>
 					</div>
 					<div style="display:flex; padding: 20px;justify-content:space-evenly;border-top:1px solid #2f3640 ">
-						@if (Model.PriceMin != Model.PriceMax)
+						@if (Model.SanPham.PriceMin != Model.SanPham.PriceMax)
 						{
-							<div class="flct original_price "><h5>@string.Format("{0:N0}", Model.PriceMax)</h5></div>
-							<div class=" flct product_price"><h3>@string.Format("{0:N0}", Model.PriceMin)</h3></div>
+							<div class="flct original_price "><h5>@string.Format("{0:N0}", Model.SanPham.PriceMax)</h5></div>
+							<div class=" flct product_price"><h3>@string.Format("{0:N0}", Model.SanPham.PriceMin)</h3></div>
 						}
 						else
 						{
-							<div class=" flct product_price"><h3>@string.Format("{0:N0}", Model.PriceMax)</h3></div>
+							<div class=" flct product_price"><h3>@string.Format("{0:N0}", Model.SanPham.PriceMax)</h3></div>
 						}
 						<div class="flct" style="margin-bottom:8px">
 							<ul class="star_rating ">
@@ -67,7 +67,7 @@
 							</ul>
 						</div>
 						<div class="flct" style="margin-bottom:8px">
-							<img src="~/icon/eye-solid.svg" style="height:15px" title="Lượt xem" />: @Model.LuotXem
+							<img src="~/icon/eye-solid.svg" style="height:15px" title="Lượt xem" />: @Model.SanPham.LuotXem
 						</div>
 					</div>
 					<div class="free_delivery d-flex flex-row align-items-center justify-content-center">
@@ -76,17 +76,19 @@
 					<div class="product_color">
 						<span>Kích cỡ:</span>
 						<ul>
-							<li>S</li>
-							<li>L</li>
-							<li>XL</li>
+						@foreach (var size in Model.SizeColorProduct)
+						{
+							<li>@size.SizeName</li>
+						}
 						</ul>
 					</div>
 					<div class="product_color">
 						<span>màu sắc:</span>
 						<ul>
-							<li style="background: #e54e5d"></li>
-							<li style="background: #252525"></li>
-							<li style="background: #60b3f3"></li>
+							@foreach (var color in Model.SizeColorProduct)
+							{
+								<li>@color.ColorName</li>
+							}
 						</ul>
 					</div>
 					<div class="quantity d-flex flex-column flex-sm-row align-items-sm-center">
@@ -100,11 +102,11 @@
 						</div>
 						<div class="cart-box">
 							<div class="btn flct" style="background-color:#2f3640;margin:0 10px">
-								<a class="btnAddToCart" data-id="@Model.MaSp" style="color:#fff" asp-action="Add" asp-controller="ShoppingCart" asp-route-Id="@Model.MaSp">Thêm vào giỏ hàng</a>
+								<a class="btnAddToCart" data-id="@Model.SanPham.MaSp" style="color:#fff" asp-action="Add" asp-controller="ShoppingCart" asp-route-Id="@Model.SanPham.MaSp">Thêm vào giỏ hàng</a>
 							</div>
 							<div style="border:1px solid #2f3640">
-								<div class="favorite" data-id="@Model.MaSp" style="font-size:20px;position:relative;top:0;left:0;padding:5px 15px">
-								@if (ViewBag.FvrPrd)
+								<div class="favorite" data-id="@Model.SanPham.MaSp" style="font-size:20px;position:relative;top:0;left:0;padding:5px 15px">
+								@if (Model.IsFavorite)
 								{
 									<i class="fa-solid fa-heart" style="color: #2f3640;"></i>
 								}
@@ -170,7 +172,7 @@
 								<h4>Mô Tả</h4>
 							</div>
 							<div>
-								@Model.MotaSp
+								@Model.SanPham.MotaSp
 							</div>							
 						</div>
 					</div>

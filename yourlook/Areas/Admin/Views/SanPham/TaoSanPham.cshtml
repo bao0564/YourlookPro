@@ -1,4 +1,4 @@
-﻿@model Data.Models.DbSanPham;
+﻿@model yourlook.Areas.Admin.Models.ProductViewModel;
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
     ViewData["Title"] = "TaoSanPham";
@@ -71,6 +71,22 @@
                                     <label class="control-label">Mô Tả </label>
                                     @Html.ValidationMessageFor(x => x.MotaSp, "", new { @class = "text-danger" })
                                     <input asp-for="MotaSp" type="text" placeholder="Mô tả sản phẩm..." />
+                                </div>
+
+                                <div class="col-6">
+                                    <label>Chọn Size:</label>
+                                    @foreach (var size in Model.SizeList)
+                                    {
+                                        <input type="checkbox" name="SelectedSizes" value="@size.SizeId" /> @size.NameSize
+                                    }
+                                </div>
+
+                                <div class="col-6">
+                                    <label>Chọn Màu Sắc:</label>
+                                    @foreach (var color in Model.ColorList)
+                                    {
+                                        <input type="checkbox" name="SelectedColors" value="@color.ColorId" /> @color.NameColor
+                                    }
                                 </div>
                                 <div class="row">
                                     <div class="col-3">

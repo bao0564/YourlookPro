@@ -48,7 +48,8 @@ namespace Data.Models
         public string? MetaDescriptions { get; set; }
 
         public virtual ICollection<DbImg> DbImgs { get; set; } = new List<DbImg>();
-        public virtual ICollection<DbFavoriteProduct> DbFavorites { get; set; }= new List<DbFavoriteProduct>();
+		public virtual ICollection<DbChiTietSanPham> DbChiTietSanPhams { get; set; } = new List<DbChiTietSanPham>();
+		public virtual ICollection<DbFavoriteProduct> DbFavorites { get; set; }= new List<DbFavoriteProduct>();
         public virtual DbDanhMuc? MaDanhMucsMaDm { get; set; } 
 
         public virtual DbGroup? Nhom { get; set; }

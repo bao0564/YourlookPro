@@ -5,7 +5,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Server.IISIntegration;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Internal;
 using X.PagedList;
+using yourlook.Areas.Admin.Models;
 using yourlook.Controllers;
 using yourlook.Models;
 
@@ -39,19 +41,22 @@ namespace yourlook.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult TaoSanPham()
         {
+            var viewModel = new ProductViewModel
+            {
+                SizeList = db.DbSizes.ToList(),
+                ColorList = db.DbColors.ToList()
+            };
             ViewBag.MaDm = new SelectList(db.DbDanhMucs.ToList(), "MaDm", "TenDm");
             ViewBag.NhomId = new SelectList(db.DbGroups.ToList(), "NhomId", "GroupName");
-            return View();
+            return View(viewModel);
         }
         [Route("taosanpham")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> TaoSanPham(DbSanPham sanPham, string Imgs,IFormFile AnhSpFile)
+        public async Task<IActionResult> TaoSanPham(ProductViewModel sanPham, string Imgs,IFormFile AnhSpFile)
         {
             if (ModelState.IsValid)
             {
-                sanPham.CreateDate = DateTime.Now;
-
                 // xử lý tải ảnh đại diện
                 if (AnhSpFile != null && AnhSpFile.Length > 0)
                 {
@@ -65,28 +70,69 @@ namespace yourlook.Areas.Admin.Controllers
                     }
 
                     sanPham.AnhSp = "" + fileName;
-                }
+				}
+				var sp = new DbSanPham
+				{
+					TenSp = sanPham.TenSp,
+					MaDm = sanPham.MaDm,
+					NhomId = sanPham.NhomId,
+					AnhSp = sanPham.AnhSp,
+					SoLuongSp = sanPham.SoLuongSp,
+					PriceMax = sanPham.PriceMax,
+					GiamGia = sanPham.GiamGia,
+					PriceMin = sanPham.PriceMin,
+					MotaSp = sanPham.MotaSp,
+					CreateDate = DateTime.Now,
+					IActive = sanPham.IActive,
+					IFavorite = sanPham.IFavorite,
+					IFeature = sanPham.IFeature,
+					IHot = sanPham.IHot,
+					ISale = sanPham.ISale
+				};
+				db.DbSanPhams.Add(sp);
+				await db.SaveChangesAsync();
 
-                // Thêm sản phẩm vào cơ sở dữ liệu
-                db.DbSanPhams.Add(sanPham);
-                await db.SaveChangesAsync();
+				// Xử lý hình ảnh liên quan
+				if (!string.IsNullOrEmpty(Imgs))
+				{
+					var imagePaths = Imgs.Split(';');
+					foreach (var imagePath in imagePaths)
+					{
+						db.DbImgs.Add(new DbImg
+						{
+							MaSp = sp.MaSp, 
+							Img = imagePath
+						});
+					}
+					await db.SaveChangesAsync();
+				}
 
-                if (!string.IsNullOrEmpty(Imgs))
-                {
-                    string[] imagePaths = Imgs.Split(';');
-                    foreach (var imagePath in imagePaths)
-                    {
-                        db.DbImgs.Add(new DbImg
-                        {
-                            MaSp = sanPham.MaSp,
-                            Img = imagePath
-                        });
-                    }
-                    await db.SaveChangesAsync();
-                }
-                return RedirectToAction("SanPham");
-            }
+				// Xử lý kích thước và màu sắc
+				if (sanPham.SelectedSizes != null && sanPham.SelectedColors != null)
+				{
+					foreach (var size in sanPham.SelectedSizes)
+					{
+						foreach (var color in sanPham.SelectedColors)
+						{
+							var spct = new DbChiTietSanPham
+							{
+								MaSp = sp.MaSp,
+								ColorId = color,
+								SizeId = size
+							};
+							db.DbChiTietSanPhams.Add(spct);
+						}
+					}
+					await db.SaveChangesAsync();
+				}
 
+				return RedirectToAction("SanPham");
+			}
+            var viewModel = new ProductViewModel
+            {
+                SizeList = db.DbSizes.ToList(),
+                ColorList = db.DbColors.ToList()
+            };
             ViewBag.MaDm = new SelectList(db.DbDanhMucs.ToList(), "MaDm", "TenDm");
             ViewBag.NhomId = new SelectList(db.DbGroups.ToList(), "NhomId", "GroupName");
             return View(sanPham);
@@ -95,64 +141,152 @@ namespace yourlook.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult SuaSanPham(int masp)
         {
-            ViewBag.MaDm = new SelectList(db.DbDanhMucs.ToList(), "MaDm", "TenDm");
-            ViewBag.NhomId = new SelectList(db.DbGroups.ToList(), "NhomId", "GroupName");
-            var sanPham = db.DbSanPhams.Include(sp => sp.DbImgs).FirstOrDefault(sp => sp.MaSp == masp);
-            return View(sanPham);
-        }
-        [Route("suasanpham")]
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> SuaSanPham(DbSanPham sanPham, string Imgs, IFormFile AnhSpFile)
-        {
-            if (ModelState.IsValid)
+            var sanPham = db.DbSanPhams.Include(sp => sp.DbImgs)
+                .Include(sp=>sp.DbChiTietSanPhams)
+                .ThenInclude(sp=>sp.Size)
+                .Include(sp=>sp.DbChiTietSanPhams)
+                .ThenInclude(sp=>sp.Color)
+                .FirstOrDefault(sp => sp.MaSp == masp);
+
+            var viewmodel = new ProductViewModel
             {
-                sanPham.ModifiedDate = DateTime.Now;
-                db.DbSanPhams.Attach(sanPham);
-                db.Entry(sanPham).State = EntityState.Modified;
 
-                if (AnhSpFile !=null && AnhSpFile.Length >0)
-                {
-                    string uploadDir = Path.Combine(_webHostEnvironment.WebRootPath, "img");
-                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(AnhSpFile.FileName);
-                    string filePath = Path.Combine(uploadDir, fileName);
-
-                    using (var fileStream = new FileStream(filePath, FileMode.Create))
-                    {
-                        await AnhSpFile.CopyToAsync(fileStream);
-                    }
-
-                    sanPham.AnhSp = "" + fileName;
-                }
-                if (!string.IsNullOrEmpty(Imgs))
-                {
-                    string[] imagePaths = Imgs.Split(';');
-                    foreach (var imagePath in imagePaths)
-                    {
-                        db.DbImgs.Add(new DbImg
-                        {
-                            MaSp = sanPham.MaSp,
-                            Img = imagePath
-                        });
-                    }
-                    await db.SaveChangesAsync();
-                }
-                await db.SaveChangesAsync();
-                return RedirectToAction("SanPham");
-            }
-
+                MaSp = sanPham.MaSp,
+                TenSp = sanPham.TenSp,
+                MaDm = sanPham.MaDm,
+                NhomId = sanPham.NhomId,
+                AnhSp = sanPham.AnhSp,
+                SoLuongSp = sanPham.SoLuongSp,
+                PriceMax = sanPham.PriceMax,
+                GiamGia = sanPham.GiamGia,
+                PriceMin = sanPham.PriceMin,
+                MotaSp = sanPham.MotaSp,
+                IActive = sanPham.IActive,
+                IFavorite = sanPham.IFavorite,
+                IFeature = sanPham.IFeature,
+                IHot = sanPham.IHot,
+                ISale = sanPham.ISale,
+                Imgs = sanPham.DbImgs.ToList(),
+                SelectedSizes = sanPham.DbChiTietSanPhams.Select(ct => ct.SizeId).ToList(),
+                SelectedColors = sanPham.DbChiTietSanPhams.Select(ct => ct.ColorId).ToList(),
+                SizeList = db.DbSizes.ToList(),
+                ColorList = db.DbColors.ToList()
+            };
             ViewBag.MaDm = new SelectList(db.DbDanhMucs.ToList(), "MaDm", "TenDm");
             ViewBag.NhomId = new SelectList(db.DbGroups.ToList(), "NhomId", "GroupName");
-            return View(sanPham);
+			return View(viewmodel);
         }
-        // Xóa Sản Phẩm
-        [Route("xoasanpham")]
+		[Route("suasanpham")]
+		[HttpPost]
+		public async Task<IActionResult> SuaSanPham(ProductViewModel sanPham, string Imgs, IFormFile AnhSpFile)
+		{
+			if (ModelState.IsValid)
+			{
+				var sp = db.DbSanPhams
+					.Include(sp => sp.DbImgs)
+					.Include(sp => sp.DbChiTietSanPhams)
+						.ThenInclude(ctsp => ctsp.Size)
+					.Include(sp => sp.DbChiTietSanPhams)
+						.ThenInclude(ctsp => ctsp.Color)
+					.FirstOrDefault(sp => sp.MaSp == sanPham.MaSp);
+
+				if (sp == null)
+				{
+					return NotFound(); // Xử lý lỗi nếu không tìm thấy sản phẩm
+				}
+
+				// Xử lý ảnh đại diện
+				if (AnhSpFile != null && AnhSpFile.Length > 0)
+				{
+					string uploadDir = Path.Combine(_webHostEnvironment.WebRootPath, "img");
+					string fileName = Guid.NewGuid().ToString() + Path.GetExtension(AnhSpFile.FileName);
+					string filePath = Path.Combine(uploadDir, fileName);
+
+					using (var fileStream = new FileStream(filePath, FileMode.Create))
+					{
+						await AnhSpFile.CopyToAsync(fileStream);
+					}
+
+					sp.AnhSp = fileName;
+				}
+
+				// Cập nhật thông tin sản phẩm
+				sp.TenSp = sanPham.TenSp;
+				sp.MaDm = sanPham.MaDm;
+				sp.NhomId = sanPham.NhomId;
+				sp.SoLuongSp = sanPham.SoLuongSp;
+				sp.PriceMax = sanPham.PriceMax;
+				sp.GiamGia = sanPham.GiamGia;
+				sp.PriceMin = sanPham.PriceMin;
+				sp.MotaSp = sanPham.MotaSp;
+				sp.IActive = sanPham.IActive;
+				sp.IFavorite = sanPham.IFavorite;
+				sp.IFeature = sanPham.IFeature;
+				sp.IHot = sanPham.IHot;
+				sp.ISale = sanPham.ISale;
+
+				// Cập nhật danh sách ảnh
+				if (!string.IsNullOrEmpty(Imgs))
+				{
+					sp.DbImgs.Clear(); // Xóa ảnh cũ
+					string[] imagePaths = Imgs.Split(';');
+					foreach (var imagePath in imagePaths)
+					{
+						sp.DbImgs.Add(new DbImg
+						{
+							MaSp = sp.MaSp,
+							Img = imagePath
+						});
+					}
+				}
+
+				// Xóa các size và màu cũ trong bảng DbChiTietSanPham
+				var oldDetails = db.DbChiTietSanPhams.Where(x => x.MaSp == sanPham.MaSp);
+				db.DbChiTietSanPhams.RemoveRange(oldDetails);
+
+				// Cập nhật chi tiết sản phẩm
+				if (sanPham.SelectedSizes != null && sanPham.SelectedColors != null)
+				{
+					foreach (var size in sanPham.SelectedSizes)
+					{
+						foreach (var color in sanPham.SelectedColors)
+						{
+							sp.DbChiTietSanPhams.Add(new DbChiTietSanPham
+							{
+								MaSp = sp.MaSp,
+								ColorId = color,
+								SizeId = size,
+							});
+						}
+					}
+				}
+
+				await db.SaveChangesAsync();
+				return RedirectToAction("SanPham");
+			}
+
+			ViewBag.MaDm = new SelectList(db.DbDanhMucs.ToList(), "MaDm", "TenDm", sanPham.MaDm);
+			ViewBag.NhomId = new SelectList(db.DbGroups.ToList(), "NhomId", "GroupName", sanPham.NhomId);
+			return View(sanPham);
+		}
+
+
+		// Xóa Sản Phẩm
+		[Route("xoasanpham")]
         [HttpGet]
         public IActionResult XoaSanPham(int masp)
         {
             TempData["Message"] = "";
-            db.Remove(db.DbSanPhams.Find(masp));
-            db.SaveChanges();
+            var img=db.DbImgs.Find(masp);
+            var sanpham=db.DbSanPhams.Find(masp);
+            //var chitietsanpham=db.DbChiTietSanPhams.Find(masp);
+            if (img!=null && sanpham!=null)
+            {
+                db.DbImgs.Remove(img);
+                db.DbSanPhams.Remove(sanpham);
+                //db.DbChiTietSanPhams.Remove(chitietsanpham);
+                db.SaveChanges();
+            }
             TempData["Message"] = "Sản Phẩm Đã Được Xóa";
             return RedirectToAction("sanpham");
         }

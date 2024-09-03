@@ -254,17 +254,33 @@ namespace yourlook.Controllers
 				db.Entry(lstSanPham).Property(X=>X.LuotXem).IsModified = true;
 				db.SaveChanges();
 			};
+
 			var lstImgProduct = db.DbImgs.Where(x => x.MaSp == masp).ToList();
-			ViewBag.ImgProduct = lstImgProduct;
+			var lstSizeColorProduct = db.DbChiTietSanPhams.Where(x => x.MaSp == masp)
+										.Include(x => x.Size)
+										.Include(x => x.Color)
+										.Select(x => new SizeColorViewModel
+										{
+											SizeName = x.Size.NameSize,
+											ColorName=x.Color.NameColor,
+											ColorHex=x.Color.MaMau,
+										}).ToList();
+
 			var idkh=HttpContext.Session.GetInt32("userid");
 			bool isFavorite = false;
 			if (idkh != null)
 			{
 				isFavorite = db.DbFavoriteProducts.Any(x => x.MaKh == idkh.Value && x.MaSp == masp);
 			}
-			ViewBag.FvrPrd = isFavorite;
+			var viewmodel = new ProductDetailViewModel
+			{
+				SanPham = lstSanPham,
+				SizeColorProduct = lstSizeColorProduct,
+				IsFavorite = isFavorite,
+				ImgProduct = lstImgProduct
+			};
 
-			return View(lstSanPham);
+			return View(viewmodel);
 		}
 		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

@@ -61,7 +61,7 @@ namespace yourlook.Areas.Admin.Controllers
 		public IActionResult XoaSize(int idsize)
 		{
 			TempData["Message"] = "";
-			var sp=db.DbChiTietSanPhams.Any(x=>x.MaSize==idsize);
+			var sp=db.DbChiTietSanPhams.Any(x=>x.SizeId==idsize);
 			if(sp)
             {
                 TempData["Message"] = "Size ĐÃ CÓ SẢN PHẨM DÙNG - KHÔNG THỂ XÓA";

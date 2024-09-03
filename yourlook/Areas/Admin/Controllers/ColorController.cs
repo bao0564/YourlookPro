@@ -29,30 +29,44 @@ namespace yourlook.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult TaoColor(DbColor color)
         {
-            return View();
+            if (ModelState.IsValid)
+            {
+                color.CreateDate = DateTime.Now;
+                db.DbColors.Add(color);
+                db.SaveChanges();
+            }
+            return RedirectToAction("Color");
         }
         [Route("suacolor")]
         [HttpGet]
         public IActionResult SuaColor(int colorid)
         {
-            return View();
+            var sp = db.DbColors.Find(colorid);
+            return View(sp);
         }
         [Route("suacolor")]
         [HttpPost]
         public IActionResult SuaColor(DbColor color)
         {
-            return View();
+            if (ModelState.IsValid)
+            {
+                color.ModifiedDate = DateTime.Now;
+                db.DbColors.Attach(color);
+                db.Entry(color).State = EntityState.Modified;
+                db.SaveChanges();
+            }
+            return RedirectToAction("Color");
         }
         [Route("xoacolor")]
         [HttpGet]
         public IActionResult XoaColor(int colorid)
         {
             TempData["Message"] = "";
-            var sp= db.DbChiTietSanPhams.Any(x=>x.MaMau==colorid);
+            var sp= db.DbChiTietSanPhams.Any(x=>x.ColorId==colorid);
             if (sp)
             {
                 TempData["Message"] = "Màu đã được sử dụng nên không thể xóa";
-                return RedirectToAction("Index");
+                return RedirectToAction("Color");
             }
             var color=db.DbColors.Find(colorid);
             if (color !=null)
@@ -61,7 +75,7 @@ namespace yourlook.Areas.Admin.Controllers
                 db.SaveChanges();
             }
             TempData["Message"] = "Màu ĐÃ ĐƯỢC XÓA";
-            return RedirectToAction("Index");
+            return RedirectToAction("Color");
         }
     }
 }

@@ -14,5 +14,6 @@ namespace Data.Models
 
         public string? NameSize { get; set; }
 
-    }
+		public virtual ICollection<DbChiTietSanPham> DbChiTietSanPhams { get; set; } = new List<DbChiTietSanPham>();
+	}
 }
