@@ -73,23 +73,26 @@
 					<div class="free_delivery d-flex flex-row align-items-center justify-content-center">
 						<span class="ti-truck"></span><span>Miễn phí vận chuyển</span>
 					</div>
-					<div class="product_color">
+					<div class="product_size flct" style="">
 						<span>Kích cỡ:</span>
-						<ul>
-						@foreach (var size in Model.SizeColorProduct)
-						{
-							<li>@size.SizeName</li>
-						}
-						</ul>
-					</div>
-					<div class="product_color">
-						<span>màu sắc:</span>
-						<ul>
-							@foreach (var color in Model.SizeColorProduct)
+						<div class="size-options">
+							@foreach (var size in Model.SizeProduct.DistinctBy(s => s.SizeId))
 							{
-								<li>@color.ColorName</li>
+								<button style="padding:5px 10px;margin-left:10px " type="button" class="size-option bdrdu" data-size="@size.SizeId">@size.NameSize</button>
 							}
-						</ul>
+						</div>
+					</div>
+
+					<div class="product_color flct">
+						<span>Màu sắc:</span>
+						<div class="color-options">
+							@foreach (var color in Model.ColorProduct)
+							{
+								<button style="padding:5px 10px;margin-left:10px;" type="button" class="color-option bdrdu" data-color="@color.ColorId">
+									<i class="fa-solid fa-certificate" style="color:@color.MaMau"></i>@color.NameColor
+								</button>
+							}
+						</div>
 					</div>
 					<div class="quantity d-flex flex-column flex-sm-row align-items-sm-center">
 						<div class="quanti-box">
@@ -102,7 +105,7 @@
 						</div>
 						<div class="cart-box">
 							<div class="btn flct" style="background-color:#2f3640;margin:0 10px">
-								<a class="btnAddToCart" data-id="@Model.SanPham.MaSp" style="color:#fff" asp-action="Add" asp-controller="ShoppingCart" asp-route-Id="@Model.SanPham.MaSp">Thêm vào giỏ hàng</a>
+								<a class="btnAddToCart" id="btnAddToCart" data-id="@Model.SanPham.MaSp" style="color:#fff" asp-action="Add" asp-controller="ShoppingCart" asp-route-Id="@Model.SanPham.MaSp">Thêm vào giỏ hàng</a>
 							</div>
 							<div style="border:1px solid #2f3640">
 								<div class="favorite" data-id="@Model.SanPham.MaSp" style="font-size:20px;position:relative;top:0;left:0;padding:5px 15px">
@@ -294,6 +297,20 @@
 			height: 550px;
 			background-size:400px;
 			background-position: center;
+		}
+
+		.size-option, .color-option {
+			padding: 10px;
+			margin: 5px;
+			border: 1px solid #ccc;
+			cursor: pointer;
+			transition: background-color 0.3s, border-color 0.3s;
+		}
+
+		.size-option.selected, .color-option.selected {
+			background-color: #2f3640;
+			color: #fff;
+			border-color: #2f3640;
 		}
 	</style>
 }

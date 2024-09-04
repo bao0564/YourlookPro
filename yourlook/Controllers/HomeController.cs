@@ -256,16 +256,17 @@ namespace yourlook.Controllers
 			};
 
 			var lstImgProduct = db.DbImgs.Where(x => x.MaSp == masp).ToList();
-			var lstSizeColorProduct = db.DbChiTietSanPhams.Where(x => x.MaSp == masp)
-										.Include(x => x.Size)
-										.Include(x => x.Color)
-										.Select(x => new SizeColorViewModel
-										{
-											SizeName = x.Size.NameSize,
-											ColorName=x.Color.NameColor,
-											ColorHex=x.Color.MaMau,
-										}).ToList();
-
+			//.Distinct() để loại bỏ các size, color trùng lặp
+			var lstSizeProduct = db.DbChiTietSanPhams.Where(x => x.MaSp == masp)
+										.Where(x => x.MaSp == masp)
+										.Select(x => x.Size)
+										.Distinct()
+										.ToList();
+			var lstColorProduct = db.DbChiTietSanPhams.Where(x => x.MaSp == masp)
+										.Where(x => x.MaSp == masp)
+										.Select(x => x.Color)
+										.Distinct()
+										.ToList();
 			var idkh=HttpContext.Session.GetInt32("userid");
 			bool isFavorite = false;
 			if (idkh != null)
@@ -275,7 +276,8 @@ namespace yourlook.Controllers
 			var viewmodel = new ProductDetailViewModel
 			{
 				SanPham = lstSanPham,
-				SizeColorProduct = lstSizeColorProduct,
+				SizeProduct=lstSizeProduct,
+				ColorProduct=lstColorProduct,
 				IsFavorite = isFavorite,
 				ImgProduct = lstImgProduct
 			};

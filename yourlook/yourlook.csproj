@@ -26,10 +26,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\js\ChoosColorSize.js" />
     <Content Remove="wwwroot\js\productnew-move.js" />
   </ItemGroup>
 
   <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\js\ChoosColorSize.js" />
     <_ContentIncludedByDefault Remove="wwwroot\js\productnew-move.js" />
   </ItemGroup>
 
@@ -63,6 +65,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\js\ChoosColorSize.js" />
     <None Include="wwwroot\js\productnew-move.js" />
   </ItemGroup>
 

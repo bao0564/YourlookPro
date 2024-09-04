@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Reflection.PortableExecutable;
 using System.Threading.Tasks.Dataflow;
 using yourlook.Extension;
@@ -20,34 +21,46 @@ namespace yourlook.Controllers
 		YourlookContext db = new YourlookContext();
 		public IActionResult Index()
 		{
-            var cart = HttpContext.Session.GetJson<ViewShoppingCartItem>("Cart") ?? new ViewShoppingCartItem();
-            if (cart != null)
-            {
-                return View(cart.Items);
-            }
-            return View();
+			var cart = HttpContext.Session.GetJson<List<ShoppingCartItem>>("Cart") ?? new List<ShoppingCartItem>();
+			return View(cart);
 		}
         [AllowAnonymous]
 		[HttpPost]
-		public IActionResult AddToCart(int masp,int quantity)
+		public IActionResult AddToCart(int masp,int quantity,int sizeid,int colorid)
 		{
 			var code = new { success = false, msg = "", code = -1};
 			var db = new YourlookContext();
 			var checkproduct = db.DbSanPhams.FirstOrDefault(x => x.MaSp == masp);
+            var checkSize = db.DbSizes.FirstOrDefault(x => x.SizeId == sizeid);
+            var checkColor = db.DbColors.FirstOrDefault(x => x.ColorId == colorid);
 			if (checkproduct != null)
 			{
-				var cart = HttpContext.Session.GetJson<ViewShoppingCartItem>("Cart") ?? new ViewShoppingCartItem();
-				ShoppingCartItem item = new ShoppingCartItem
-				{
-					ProductId = checkproduct.MaSp,
-					ProductName = checkproduct.TenSp,
-					ProductImg = checkproduct.AnhSp,
-					CategoryName = checkproduct.MaDanhMucsMaDm?.TenDm,
-					ProductQuantity = quantity,
-					ProductPrice = checkproduct.GiamGia > 0 ? checkproduct.PriceMin : checkproduct.PriceMax,
-					Total = (checkproduct.GiamGia > 0 ? checkproduct.PriceMin : checkproduct.PriceMax) * quantity
-				};
-				cart.AddToCart(item, quantity);
+				var cart = HttpContext.Session.GetJson<List<ShoppingCartItem>>("Cart") ?? new List<ShoppingCartItem>();
+                var exitprd = cart.FirstOrDefault(x => x.ProductId == masp && x.ColorId == colorid && x.SizeId == sizeid);
+                if (exitprd!=null)
+                {
+					// Nếu đã tồn tại, cập nhật số lượng
+					exitprd.ProductQuantity += quantity;
+					exitprd.Total = exitprd.ProductQuantity * exitprd.ProductPrice;
+				}
+                else
+                {
+					ShoppingCartItem item = new ShoppingCartItem
+					{
+						ProductId = checkproduct.MaSp,
+						ProductName = checkproduct.TenSp,
+						ProductImg = checkproduct.AnhSp,
+						CategoryName = checkproduct.MaDanhMucsMaDm?.TenDm,
+						ProductQuantity = quantity,
+						ColorId = colorid,
+						SizeId = sizeid,
+						ColorName = checkColor.NameColor,
+						SizeName = checkSize.NameSize,
+						ProductPrice = checkproduct.GiamGia > 0 ? checkproduct.PriceMin : checkproduct.PriceMax,
+						Total = (checkproduct.GiamGia > 0 ? checkproduct.PriceMin : checkproduct.PriceMax) * quantity
+					};
+					cart.Add(item);
+				}
 				HttpContext.Session.SetJson("Cart", cart);
 
 				code = new { success = true, msg = "Sản phẩm đã được thêm vào giỏ hàng", code = 0};
@@ -64,12 +77,12 @@ namespace yourlook.Controllers
         [HttpPost]
         public IActionResult Checkout([FromBody] CheckoutRequest request)
         {
-            var cart = HttpContext.Session.GetJson<ViewShoppingCartItem>("Cart") ?? new ViewShoppingCartItem();
+            var cart = HttpContext.Session.GetJson<List<ShoppingCartItem>>("Cart") ?? new List<ShoppingCartItem>();
             var selectedItems = new List<CheckOutItem>();
 
             foreach (var product in request.selectedProducts)
             {
-                var item = cart.Items.FirstOrDefault(x => x.ProductId == product.ProductId);
+                var item = cart.FirstOrDefault(x => x.ProductId == product.ProductId && x.ColorId == product.ColorId && x.SizeId == product.SizeId);
                 if (item != null)
                 {
                     var checkoutItem = new CheckOutItem
@@ -79,16 +92,18 @@ namespace yourlook.Controllers
                         ProductImg = item.ProductImg,
                         CategoryName = item.CategoryName,
                         ProductQuantity = product.ProductQuantity,
+                        ColorId = item.ColorId,
+                        SizeId = item.SizeId,
+                        ColorName = item.ColorName,
+                        SizeName = item.SizeName,
                         ProductPrice = item.ProductPrice,
                         Total = item.ProductPrice * product.ProductQuantity
                     };
                     selectedItems.Add(checkoutItem);
                 }
             }
-
             HttpContext.Session.SetJson("Order", selectedItems);
             HttpContext.Session.SetJson("OrderInfo", request.selectInfors);
-
             return Json(new { success = true });
         }
 

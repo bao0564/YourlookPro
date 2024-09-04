@@ -1,5 +1,4 @@
-﻿$(document).ready(function () {
-    
+﻿$(document).ready(function () {    
     // Thêm vào giỏ hàng
     $('body').on('click', '.btnAddToCart', function (e) {
         e.preventDefault();
@@ -9,10 +8,18 @@
         if (tQuantity != '') {
             quantity = parseInt(tQuantity);
         }
+        // size/color
+        var selectedSize = $('.size-option.selected').data('size');
+        var selectedColor = $('.color-option.selected').data('color');
+
+        if (!selectedSize || !selectedColor) {
+            alert("Vui lòng chọn size và màu sắc");
+            return;
+        }
         $.ajax({
             url: '/shoppingcart/addtocart',
             type: 'POST',
-            data: { masp: id, quantity: quantity },
+            data: { masp: id, quantity: quantity, sizeid: selectedSize, colorid: selectedColor },
             success: function (rs) {
                 if (rs.success) {
                     alert(rs.msg);
@@ -29,9 +36,11 @@
         var selectedProducts = [];
         $('.cart-checkbox:checked').each(function () {
             var id = $(this).data('id');
+            var sizeid = $(this).data('sizeid');
+            var colorid = $(this).data('colorid');
             var quantityElement = $(this).closest('.cart-container').find('.quantity_value-cart');
             var quantity = parseInt(quantityElement.text());
-            selectedProducts.push({ ProductId: id, ProductQuantity: quantity });
+            selectedProducts.push({ ProductId: id, ProductQuantity: quantity, ColorId: colorid, SizeId :sizeid});
         });
 
         var orderInfo = {

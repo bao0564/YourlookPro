@@ -131,7 +131,7 @@
                             <div class="box-cart" id="sp-@prd.ProductId">
                                 <div class="cart-container flex-cart">
                                     <div class="check-box">
-                                        <input type="checkbox" class="cart-checkbox" data-id="@prd.ProductId" data-price="@prd.ProductPrice" data-total="@prd.Total" />
+                                        <input type="checkbox" class="cart-checkbox" data-id="@prd.ProductId" data-price="@prd.ProductPrice" data-total="@prd.Total" data-sizeid="@prd.SizeId" data-colorid="@prd.ColorId"/>
                                     </div>
                                     <div class="flex-cart">
                                         <div class="box-img" style="display:flex; align-items:center">
@@ -139,10 +139,12 @@
                                         </div>
                                         <div class="cart-infor">
                                             <div class="infor-colum">
-                                                <p class="cart-name">@prd.ProductName</p>
+                                                <p class="cart-name"style="color:#000">@prd.ProductName</p>
                                                 <div class="flex-cart" style="max-width:150px">
-                                                    <div>Màu</div>
-                                                    <div>Size</div>
+                                                    <div class="flct"style="white-space:nowrap">Phân Loại:
+                                                        <div class="bdrdu" style="padding:5px 10px;margin:0 10px">@prd.ColorName</div>
+                                                        <div class="bdrdu" style="padding:5px 10px;margin:0 10px">@prd.SizeName</div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="flex-cart infor-colum">
