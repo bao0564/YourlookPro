@@ -14,6 +14,11 @@ namespace yourlook.Areas.Admin.Controllers
         [Route("danhmuc")]
         public IActionResult DanhMuc(int? page)
         {
+            var name = HttpContext.Session.GetString("NameAdmin");
+            if (name == null)
+            {
+                return RedirectToAction("Login", "HomeAdmin");
+            }
             int pageSize = 10;
             int pageNumber = page ?? 1;
             var lstDanhMuc = db.DbDanhMucs.AsNoTracking().OrderBy(x => x.MaDm);

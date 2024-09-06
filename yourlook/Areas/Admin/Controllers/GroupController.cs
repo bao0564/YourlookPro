@@ -14,6 +14,11 @@ namespace yourlook.Areas.Admin.Controllers
         [Route("group")]
         public IActionResult Group(int? page)
         {
+            var name = HttpContext.Session.GetString("NameAdmin");
+            if (name == null)
+            {
+                return RedirectToAction("Login", "HomeAdmin");
+            }
             int pageSize = 5;
             int pageNumber=page ?? 1;
             var listGroup = db.DbGroups.AsNoTracking().OrderBy(x => x.NhomId);

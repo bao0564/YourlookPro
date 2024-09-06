@@ -11,7 +11,6 @@ namespace Data.Models
         public int Id { get; set; }
         public int MaSp { get; set; }
         public string? Img { get; set; }
-
         public bool IsDefault { get; set; }
         public string? Place { get; set; }
 

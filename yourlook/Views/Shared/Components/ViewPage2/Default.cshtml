@@ -40,9 +40,14 @@
                 <div class="product_price">@string.Format("{0:N0}", prd.PriceMax)</div>
             </div>
         }
-        <div class="red_button add_to_cart_button">
+        @* <div class="red_button add_to_cart_button">
             <a class="btnAddToCart" data-id="@prd.MaSp" asp-action="Add" asp-controller="ShoppingCart" asp-route-Id="@prd.MaSp">
                 Thêm Vào Giỏ Hàng<i class="fa-solid fa-cart-plus fa-flip-horizontal fa-lg" style="color: #ffffff;padding:10px"></i>
+            </a>
+        </div> *@
+        <div class="red_button add_to_cart_button">
+            <a asp-controller="Home" asp-action="ProductDetail" asp-route-masp="@prd.MaSp">
+                Xem Chi Tiết<i class="fa-solid fa-cart-plus fa-flip-horizontal fa-lg" style="color: #ffffff;padding:10px"></i>
             </a>
         </div>
     </div>

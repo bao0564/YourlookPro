@@ -420,16 +420,12 @@
 							<div class="filter_button"><span>Chọn</span></div>
 						</div>
 						<!-- Sizes -->
-						<div class="sidebar_section sidebar_section-1">
+						@* <div class="sidebar_section sidebar_section-1">
 							<div class="sidebar_title">
 								<h5>Sizes</h5>
 							</div>
 							<ul class="checkboxes">
-								<li><i class="fa fa-square-o" aria-hidden="true"></i><span>S</span></li>
-								<li class="active"><i class="fa fa-square" aria-hidden="true"></i><span>M</span></li>
-								<li><i class="fa fa-square-o" aria-hidden="true"></i><span>L</span></li>
-								<li><i class="fa fa-square-o" aria-hidden="true"></i><span>XL</span></li>
-								<li><i class="fa fa-square-o" aria-hidden="true"></i><span>XXL</span></li>
+								@await Component.InvokeAsync("ViewSize")
 							</ul>
 							<div class="show_more">
 								<span><span>+</span>Show More</span>
@@ -439,32 +435,18 @@
 							<div class="sidebar_title">
 								<h5>Sizes</h5>
 							</div>
-                            <ul class="checkboxes menu_selection">
-								<li><i class="fa fa-square-o" aria-hidden="true"></i><span>S</span></li>
-								<li class="active"><i class="fa fa-square" aria-hidden="true"></i><span>M</span></li>
-								<li><i class="fa fa-square-o" aria-hidden="true"></i><span>L</span></li>
-								<li><i class="fa fa-square-o" aria-hidden="true"></i><span>XL</span></li>
-								<li><i class="fa fa-square-o" aria-hidden="true"></i><span>XXL</span></li>
+							<ul class="checkboxes menu_selection">
+								@await Component.InvokeAsync("ViewSize")
 							</ul>
-						</div>
+						</div> *@
 
 						<!-- Color -->
-						<div class="sidebar_section sidebar_section-1">
+						@* <div class="sidebar_section sidebar_section-1">
 							<div class="sidebar_title">
 								<h5>Color</h5>
 							</div>
 							<ul class="checkboxes">
-								<li><i class="fa fa-square-o" aria-hidden="true"></i><span>Black</span></li>
-								<li class="active"><i class="fa fa-square" aria-hidden="true"></i><span>Pink</span></li>
-								<li><i class="fa fa-square-o" aria-hidden="true"></i><span>White</span></li>
-								<li><i class="fa fa-square-o" aria-hidden="true"></i><span>Blue</span></li>
-								<li><i class="fa fa-square-o" aria-hidden="true"></i><span>Orange</span></li>
-								<li><i class="fa fa-square-o" aria-hidden="true"></i><span>White</span></li>
-								<li><i class="fa fa-square-o" aria-hidden="true"></i><span>Blue</span></li>
-								<li><i class="fa fa-square-o" aria-hidden="true"></i><span>Orange</span></li>
-								<li><i class="fa fa-square-o" aria-hidden="true"></i><span>White</span></li>
-								<li><i class="fa fa-square-o" aria-hidden="true"></i><span>Blue</span></li>
-                                <li><i class="fa fa-square-o" aria-hidden="true"></i><span>Orange</span></li>
+								@await Component.InvokeAsync("ViewColor")
                             </ul>
                             <div class="show_more">
                                 <span><span>+</span>Hiển thị</span>
@@ -475,22 +457,12 @@
 								<h5>Color</h5> 
 							</div>
 							<ul class="checkboxes menu_selection">
-								<li><i class="fa fa-square-o" aria-hidden="true"></i><span>Black</span></li>
-								<li class="active"><i class="fa fa-square" aria-hidden="true"></i><span>Pink</span></li>
-								<li><i class="fa fa-square-o" aria-hidden="true"></i><span>White</span></li>
-								<li><i class="fa fa-square-o" aria-hidden="true"></i><span>Blue</span></li>
-								<li><i class="fa fa-square-o" aria-hidden="true"></i><span>Orange</span></li>
-								<li><i class="fa fa-square-o" aria-hidden="true"></i><span>White</span></li>
-								<li><i class="fa fa-square-o" aria-hidden="true"></i><span>Blue</span></li>
-								<li><i class="fa fa-square-o" aria-hidden="true"></i><span>Orange</span></li>
-								<li><i class="fa fa-square-o" aria-hidden="true"></i><span>White</span></li>
-								<li><i class="fa fa-square-o" aria-hidden="true"></i><span>Blue</span></li>
-                                <li><i class="fa fa-square-o" aria-hidden="true"></i><span>Orange</span></li>
+								@await Component.InvokeAsync("ViewColor")
                             </ul>
                             <div class="show_more">
                                 <span><span>+</span>Show More</span>
                             </div>
-						</div>
+						</div> *@
 					</div>
 					<div class="main_content">
 						<div class="products_iso">

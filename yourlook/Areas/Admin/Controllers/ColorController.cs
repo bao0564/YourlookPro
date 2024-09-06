@@ -13,6 +13,11 @@ namespace yourlook.Areas.Admin.Controllers
         [Route("color")]
         public IActionResult Color(int? page)
         {
+            var name = HttpContext.Session.GetString("NameAdmin");
+            if (name == null)
+            {
+                return RedirectToAction("Login", "HomeAdmin");
+            }
             int pageSize = 10;
             int pageNumber = page ?? 1;
             var lstColor=db.DbColors.AsNoTracking().OrderBy(x=>x.CreateDate).ToList();

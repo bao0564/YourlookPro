@@ -12,8 +12,13 @@ namespace yourlook.Areas.Admin.Controllers
 		YourlookContext db = new YourlookContext();
 		[Route("khachhang")]
 		public IActionResult KhachHang(int? page)
-		{
-			int pageSize = 10;
+        {
+            var name = HttpContext.Session.GetString("NameAdmin");
+            if (name == null)
+            {
+                return RedirectToAction("Login", "HomeAdmin");
+            }
+            int pageSize = 10;
 			int pageNumber = page ?? 1;
 			var lstKhachHang = db.DbKhachHangs.AsNoTracking().OrderBy(x => x.MaKh).ToList();
 			PagedList<DbKhachHang> lst = new PagedList<DbKhachHang>(lstKhachHang, pageNumber, pageSize);

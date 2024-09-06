@@ -15,6 +15,10 @@ namespace Data.Models
         public int MaSp { get; set; }
         public string? TenSp { get; set; }
         public string? AnhSp { get; set; }
+        public int ColorId { get; set; }
+        public string ColorName { get; set; }
+        public int SizeId { get; set; }
+        public string SizeName { get; set; }
         public int? SoLuongSp { get; set; }
 
         public decimal Price { get; set; }

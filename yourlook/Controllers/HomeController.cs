@@ -126,11 +126,26 @@ namespace yourlook.Controllers
                 idFvrPrd = db.DbFavoriteProducts.Where(x=>x.MaKh==idkh.Value).Select(x=>x.MaSp).ToList();
 			}
 			var lstAllSanPham = db.DbSanPhams.AsNoTracking().Where(x=>x.IActive==true).OrderBy(x => x.TenSp).ToList();
-			foreach (var prd in lstAllSanPham)
-			{
-				prd.IFavorite = idFvrPrd.Contains(prd.MaSp);
+            var newlst = new List<ViewAllDetail>();
+            foreach (var prd in lstAllSanPham)
+            {
+                var lstSize = db.DbChiTietSanPhams.Where(x => x.MaSp == prd.MaSp).Select(x => x.Size).Distinct().ToList();
+                var lstColor = db.DbChiTietSanPhams.Where(x => x.MaSp == prd.MaSp).Select(x => x.Color).Distinct().ToList();
+                newlst.Add(new ViewAllDetail
+                {
+                    MaSp = prd.MaSp,
+                    TenSp = prd.TenSp,
+                    AnhSp = prd.AnhSp,
+                    PriceMax = prd.PriceMax,
+                    PriceMin = prd.PriceMin,
+                    GiamGia = prd.GiamGia,
+                    IFavorite = idFvrPrd.Contains(prd.MaSp),
+                    Sizes = lstSize,
+                    Colors = lstColor,
+                    LuotXem = prd.LuotXem
+                });
             }
-			PagedList<DbSanPham> lstsp = new PagedList<DbSanPham>(lstAllSanPham, pageNumber, pageSize);
+            PagedList<ViewAllDetail> lstsp = new PagedList<ViewAllDetail>(newlst, pageNumber, pageSize);
 			return View(lstsp);
 		}
         public IActionResult SellProduct(int? page)
@@ -144,11 +159,26 @@ namespace yourlook.Controllers
                 idFvrPrd = db.DbFavoriteProducts.Where(x => x.MaKh == idkh.Value).Select(x => x.MaSp).ToList();
             }
             var lstSellSanPham = db.DbSanPhams.AsNoTracking().Where(x => x.ISale == true).OrderBy(x => x.TenSp).ToList();
+            var newlst = new List<ViewAllDetail>();
             foreach (var prd in lstSellSanPham)
             {
-                prd.IFavorite = idFvrPrd.Contains(prd.MaSp);
-            }            
-			PagedList<DbSanPham> lstsp = new PagedList<DbSanPham>(lstSellSanPham, pageNumber, pageSize);
+                var lstSize = db.DbChiTietSanPhams.Where(x => x.MaSp == prd.MaSp).Select(x => x.Size).Distinct().ToList();
+                var lstColor = db.DbChiTietSanPhams.Where(x => x.MaSp == prd.MaSp).Select(x => x.Color).Distinct().ToList();
+                newlst.Add(new ViewAllDetail
+                {
+                    MaSp = prd.MaSp,
+                    TenSp = prd.TenSp,
+                    AnhSp = prd.AnhSp,
+                    PriceMax = prd.PriceMax,
+                    PriceMin = prd.PriceMin,
+                    GiamGia = prd.GiamGia,
+                    IFavorite = idFvrPrd.Contains(prd.MaSp),
+                    Sizes = lstSize,
+                    Colors = lstColor,
+                    LuotXem = prd.LuotXem
+                });
+            }
+            PagedList<ViewAllDetail> lstsp = new PagedList<ViewAllDetail>(newlst, pageNumber, pageSize);
 			return View(lstsp);
         }
 		public IActionResult NewProduct(int? page)
@@ -165,11 +195,26 @@ namespace yourlook.Controllers
             var lstNewProduct = db.DbSanPhams.AsNoTracking()
                 .Where(x => x.CreateDate >= prdNew && x.CreateDate <= DateTime.Now)
                 .OrderByDescending(x => x.CreateDate).ToList();
+            var newlst = new List<ViewAllDetail>();
             foreach (var prd in lstNewProduct)
             {
-                prd.IFavorite = idFvrPrd.Contains(prd.MaSp);
+                var lstSize = db.DbChiTietSanPhams.Where(x => x.MaSp == prd.MaSp).Select(x => x.Size).Distinct().ToList();
+                var lstColor = db.DbChiTietSanPhams.Where(x => x.MaSp == prd.MaSp).Select(x => x.Color).Distinct().ToList();
+                newlst.Add(new ViewAllDetail
+                {
+                    MaSp = prd.MaSp,
+                    TenSp = prd.TenSp,
+                    AnhSp = prd.AnhSp,
+                    PriceMax = prd.PriceMax,
+                    PriceMin = prd.PriceMin,
+                    GiamGia = prd.GiamGia,
+                    IFavorite = idFvrPrd.Contains(prd.MaSp),
+                    Sizes = lstSize,
+                    Colors = lstColor,
+                    LuotXem = prd.LuotXem
+                });
             }
-			PagedList<DbSanPham> lstNew = new PagedList<DbSanPham>(lstNewProduct, pageNumber, pageSize);
+            PagedList<ViewAllDetail> lstNew = new PagedList<ViewAllDetail>(newlst, pageNumber, pageSize);
 			return View(lstNew);
 		}
 		public IActionResult HotProduct(int? page)
@@ -183,11 +228,26 @@ namespace yourlook.Controllers
                 idFvrPrd = db.DbFavoriteProducts.Where(x => x.MaKh == idkh.Value).Select(x => x.MaSp).ToList();
             }
             var lstHotProduct = db.DbSanPhams.AsNoTracking().Where(x => x.IHot == true).OrderByDescending(x => x.LuotSold).ToList();
+            var newlst = new List<ViewAllDetail>();
             foreach (var prd in lstHotProduct)
             {
-                prd.IFavorite = idFvrPrd.Contains(prd.MaSp);
-            }            
-			PagedList<DbSanPham> lstHot = new PagedList<DbSanPham>(lstHotProduct, pageNumber, pageSize);
+                var lstSize = db.DbChiTietSanPhams.Where(x => x.MaSp == prd.MaSp).Select(x => x.Size).Distinct().ToList();
+                var lstColor = db.DbChiTietSanPhams.Where(x => x.MaSp == prd.MaSp).Select(x => x.Color).Distinct().ToList();
+                newlst.Add(new ViewAllDetail
+                {
+                    MaSp = prd.MaSp,
+                    TenSp = prd.TenSp,
+                    AnhSp = prd.AnhSp,
+                    PriceMax = prd.PriceMax,
+                    PriceMin = prd.PriceMin,
+                    GiamGia = prd.GiamGia,
+                    IFavorite = idFvrPrd.Contains(prd.MaSp),
+                    Sizes = lstSize,
+                    Colors = lstColor,
+                    LuotXem = prd.LuotXem
+                });
+            }
+            PagedList<ViewAllDetail> lstHot = new PagedList<ViewAllDetail>(newlst, pageNumber, pageSize);
 			return View(lstHot);
 		}
 		public IActionResult UnderProduct(int? page)
@@ -201,11 +261,26 @@ namespace yourlook.Controllers
                 idFvrPrd = db.DbFavoriteProducts.Where(x => x.MaKh == idkh.Value).Select(x => x.MaSp).ToList();
             }
             var lstUnderProduct = db.DbSanPhams.AsNoTracking().Where(x => x.MaDm == 2).OrderByDescending(x => x.MaSp).ToList();
+            var newlst = new List<ViewAllDetail>();
             foreach (var prd in lstUnderProduct)
             {
-                prd.IFavorite = idFvrPrd.Contains(prd.MaSp);
+                var lstSize = db.DbChiTietSanPhams.Where(x => x.MaSp == prd.MaSp).Select(x => x.Size).Distinct().ToList();
+                var lstColor = db.DbChiTietSanPhams.Where(x => x.MaSp == prd.MaSp).Select(x => x.Color).Distinct().ToList();
+                newlst.Add(new ViewAllDetail
+                {
+                    MaSp = prd.MaSp,
+                    TenSp = prd.TenSp,
+                    AnhSp = prd.AnhSp,
+                    PriceMax = prd.PriceMax,
+                    PriceMin = prd.PriceMin,
+                    GiamGia = prd.GiamGia,
+                    IFavorite = idFvrPrd.Contains(prd.MaSp),
+                    Sizes = lstSize,
+                    Colors = lstColor,
+                    LuotXem = prd.LuotXem
+                });
             }
-			PagedList<DbSanPham> lstNew = new PagedList<DbSanPham>(lstUnderProduct, pageNumber, pageSize);
+            PagedList<ViewAllDetail> lstNew = new PagedList<ViewAllDetail>(newlst, pageNumber, pageSize);
 			return View(lstNew);
 		}
 		public IActionResult ProductCategory(int? page)
@@ -219,11 +294,26 @@ namespace yourlook.Controllers
                 idFvrPrd = db.DbFavoriteProducts.Where(x => x.MaKh == idkh.Value).Select(x => x.MaSp).ToList();
             }
             var lstcateSanPham = db.DbSanPhams.AsNoTracking().Where(x => x.IActive == true).OrderBy(x => x.TenSp).ToList();
+			var newlst=new List<ViewAllDetail>();
             foreach (var prd in lstcateSanPham)
             {
-                prd.IFavorite = idFvrPrd.Contains(prd.MaSp);
+				var lstSize = db.DbChiTietSanPhams.Where(x => x.MaSp == prd.MaSp).Select(x => x.Size).Distinct().ToList();
+				var lstColor=db.DbChiTietSanPhams.Where(x=>x.MaSp==prd.MaSp).Select(x=>x.Color).Distinct().ToList();
+				newlst.Add(new ViewAllDetail
+				{
+                    MaSp = prd.MaSp,
+                    TenSp = prd.TenSp,
+                    AnhSp = prd.AnhSp,
+                    PriceMax = prd.PriceMax,
+                    PriceMin = prd.PriceMin,
+                    GiamGia = prd.GiamGia,
+                    IFavorite = idFvrPrd.Contains(prd.MaSp),
+                    Sizes = lstSize,
+                    Colors = lstColor,
+                    LuotXem = prd.LuotXem
+                });
             }            
-            PagedList<DbSanPham> lstcatesp = new PagedList<DbSanPham>(lstcateSanPham, pageNumber, pageSize);
+            PagedList<ViewAllDetail> lstcatesp = new PagedList<ViewAllDetail>(newlst, pageNumber, pageSize);
             return View(lstcatesp);
         }
 		public IActionResult ProductTipe(int madm,int? page)
@@ -236,13 +326,35 @@ namespace yourlook.Controllers
             {
                 idFvrPrd = db.DbFavoriteProducts.Where(x => x.MaKh == idkh.Value).Select(x => x.MaSp).ToList();
             }
-            List<DbSanPham> lstProductTipe = db.DbSanPhams.AsNoTracking().Where(x => x.MaDm == madm).OrderBy(x => x.TenSp).ToList(); ;
+            var lstProductTipe = db.DbSanPhams.AsNoTracking().Where(x => x.MaDm == madm).OrderBy(x => x.TenSp).ToList();
+			var newLst = new List<ViewAllDetail>();           
             foreach (var prd in lstProductTipe)
             {
-                prd.IFavorite = idFvrPrd.Contains(prd.MaSp);
-            }            
-			ViewBag.Madm = madm;
-			PagedList<DbSanPham> lstprdbytipe = new PagedList<DbSanPham>(lstProductTipe, pageNumber,pageSize);
+                var lstSize = db.DbChiTietSanPhams
+								.Where(x =>x.MaSp==prd.MaSp)
+                                .Select(x => x.Size)
+                                .Distinct()
+                                .ToList();
+                var lstColor= db.DbChiTietSanPhams
+								.Where(x => x.MaSp == prd.MaSp)
+                                .Select(x => x.Color)
+                                .Distinct()
+                                .ToList();
+				newLst.Add(new ViewAllDetail
+                {
+					MaSp = prd.MaSp,
+					TenSp = prd.TenSp,
+					AnhSp = prd.AnhSp,
+					PriceMax = prd.PriceMax,
+					PriceMin = prd.PriceMin,
+					GiamGia = prd.GiamGia,
+					IFavorite = idFvrPrd.Contains(prd.MaSp),
+					Sizes=lstSize,
+					Colors=lstColor,
+					LuotXem=prd.LuotXem
+				});            
+			}            
+			PagedList<ViewAllDetail> lstprdbytipe = new PagedList<ViewAllDetail>(newLst, pageNumber,pageSize);
 			return View(lstprdbytipe);
 		}
 		public IActionResult ProductDetail(int masp)
@@ -254,7 +366,6 @@ namespace yourlook.Controllers
 				db.Entry(lstSanPham).Property(X=>X.LuotXem).IsModified = true;
 				db.SaveChanges();
 			};
-
 			var lstImgProduct = db.DbImgs.Where(x => x.MaSp == masp).ToList();
 			//.Distinct() để loại bỏ các size, color trùng lặp
 			var lstSizeProduct = db.DbChiTietSanPhams.Where(x => x.MaSp == masp)

@@ -30,6 +30,11 @@ namespace yourlook.Areas.Admin.Controllers
         [Route("sanpham")]
         public IActionResult SanPham(int? page)
         {
+            var name = HttpContext.Session.GetString("NameAdmin");
+            if (name == null)
+            {
+                return RedirectToAction("Login", "HomeAdmin");
+            }
             int pageSize = 20;
             int pageNumber = page ?? 1;
             var lstSanPham = db.DbSanPhams.Include(p => p.MaDanhMucsMaDm).OrderByDescending(x => x.CreateDate).ToList();
@@ -189,7 +194,6 @@ namespace yourlook.Areas.Admin.Controllers
 					.Include(sp => sp.DbChiTietSanPhams)
 						.ThenInclude(ctsp => ctsp.Color)
 					.FirstOrDefault(sp => sp.MaSp == sanPham.MaSp);
-
 				if (sp == null)
 				{
 					return NotFound(); // Xử lý lỗi nếu không tìm thấy sản phẩm
@@ -206,10 +210,30 @@ namespace yourlook.Areas.Admin.Controllers
 					{
 						await AnhSpFile.CopyToAsync(fileStream);
 					}
-
 					sp.AnhSp = fileName;
-				}
 
+					sp.DbImgs.Clear(); // Xóa ảnh cũ
+				}
+				// Cập nhật danh sách ảnh
+				if (!string.IsNullOrEmpty(Imgs))
+				{
+                    if (AnhSpFile == null || AnhSpFile.Length == 0)
+                    {
+                    }
+                    else
+                    {
+                        sp.DbImgs.Clear();
+                    }
+                    string[] imagePaths = Imgs.Split(';');
+					foreach (var imagePath in imagePaths)
+					{
+						sp.DbImgs.Add(new DbImg
+						{
+							MaSp = sp.MaSp,
+							Img = imagePath
+						});
+					}
+				}
 				// Cập nhật thông tin sản phẩm
 				sp.TenSp = sanPham.TenSp;
 				sp.MaDm = sanPham.MaDm;
@@ -224,22 +248,6 @@ namespace yourlook.Areas.Admin.Controllers
 				sp.IFeature = sanPham.IFeature;
 				sp.IHot = sanPham.IHot;
 				sp.ISale = sanPham.ISale;
-
-				// Cập nhật danh sách ảnh
-				if (!string.IsNullOrEmpty(Imgs))
-				{
-					sp.DbImgs.Clear(); // Xóa ảnh cũ
-					string[] imagePaths = Imgs.Split(';');
-					foreach (var imagePath in imagePaths)
-					{
-						sp.DbImgs.Add(new DbImg
-						{
-							MaSp = sp.MaSp,
-							Img = imagePath
-						});
-					}
-				}
-
 				// Xóa các size và màu cũ trong bảng DbChiTietSanPham
 				var oldDetails = db.DbChiTietSanPhams.Where(x => x.MaSp == sanPham.MaSp);
 				db.DbChiTietSanPhams.RemoveRange(oldDetails);
@@ -264,13 +272,10 @@ namespace yourlook.Areas.Admin.Controllers
 				await db.SaveChangesAsync();
 				return RedirectToAction("SanPham");
 			}
-
-			ViewBag.MaDm = new SelectList(db.DbDanhMucs.ToList(), "MaDm", "TenDm", sanPham.MaDm);
+            ViewBag.MaDm = new SelectList(db.DbDanhMucs.ToList(), "MaDm", "TenDm", sanPham.MaDm);
 			ViewBag.NhomId = new SelectList(db.DbGroups.ToList(), "NhomId", "GroupName", sanPham.NhomId);
 			return View(sanPham);
 		}
-
-
 		// Xóa Sản Phẩm
 		[Route("xoasanpham")]
         [HttpGet]
@@ -290,6 +295,7 @@ namespace yourlook.Areas.Admin.Controllers
             TempData["Message"] = "Sản Phẩm Đã Được Xóa";
             return RedirectToAction("sanpham");
         }
+
         [HttpPost]
         public async Task<IActionResult> UploadImg(List<IFormFile> files)
         {

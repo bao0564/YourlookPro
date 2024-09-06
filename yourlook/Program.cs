@@ -45,6 +45,8 @@ builder.Services.AddSession(options =>
 //builder ViewComponent
 builder.Services.AddScoped<ISanPhamHot, SanPhamHot>();
 builder.Services.AddScoped<ICategory, Category>();
+builder.Services.AddScoped<ISize, Size>();
+builder.Services.AddScoped<IColor, Color>();
 builder.Services.AddScoped<ISanPhamNew, SanPhamNew>();
 builder.Services.AddScoped<IAds, Ads>();
 builder.Services.AddScoped<IPage1, Page1>();

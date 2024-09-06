@@ -1,15 +1,15 @@
-﻿@using Data.Models;
+﻿@using yourlook.Models;
 @using X.PagedList.Mvc.Core;
 @{
     ViewData["Title"] = "ProductTipe";
     Layout = "~/Views/Shared/_LayoutCate.cshtml";
 }
-@model X.PagedList.IPagedList<DbSanPham>
+@model X.PagedList.IPagedList<ViewAllDetail>
 
 <div class="product-grid">
 	@foreach (var prd in Model)
 	{
-        <div class="product-item ">
+        <div class="product-item">
             @if (prd.GiamGia > 0)
             {
                 <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>-@prd.GiamGia%</span></div>
@@ -21,6 +21,23 @@
             <div class="product discount product_filter">
 				<div class="product_image">
 					<a asp-controller="Home" asp-action="ProductDetail" asp-route-masp="@prd.MaSp"><img src="@Url.Content("/img/"+prd.AnhSp)" alt=""></a>
+                    <div class="box-inf-cl-s">
+                        <div>
+                            <div class="fljct" style="padding:10px">Phân Loại</div>
+                            <div class="fljct flct" style="margin-bottom:10px">Size:
+                                @foreach (var sz in prd.Sizes)
+                                {
+                                    <button>@sz.NameSize</button>
+                                }
+                            </div>
+                            <div class="fljct flct">Màu:
+                                @foreach (var cl in prd.Colors)
+                                {
+                                    <button style="background-color:@cl.MaMau"></button>
+                                }
+                            </div>
+                        </div>
+                    </div>
 				</div>
                 <div class="favorite" data-id="@prd.MaSp" style="font-size:20px">
                     @if (prd.IFavorite == true)
@@ -47,10 +64,16 @@
                         <div style="display:none;" class="in_product_price"> @prd.PriceMax</div>
                     }
 				</div>
-			</div>
-            <div class="red_button add_to_cart_button">
+			</div>            
+          @*<div class="red_button add_to_cart_button">
                 <a class="btnAddToCart" data-id="@prd.MaSp" asp-action="Add" asp-controller="ShoppingCart" asp-route-Id="@prd.MaSp">
                     Thêm Vào Giỏ Hàng<i class="fa-solid fa-cart-plus fa-flip-horizontal fa-lg" style="color: #ffffff;padding:10px"></i>
+                </a>
+            </div> *@
+
+            <div class="red_button add_to_cart_button">
+                <a asp-controller="Home" asp-action="ProductDetail" asp-route-masp="@prd.MaSp">
+                    Xem Chi Tiết<i class="fa-solid fa-cart-plus fa-flip-horizontal fa-lg" style="color: #ffffff;padding:10px"></i>
                 </a>
             </div>
 		</div>

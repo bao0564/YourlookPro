@@ -11,18 +11,14 @@ namespace yourlook.Areas.Admin.Controllers
     public class AdsController : Controller
     {
         YourlookContext db=new YourlookContext();
-        //private readonly IWebHostEnvironment _webHostEnvironment;
-        //private readonly ILogger<AdsController> _logger;
-
-        //public AdsController(IWebHostEnvironment webHostEnvironment, ILogger<AdsController> logger)
-        //{
-        //    _webHostEnvironment = webHostEnvironment;
-        //    _logger = logger;
-        //}
-
         [Route("ads")]
         public IActionResult Ads(int? page)
         {
+            var name = HttpContext.Session.GetString("NameAdmin");
+            if (name == null)
+            {
+                return RedirectToAction("Login", "HomeAdmin");
+            }
             int pageSize = 10;
             int pageNumber = page ?? 1;
             var lstAds = db.DbAdds.AsNoTracking().OrderBy(x => x.Id);

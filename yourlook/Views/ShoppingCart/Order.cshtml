@@ -28,6 +28,7 @@
                             <tr>
                                 <th>Ảnh Sản Phẩm</th>
                                 <th>Tên Sản Phẩm</th>
+                                <th>Phân loại</th>
                                 <th>Số lượng</th>
                                 <th>Giá</th>
                                 <th>Tổng tiền</th>
@@ -38,6 +39,7 @@
                                 <tr>
                                     <td class="box-img"><img src="@Url.Content("../img/"+prd.ProductImg)" /></td>
                                     <td>@prd.ProductName</td>
+                                    <td>@prd.ColorName - @prd.SizeName</td>
                                     <td>@prd.ProductQuantity</td>
                                     <td>@prd.ProductPrice.ToString("N0") VNĐ</td>
                                     <td>@prd.Total.ToString("N0") VNĐ</td>

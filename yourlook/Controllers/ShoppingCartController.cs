@@ -106,7 +106,7 @@ namespace yourlook.Controllers
             HttpContext.Session.SetJson("OrderInfo", request.selectInfors);
             return Json(new { success = true });
         }
-
+        
         public IActionResult Order()
         {
             var selectedItems = HttpContext.Session.GetJson<List<CheckOutItem>>("Order") ?? new List<CheckOutItem>();
@@ -164,6 +164,10 @@ namespace yourlook.Controllers
                         MaSp = item.ProductId,
                         TenSp = item.ProductName,
                         AnhSp = item.ProductImg,
+                        ColorId= item.ColorId,
+                        ColorName=item.ColorName,
+                        SizeId=item.SizeId,
+                        SizeName=item.SizeName,
                         SoLuongSp = item.ProductQuantity,
                         Price = item.ProductPrice,
                         CreateDate = DateTime.Now
@@ -173,14 +177,14 @@ namespace yourlook.Controllers
                 db.SaveChanges();
                 HttpContext.Session.Remove("Order");
                 HttpContext.Session.Remove("OrderInfor");
-
-                var cart = HttpContext.Session.GetJson<ViewShoppingCartItem>("Cart") ?? new ViewShoppingCartItem();
+                //xóa sp đã thanh toán ra khỏi giỏ hàng
+                var cart = HttpContext.Session.GetJson<List<ShoppingCartItem>>("Cart") ?? new List<ShoppingCartItem>();
                 foreach (var prd in selectedItems)
                 {
-                    var prdmove= cart.Items.FirstOrDefault(x=>x.ProductId == prd.ProductId);
+                    var prdmove= cart.FirstOrDefault(x=>x.ProductId == prd.ProductId);
                     if (prdmove != null)
                     {
-                        cart.Items.Remove(prdmove);
+                        cart.Remove(prdmove);
                     };
                 };
                 HttpContext.Session.SetJson("Cart",cart);

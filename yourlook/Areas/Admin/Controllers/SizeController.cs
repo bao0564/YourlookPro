@@ -12,8 +12,13 @@ namespace yourlook.Areas.Admin.Controllers
 		[Route("size")]
 		[HttpGet]
 		public IActionResult Size()
-		{
-			var lst = db.DbSizes.AsNoTracking().OrderBy(x => x.SizeId);
+        {
+            var name = HttpContext.Session.GetString("NameAdmin");
+            if (name == null)
+            {
+                return RedirectToAction("Login", "HomeAdmin");
+            }
+            var lst = db.DbSizes.AsNoTracking().OrderBy(x => x.SizeId);
 			return View(lst);
 		}
 		[Route("taosize")]
