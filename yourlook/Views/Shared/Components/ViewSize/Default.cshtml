@@ -4,7 +4,7 @@
 @foreach (var prd in Model)
 {
 	@* <li><a asp-controller="Home" asp-action="ProductTipe" asp-route-sizeid="@prd.SizeId">@prd.NameSize</a></li> *@
-    <li>
-        <input type="checkbox" /><span style ="margin-left:10px">@prd.NameSize</span>
+    <li style="display:flex">
+        <input type="checkbox" /><p style ="margin-left:10px;color:#000">@prd.NameSize</p>
     </li>
 }  

@@ -24,33 +24,37 @@
                     <a asp-controller="Home" asp-action="ProductDetail" asp-route-masp="@prd.MaSp"><img src="@Url.Content("/img/"+prd.AnhSp)" alt=""></a>
                     <div class="box-inf-cl-s">
                         <div>
-                            <div class="fljct" style="padding:10px">Phân Loại</div>
-                            <div class="fljct flct" style="margin-bottom:10px">
+                            <div class="box-inf-title fljct">Phân Loại</div>
+                            <div class="box-inf-size fljct flct">
                                 Size:
-                                @foreach (var sz in prd.Sizes)
-                                {
-                                    <button>@sz.NameSize</button>
-                                }
+                                <div class="flscr">
+                                    @foreach (var sz in prd.Sizes)
+                                    {
+                                        <button>@sz.NameSize</button>
+                                    }
+                                </div>
                             </div>
-                            <div class="fljct flct">
+                            <div class="box-inf-color fljct flct">
                                 Màu:
-                                @foreach (var cl in prd.Colors)
-                                {
-                                    <button style="background-color:@cl.MaMau"></button>
-                                }
+                                <div class="flscr">
+                                    @foreach (var cl in prd.Colors)
+                                    {
+                                        <button style="background-color:@cl.MaMau"></button>
+                                    }
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="favorite" data-id="@prd.MaSp" style="font-size:20px">
-                    @if (prd.IFavorite)
-                    {
-                        <i class="fa-solid fa-heart" style="color: #2f3640;"></i>
-                    }
-                    else
-                    {
-                        <i class="fa-regular fa-heart" style="color: #2f3640;"></i>
-                    }
+                    <div class="favorite" data-id="@prd.MaSp" style="font-size:20px">
+                        @if (prd.IFavorite)
+                        {
+                            <i class="fa-solid fa-heart" style="color: #2f3640;"></i>
+                        }
+                        else
+                        {
+                            <i class="fa-regular fa-heart" style="color: #2f3640;"></i>
+                        }
+                    </div>
                 </div>
                 <div class="product_info">
                     <h6 class="product_name">

@@ -8,8 +8,8 @@
     var TongTien = Model.CheckOutItems.Sum(X => X.Total).ToString("N0") + "VNĐ";
     var TongSanPham = Model.CheckOutItems.Sum(Y => Y.ProductQuantity).ToString();
 }
-<main class="mar150_container cart" style="margin-bottom:150px">
-    <div class="breadcrumbs d-flex flex-row align-items-center" style="margin:0">
+<main class="mar150_container cart cart-order" style="margin-bottom:150px">
+    <div class="breadcrumbs d-flex flex-row align-items-center mg" style="margin-bottom:0;">
         <ul>
             <li>
                 <a href="@Url.Action("Index","ShoppingCart")">
@@ -26,23 +26,23 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th>Ảnh Sản Phẩm</th>
-                                <th>Tên Sản Phẩm</th>
-                                <th>Phân loại</th>
-                                <th>Số lượng</th>
+                                <th class="nw">Ảnh Sản Phẩm</th>
+                                <th class="nw">Tên Sản Phẩm</th>
+                                <th class="nw">Phân loại</th>
+                                <th class="nw">Số lượng</th>
                                 <th>Giá</th>
-                                <th>Tổng tiền</th>
+                                <th class="nw">Tổng tiền</th>
                             </tr>
                         </thead>
                         <tbody>
                            @foreach(var prd in Model.CheckOutItems){
                                 <tr>
                                     <td class="box-img"><img src="@Url.Content("../img/"+prd.ProductImg)" /></td>
-                                    <td>@prd.ProductName</td>
-                                    <td>@prd.ColorName - @prd.SizeName</td>
-                                    <td>@prd.ProductQuantity</td>
-                                    <td>@prd.ProductPrice.ToString("N0") VNĐ</td>
-                                    <td>@prd.Total.ToString("N0") VNĐ</td>
+                                    <td >@prd.ProductName</td>
+                                    <td class="nw">@prd.ColorName - @prd.SizeName</td>
+                                    <td class="nw">@prd.ProductQuantity</td>
+                                    <td class="nw">@prd.ProductPrice.ToString("N0") VNĐ</td>
+                                    <td class="nw">@prd.Total.ToString("N0") VNĐ</td>
                                 </tr>
                             }       
                         </tbody>
@@ -61,27 +61,42 @@
             </div>
         </div>
         <div class="order-cart">
-            <div class="box-cart">
+            <div class="flct box-cart">
                 <h4>Hình thức thanh toán:</h4>
-                <p>Thanh Toán bằng MOMO</p>
+                <p class="flct">@Model.PayName</p>
             </div>
             <div class="box-cart">
                 <h4>Thông tin địa chỉ:</h4>
-                <p>Tên người nhận:@Model.TenKh </p>
-                <p>Số điện thoại:@Model.Sdt</p>
-                <p>@Model.Ward - @Model.District - @Model.City</p>
-                <p>@Model.DiaChi</p>
+               <div class="flct">
+                    <p class="mg">Tên người nhận:</p>
+                    <div>@Model.TenKh </div>
+               </div>
+               <div class="flct">
+                    <p class="mg">Số điện thoại:</p>
+                    <div>@Model.Sdt</div>
+               </div>
+               <div class="flct">
+                    <p class="mg nw">Địa chỉ:</p>
+                    <div class="mg">@Model.Ward - @Model.District - @Model.City</div>
+                    <h5 class="mg">(@Model.DiaChi)</h5>
+               </div>
                 <h5>Ghi chú:</h5>
-                <p>@Model.GhiChu</p>
+                <div class="mg">@Model.GhiChu</div>
             </div>
 
         </div>
         <div class="box-pay-all">
             <div class="box-cart">
                 <div style="display:flex;align-items:center;height:50px">
-                    <div class="" style="display:flex;width:50%">
-                        <div class="infor-payment">phương thức thanh toán</div>
-                        <div class="infor-payment">voucher</div>
+                    <div class="tipe-choose">
+                        <div class="infor-payment flct bdrdu">
+                            <p>Thanh Toán:</p>
+                            <div class="fljct bdrdu">
+                                <img src="#" alt="" style="height:25px">
+                                <div class="flscr">@Model.PayName</div>
+                            </div>
+                        </div>
+                        <div class="infor-payment bdrdu">voucher</div>
                     </div>
                     <div style="display:flex;width:50%;justify-content:flex-end">
                         <div class=" flex2-cart">

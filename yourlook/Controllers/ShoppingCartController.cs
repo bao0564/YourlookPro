@@ -21,8 +21,18 @@ namespace yourlook.Controllers
 		YourlookContext db = new YourlookContext();
 		public IActionResult Index()
 		{
-			var cart = HttpContext.Session.GetJson<List<ShoppingCartItem>>("Cart") ?? new List<ShoppingCartItem>();
-			return View(cart);
+            var idkh = HttpContext.Session.GetInt32("userid");
+            var userAdress=db.DbAddreses.Where(x=>x.MaKh==idkh).ToList();
+            var pay=db.DbPayments.ToList();
+            var cart = HttpContext.Session.GetJson<List<ShoppingCartItem>>("Cart") ?? new List<ShoppingCartItem>();
+            var item = new ShoppingCartDetail
+            {
+                Address = userAdress,
+                Items = cart,
+                Payments =pay                
+            };
+
+            return View(item);
 		}
         [AllowAnonymous]
 		[HttpPost]
@@ -103,7 +113,7 @@ namespace yourlook.Controllers
                 }
             }
             HttpContext.Session.SetJson("Order", selectedItems);
-            HttpContext.Session.SetJson("OrderInfo", request.selectInfors);
+            HttpContext.Session.SetJson("OrderInfo", request.selectInfors); 
             return Json(new { success = true });
         }
         
@@ -122,6 +132,8 @@ namespace yourlook.Controllers
                 TongTien=orderInfor.TongTien,
                 PaymentId = orderInfor.PaymentId,
                 GhiChu = orderInfor.GhiChu,
+                PayName =orderInfor.payname,
+                Icon = orderInfor.icon,
                 CheckOutItems = selectedItems
             };
             return View(item);
@@ -148,6 +160,7 @@ namespace yourlook.Controllers
                     Ward = orderInfor.Ward,
                     DiaChi = orderInfor.DiaChi,
                     PaymentId = orderInfor.PaymentId,
+                    PaymentName=orderInfor.payname,
                     GhiChu = orderInfor.GhiChu,
                     TongTien = tongtien,
                     soluong = tongsoluong,

@@ -29,7 +29,6 @@
             }
         });
     });
-
     // Đưa sản phẩm được chọn,thông tin khách hàng vào trang thanh toán
     $('.pay-btn').off('click').on('click', function (e) {
         e.preventDefault();
@@ -42,7 +41,15 @@
             var quantity = parseInt(quantityElement.text());
             selectedProducts.push({ ProductId: id, ProductQuantity: quantity, ColorId: colorid, SizeId :sizeid});
         });
-
+        if (selectedProducts.length === 0) {
+            alert('Vui lòng chọn một sản phảm để thanh toán');
+            return;
+        }
+        var selectedAdress = $('.address-val:checked');
+        if (selectedAdress.length === 0) {
+            alert('Địa chỉ không được để trống');
+            return;
+        }
         var orderInfo = {
             TenKh: $('#TenKh').val(),
             Sdt: $('#Sdt').val(),
@@ -50,26 +57,32 @@
             District: $('#District').val(),
             Ward: $('#Ward').val(),
             DiaChi: $('#DiaChi').val(),
-            GhiChu: $('#GhiChu').val()
+            GhiChu: $('#GhiChu').val(),
+            ////pay
+            //PaymentId: $('#payid').text(),
+            //payname: $('#payname').text()
         };
-
-        if (selectedProducts.length > 0) {
-            var data = {
-                selectedProducts: selectedProducts,
-                selectInfors: orderInfo
-            };
-            $.ajax({
-                url: '/shoppingcart/checkout',
-                type: 'POST',
-                contentType: 'application/json',
-                data: JSON.stringify(data),
-                success: function (response) {
-                    window.location.href = '/shoppingcart/order';
-                }
-            });
-        } else {
-            alert("Vui lòng chọn ít nhất một sản phẩm để thanh toán.");
+        var selectedPayment = $('.pay-checked:checked');
+        if (selectedPayment.length === 0) {
+            alert("Vui lòng chọn phương thức thanh toán.");
+            return;
         }
+        orderInfo.PaymentId = $('#payid').text();
+        orderInfo.payname = $('#payname').text();
+        
+        var data = {
+            selectedProducts: selectedProducts,
+            selectInfors: orderInfo
+        };
+        $.ajax({
+            url: '/shoppingcart/checkout',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify(data),
+            success: function (response) {
+                window.location.href = '/shoppingcart/order';
+            }
+        });
     });
     // Xóa sản phẩm
     $('body').off('click', '.deletebtn').on('click', '.deletebtn', function (e) {
@@ -99,7 +112,7 @@
             var quantity = parseInt($(this).closest('.cart-container').find('.quantity_value-cart').text());
             total += price * quantity;
         });
-        $('#TongTien').text(total.toLocaleString() + ' VNĐ');
+        $('#TongTien').text(total.toLocaleString() + ' VND');
     }
 
     // Cập nhật giá tiền
@@ -107,7 +120,7 @@
         var priceElement = element.closest('.flex-cart').find('.product_price');
         var unitPrice = parseFloat(priceElement.data('price'));
         var newPrice = unitPrice * quantity;
-        priceElement.text(newPrice.toLocaleString() + ' VNĐ');
+        priceElement.text(newPrice.toLocaleString() + ' VND');
     }
 
      //Hàm cập nhật số lượng sản phẩm trong giỏ hàng

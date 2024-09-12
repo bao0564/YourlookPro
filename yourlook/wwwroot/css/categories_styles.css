@@ -51,7 +51,9 @@ COLOR PALETTE
 	width: calc(100% - 200px);
 	padding-left: 34px;
 }
-
+.cate .row{
+	margin:0;
+}
 /*********************************
 3.5 Hamburger Menu
 *********************************/
@@ -299,7 +301,7 @@ COLOR PALETTE
 }
 .product_sorting
 {
-	display: inline-block;
+	display: flex;
 }
 .product_sorting > li
 {
@@ -385,7 +387,7 @@ COLOR PALETTE
 }
 .product_sorting li span:nth-child(2)
 {
-	margin-left: 71px;
+	margin-left:1px;
 }
 .pages
 {
@@ -421,8 +423,10 @@ COLOR PALETTE
 {
 	color: #FFFFFF;
 }
-.page_selection
-{
+.product_sorting .sidebar_section-box1{
+	display:none;
+}
+.page_selection {
 	display: block;
 	position: absolute;
 	right: 0;
@@ -549,16 +553,12 @@ COLOR PALETTE
 {
 	float: left;
 	width: 200px;
-	padding-right: 17px;
+	padding-left: 17px;
 }
-.sidebar_section
-{
-	padding-bottom: 35px;
-	margin-bottom: 50px;
+.sidebar_section{
 	border-bottom: solid 1px #ebebeb;
 }
-.sidebar_title h5
-{
+.sidebar_title h5 {
 	font-size: 18px;
 	margin-bottom: 21px;
 }
@@ -598,7 +598,7 @@ COLOR PALETTE
 .filter_button
 {
 	width: 100%;
-	height: 30px;
+	height: auto;
 	background: #1e1e27;
 	text-align: center;
 	margin-top: 25px;
@@ -793,7 +793,7 @@ COLOR PALETTE
 	font-weight: 400;
 	color: #b9b4c7 !important;
 }
-#newsletter_email::-moz-placeholder  Firefox 19+ 
+#newsletter_email::-moz-placeholder  Firefox 
 {
 	font-size: 14px !important;
 	font-weight: 400;
@@ -841,6 +841,7 @@ COLOR PALETTE
 .pagination li {
 	border: 1px solid;
 	margin: 0 5px;
+	padding:5px 10px;
 }
 /*product form page*/
 /*

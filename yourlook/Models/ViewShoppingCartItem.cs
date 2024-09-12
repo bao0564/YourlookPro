@@ -1,4 +1,6 @@
 ﻿
+using Data.Models;
+
 namespace yourlook.Models
 {
     public class ViewShoppingCartItem
@@ -63,6 +65,13 @@ namespace yourlook.Models
         public string  SizeName { get; set; }
         public decimal Total {  get; set; }
     }
+    //Địa chỉ người dùng + Sản phẩm thêm vào giỏ hàng + phương thức thanh toán + voucher
+    public class ShoppingCartDetail
+    {
+        public IEnumerable<ShoppingCartItem> Items { get; set; }
+        public List<DbAddres> Address { get; set; }
+        public List<DbPayment> Payments { get; set; }
+    }
     //sản phẩm được chọn thêm vào trang thanh toán
     public class CheckOutItem
     {
@@ -89,6 +98,8 @@ namespace yourlook.Models
         public string? DiaChi { get; set; }
         public decimal? TongTien { get; set; }
         public int? PaymentId { get; set; }
+        public string? Icon { get; set; }
+        public string? PayName { get; set; }
         public string? GhiChu { get; set; }
         public List<CheckOutItem>? CheckOutItems { get; set; }
     }
@@ -105,6 +116,8 @@ namespace yourlook.Models
         public string? DiaChi { get; set; }
         public decimal? TongTien { get; set; }
         public int? PaymentId { get; set; }
+        public string icon {  get; set; }
+        public string payname {  get; set; }
         public string? GhiChu { get; set; }
     }
     public class CheckoutRequest

@@ -389,6 +389,10 @@ namespace Data.Migrations
                     b.Property<int?>("PaymentId")
                         .HasColumnType("int");
 
+                    b.Property<string>("PaymentName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Sdt")
                         .HasColumnType("nvarchar(max)");
 

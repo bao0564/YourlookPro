@@ -58,9 +58,28 @@ COLOR PALETTE
 	display: flex;
 	justify-content:center;
 }
+.flscr{
+	display:-webkit-flex;
+	overflow-y:hidden;
+	overflow-x:auto;
+}
+.flscr::-webkit-scrollbar {
+	display: none;
+}
 .bdrdu {
+	padding: 5px 10px;
+	margin:0 10px;
 	border: 1px solid #2f3640;
-	border-radius:10px;
+	border-radius: 10px;
+}
+.pd{
+	padding:10px;
+}
+.mg{
+	margin:10px;
+}
+.nw{
+	white-space:nowrap;
 }
 .no-scrollbar {
 	scrollbar-width: none; /* Firefox */
@@ -647,12 +666,11 @@ section
 	height: auto;
 }
 
-	.product-body .imgad img {
-		margin: 15px 0;
-		width: 100%;
-		object-fit: cover;
-	}
-
+.product-body .imgad img {
+	margin: 15px 0;
+	width: 100%;
+	object-fit: cover;
+}
 /*********************************
 3. Home
 *********************************/
@@ -1490,13 +1508,13 @@ section
 	padding:10px;
 	margin-top: 54px;
 }
-
+/*Thay đổi giá  trị mặc định của template*/
 /*********************************
 5.1 New Arrivals Sorting
 *********************************/
-.first-box-prd{
-	position:relative;
-	top:-20px;
+.first-box-prd {
+	position: relative;
+	top: -20px;
 }
 .new_arrivals_sorting {
 	display: inline-block;
@@ -1543,7 +1561,7 @@ section
 *********************************/
 
 .prd-grid {
-	overflow: hidden;
+	overflow: scroll;
 	position: relative;
 	width: 99%;
 	margin: 10px 0 0;
@@ -1551,6 +1569,10 @@ section
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
+
+}
+.prd-grid::-webkit-scrollbar {
+	display: none;
 }
 .btn-primary-prev {
 	position: absolute;
@@ -1567,7 +1589,7 @@ section
 }
 .productContainer {
 	display: flex;
-	margin: 10px 0;
+	margin: 10px 25px ;
 	transition: transform 0.5s ease;
 }
 .prd-item {
@@ -1628,12 +1650,12 @@ section
 .product {
 	width: auto;
 	height: 340px;
-	border-right: solid 1px #e9e9e9;
 }
 .product-2 {
 	width: 100%;
 }
 .product_image {
+	border-right:1px solid #e9e9e9;
 	width: 100%;
 }
 .product_image-2 {
@@ -1661,19 +1683,27 @@ section
 	transition: opacity 0.5s ease, visibility 0.5s ease;
 	background: linear-gradient(0deg, rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), hsla(0, 0%, 100%, .4)
 }
-
+.box-inf-cl-s .box-inf-title {
+	padding: 10px
+}
+.box-inf-cl-s .box-inf-size {
+	margin-bottom: 10px
+}
+.box-inf-cl-s.box-inf-color {
+}
 .box-inf-cl-s:hover {
 }
 
 .box-inf-cl-s button {
-	border:none;
+	border: none;
 	text-align: center;
 	background-color: #fff;
 	border-radius: 10px;
-	box-shadow: 10px #000;
+	border:0.5px solid #fff;
 	padding: 5px 10px;
-	margin:4px;
-	min-width:40px;
+	margin: 4px;
+	min-width: 40px;
+	min-height: 10px;
 }
 
 .box-inf-cl-s button .icon {
@@ -1915,8 +1945,10 @@ section
 .product_slider_container
 {
 	width: 100%;
-	height: 380px;
-	margin-top: 73px;
+	height: 440px;
+	margin-top: 53px;
+	padding-top:20px;
+	overflow:hidden;
 }
 .product_slider_container::after
 {
@@ -1930,9 +1962,12 @@ section
 	content: '';
 	z-index: 1;
 }
+.owl-carousel .owl-stage-outer{
+	overflow:inherit !important;
+}
 .box-flex {
 	display: -webkit-flex;
-	flex-wrap:wrap;
+	flex-wrap: wrap;
 }
 .product_slider {
 	overflow: visible !important;
@@ -2005,12 +2040,12 @@ section
 }
 .product_slider_nav_left
 {
-	top: 50%;
+	top: 40%;
 	left: 0;
 }
 .product_slider_nav_right
 {
-	top: 50%;
+	top: 40%;
 	right: 0;
 }
 
@@ -2397,7 +2432,6 @@ section
 }
 .space-address {
 	border-radius: 10px;
-	padding: 10px;
 }
 .space-address a{
 	font-size:1.2rem;
@@ -2409,9 +2443,8 @@ section
 }
 .space-address, .space-pay {
 	display: flex;
-	margin: 20px 10px 20px 0;
+	margin: 10px 10px 10px 0;
 }
-
 .space-address .box-address, .box-pay, .inp {
 	position: relative;
 	flex-grow: 1;
@@ -2421,7 +2454,7 @@ section
 	height: 50px;
 	border: 2px solid #252424;
 	border-radius: 20px;
-	background-color:#fff;
+	background-color: #fff;
 }
 
 .space-address input, .inp input {
@@ -2455,6 +2488,11 @@ section
 	padding: 10px;
 	max-height:860px;
 	overflow-y:scroll;
+}
+
+.voucher-list .box-img img {
+	height: 75px;
+	width: 75px;
 }
 /*Sản Phẩm trong giỏ Hàng*/
 .flex-cart{
@@ -2497,14 +2535,21 @@ section
 	height: 70px;
 	padding: 10px 0;
 	margin: 0 10px;
-	background-color: dimgrey;
+	background-color: #fff;
 }
 .pay-btn,.checkout-btn,.pay-btn-none {
-	width: 100%;
+	width: auto;
+	padding:0 10px;
 	height: 35px;
 	font-weight: 600;
 	font-size: 20px;
 	border-radius:10px;
+	border:none;
+	white-space:nowrap;
+}
+.tipe-choose, .price-choose {
+	display: flex;
+	width: 50%
 }
 /*trang thông tin khách hàng*/
 .dpf {
@@ -2541,6 +2586,9 @@ section
 }
 .body-customer .address-customer a{
 	color:#000;
+}
+.address-customer .space-address{
+	padding:10px;
 }
 .body-customer .title {
 	display: flex;

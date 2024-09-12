@@ -20,6 +20,7 @@ namespace Data.Models
         public decimal? TongTien { get; set; }
         public int soluong {  get; set; }
         public int? PaymentId { get; set; }
+        public string PaymentName {  get; set; }
         public string? GhiChu { get; set; }
         public bool ODSuccess { get; set; }
         public bool ODReadly { get; set; }
