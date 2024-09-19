@@ -20,7 +20,6 @@ namespace yourlook.Controllers
 			if(email != null)
 			{
 				var user= GetEmailKhachHang(email);
-				ViewBag.TenKH=user.TenKh;
 			}
             return View();
 		}

@@ -10,7 +10,7 @@ namespace Data.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int MaDh { get; set; }
         public int MaKh { get; set; }
-        public string EmailKh {  get; set; }
+        public string? EmailKh {  get; set; }
         public string? TenKh { get; set; }
         public string? Sdt { get; set; }
         public string? City {  get; set; }
@@ -20,7 +20,7 @@ namespace Data.Models
         public decimal? TongTien { get; set; }
         public int soluong {  get; set; }
         public int? PaymentId { get; set; }
-        public string PaymentName {  get; set; }
+        public string? PaymentName {  get; set; }
         public string? GhiChu { get; set; }
         public bool ODSuccess { get; set; }
         public bool ODReadly { get; set; }

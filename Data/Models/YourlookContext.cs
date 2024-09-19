@@ -43,6 +43,12 @@ namespace Data.Models
 				.WithMany(s => s.DbChiTietSanPhams)
 				.HasForeignKey(ctsp => ctsp.SizeId)
 				.OnDelete(DeleteBehavior.Cascade);
+			//Cấu hình quan hệ giữa Dbchitietdonhang voiws dbdonhang
+			modelBuilder.Entity<DbChiTietDonHang>()
+				.HasOne(ctdh => ctdh.MaDhNavigation)
+				.WithMany(dh => dh.DbChiTietDonHangs)
+				.HasForeignKey(ctdh => ctdh.MaDh)
+				.OnDelete(DeleteBehavior.Cascade);
 		}
 		// sản phẩm yêu thích
 		public List<DbSanPham> GetFavoriteProducts(int maKh)

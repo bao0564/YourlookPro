@@ -183,7 +183,6 @@ namespace Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("ColorName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CreateBy")
@@ -211,7 +210,6 @@ namespace Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("SizeName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("SoLuongSp")
@@ -359,7 +357,6 @@ namespace Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("EmailKh")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("GhiChu")
@@ -390,7 +387,6 @@ namespace Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("PaymentName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Sdt")

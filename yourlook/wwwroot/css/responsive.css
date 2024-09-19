@@ -61,9 +61,6 @@
 			font-size: 17px;
 		}
 
-		.pagination li a {
-			padding: 0 0;
-		}
 
 		.space-address a {
 			font-size: 1.1rem;
@@ -638,6 +635,9 @@
 			width: 35%;
 		}
 
+		.hamburger_menu_content .search-children{
+			display:none;
+		}
 		.body-customer .inf-customer {
 			width: 65%;
 		}
@@ -880,11 +880,26 @@
 		.top_nav_menu {
 			height: 30px
 		}
-
 		.form-search {
 			display: none;
 		}
-
+		.hamburger_menu_content .search-children {
+			display: block;
+		}
+		.hamburger_menu_content .search-children input {
+			position: relative;
+			border: 1px solid #2f3640;
+			border-radius:10px;
+			min-height:35px;
+			width:90%;
+			padding-left:10px;
+		}
+		.hamburger_menu_content .search-children #searchButton-2 {
+			position: absolute;
+			top: 10%;
+			right: 0;
+			padding: 5px 10px;
+		}
 		.navbar {
 			height: 70px;
 		}
@@ -1458,7 +1473,7 @@
 		}
 
 		.product_image img {
-			height: 210px;
+			height: 180px;
 		}
 
 		.mar150_container {
@@ -1652,7 +1667,7 @@
 		}
 
 		.product_image img {
-			height: 190px;
+			height: 160px;
 		}
 
 		.favorite {

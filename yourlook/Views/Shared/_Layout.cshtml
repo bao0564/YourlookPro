@@ -318,10 +318,10 @@
 		<div class="hamburger_menu">
 			<div class="hamburger_close"><i class="fa fa-times" aria-hidden="true"></i></div>
 			<div class="hamburger_menu_content text-right">
-				<div class="form-search" style="">
-					<input style="position:relative;border:1px solid #2f3640" type="text" name="" class="search-text" id="searchKeyword" placeholder="Tìm Kiếm" />
-					<a id="searchButton" style="right:12%">
-						<i id="searchButton" class="fa fa-search" aria-hidden="true"></i>
+				<div class="search-children" style="">
+					<input type="text" name="" class="search-text" id="searchKeyword-2" placeholder="Tìm Kiếm" />
+					<a id="searchButton-2" >
+						<i id="searchButton-2" class="fa fa-search" aria-hidden="true"></i>
 					</a>
 				</div>
 				<ul class="menu_top_nav">
@@ -329,7 +329,7 @@
 						@if(Context.Session.GetString("user") != null)
 						{
 							<a href="#">
-								Xin Chào: @ViewBag.TenKh
+								Xin Chào: @Context.Session.GetString("user")
 								<i class="fa fa-angle-down"></i>
 							</a>
 							<ul class="menu_selection">
@@ -348,7 +348,7 @@
 							</ul>
 						}
 					</li>
-					<li class="menu_item"><a href="@Url.Action("Index","Home")">home</a></li>
+					<li class="menu_item"><a href="@Url.Action("Index","Home")">Trang chủ</a></li>
 					<li class="menu_item"><a href="@Url.Action("SellProduct","Home")">Sản Phẩm Sell</a></li>
 					<li class="menu_item"><a href="@Url.Action("NewProduct","Home")">Sản Phẩm Mới</a></li>
 					<li class="menu_item"><a href="@Url.Action("HotProduct","Home")">Sản Phẩm Hot</a></li>
@@ -508,6 +508,7 @@
     <script src="../js/chooscolorsize.js"></script>
     <script src="../js/addtocart.js"></script>
     <script src="../js/findprd.js"></script>
+    <script src="../js/findprd2.js"></script>
     <script src="../js/favoriteproduct.js"></script>
 	<script src="../js/site.js"></script>
 	<script src="../js/map.js"></script>

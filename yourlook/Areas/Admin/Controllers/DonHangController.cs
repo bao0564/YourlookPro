@@ -61,11 +61,14 @@ namespace yourlook.Areas.Admin.Controllers
         public IActionResult XoaDonHang(int madh)
         {
             var donhang = db.DbDonHangs.Find(madh);
-            var chitietdonhang = db.DbChiTietDonHangs.Find(madh);
-            if (donhang != null && chitietdonhang != null)
+            var chitietdonhang = db.DbChiTietDonHangs.Where(x=>x.MaDh==madh).ToList();
+            if (donhang != null )
             {
+                if (chitietdonhang.Any())
+                {
+                    db.DbChiTietDonHangs.RemoveRange(chitietdonhang);
+                }
                 db.DbDonHangs.Remove(donhang);
-                db.DbChiTietDonHangs.Remove(chitietdonhang);
                 db.SaveChanges();
             }
             TempData["Message"] = "Đơn Hàng ĐÃ ĐƯỢC XÓA";
