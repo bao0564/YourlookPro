@@ -3,28 +3,64 @@
   "WorkspaceRootPath": "E:\\ShopYourLook\\yourlook\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\wwwroot\\css\\responsive.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\wwwroot\\css\\responsive.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\wwwroot\\css\\main_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\wwwroot\\css\\main_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\areas\\admin\\views\\donhang\\chitietdonhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\areas\\admin\\views\\donhang\\chitietdonhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\useraddress\\useraddress.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\useraddress\\useraddress.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\wwwroot\\js\\productnew-move.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\wwwroot\\js\\productnew-move.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\wwwroot\\js\\product-move.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\wwwroot\\js\\product-move.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\wwwroot\\js\\swich.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\wwwroot\\js\\swich.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\wwwroot\\css\\responsive.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\wwwroot\\css\\responsive.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\wwwroot\\css\\categories_responsive.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\wwwroot\\css\\categories_responsive.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\wwwroot\\css\\categories_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\wwwroot\\css\\categories_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\wwwroot\\css\\bootstrap4\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\wwwroot\\css\\bootstrap4\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\shared\\_layoutcate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\shared\\_layoutcate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\shared\\components\\viewflashsell\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\shared\\components\\viewflashsell\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\shared\\components\\viewsphot\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\shared\\components\\viewsphot\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\areas\\admin\\views\\donhang\\chitietdonhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\areas\\admin\\views\\donhang\\chitietdonhang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\useraddress\\useraddress.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\useraddress\\useraddress.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\models\\viewshoppingcartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,20 +87,8 @@
       "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\wwwroot\\css\\categories_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\wwwroot\\css\\categories_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\shared\\_layoutud.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\shared\\_layoutud.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\shared\\_layoutcate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\shared\\_layoutcate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|solutionrelative:yourlook\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40A7AD2D-EDC7-43FA-8DC1-482B8AD6F9C8}|yourlook\\yourlook.csproj|e:\\shopyourlook\\yourlook\\yourlook\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -105,12 +129,12 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 526,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 617,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
               "Title": "ViewShoppingCartItem.cs",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Models\\ViewShoppingCartItem.cs",
               "RelativeDocumentMoniker": "yourlook\\Models\\ViewShoppingCartItem.cs",
@@ -123,41 +147,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ShoppingCartController.cs",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Controllers\\ShoppingCartController.cs",
-              "RelativeDocumentMoniker": "yourlook\\Controllers\\ShoppingCartController.cs",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Controllers\\ShoppingCartController.cs",
-              "RelativeToolTip": "yourlook\\Controllers\\ShoppingCartController.cs",
-              "ViewState": "AQIAALIAAAAAAAAAAADwv68AAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T15:34:52.807Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\ShoppingCart\\Index.cshtml",
               "RelativeDocumentMoniker": "yourlook\\Views\\ShoppingCart\\Index.cshtml",
               "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\ShoppingCart\\Index.cshtml",
               "RelativeToolTip": "yourlook\\Views\\ShoppingCart\\Index.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAADEAAAA1AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-10T15:19:02.77Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "main_styles.css",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\main_styles.css",
-              "RelativeDocumentMoniker": "yourlook\\wwwroot\\css\\main_styles.css",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\main_styles.css",
-              "RelativeToolTip": "yourlook\\wwwroot\\css\\main_styles.css",
-              "ViewState": "AQIAACcGAAAAAAAAAAAAAEAGAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-20T13:50:14.451Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
@@ -171,6 +170,94 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "productnew-move.js",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\productnew-move.js",
+              "RelativeDocumentMoniker": "yourlook\\wwwroot\\js\\productnew-move.js",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\productnew-move.js",
+              "RelativeToolTip": "yourlook\\wwwroot\\js\\productnew-move.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-21T15:06:00.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "swich.js",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\swich.js",
+              "RelativeDocumentMoniker": "yourlook\\wwwroot\\js\\swich.js",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\swich.js",
+              "RelativeToolTip": "yourlook\\wwwroot\\js\\swich.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-21T16:14:38.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "product-move.js",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\product-move.js",
+              "RelativeDocumentMoniker": "yourlook\\wwwroot\\js\\product-move.js",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\product-move.js",
+              "RelativeToolTip": "yourlook\\wwwroot\\js\\product-move.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-21T15:05:50.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "categories_responsive.css",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\categories_responsive.css",
+              "RelativeDocumentMoniker": "yourlook\\wwwroot\\css\\categories_responsive.css",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\categories_responsive.css",
+              "RelativeToolTip": "yourlook\\wwwroot\\css\\categories_responsive.css",
+              "ViewState": "AQIAAD8CAAAAAAAAAAAAAF4CAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-21T07:26:37.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Shared\\Components\\ViewSPHot\\Default.cshtml",
+              "RelativeDocumentMoniker": "yourlook\\Views\\Shared\\Components\\ViewSPHot\\Default.cshtml",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Shared\\Components\\ViewSPHot\\Default.cshtml",
+              "RelativeToolTip": "yourlook\\Views\\Shared\\Components\\ViewSPHot\\Default.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-21T04:52:49.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "yourlook\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "yourlook\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAAAJoAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-15T12:09:04.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_LayoutCate.cshtml",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Shared\\_LayoutCate.cshtml",
+              "RelativeDocumentMoniker": "yourlook\\Views\\Shared\\_LayoutCate.cshtml",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Shared\\_LayoutCate.cshtml",
+              "RelativeToolTip": "yourlook\\Views\\Shared\\_LayoutCate.cshtml",
+              "ViewState": "AQIAAEgBAAAAAAAAAAAAABIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-15T12:15:07.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "ChiTietDonHang.cshtml",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\DonHang\\ChiTietDonHang.cshtml",
               "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Views\\DonHang\\ChiTietDonHang.cshtml",
@@ -178,12 +265,11 @@
               "RelativeToolTip": "yourlook\\Areas\\Admin\\Views\\DonHang\\ChiTietDonHang.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-19T15:37:56.552Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-19T15:37:56.552Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 16,
               "Title": "DonHangController.cs",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Controllers\\DonHangController.cs",
               "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Controllers\\DonHangController.cs",
@@ -195,7 +281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "Order.cshtml",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\ShoppingCart\\Order.cshtml",
               "RelativeDocumentMoniker": "yourlook\\Views\\ShoppingCart\\Order.cshtml",
@@ -207,7 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 14,
               "Title": "UserAddress.cshtml",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\UserAddress\\UserAddress.cshtml",
               "RelativeDocumentMoniker": "yourlook\\Views\\UserAddress\\UserAddress.cshtml",
@@ -219,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 17,
               "Title": "DonHang.cshtml",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\DonHang\\DonHang.cshtml",
               "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Views\\DonHang\\DonHang.cshtml",
@@ -231,7 +317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 19,
               "Title": "SuaDonHang.cshtml",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\DonHang\\SuaDonHang.cshtml",
               "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Views\\DonHang\\SuaDonHang.cshtml",
@@ -243,7 +329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 20,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Program.cs",
               "RelativeDocumentMoniker": "yourlook\\Program.cs",
@@ -255,19 +341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "categories_styles.css",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\categories_styles.css",
-              "RelativeDocumentMoniker": "yourlook\\wwwroot\\css\\categories_styles.css",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\categories_styles.css",
-              "RelativeToolTip": "yourlook\\wwwroot\\css\\categories_styles.css",
-              "ViewState": "AQIAAC8DAAAAAAAAAAAAAEoDAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-16T15:54:26.756Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "_LayoutUD.cshtml",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Shared\\_LayoutUD.cshtml",
               "RelativeDocumentMoniker": "yourlook\\Views\\Shared\\_LayoutUD.cshtml",
@@ -279,31 +353,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "_LayoutCate.cshtml",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Shared\\_LayoutCate.cshtml",
-              "RelativeDocumentMoniker": "yourlook\\Views\\Shared\\_LayoutCate.cshtml",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Shared\\_LayoutCate.cshtml",
-              "RelativeToolTip": "yourlook\\Views\\Shared\\_LayoutCate.cshtml",
-              "ViewState": "AQIAAEUBAAAAAAAAAAAAAGkBAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-15T12:15:07.86Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "yourlook\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "yourlook\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAD0BAAAAAAAAAAAAAGQBAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-15T12:09:04.942Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 23,
               "Title": "HomeAdminController.cs",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Controllers\\HomeAdminController.cs",
               "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Controllers\\HomeAdminController.cs",
@@ -315,7 +365,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 22,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "yourlook\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
@@ -327,7 +377,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 24,
               "Title": "AllProduct.cshtml",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\AllProduct.cshtml",
               "RelativeDocumentMoniker": "yourlook\\Views\\Home\\AllProduct.cshtml",
@@ -339,7 +389,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
               "Title": "addressUser.cshtml",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\ShoppingCart\\addressUser.cshtml",
               "RelativeDocumentMoniker": "yourlook\\Views\\ShoppingCart\\addressUser.cshtml",
@@ -351,7 +401,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "UserDetail.cshtml",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Home\\UserDetail.cshtml",
               "RelativeDocumentMoniker": "yourlook\\Views\\Home\\UserDetail.cshtml",
@@ -363,7 +413,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "ViewAllDetail.cs",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Models\\ViewAllDetail.cs",
               "RelativeDocumentMoniker": "yourlook\\Models\\ViewAllDetail.cs",
@@ -375,7 +425,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "DbPayment.cs",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\Data\\Models\\DbPayment.cs",
               "RelativeDocumentMoniker": "Data\\Models\\DbPayment.cs",
@@ -387,7 +437,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "UserAddressController.cs",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Controllers\\UserAddressController.cs",
               "RelativeDocumentMoniker": "yourlook\\Controllers\\UserAddressController.cs",
@@ -400,21 +450,71 @@
           ]
         },
         {
-          "DockedWidth": 526,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 435,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "categories_styles.css",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\categories_styles.css",
+              "RelativeDocumentMoniker": "yourlook\\wwwroot\\css\\categories_styles.css",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\categories_styles.css",
+              "RelativeToolTip": "yourlook\\wwwroot\\css\\categories_styles.css",
+              "ViewState": "AQIAAEQDAAAAAAAAAAAAAFADAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-16T15:54:26.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "main_styles.css",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\main_styles.css",
+              "RelativeDocumentMoniker": "yourlook\\wwwroot\\css\\main_styles.css",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\main_styles.css",
+              "RelativeToolTip": "yourlook\\wwwroot\\css\\main_styles.css",
+              "ViewState": "AQIAACsGAAAAAAAAAAAAAEAGAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-20T13:50:14.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "bootstrap.min.css",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\bootstrap4\\bootstrap.min.css",
+              "RelativeDocumentMoniker": "yourlook\\wwwroot\\css\\bootstrap4\\bootstrap.min.css",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\bootstrap4\\bootstrap.min.css",
+              "RelativeToolTip": "yourlook\\wwwroot\\css\\bootstrap4\\bootstrap.min.css",
+              "ViewState": "AQIAACYCAAAAAAAAAAAAAE8CAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-21T12:19:02.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "responsive.css",
               "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\responsive.css",
               "RelativeDocumentMoniker": "yourlook\\wwwroot\\css\\responsive.css",
               "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\css\\responsive.css",
               "RelativeToolTip": "yourlook\\wwwroot\\css\\responsive.css",
-              "ViewState": "AQIAAEAFAAAAAAAAAAAAAGgFAAAYAAAA",
+              "ViewState": "AQIAAJoFAAAAAAAAAAAAAMwFAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-09-20T13:35:37.579Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Shared\\Components\\ViewFlashSell\\Default.cshtml",
+              "RelativeDocumentMoniker": "yourlook\\Views\\Shared\\Components\\ViewFlashSell\\Default.cshtml",
+              "ToolTip": "E:\\ShopYourLook\\yourlook\\yourlook\\Views\\Shared\\Components\\ViewFlashSell\\Default.cshtml",
+              "RelativeToolTip": "yourlook\\Views\\Shared\\Components\\ViewFlashSell\\Default.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-21T04:52:13.971Z"
             }
           ]
         }

@@ -76,30 +76,31 @@
 <!-- New Arrivals -->
 <!-- Best Sellers -->
 <div class="best_sellers">
-	<div class="container container-flashsell">
-		<div class="row">
-			<div class="col text-center">
-				<div class="section_title new_arrivals_title">
-					<h2>F⚡︎ash Sell</h2>
+    <div class="container container-flashsell">
+		<div class="row" style="">
+            <div class="col col-fls-1" style="">
+				<div class="section_title new_arrivals_title" style="border:none">
+					<h2 style="color:#fff">F⚡︎ash Sell</h2>
 				</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col">
-				<div class="product_slider_container">
-					<div class="owl-carousel owl-theme product_slider">
+			<div class="col col-fls-2" style="">
+				<div class="prd-grid bdrdu pd" style="background-color:#fff;">
+					<div class="productContainer" id="prdcontainerfls">
 						<!-- fls -->
 						@await Component.InvokeAsync("ViewFlashSell")
-					</div>
-					<!-- Slider Navigation -->
-
-					<div class="product_slider_nav_left product_slider_nav d-flex align-items-center justify-content-center flex-column">
-						<i class="fa fa-chevron-left" aria-hidden="true"></i>
-					</div>
-					<div class="product_slider_nav_right product_slider_nav d-flex align-items-center justify-content-center flex-column">
-						<i class="fa fa-chevron-right" aria-hidden="true"></i>
-					</div>
-				</div>
+                    </div>
+                    <!-- Slider Navigation -->
+					<button onclick="prevProductfls()" class="btn btn-primary-prev">
+						<i class="fa-solid fa-angle-left fa-xl"
+						   style="color: #000000"></i>
+					</button>
+					<button onclick="nextProductfls()" class="btn btn-primary-next">
+						<i class="fa-solid fa-angle-right fa-xl"
+						   style="color: #0d0d0d"></i>
+					</button>
+                </div>
 			</div>
 		</div>
 	</div>
@@ -136,7 +137,7 @@
 					   style="color: #0d0d0d"></i>
 				</button>
 				<div class="prd-btn">
-					<button class="btn prd-next"><a href="@Url.Action("HotProduct","Home")">Xem Thêm<i class="fa-solid fa-angle-right" style="color: #000000;"></i></a></button>
+					<button class="btn prd-next flct"><a href="@Url.Action("HotProduct","Home")">Xem Thêm<i class="fa-solid fa-angle-right" style="color: #000000;"></i></a></button>
 				</div>
             </div>
 			<div class="col" id="prd-new">
@@ -154,7 +155,7 @@
 					   style="color: #0d0d0d"></i>
 				</button>
                 <div class="prd-btn">
-                    <button class="btn prd-next"><a href="@Url.Action("NewProduct","Home")">Xem Thêm<i class="fa-solid fa-angle-right" style="color: #000000;"></i></a></button>
+					<button class="btn prd-next flct"><a href="@Url.Action("NewProduct","Home")">Xem Thêm<i class="fa-solid fa-angle-right" style="color: #000000;"></i></a></button>
                 </div>
             </div>
 		</div>
@@ -162,7 +163,7 @@
 	</div>
 </div>
 <!-- Sản phẩm quần dài -->
-<section class="ad-type" style="margin-top: 30px;" id="page1">
+<section class="ad-type" style="margin: 30px 0 10px 0;" id="page1">
 	<img style="width:100%" src="logo/ad-6.png" alt="" />
 </section>
 <div class="new_arrivals">
@@ -182,7 +183,7 @@
 					</div>
 				</div>
 				<div class="prd-btn">
-					<button class="btn prd-next"><a href="Home/ProductTipe?madm=1">Xem Thêm<i class="fa-solid fa-angle-right" style="color: #000000;"></i></a></button>
+					<button class="btn prd-next flct"><a href="Home/ProductTipe?madm=1">Xem Thêm<i class="fa-solid fa-angle-right" style="color: #000000;"></i></a></button>
 				</div>
 			</div>
 			<script src="js/swich.js"></script>
@@ -190,7 +191,7 @@
 	</div>
 </div>
 <!-- Sản phẩm quần cộc -->
-<section class="ad-type" style="margin-top: 30px;" id="page2">
+<section class="ad-type" style="margin: 30px 0 10px 0;" id="page2">
 	<img style="width:100%" src="logo/ad-7.jpeg" alt="" />
 </section>
 <div class="new_arrivals">
@@ -210,7 +211,7 @@
 					</div>
 				</div>
 				<div class="prd-btn">
-					<button class="btn prd-next"><a href="Home/ProductTipe?madm=5">Xem Thêm<i class="fa-solid fa-angle-right" style="color: #000000;"></i></a></button>
+					<button class="btn prd-next flct"><a href="Home/ProductTipe?madm=5">Xem Thêm<i class="fa-solid fa-angle-right" style="color: #000000;"></i></a></button>
 				</div>
 			</div>
 			<script src="js/swich.js"></script>
@@ -218,7 +219,7 @@
 	</div>
 </div>
 <!-- Sản phẩm áo -->
-<section class="ad-type" style="margin-top: 30px;" id="page3">
+<section class="ad-type" style="margin: 30px 0 10px 0;" id="page3">
 	<img style ="width:100%" src="logo/ad-8.jpeg" alt="" />
 </section>
 <div class="new_arrivals">
@@ -238,7 +239,7 @@
 					</div>
 				</div>
 				<div class="prd-btn">
-					<button class="btn prd-next"><a href="Home/ProductTipe?madm=3">Xem Thêm<i class="fa-solid fa-angle-right" style="color: #000000;"></i></a></button>
+					<button class="btn prd-next flct"><a href="Home/ProductTipe?madm=3">Xem Thêm<i class="fa-solid fa-angle-right" style="color: #000000;"></i></a></button>
 				</div>
 			</div>
 			<script src="js/swich.js"></script>
@@ -246,7 +247,7 @@
 	</div>
 </div>
 <!-- Sản phẩm áo khoác -->
-<section class="ad-type" style="margin-top: 30px;" id="page4">
+<section class="ad-type" style="margin: 30px 0 10px 0;" id="page4">
 	<img style="width:100%" src="logo/ad-9.jpeg" alt="" />
 </section>
 <div class="new_arrivals">
@@ -266,7 +267,7 @@
 					</div>
 				</div>
 				<div class="prd-btn">
-					<button class="btn prd-next"><a href="Home/ProductTipe?madm=4">Xem Thêm<i class="fa-solid fa-angle-right" style="color: #000000;"></i></a></button>
+					<button class="btn prd-next flct"><a href="Home/ProductTipe?madm=4">Xem Thêm<i class="fa-solid fa-angle-right" style="color: #000000;"></i></a></button>
 				</div>
 			</div>
 			<script src="js/swich.js"></script>
@@ -426,6 +427,7 @@
 </div>
 <script src="../js/product-move.js"></script>
 <script src="../js/productnew-move.js"></script>
+<script src="../js/product-fls.js"></script>
 @section scripts{
 	<script>
 		//Chuyển động mini-map

@@ -843,19 +843,22 @@ COLOR PALETTE
 	margin: 0 5px;
 }
 /*product form page*/
-/*
-.product-grid {
+/**/
+.cate .product-grid {
 	width: 100%;
 	margin-top: 57px;
 }
 
-.product-item {
+.cate .product-item {
 	width: 20%;
-	height: 380px;
+	height: auto;
 	cursor: pointer;
 }
-
-.product-item::after {
+.cate .product_image img {
+	width: 100%;
+	position: relative;
+}
+/*.product-item::after {
 	display: block;
 	position: absolute;
 	top: 0;

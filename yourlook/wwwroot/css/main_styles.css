@@ -42,8 +42,9 @@ COLOR PALETTE
 
 :root {
 	--gray-a: #2f3640;
+	--gray-b: #ee5253/* #353b48*/;
 	--gray-d: #bdc3c7;
-	--font-1: "Fredoka One", Arial, sans-serif;/*price*/
+	--font-1: "Fredoka One", Arial, sans-serif; /*price*/
 }
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900');
 
@@ -69,7 +70,7 @@ COLOR PALETTE
 .bdrdu {
 	padding: 5px 10px;
 	margin:0 10px;
-	border: 1px solid #2f3640;
+	border: 1px solid var(--gray-a);
 	border-radius: 10px;
 }
 .pd{
@@ -354,7 +355,7 @@ section
 	margin: 10px;
 	padding:20px;
 	border-radius: 10px;
-	background-color: #2f3640;
+	background-color: var(--gray-a);
 	color: #ccc;
 }
 .box-login-right {
@@ -441,8 +442,9 @@ section
 	width: 100%;
 	padding:10px;
 }
+
 .btn-primary-next:hover,.btn-primary-prev:hover{
-	background-color:#2f3640;
+	background-color:var(--gray-a);
 }
 .btn-swich {
 	display: flex;
@@ -511,7 +513,7 @@ section
 	float: right;
 	width: 50%;
 	margin: 10px;
-	background-color: #2f3640;
+	background-color: var(--gray-a);
 	border-radius: 10px;
 	color: #ccc;
 	display:flex;
@@ -630,30 +632,30 @@ section
 	padding: 70px;
 }
 
-	.login-body .font-login {
-		margin: 0 auto;
+.login-body .font-login {
+	margin: 0 auto;
+	padding: 10px;
+	width: 50%;
+	background-color: #fff;
+	border: 2px solid var(--gray-a);
+	border-radius: 20px;
+}
+
+	.login-body .font-login .logo-login img {
+		height: 100px;
 		padding: 10px;
-		width: 50%;
-		background-color: #fff;
-		border: 2px solid #2f36406d;
-		border-radius: 20px;
 	}
 
-		.login-body .font-login .logo-login img {
-			height: 100px;
-			padding: 10px;
-		}
-
-		.login-body .font-login .title img {
-			height: 60px;
-			padding: 5px;
-		}
-
-	.login-body .title {
-		display: flex;
-		margin-bottom: 10px;
-		justify-content: space-between;
+	.login-body .font-login .title img {
+		height: 60px;
+		padding: 5px;
 	}
+
+.login-body .title {
+	display: flex;
+	margin-bottom: 10px;
+	justify-content: space-between;
+}
 
 .font-login .title button {
 	border: none;
@@ -957,7 +959,7 @@ section
 .main_nav_container
 {
 	width: 100%;
-	background:#2f3640;
+	background:var(--gray-a);
 	box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
 }
 .navbar
@@ -1320,7 +1322,7 @@ section
 	align-items: center;
 	width: auto;
 	height: 40px;
-	background: #2f3640;
+	background: var(--gray-a);
 	border-radius: 3px;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
@@ -1335,7 +1337,7 @@ section
 } 
 .red_button:hover
 {
-	background: #2f3640 !important;
+	background: var(--gray-a) !important;
 }
 .red_button a
 {
@@ -1414,7 +1416,7 @@ section
 }
 
 .btn {
-	background-color: #2f364000;
+	background-color: var(--gray-a);
 	border: none;
 	max-height:45px;
   }
@@ -1437,10 +1439,24 @@ section
 4. Banner
 *********************************/
 
-.banner
-{
+.banner, .best_sellers {
 	width: 100%;
-	margin-top: 30px;
+	margin: 30px 10px;
+}
+
+.best_sellers .col-fls-1,.best_sellers .col-fls-2{
+	background-color: var(--gray-b);
+}
+.best_sellers .col-fls-1 {
+	border:1px solid var(--gray-a);
+	border-bottom:none;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px
+}
+.best_sellers .col-fls-2 {
+	padding: 0 20px 20px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px
 }
 .banner_item {
 	display: -webkit-box;
@@ -1502,20 +1518,21 @@ section
 .new_arrivals_title
 {
 	min-width:150px;
-	background-color:#fff;
-	border:2px solid #2f3640;
+	border:2px solid var(--gray-a);
 	border-radius:1.5rem;
 	padding:10px;
-	margin-top: 54px;
+	margin-top: 20px;
+}
+.new_arrivals_title h2{
 }
 /*Thay đổi giá  trị mặc định của template*/
-/*********************************
+	/*********************************
 5.1 New Arrivals Sorting
 *********************************/
-.first-box-prd {
-	position: relative;
-	top: -20px;
-}
+	.first-box-prd {
+		position: relative;
+		top: -20px;
+	}
 .new_arrivals_sorting {
 	display: inline-block;
 	border-radius: 3px;
@@ -1548,12 +1565,12 @@ section
 }
 .grid_sorting_button.active:hover
 {
-	background: #2f3640 !important;
+	background: var(--gray-a) !important;
 }
 .grid_sorting_button.active
 {
 	color: #FFFFFF;
-	background: #2f3640;
+	background: var(--gray-a);
 }
 
 /*********************************
@@ -1563,7 +1580,7 @@ section
 .prd-grid {
 	overflow: scroll;
 	position: relative;
-	width: 99%;
+	width: 100%;
 	margin: 10px 0 0;
 	display: -webkit-flex;
 	flex-direction: row;
@@ -1573,6 +1590,14 @@ section
 }
 .prd-grid::-webkit-scrollbar {
 	display: none;
+}
+.container-flashsell .btn-primary-prev{
+	left:-10px;
+	top:40%;
+}
+.container-flashsell .btn-primary-next {
+	right: -10px;
+	top: 40%;
 }
 .btn-primary-prev {
 	position: absolute;
@@ -1633,7 +1658,6 @@ section
 }
 
 .product-item {
-	width: 20%;
 	height: 380px;
 	cursor: pointer;
 }
@@ -1646,7 +1670,7 @@ section
 	height: 100%;
 	pointer-events: none;
 	content: '';
-	border: solid 2px rgba(235,235,235,0);
+	/*border: solid 2px rgba(235,235,235,0);*/
 	border-radius: 3px;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
@@ -1754,7 +1778,7 @@ section
 }
 .product_price {
 	font-size: 18px;
-	color: #2f3640;
+	color: var(--gray-a);
 	font-weight: 600;
 	margin-bottom: 10px;
 	font-family: var(--font-1);
@@ -1806,7 +1830,7 @@ section
 }
 .product_bubble_red::after
 {
-	border-color: transparent transparent transparent #2f3640;
+	border-color: transparent transparent transparent var(--gray-a);
 }
 .product_bubble_left::after
 {
@@ -1814,7 +1838,7 @@ section
 }
 .product_bubble_red
 {
-	background: #2f3640;
+	background: var(--gray-a);
 }
 .product_bubble_green
 {
@@ -1959,9 +1983,11 @@ section
 {
 	width: 100%;
 	height: 440px;
-	margin-top: 53px;
+	margin-top: 20px;
 	padding-top:20px;
 	overflow:hidden;
+	background-color:#fff;
+	border-radius:10px;
 }
 .product_slider_container::after
 {
@@ -1971,7 +1997,7 @@ section
 	right: 0;
 	width: 1px;
 	height: 100%;
-	background: #FFFFFF;
+	background:none;
 	content: '';
 	z-index: 1;
 }
@@ -2285,7 +2311,7 @@ section
 	width: 160px;
 	height: 46px;
 	border: none;
-	background: #2f3640;
+	background: var(--gray-a);
 	color: #FFFFFF;
 	font-size: 14px;
 	font-weight: 500;
@@ -2294,14 +2320,14 @@ section
 }
 .newsletter_submit_btn:hover
 {
-	background: #2f3640;
+	background: var(--gray-a);
 }
 
 /*********************************
 11. Footer
 *********************************/
 .footer{
-	background-color: #2f3640;
+	background-color: var(--gray-a);
 }
 .footer .row-block{
 	display: none;
@@ -2433,7 +2459,7 @@ section
 	padding: 10px;
 }
 .box-cart {
-	border: 1px solid #2f3640;	
+	border: 1px solid var(--gray-a);	
 	border-radius:10px;
 	padding: 10px;
 	margin:10px;
@@ -2539,7 +2565,7 @@ section
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	background-color: #2f3640;
+	background-color: var(--gray-a);
 	color: #fff;
 	z-index:10;
 }
@@ -2624,7 +2650,7 @@ section
 	left: 0;
 	height: 100px;
 	border-radius: 50%;
-	border: 2px solid #2f3640
+	border: 2px solid var(--gray-a)
 }
 .customer-name {
 	border-bottom: 1px solid;
@@ -2670,7 +2696,7 @@ section
 	margin:0 5px;
 	border:none;
 	border-radius: 10px;
-	background-color: #2f3640;
+	background-color: var(--gray-a);
 }
 .btn-action:hover {
 	color:#000;
@@ -2832,7 +2858,7 @@ section
 }
 
 .pagination .active {
-	background-color: #2f3640;
+	background-color: var(--gray-a);
 	padding: 5px 10px;
 	color: #fff;
 }

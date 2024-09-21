@@ -101,7 +101,7 @@
 		left: 20%;
 	}
 	.cate .product-item{
-		width:25%;
+		width:20%;
 	}
 	.cate .product_name a {
 		font-size: 12px;
@@ -136,10 +136,6 @@
 {
 	.product_section_container {
 		margin-top: 150px;
-	}
-	.cate .product-item .favorite {
-		top: 0px;
-		left: 15%;
 	}
 	.cate .product_bubble_right {
 		justify-content: center;
@@ -365,7 +361,7 @@
 	}
 	.new_arrivals_title
 	{
-		margin-top: 10px;
+		margin: 0px;
 	}
 	.product_sorting
 	{
@@ -612,7 +608,7 @@
 	}
 	.product_name a
 	{
-		font-size: 12px;
+		font-size: 9px;
 	}
 	.add_to_cart_button
 	{
