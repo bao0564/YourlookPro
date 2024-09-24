@@ -4,9 +4,7 @@
     ViewData["Title"] = "ProductCategory";
     Layout = "~/Views/Shared/_LayoutCate.cshtml";
 }
-
 @model X.PagedList.IPagedList<ViewAllDetail>
-
 <div class="product-grid">
     @foreach (var prd in Model)
     {
@@ -31,6 +29,7 @@
                                     @foreach (var sz in prd.Sizes)
                                     {
                                         <button>@sz.NameSize</button>
+                                        <div class="in-size-item" style="display:none;">@sz.NameSize</div>
                                     }
                                 </div>
                             </div>
@@ -40,6 +39,7 @@
                                     @foreach (var cl in prd.Colors)
                                     {
                                         <button style="background-color:@cl.MaMau"></button>
+                                        <div class="in-color-item" style="display:none;">@cl.NameColor</div>
                                     }
                                 </div>
                             </div>

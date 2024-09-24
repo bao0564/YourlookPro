@@ -937,6 +937,10 @@
       "PackagePath": "staticwebassets\\js\\move-ad.js"
     },
     {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\product-fls.js",
+      "PackagePath": "staticwebassets\\js\\product-fls.js"
+    },
+    {
       "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\product-move.js",
       "PackagePath": "staticwebassets\\js\\product-move.js"
     },

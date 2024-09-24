@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KLEWk42W1Jc2Zs3jP2JCQ2DmDkSNYVx+gweIgi6keIs=",
+  "Hash": "YxGFvbRNKGFNKs5N//VL60xbWd1aXyog04LrKrMY/fI=",
   "Source": "yourlook",
   "BasePath": "_content/yourlook",
   "Mode": "Default",
@@ -4473,6 +4473,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\move-ad.js"
+    },
+    {
+      "Identity": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\product-fls.js",
+      "SourceId": "yourlook",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\",
+      "BasePath": "_content/yourlook",
+      "RelativePath": "js/product-fls.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\product-fls.js"
     },
     {
       "Identity": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\js\\product-move.js",

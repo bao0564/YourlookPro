@@ -3,5 +3,11 @@
 @model IEnumerable<DbDanhMuc>
 @foreach (var prd in Model)
 {
-	<li><a asp-controller ="Home" asp-action="ProductTipe" asp-route-madm="@prd.MaDm">@prd.TenDm</a></li>
+
+    <li>
+        <div class="flspb flct" style="width:100%">
+            <img class="img-cate" src="@Url.Content("/img/"+prd.AnhDaiDien)"/>
+            <a asp-controller="Home" asp-action="ProductTipe" asp-route-madm="@prd.MaDm" style="margin-right:10%">@prd.TenDm</a>
+        </div>
+	</li>
 }  

@@ -30,6 +30,7 @@
     <Content Remove="wwwroot\js\ChoosColorSize.js" />
     <Content Remove="wwwroot\js\findprd2.js" />
     <Content Remove="wwwroot\js\productnew-move.js" />
+    <Content Remove="wwwroot\js\selectColol-Size.js" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,6 +38,7 @@
     <_ContentIncludedByDefault Remove="wwwroot\js\ChoosColorSize.js" />
     <_ContentIncludedByDefault Remove="wwwroot\js\findprd2.js" />
     <_ContentIncludedByDefault Remove="wwwroot\js\productnew-move.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\selectColol-Size.js" />
   </ItemGroup>
 
   <ItemGroup>
@@ -73,6 +75,7 @@
     <None Include="wwwroot\js\ChoosColorSize.js" />
     <None Include="wwwroot\js\findprd2.js" />
     <None Include="wwwroot\js\productnew-move.js" />
+    <None Include="wwwroot\js\selectColol-Size.js" />
   </ItemGroup>
 
 </Project>

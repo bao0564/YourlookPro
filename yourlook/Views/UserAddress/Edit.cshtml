@@ -34,19 +34,28 @@
                     <div class="box-adr col-12" style="display:flex">
                         <div class="col-4">
                             <label class="control-label">Thành Phố:</label>
-                            <input asp-for="City" class="form-control" />
+                            <select asp-for="City" id="City" name="City" class="form-control">
+                                <option value="">Chọn thành phố</option>
+                            </select>
                             <span asp-validation-for="City" class="text-danger"></span>
                         </div>
+
                         <div class="col-4">
                             <label class="control-label">Quận/Huyện:</label>
-                            <input asp-for="QuanHuyen" class="form-control" />
+                            <select asp-for="QuanHuyen" name="QuanHuyen" id="District" class="form-control" disabled>
+                                <option value="">Chọn Quận huyện</option>
+                            </select>
                             <span asp-validation-for="QuanHuyen" class="text-danger"></span>
                         </div>
+
                         <div class="col-4">
                             <label class="control-label">Phường/Xã:</label>
-                            <input asp-for="PhuongXa" class="form-control" />
+                            <select asp-for="PhuongXa" name="PhuongXa" id="Ward" class="form-control" disabled>
+                                <option value="">Chọn Phường/Xã</option>
+                            </select>
                             <span asp-validation-for="PhuongXa" class="text-danger"></span>
                         </div>
+
                     </div>
                     <div class="box-adr col-12" style="display:flex">
                         <div class="col-9">
@@ -73,6 +82,7 @@
         }
     </div>
 </div>
+<script src="../js/address.js"></script>
 @section scripts {
     <style>
         .btn-primary:hover {

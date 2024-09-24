@@ -4,7 +4,8 @@
 @foreach (var prd in Model)
 {
 	@* <li><a asp-controller="Home" asp-action="ProductTipe" asp-route-colorid="@prd.ColorId">@prd.NameColor</a></li>*@
-    <li style="display:flex">
-        <input type="checkbox" /><p style="margin-left:10px;color:#000">@prd.NameColor</p>
+    <li class="flct" style="width:100%;">
+        <input class="color-filter" type="checkbox" style="margin-left:30%" />
+        <p class="fl-center" style="color:#000;margin-left:20%">@prd.NameColor</p>
     </li>
 }   

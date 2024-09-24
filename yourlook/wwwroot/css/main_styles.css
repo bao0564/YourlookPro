@@ -42,7 +42,7 @@ COLOR PALETTE
 
 :root {
 	--gray-a: #2f3640;
-	--gray-b: #ee5253/* #353b48*/;
+	--gray-b: #535c68 /* #353b48*/;
 	--gray-d: #bdc3c7;
 	--font-1: "Fredoka One", Arial, sans-serif; /*price*/
 }
@@ -51,6 +51,12 @@ COLOR PALETTE
 /*********************************
 2. Body and some general stuff
 *********************************/
+.pssf {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-53%,-60%);
+}
 .flct {
 	display: flex;
 	align-items: center;
@@ -58,6 +64,15 @@ COLOR PALETTE
 .fljct {
 	display: flex;
 	justify-content:center;
+}
+.flspb {
+	display:flex;
+	justify-content:space-between;
+}
+.fl-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .flscr{
 	display:-webkit-flex;
@@ -625,7 +640,7 @@ section
 .mar_container {
 	margin-top: 120px;
 }
-.mar150_container {	
+.mar150_container,.cart {	
 	margin:150px 0 20px 0;
 }
 .login-body {
@@ -1578,7 +1593,8 @@ section
 *********************************/
 
 .prd-grid {
-	overflow: scroll;
+	overflow-x: auto;
+	overflow-y:hidden;
 	position: relative;
 	width: 100%;
 	margin: 10px 0 0;
@@ -1591,13 +1607,15 @@ section
 .prd-grid::-webkit-scrollbar {
 	display: none;
 }
-.container-flashsell .btn-primary-prev{
-	left:-10px;
-	top:40%;
+.container-flashsell .btn-primary-prev {
+	left: -10px;
+	top: 40%;
+	background-color: #ffffff7a;
 }
 .container-flashsell .btn-primary-next {
 	right: -10px;
 	top: 40%;
+	background-color: #ffffff7a;
 }
 .btn-primary-prev {
 	position: absolute;
@@ -1708,18 +1726,29 @@ section
 	opacity: 1;
 	visibility: visible;
 }
+.product_image-2:hover .box-inf-cl-s {
+	opacity: 1;
+	visibility: visible;
+}
+.product_image-2 .box-inf-cl-s {
+	transition: opacity 0.5s ease, visibility 0.5s ease;
+	background: linear-gradient(0deg, rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), hsla(0, 0%, 100%, .4)
+}
+.product_image .box-inf-cl-s {	
+	transition: opacity 0.5s ease, visibility 0.5s ease;
+	background: linear-gradient(0deg, rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), hsla(0, 0%, 100%, .4)
+}
 .box-inf-cl-s {
 	position: absolute;
 	bottom: 0.5rem;
 	height: auto;
 	border: none;
 	border-radius: 10px;
-	width: 90%;
 	margin: 0 5%;
-	opacity: 0; 
-	visibility: hidden; 
-	transition: opacity 0.5s ease, visibility 0.5s ease;
-	background: linear-gradient(0deg, rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), hsla(0, 0%, 100%, .4)
+	opacity: 0;
+	visibility: hidden;
+	width: 90%;
+	font-weight:600;
 }
 .box-inf-cl-s .box-inf-title {
 	padding: 10px
@@ -2450,24 +2479,37 @@ section
 	font-weight:600;
 }
 /* giỏ hàng */
-.cart .body-cart {
+.cart .body-cart, .body-cart-order {
 	display: flex;
 }
-
-.body-cart .address-cart {
+.body-cart-order .table-2{
+	display: none;
+}
+.body-cart .address-cart, .body-cart-order .address-cart {
 	width: 60%;
 	padding: 10px;
 }
 .box-cart {
-	border: 1px solid var(--gray-a);	
-	border-radius:10px;
+	border: 1px solid var(--gray-a);
+	border-radius: 10px;
 	padding: 10px;
-	margin:10px;
+	margin: 10px;
 }
-.check-box{
-	margin:0 10px;
-	display:flex;
-	align-items:center;
+.address-cart .box-cart {
+	border-bottom: 1px solid #fff;
+}
+.address-cart .box-cart, .box-cart-address .space-address, .box-cart-address .box-address, .box-cart-address .space-address input {
+	background-color: var(--gray-a);
+	border-radius: 0px;
+}
+.cart-container .check-box {
+	margin: 0 5px;
+	display: flex;
+	align-items: center;
+	width: 7%;
+}
+.cart-container .box-img {
+	width: 20%;
 }
 .space-address {
 	border-radius: 10px;
@@ -2491,18 +2533,20 @@ section
 	align-items: center;
 	margin-left: 10px;
 	height: 50px;
-	border: 2px solid #252424;
-	border-radius: 20px;
-	background-color: #fff;
+	border-bottom: 1px solid #252424;
+	/*border-top: 1px solid #252424;*/
+	/*border-radius: 20px;*/
 }
-
-.space-address input, .inp input {
-	position: absolute;
-	right: 5px;
-	left: 5px;
-	border: none;
-	margin-left: 10px;
+.body-cart .title, .body-cart .title, .space-pay p {
+	color: #fff;
 }
+	.space-address input, .inp input {
+		position: absolute;
+		right: 5px;
+		left: 5px;
+		border: none;
+		margin-left: 10px;
+	}
 
 .space-address input:focus {
 	outline: none;
@@ -2512,6 +2556,7 @@ section
 	display: flex;
 	align-items: center;
 	justify-content:center;
+	
 }
 
 .pay-title .icon {
@@ -2534,16 +2579,16 @@ section
 	width: 75px;
 }
 /*Sản Phẩm trong giỏ Hàng*/
-.flex-cart{
-	display:flex;
-	justify-content:space-between;
+.cart-container{
+	width:100%;
 }
 .flex2-cart{
 	display:flex;
 	align-items:center;
 }
 .cart-infor {
-	max-width:400px;
+	position:relative;
+	width:65%;
 	overflow:hidden;
 	padding:20px;
 	display: flex;
@@ -2553,12 +2598,15 @@ section
 	max-width: 100px;
 	max-height:150px;
 }
-.cart-name{
-	margin:0;
-	max-width:250px;
+.cart-name {
+	margin: 0;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 .infor-colum{
 	padding:10px 0;
+	width:100%;
 }
 .box-pay-all {
 	position: fixed;
@@ -2614,9 +2662,9 @@ section
 	overflow-y: auto;
 	overflow-x: hidden;
 }
-.body-customer .inf-customer .product_image img {
-	height: 250px;
-	width: auto;
+.body-customer .inf-customer .product_image img {	
+	position:relative;
+	width: 100%;
 }
 .body-customer .address-customer {
 	width: 30%;
