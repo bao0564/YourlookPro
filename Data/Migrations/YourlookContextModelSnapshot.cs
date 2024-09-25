@@ -350,6 +350,9 @@ namespace Data.Migrations
                     b.Property<DateTime?>("CreateDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<int?>("DbPaymentPaymentId")
+                        .HasColumnType("int");
+
                     b.Property<string>("DiaChi")
                         .HasColumnType("nvarchar(max)");
 
@@ -367,6 +370,9 @@ namespace Data.Migrations
 
                     b.Property<int?>("MaKhNavigationMaKh")
                         .HasColumnType("int");
+
+                    b.Property<string>("MaVoucher")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ModifiedBy")
                         .HasColumnType("nvarchar(max)");
@@ -398,6 +404,9 @@ namespace Data.Migrations
                     b.Property<decimal?>("TongTien")
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<string>("ValueVoucher")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Ward")
                         .HasColumnType("nvarchar(max)");
 
@@ -406,9 +415,9 @@ namespace Data.Migrations
 
                     b.HasKey("MaDh");
 
-                    b.HasIndex("MaKhNavigationMaKh");
+                    b.HasIndex("DbPaymentPaymentId");
 
-                    b.HasIndex("PaymentId");
+                    b.HasIndex("MaKhNavigationMaKh");
 
                     b.ToTable("DbDonHang");
                 });
@@ -812,6 +821,45 @@ namespace Data.Migrations
                     b.ToTable("DbTransaction");
                 });
 
+            modelBuilder.Entity("Data.Models.DbVoucher", b =>
+                {
+                    b.Property<int>("idVoucher")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("idVoucher"));
+
+                    b.Property<string>("CreateBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("CreateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("IconVoucher")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MaVoucher")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ModifiedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("ModifiedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("MotaVoucher")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("valueVoucher")
+                        .HasColumnType("int");
+
+                    b.HasKey("idVoucher");
+
+                    b.ToTable("DbVoucher");
+                });
+
             modelBuilder.Entity("Data.Models.ThongKe", b =>
                 {
                     b.Property<int>("Id")
@@ -880,17 +928,15 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Data.Models.DbDonHang", b =>
                 {
+                    b.HasOne("Data.Models.DbPayment", null)
+                        .WithMany("DbDonHangs")
+                        .HasForeignKey("DbPaymentPaymentId");
+
                     b.HasOne("Data.Models.DbKhachHang", "MaKhNavigation")
                         .WithMany("DbDonHangs")
                         .HasForeignKey("MaKhNavigationMaKh");
 
-                    b.HasOne("Data.Models.DbPayment", "Payment")
-                        .WithMany("DbDonHangs")
-                        .HasForeignKey("PaymentId");
-
                     b.Navigation("MaKhNavigation");
-
-                    b.Navigation("Payment");
                 });
 
             modelBuilder.Entity("Data.Models.DbFavoriteProduct", b =>

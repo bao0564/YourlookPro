@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YxGFvbRNKGFNKs5N//VL60xbWd1aXyog04LrKrMY/fI=",
+  "Hash": "33W9DO0yMnUZUNihQ9sYU1Uh+M9aYgcbNEn5gzdJKI0=",
   "Source": "yourlook",
   "BasePath": "_content/yourlook",
   "Mode": "Default",
@@ -597,6 +597,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\icon\\google.png"
+    },
+    {
+      "Identity": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\icon\\iconvoucher.png",
+      "SourceId": "yourlook",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\",
+      "BasePath": "_content/yourlook",
+      "RelativePath": "icon/iconvoucher.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\icon\\iconvoucher.png"
     },
     {
       "Identity": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\icon\\instagram.svg",

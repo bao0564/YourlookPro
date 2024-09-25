@@ -21,14 +21,13 @@ $(document).on('change', '.address-val', function () {
         $('#DiaChi').val(address);
     }
 });
+//chỉ chọn 1 hình thức thanh toán
 $(document).on('change', '.pay-checked', function () {
     $('.pay-checked').not(this).prop('checked', false);
     if (this.checked) {
-        var icon = $(this).data('payicon');
         var name = $(this).data('payname');
         var id = $(this).data('payid');
-
-        $('#payicon').attr('src', icon);
+        
         $('#payid').text(id);
         $('#payname').text(name);
     }

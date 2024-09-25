@@ -5,8 +5,13 @@
 @using yourlook.Models;
 @model ViewCheckOutItem
 @{
-    var TongTien = Model.CheckOutItems.Sum(X => X.Total).ToString("N0") + "VND";
+    var TongTien = Model.CheckOutItems.Sum(X => X.Total);
     var TongSanPham = Model.CheckOutItems.Sum(Y => Y.ProductQuantity).ToString();
+    decimal Giamgia = Model.GiamGia ?? 0;
+    decimal giamGiaValue = (TongTien * Giamgia / 100);
+    var Giam =giamGiaValue.ToString("N0") + "VND";
+    decimal GiaCuoi= TongTien - giamGiaValue +20000 ;
+    var FinalTotal = GiaCuoi.ToString("N0") + "VND";
 }
 <main class="cart cart-order" style="margin-bottom:150px">
     <div class="breadcrumbs d-flex flex-row align-items-center mg" style="margin-bottom:0;">
@@ -76,16 +81,12 @@
                     </div>
                     <div class="flex2-cart flex-cart">
                         <h5 style="margin:0 10px">Tổng Thanh Toán:</h5>
-                        <p style="margin:0;color:#000;font-weight:600">@TongTien</p>
+                        <p style="margin:0;color:#000;font-weight:600">@TongTien.ToString("N0") VND</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="order-cart">
-            <div class="flct box-cart">
-                <h4>Hình thức thanh toán:</h4>
-                <div class="flct">@Model.PayName</div>
-            </div>
             <div class="box-cart">
                 <h4>Thông tin địa chỉ:</h4>
                <div class="flct">
@@ -104,6 +105,17 @@
                 <h5>Ghi chú:</h5>
                 <div class="mg">@Model.GhiChu</div>
             </div>
+            <div class="box-cart">
+                <div class="flct">
+                    <div>Voucher Giảm Giá:</div>-@Giam
+                </div>
+                <div class="flct">
+                    <div>Vận Chuyển:</div>@Model.Ship
+                </div>
+                <div class="flct">
+                    <div>Hình thức thanh toán:</div>@Model.PayName
+                </div>
+            </div>
 
         </div>
         <div class="box-pay-all all-choose">
@@ -111,7 +123,7 @@
                 <div class="flct" style="height:50px;justify-content:flex-end">
                     <div class="price-choose" style="justify-content:flex-end">
                         <div class="flex-cart title total-price-container fl-center">
-                            Thành Tiền: <div class="flct product_price" style="color:#000;margin:0 10px">@TongTien</div>
+                            Thành Tiền: <div class="flct product_price" style="color:#000;margin:0 10px">@FinalTotal</div>
                         </div>
                         <div>
                             <button class="checkout-btn">Đặt Hàng</button>

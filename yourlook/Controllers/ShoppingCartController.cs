@@ -24,12 +24,14 @@ namespace yourlook.Controllers
             var idkh = HttpContext.Session.GetInt32("userid");
             var userAdress=db.DbAddreses.Where(x=>x.MaKh==idkh).ToList();
             var pay=db.DbPayments.ToList();
+            var voucher=db.DbVouchers.ToList();
             var cart = HttpContext.Session.GetJson<List<ShoppingCartItem>>("Cart") ?? new List<ShoppingCartItem>();
             var item = new ShoppingCartDetail
             {
                 Address = userAdress,
                 Items = cart,
-                Payments =pay                
+                Payments =pay,
+                Vouchers = voucher
             };
 
             return View(item);
@@ -134,6 +136,8 @@ namespace yourlook.Controllers
                 GhiChu = orderInfor.GhiChu,
                 PayName =orderInfor.payname,
                 Icon = orderInfor.icon,
+                GiamGia=orderInfor.GiamGia,
+                Ship=orderInfor.Ship,
                 CheckOutItems = selectedItems
             };
             return View(item);
@@ -162,7 +166,7 @@ namespace yourlook.Controllers
                     PaymentId = orderInfor.PaymentId,
                     PaymentName=orderInfor.payname,
                     GhiChu = orderInfor.GhiChu,
-                    TongTien = tongtien,
+                    TongTien = tongtien,                    
                     soluong = tongsoluong,
                     CreateDate = DateTime.Now
                 };

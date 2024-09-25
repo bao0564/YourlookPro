@@ -58,10 +58,8 @@
             Ward: $('#Ward').val(),
             DiaChi: $('#DiaChi').val(),
             GhiChu: $('#GhiChu').val(),
-            ////pay
-            //PaymentId: $('#payid').text(),
-            //payname: $('#payname').text()
-        };
+            Ship: 20000.0
+        }; 
         var selectedPayment = $('.pay-checked:checked');
         if (selectedPayment.length === 0) {
             alert("Vui lòng chọn phương thức thanh toán.");
@@ -69,7 +67,13 @@
         }
         orderInfo.PaymentId = $('#payid').text();
         orderInfo.payname = $('#payname').text();
-        
+        var selectedVoucher = $('.voucher-checked:checked');
+        if (selectedVoucher.length >0) {
+            orderInfo.GiamGia = selectedVoucher.first().data('vcvalue');
+        }
+        else {
+            orderInfo.GiamGia = 0; 
+        }
         var data = {
             selectedProducts: selectedProducts,
             selectInfors: orderInfo
@@ -107,14 +111,34 @@
     // Tính tổng tiền
     function calculateTotal() {
         var total = 0;
-        $('.cart-checkbox:checked').each(function () {
+        var discount = 0;
+        var finaltotal = 0;
+        var ship = 0;
+        //tổng tiền sản phẩm đc chọn
+        $('.cart-checkbox:checked').each(function () {            
             var price = parseFloat($(this).data('price'));
             var quantity = parseInt($(this).closest('.cart-container').find('.quantity_value-cart').text());
             total += price * quantity;
+            ship = 20000.0;
         });
+        $('#ship').text(ship.toLocaleString() + 'VND');
         $('#TongTien').text(total.toLocaleString() + ' VND');
-    }
+        // Tính tiền giảm giá theo voucher được chọn
+        $('.voucher-checked:checked').each(function () {
+            var selectedDiscountValue = parseInt($(this).data('vcvalue'));
+            if (selectedDiscountValue > 0) {
+                discount = - (total * selectedDiscountValue) / 100;
+            }
+        });        
 
+        // Hiển thị giảm giá
+        $('#GiamGia').text(discount.toLocaleString() + ' VND');
+
+        // Tính tổng tiền cuối cùng
+        finaltotal = total + discount + ship;
+        $('#finaltotal').text(finaltotal.toLocaleString() + ' VND');
+
+    }
     // Cập nhật giá tiền
     function updatePrice(element, quantity) {
         var priceElement = element.closest('.flex-cart').find('.product_price');
@@ -137,11 +161,18 @@
         });
     }
 
-    // Sự kiện thay đổi checkbox
+    // Sự kiện thay đổi checkbox thì giá trị sẽ được tính lại(chọn sp /voucher)
     $(document).off('change', '.cart-checkbox').on('change', '.cart-checkbox', function () {
         calculateTotal();
+    });   
+    $(document).on('change', '.voucher-checked', function () {
+        if (this.checked) {
+            $('.voucher-checked').not(this).prop('checked', false);
+            calculateTotal();
+        } else {
+            calculateTotal();
+        }
     });
-
     // Sự kiện tăng số lượng
     $(document).off('click', '.plus-cart').on('click', '.plus-cart', function () {
         var quantityElement = $(this).siblings('.quantity_value-cart');

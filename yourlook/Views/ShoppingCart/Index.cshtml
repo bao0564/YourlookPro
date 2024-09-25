@@ -113,38 +113,25 @@
                         <h3 style="color:#fff">Voucher</h3>
                     </div>
                     <div class="bdrdu voucher-list">
-                        <div class="space-pay">
-                            <div class="bdrdu" style="flex-grow:1">
-                                <div class="cart-container flct">
-                                    <span class="check-box">
-                                        <input type="checkbox" />
-                                    </span>
-                                    <div class="box-img flct">
-                                        <img src="/images/desc_1.jpg" alt="Product Image" />
-                                    </div>
-                                    <div class="info-voucher" style="margin-left:10px">
-                                        <p>Giảm 25%</p>
-                                        <p>Giảm Tối đa 50.000 VNĐ </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="space-pay">
-                            <div class="bdrdu" style="flex-grow:1">
-                                <div class="cart-container flct">
-                                    <span class="check-box">
-                                        <input type="checkbox" />
-                                    </span>
-                                    <div class="box-img flct">
-                                        <img src="/images/desc_1.jpg" alt="Product Image" />
-                                    </div>
-                                    <div class="info-voucher" style="margin-left:10px">
-                                        <p>Giảm 25%</p>
-                                        <p>Giảm Tối đa 50.000 VNĐ </p>
+                        @foreach(var vc in Model.Vouchers)
+                        {
+                            <div class="space-pay">
+                                <div class="bdrdu" style="flex-grow:1">
+                                    <div class="cart-container flct">
+                                        <span class="check-box">
+                                            <input type="checkbox" class="voucher-checked" data-vcvalue="@vc.valueVoucher" data-vcid="@vc.idVoucher" data-mavc="@vc.MaVoucher"/>
+                                        </span>
+                                        <div class="box-img flct">
+                                            <img src="@Url.Content("/icon/"+vc.IconVoucher)" alt="Product Image" />
+                                        </div>
+                                        <div class="info-voucher" style="margin-left:10px">
+                                            <p>@vc.MotaVoucher </p>
+                                            <p>Giảm @vc.valueVoucher %</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        }
                     </div>
                 </div>
             </div>
@@ -249,22 +236,33 @@
             </div>
         </div>
         <div class="box-pay-all all-choose">
-            <div class="box-cart">
-                <div class="flct" style="height:50px">
+            <div class="mg">
+                <div class="flct">
                     <div class="tipe-choose">
-                        <div class="infor-payment fl-center bdrdu">
-                            <div class="fljct">
-                                <img id="payicon" src="#" alt="" style="height:25px">
+                        <div>
+                            <div class="flspb">
+                                Tạm tính:
+                                <div style="color:#fff;margin:0 10px" id="TongTien"></div>
+                            </div>
+                            <div class="flspb">
+                                Giảm Giá:                                
+                                <div style="color:#fff;margin:0 10px" id="GiamGia"></div>
+                            </div>
+                            <div class="flspb">
+                                Phí Vận Chuyển:
+                                <div style="color:#fff;margin:0 10px" id="ship"></div>
+                            </div>
+                            <div class="flspb">
+                                Phương thức thanh toán:
                                 <p id="payid" style="display:none">...</p>
-                                <div id="payname">Phương thức thanh toán trống</div>
+                                <div id="payname" style="color:#fff;margin:0 10px"></div>
                             </div>
                         </div>
-                        <div class="infor-payment bdrdu">voucher</div>
                     </div>
                     <div class="price-choose" style="justify-content:flex-end">
                         <div class="fljct" style="flex-direction: column">
                             <div class="flex-cart title total-price-container">
-                                Tổng: <div class="flct product_price" style="color:#fff;margin:0 10px" id="TongTien"></div>
+                                Tổng: <div class="flct product_price" style="color:#fff;margin:0 10px" id="finaltotal"></div>
                             </div>
                         </div>
                         <div style="">

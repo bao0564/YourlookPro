@@ -71,6 +71,7 @@ namespace yourlook.Models
         public IEnumerable<ShoppingCartItem> Items { get; set; }
         public List<DbAddres> Address { get; set; }
         public List<DbPayment> Payments { get; set; }
+        public List<DbVoucher> Vouchers { get; set; }
     }
     //sản phẩm được chọn thêm vào trang thanh toán
     public class CheckOutItem
@@ -101,6 +102,8 @@ namespace yourlook.Models
         public string? Icon { get; set; }
         public string? PayName { get; set; }
         public string? GhiChu { get; set; }
+        public decimal? GiamGia { get; set; }    // Giảm giá có thể là số thập phân
+        public decimal? Ship { get; set; }        // Phí vận chuyển thường là số thập phân
         public List<CheckOutItem>? CheckOutItems { get; set; }
     }
         //lưu thông tin địa chỉ của khách hàng
@@ -118,6 +121,9 @@ namespace yourlook.Models
         public int? PaymentId { get; set; }
         public string icon {  get; set; }
         public string payname {  get; set; }
+        public decimal? GiamGia { get; set; }    // Giảm giá có thể là số thập phân
+        public decimal? Ship { get; set; }        // Phí vận chuyển thường là số thập phân
+
         public string? GhiChu { get; set; }
     }
     public class CheckoutRequest

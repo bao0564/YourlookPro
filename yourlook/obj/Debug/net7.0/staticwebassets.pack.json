@@ -125,6 +125,10 @@
       "PackagePath": "staticwebassets\\icon\\google.png"
     },
     {
+      "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\icon\\iconvoucher.png",
+      "PackagePath": "staticwebassets\\icon\\iconvoucher.png"
+    },
+    {
       "Id": "E:\\ShopYourLook\\yourlook\\yourlook\\wwwroot\\icon\\instagram.svg",
       "PackagePath": "staticwebassets\\icon\\instagram.svg"
     },

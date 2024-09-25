@@ -21,6 +21,8 @@ namespace Data.Models
         public int soluong {  get; set; }
         public int? PaymentId { get; set; }
         public string? PaymentName {  get; set; }
+        public string? MaVoucher { get; set; }
+        public string? ValueVoucher { get; set; }
         public string? GhiChu { get; set; }
         public bool ODSuccess { get; set; }
         public bool ODReadly { get; set; }
@@ -29,7 +31,5 @@ namespace Data.Models
         public virtual ICollection<DbChiTietDonHang> DbChiTietDonHangs { get; set; } = new List<DbChiTietDonHang>();
 
         public virtual DbKhachHang? MaKhNavigation { get; set; }
-
-        public virtual DbPayment? Payment { get; set; }
     }
 }
