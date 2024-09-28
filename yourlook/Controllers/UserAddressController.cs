@@ -6,7 +6,7 @@ namespace yourlook.Controllers
 {
 	public class UserAddressController : Controller
 	{
-		YourlookContext db= new YourlookContext();           
+		YourlookContext db= new YourlookContext();      
         [HttpGet]
         public IActionResult UserAddress()
         {

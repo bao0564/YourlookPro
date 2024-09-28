@@ -1,0 +1,137 @@
+﻿
+@{
+    ViewData["Title"] = "HistoryOrder";
+    Layout = "~/Views/Shared/_LayoutUD.cshtml";
+}
+@model List<yourlook.Models.ViewHistoryOrder>
+<div class="inf-customer" style="padding:0">
+    <div class="box-customer" style="background-color:#fff;max-height:500px">
+        <div class="order-history flcl" style="">
+            @if (Model !=null && Model.Any())
+            {
+                @foreach (var prd in Model)
+                {
+                    <div class="bdrdu" style="background-color:#bdc3c7">
+                        <div class="flspb flct">
+                            <div class="date-order">Ngày Đặt: @prd.CreateDate</div>
+                            <div class="payment-name">@prd.PaymentName</div>
+                            <div class="" style="display:flex">
+                                <div class="flcl" style="margin:0 5px 0 0">
+                                    <i class="fa-solid fa-bag-shopping" style="color: #000000;"></i>
+                                    @if (prd.ODSuccess == true)
+                                    {
+                                        <div class="nw">
+                                            <i class="fa-regular fa-circle-check" style="color: #00fa2a;"></i>
+                                            <i class="fa-solid fa-minus" style="color: #00fa2a;"></i>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="nw">
+                                            <i class="fa-solid fa-circle-check" style="color: #000000;"></i>
+                                            <i class="fa-solid fa-minus" style="color: #000000;"></i>
+                                        </div>
+                                    }
+                                </div>
+                                <div class="flcl" style="margin:0 5px 0 0">
+                                    <i class="fa-solid fa-person-rifle" style="color: #000000;"></i>
+                                    @if (prd.ODReadly)
+                                    {
+                                        <div class="nw">
+                                            <i class="fa-regular fa-circle-check" style="color: #00fa2a;"></i>
+                                            <i class="fa-solid fa-minus" style="color: #00fa2a;"></i>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="nw">
+                                            <i class="fa-solid fa-circle-check" style="color: #000000;"></i>
+                                            <i class="fa-solid fa-minus" style="color: #000000;"></i>
+                                        </div>
+                                    }
+                                </div>
+                                <div class="flcl" style="margin:0 5px 0 0">
+                                    <i class="fa-solid fa-truck-fast" style="color: #000000;"></i>
+                                    @if (prd.ODTransported)
+                                    {
+                                        <div class="nw">
+                                            <i class="fa-regular fa-circle-check" style="color: #00fa2a;"></i>
+                                            <i class="fa-solid fa-minus" style="color: #00fa2a;"></i>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="nw">
+                                            <i class="fa-solid fa-circle-check" style="color: #000000;"></i>
+                                            <i class="fa-solid fa-minus" style="color: #000000;"></i>
+                                        </div>
+                                    }
+                                </div>
+                                <div class="flcl" style="margin:0 20px 0 0">
+                                    <i class="fa-solid fa-street-view" style="color: #000000;"></i>
+                                    @if (prd.Complete)
+                                    {
+                                        <div>
+                                            <i class="fa-regular fa-circle-check" style="color: #00fa2a;"></i>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div>
+                                            <i class="fa-solid fa-circle-check" style="color: #000000;"></i>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flcl" style="">
+                            @foreach (var ctsp in prd.DhDetail)
+                            {
+                                <div class="box-cart">
+                                    <div class="cart-container flspb">
+                                        <div class="box-img fl-center">
+                                            <img src="@Url.Content("/img/" + ctsp.AnhSp)" alt="Product Image" />
+                                        </div>
+                                        <div class="cart-infor">
+                                            <div style="max-width:100%">
+                                                <div class="infor-colum">
+                                                    <p class="cart-name" style="color:#000">@ctsp.TenSp</p>
+                                                    <div class="flct">
+                                                        <p class="flct" style="white-space:nowrap">
+                                                            Phân Loại:
+                                                            <p class="bdrdu">@ctsp.ColorName</p>
+                                                            <p class="bdrdu">@ctsp.SizeName</p>
+                                                        </p>
+                                                    </div>
+                                                    <div class="flct nw">
+                                                        <p>Số lượng:x @ctsp.SoLuongSp</p>
+                                                        <div class="infor-colum flct" style="justify-content:end">
+                                                            <div class="flct" style="flex-direction:column">
+                                                                <div>@ctsp.Price.ToString("N0") VNĐ</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <div class="" style="display:flex;justify-content:end">
+                            <div class="flcl" style="gap:0">
+                                <div class="voucher flspb">Voucher: <div>-@prd.Giamgia.Value.ToString("N0") VNĐ</div></div>
+                                <div class="ship flspb">Phí vận chuyển:<div> @prd.Ship.Value.ToString("N0") VNĐ</div></div>
+                                <div class="product_price flspb">Thành Tiền :<div>@prd.TongTienThanhToan.Value.ToString("N0") VNĐ</div></div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="fljct">Lịch sử trống! Bạn chưa có đơn hàng nào </div>
+            }
+        </div>        
+    </div>
+</div>

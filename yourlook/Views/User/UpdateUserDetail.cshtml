@@ -1,0 +1,116 @@
+﻿@model Data.Models.DbKhachHang
+
+@{
+    ViewData["Title"] = "UpdateUserDetail";
+    Layout = "~/Views/Shared/_LayoutUD.cshtml";
+}
+<div class="inf-customer" style="">
+    <div class="box-customer" style="background-color:#fff">
+        <div style="display:flex;align-items:center;padding-top:15px">
+            <a asp-action="UserDetail"><img style="height:15px" src="\icon\drop left.svg" /></a>
+        </div>
+        <form asp-action="UpdateUserDetail">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="MaKh" />
+            <input type="hidden" asp-for="Addres" />
+            <input type="hidden" asp-for="Passwords" />
+            <input type="hidden" asp-for="ConfirmPasswords" />
+            <input type="hidden" asp-for="CreateDate" />
+            <input type="hidden" asp-for="IsExternalAccount" />
+            <div class="row" style="display:block">
+                <div class="box-adr col-12" style="display:flex">
+                    <div class="col-6">
+                        <label class="control-label">Tên Khách Hàng</label>
+                        <input asp-for="TenKh" class="form-control" />
+                        <span asp-validation-for="TenKh" class="text-danger"></span>
+                    </div>
+                    <div class="col-6">
+                        <label class="control-label">Ảnh Đại Diện</label>
+                        <input type="file" asp-for="Img" class="form-control" />
+                        <span asp-validation-for="Img" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="box-adr col-12" style="display:flex">
+                    <div class="col-6">
+                        <label class="control-label">Giới tính</label>
+                        <select asp-for="GioiTinh" class="form-control" asp-items="ViewBag.MaDm">
+                            <option value="">--- Giới tính ---</option>
+                            <option value="Nam">Nam</option>
+                            <option value="Nữ">Nữ</option>
+                        </select>
+                        <span asp-validation-for="GioiTinh" class="text-danger"></span>
+                    </div>
+                   @*  <div class="col-6">
+                        <label class="control-label">Ngày sinh </label>
+                        <input type="date" asp-for="Birth" class="form-control" />
+                        <span asp-validation-for="Birth" class="text-danger"></span>
+                    </div> *@
+                </div>
+                <div class="box-adr col-12" style="display:flex">                    
+                    @if(Model.Sdt != null){
+                        <div class="col-6">
+                            <label class="control-label">Số Điện Thoại</label>
+                            <input asp-for="Sdt" class="form-control"/>
+                            <span asp-validation-for="Sdt" class="text-danger"></span>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="col-6">
+                            <label class="control-label">Số Điện Thoại</label>
+                            <input asp-for="Sdt" class="form-control" disabled />
+                            <span asp-validation-for="Sdt" class="text-danger"></span>
+                        </div>
+                    }
+                    <div class="col-6">
+                        <label asp-for="Email" class="control-label"></label>
+                        <input asp-for="Email" class="form-control" disabled />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                </div>
+                @*  <div class="form-group">
+                <label asp-for="Passwords" class="control-label"></label>
+                <input asp-for="Passwords" class="form-control" />
+                <span asp-validation-for="Passwords" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                <label asp-for="ConfirmPasswords" class="control-label"></label>
+                <input asp-for="ConfirmPasswords" class="form-control" />
+                <span asp-validation-for="ConfirmPasswords" class="text-danger"></span>
+                </div>
+                <div class="form-group form-check">
+                <label class="form-check-label">
+                <input class="form-check-input" asp-for="IsExternalAccount" /> @Html.DisplayNameFor(model => model.IsExternalAccount)
+                </label>
+                </div>
+                <div class="form-group">
+                <label asp-for="CreateDate" class="control-label"></label>
+                <input asp-for="CreateDate" class="form-control" />
+                <span asp-validation-for="CreateDate" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                <label asp-for="CreateBy" class="control-label"></label>
+                <input asp-for="CreateBy" class="form-control" />
+                <span asp-validation-for="CreateBy" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                <label asp-for="ModifiedDate" class="control-label"></label>
+                <input asp-for="ModifiedDate" class="form-control" />
+                <span asp-validation-for="ModifiedDate" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                <label asp-for="ModifiedBy" class="control-label"></label>
+                <input asp-for="ModifiedBy" class="form-control" />
+                <span asp-validation-for="ModifiedBy" class="text-danger"></span>
+                </div>*@
+                <div class="col-12" style="display:flex;justify-content:center">
+                    <div style="border:1px solid #000;border-radius:10px">
+                        <input type="submit" value="Lưu" class="btn btn-primary" />
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+

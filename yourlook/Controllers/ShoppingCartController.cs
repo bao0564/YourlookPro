@@ -149,7 +149,12 @@ namespace yourlook.Controllers
             {
                 var selectedItems = HttpContext.Session.GetJson<List<CheckOutItem>>("Order");
                 var orderInfor = HttpContext.Session.GetJson<OrderInforItem>("OrderInfo");
-                var tongtien=selectedItems.Sum(x=>x.Total);//dm
+                //tính tiền đã trừ đi mã giảm giá
+                var tongtien=selectedItems.Sum(x=>x.Total);
+                decimal Giamgia = orderInfor.GiamGia ?? 0;
+                decimal giamGiaValue = (tongtien * Giamgia / 100);
+                var ship=orderInfor.Ship;
+                var finaltotal = tongtien - giamGiaValue + ship;
                 var tongsoluong=selectedItems.Sum(x=>x.ProductQuantity);
                 var emailkh = HttpContext.Session.GetString("user");
                 var idkh = HttpContext.Session.GetInt32("userid");
@@ -166,8 +171,11 @@ namespace yourlook.Controllers
                     PaymentId = orderInfor.PaymentId,
                     PaymentName=orderInfor.payname,
                     GhiChu = orderInfor.GhiChu,
-                    TongTien = tongtien,                    
+                    TongTienThanhToan= finaltotal, 
+                    TongTien = tongtien,              
                     soluong = tongsoluong,
+                    Giamgia = giamGiaValue,
+                    Ship = orderInfor.Ship,
                     CreateDate = DateTime.Now
                 };
                 
@@ -176,8 +184,10 @@ namespace yourlook.Controllers
                 foreach (var item in selectedItems)
                 {
                     var productOrder = new DbChiTietDonHang
-                    {
-                        MaDh = order.MaDh,
+					{
+						MaKh = idkh.Value,
+						EmailKh = emailkh,
+						MaDh = order.MaDh,
                         MaSp = item.ProductId,
                         TenSp = item.ProductName,
                         AnhSp = item.ProductImg,

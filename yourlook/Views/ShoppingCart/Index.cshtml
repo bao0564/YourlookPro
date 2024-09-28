@@ -142,8 +142,6 @@
                     <h3 style="border-bottom:1px solid">Giỏ Hàng </h3>
                 </div>
                 <div id="List-prd-cart">
-                    @* @await Html.PartialAsync("Partial_Product_In_Cart") *@
-
                     @if (Model.Items != null && Model.Items.Any())
                     {
                         foreach (var prd in Model.Items)

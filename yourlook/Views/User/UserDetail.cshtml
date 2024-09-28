@@ -1,0 +1,38 @@
+﻿@using Data.Models
+@{
+    ViewData["Title"] = "UserDetail";
+    Layout = "~/Views/Shared/_LayoutUD.cshtml";
+}
+@model DbKhachHang
+<div class="inf-customer" style="">
+    <div class="box-customer" style="background-color:#fff">
+        <div class="title" style="padding-bottom:20px">
+            <div class="img-customer" style="">
+                @if (Model.Img != null)
+                {
+                    <img style="" src="@Url.Content("/logo/"+Model.Img)" />
+                }
+                else
+                {
+                    <img style="" src="@Url.Content("../logo/images (11).jpg")" />
+                }
+            </div>
+            <div>
+                <h4>Thông Tin Khách Hàng</h4>
+                <h5 class="customer-name" style="">@Model.TenKh</h5>
+            </div>
+        </div>
+        <div class="dpf jcc" style="">
+            <div class="box-inforcustomer">
+                <div class="customer-title"><h5>Họ Tên :</h5>@Model.TenKh</div>
+                <div class="customer-title"><h5>Ngày sinh :</h5>20/11/2002</div>
+                <div class="customer-title"><h5>Giới Tính :</h5>@Model.GioiTinh</div>
+                <div class="customer-title"><h5>Email :</h5>@Model.Email</div>
+                <div class="customer-title"><h5>Số điện thoại:</h5>@Model.Sdt</div>
+            </div>
+        </div>
+        <div class="new-inf" style="">
+            <a class="pd" asp-action="UpdateUserDetail" asp-route-makh="@Model.MaKh">Sửa thông tin ></a>
+        </div>
+    </div>
+</div>

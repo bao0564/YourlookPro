@@ -191,7 +191,13 @@ namespace Data.Migrations
                     b.Property<DateTime?>("CreateDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("EmailKh")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("MaDh")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MaKh")
                         .HasColumnType("int");
 
                     b.Property<int>("MaSp")
@@ -365,6 +371,9 @@ namespace Data.Migrations
                     b.Property<string>("GhiChu")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<decimal?>("Giamgia")
+                        .HasColumnType("decimal(18,2)");
+
                     b.Property<int>("MaKh")
                         .HasColumnType("int");
 
@@ -398,10 +407,16 @@ namespace Data.Migrations
                     b.Property<string>("Sdt")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<decimal?>("Ship")
+                        .HasColumnType("decimal(18,2)");
+
                     b.Property<string>("TenKh")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal?>("TongTien")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal?>("TongTienThanhToan")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("ValueVoucher")

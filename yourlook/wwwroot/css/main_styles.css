@@ -57,6 +57,9 @@ COLOR PALETTE
 	left: 50%;
 	transform: translate(-53%,-60%);
 }
+.fl{
+	display:flex;
+}
 .flct {
 	display: flex;
 	align-items: center;
@@ -74,6 +77,11 @@ COLOR PALETTE
 	align-items: center;
 	justify-content: center;
 }
+.flcl {
+	display: flex;
+	flex-direction: column;
+	gap: 10px
+}
 .flscr{
 	display:-webkit-flex;
 	overflow-y:hidden;
@@ -81,6 +89,10 @@ COLOR PALETTE
 }
 .flscr::-webkit-scrollbar {
 	display: none;
+}
+.bd-t{
+	/*border-bottom:1px solid var(--gray-a);*/
+	border-top:1px solid var(--gray-a);
 }
 .bdrdu {
 	padding: 5px 10px;
@@ -91,11 +103,28 @@ COLOR PALETTE
 .pd{
 	padding:10px;
 }
+.pd-tb{
+	padding:10px 0;
+}
+.pd-lr{
+	padding:0 10px;
+}
 .mg{
 	margin:10px;
 }
+.mg-tb{
+	margin:10px 0;
+}
+.mg-lr{
+	margin:0 10px;
+}
 .nw{
 	white-space:nowrap;
+}
+.ttu {
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-bottom:10px;
 }
 .no-scrollbar {
 	scrollbar-width: none; /* Firefox */
@@ -1922,21 +1951,25 @@ section
 
 .deal_ofthe_week
 {
+	display:flex;
 	width: 100%;
 	margin-top: 41px;
-	background: #f2f2f2;
 }
-.deal_ofthe_week_img
-{
+.deal_ofthe_week_img {
 	height: 540px;
+	max-width: 50%;
+	min-width: 50%;
 }
-.deal_ofthe_week_img img
-{
+.deal_ofthe_week_col {
+	max-width: 50%;
+	min-width: 50%;
+}
+.deal_ofthe_week_img img {
 	height: 100%;
 }
 .deal_ofthe_week_content
 {
-	height: 100%;
+	height: 100%;	
 }
 .section_title
 {
@@ -1997,7 +2030,7 @@ section
 {
 	width: 140px;
 	background: #1e1e27;
-	margin-top: 52px;
+	margin:36px 0 10px 0;
 }
 .deal_ofthe_week_button:hover
 {
@@ -2362,8 +2395,11 @@ section
 	display: none;
 }
 .footer .none{
-	padding-top: 30px;
-	justify-content:space-around;
+	padding: 30px;
+	width:100%
+}
+.footer .none .inf {
+	width:20%;
 }
 .footer .row{
 	justify-content:space-around;
@@ -2683,7 +2719,7 @@ section
 	justify-content: center;
 }
 .box-customer {
-	min-height:500px;
+	height:auto;
 	border-radius: 10px;
 	padding: 10px;
 	margin: 10px;
@@ -2796,10 +2832,6 @@ section
 .timer_unit {
 	margin-top: -9px;
 	font-size: 10px;
-}
-
-.deal_ofthe_week_button {
-	margin-top: 36px;
 }
 
 .product_info {
@@ -2916,10 +2948,6 @@ section
 	color: black;
 }
 
-.footer_nav_container {
-	margin-top: 35px;
-}
-
 .cr {
 	margin-bottom: 20px;
 }
@@ -2931,4 +2959,11 @@ section
 .footer_social {
 	margin-top: 5px;
 	margin-bottom: 30px;
+}
+/*lịch sử mua hàng*/
+.order-history {
+	padding-bottom: 20px;
+}
+.order-history p {
+	color:#000 !important;
 }

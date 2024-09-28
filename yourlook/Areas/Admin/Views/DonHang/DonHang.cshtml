@@ -1,4 +1,4 @@
-﻿@using Data.Models
+﻿﻿@using Data.Models
 @using X.PagedList.Mvc.Core
 @{
     ViewData["Title"] = "DonHang";
@@ -28,6 +28,7 @@
                         <th>Tên khách hàng - SDT - Địa chỉ</th>
                         <th>Tổng Số Lượng</th>
                         <th>tổng tiền</th>
+                        <th>tổng tiền Thanh toán</th>
                         <th>Ngày Đặt</th>
                         <th>Đặt Hàng Thành công</th>
                         <th>Đang chuẩn bị hàng</th>
@@ -37,16 +38,19 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @if(Model!=null && Model.Any()){
+                    @if (Model != null && Model.Any())
+                    {
                         foreach (var prd in Model)
                         {
                             <tr>
                                 <td>@prd.MaDh</td>
                                 <td>@prd.TenKh - @prd.Sdt - @prd.DiaChi</td>
                                 <td>@prd.soluong</td>
-                                <td>@prd.TongTien</td>
+                                <td>@prd.TongTien.Value.ToString("N0") VND</td>
+                                <td>@prd.TongTienThanhToan.Value.ToString("N0") VND</td>
                                 <td>@prd.CreateDate</td>
-                                @if(prd.ODSuccess ==true){
+                                @if (prd.ODSuccess == true)
+                                {
                                     <td>
                                         <div class="check-od"></div>
                                     </td>
@@ -60,7 +64,7 @@
                                 @if (prd.ODReadly == true)
                                 {
                                     <td>
-                                        <div  class="check-od"></div>
+                                        <div class="check-od"></div>
                                     </td>
                                 }
                                 else
@@ -72,7 +76,7 @@
                                 @if (prd.ODTransported == true)
                                 {
                                     <td>
-                                        <div  class="check-od"></div>
+                                        <div class="check-od"></div>
                                     </td>
                                 }
                                 else
@@ -84,7 +88,7 @@
                                 @if (prd.Complete == true)
                                 {
                                     <td>
-                                        <div  class="check-od"></div>
+                                        <div class="check-od"></div>
                                     </td>
                                 }
                                 else

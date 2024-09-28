@@ -164,7 +164,7 @@
 									{
 										<li>
 											<div class="" style="border:1px solid #5c5c5c; border-radius:20px">
-												<a style="margin:0px;" href="@Url.Action("UserDetail","Home")"><i class="fa fa-user" style="color: #000" aria-hidden="true"></i></a>
+												<a style="margin:0px;" href="@Url.Action("UserDetail","User")"><i class="fa fa-user" style="color: #000" aria-hidden="true"></i></a>
 											</div>
 										</li>
 									}
@@ -330,7 +330,7 @@
 								<i class="fa fa-angle-down"></i>
 							</a>
 							<ul class="menu_selection">
-								<li><a href="@Url.Action("UserDetail","Home")"><i class="fa fa-sign-in" aria-hidden="true"></i>Thông Tin Tài Khoản</a></li>
+								<li><a href="@Url.Action("UserDetail","User")"><i class="fa fa-sign-in" aria-hidden="true"></i>Thông Tin Tài Khoản</a></li>
 							</ul>
 						}
 						else
@@ -487,15 +487,16 @@
 
 		<!-- Footer -->
 
-		<footer class="footer">
+
+		<footer class="footer" id="footer">
 			<div class="row">
 				<div class="col-lg-4">
 					<div class="ft-logo">
-						<img class="ft-logo" src="/logo/logo.png" alt="">
+						<img class="" src="/logo/logo.png" alt="">
 						<p class="letter">Luôn sẵn sàng mang đến cho bạn những sản phẩm chất lượng</p>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-3">
 					<div class="cha">
 						<div class="con">
 							<div class="ft-infor">
@@ -543,8 +544,8 @@
 				</div>
 			</div>
 			<div class="row none">
-				<div class="col-lg-2">
-					<div class="inf footer_nav_container">
+				<div class="inf footer_nav_container fljct">
+					<div>
 						<h4>About YourLook</h4>
 						<ul class="inf-con" id="inf-con-1">
 							<li>Thành viên</li>
@@ -552,8 +553,8 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-lg-3">
-					<div class="inf footer_nav_containe">
+				<div class="inf footer_nav_containe fljct">
+					<div>
 						<h4>Tài liệu-Tuyển dụng</h4>
 						<ul class="inf-con" id="inf-con-3">
 							<li>Tuyển dụng</li>
@@ -562,8 +563,8 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-lg-2">
-					<div class="inf footer_nav_containe">
+				<div class="inf footer_nav_containe fljct">
+					<div>
 						<h4>Costomer</h4>
 						<ul class="inf-con" id="inf-con-2">
 							<li href="">Chính sách đổi trả</li>
@@ -575,8 +576,8 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-lg-3">
-					<div class="inf footer_nav_containe">
+				<div class="inf footer_nav_containe fljct">
+					<div>
 						<h4>Kiến thức mua sắm</h4>
 						<ul class="inf-con" id="inf-con-4">
 							<li>Blog mua sắm </li>
@@ -584,14 +585,14 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-lg-2">
-					<div class="inf footer_nav_containe">
+				<div class="inf footer_nav_containe fljct">
+					<div>
 						<h4>Địa chỉ</h4>
 						<ul class="inf-con" id="inf-con-5">
-							<li>Hà Nội:</li>
-							<li><a href ="@Url.Action("About", "About")">số nhà 55 ngõ 62 Thị Trấn Trâu Quỳ Thành Phố Hà Nội</a></li>
-							<li>HCM</li>
-							<li><a href="@Url.Action("About","About")">số nhà 55 quận 2 Trâu Quỳ Thành Phố Hồ Chí Minh</a></li>
+							<li><i class="fa fa-map-marker"></i>:Hà Nội</li>
+							<li><a href="@Url.Action("About","About")">số nhà 55 ngõ 62 Thị Trấn Trâu Quỳ Thành Phố Hà Nội</a></li>
+							<li><i class="fa fa-map-marker"></i>:HCM</li>
+							<li><a href="@Url.Action("About","About")">số nhà 65 Phù Đổng Thiên Vương Phường 11 quận 5 Thành Phố Hồ Chí Minh</a></li>
 						</ul>
 					</div>
 				</div>
@@ -608,7 +609,6 @@
 				</div>
 			</div>
 		</footer>
-
 	</div>
 
 	<script src="../js/jquery-3.2.1.min.js"></script>

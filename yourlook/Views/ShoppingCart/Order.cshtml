@@ -89,31 +89,37 @@
         <div class="order-cart">
             <div class="box-cart">
                 <h4>Thông tin địa chỉ:</h4>
-               <div class="flct">
-                    <div class="mg">Tên người nhận:</div>
-                    <div>@Model.TenKh </div>
+               <div class="flspb">
+                    <div class="">Tên người nhận:</div>
+                    <div class="ttu">@Model.TenKh </div>
                </div>
-               <div class="flct">
-                    <div class="mg">Số điện thoại:</div>
-                    <div>@Model.Sdt</div>
+               <div class="flspb">
+                    <div class="">Số điện thoại:</div>
+                    <div class="ttu">@Model.Sdt</div>
                </div>
-               <div class="flct">
-                    <div class="mg nw">Địa chỉ:</div>
-                    <div class="mg">@Model.Ward - @Model.District - @Model.City</div>
-                    <h5 class="mg">(@Model.DiaChi)</h5>
+               <div class="flspb">
+                    <div class="nw">Địa chỉ:</div>
+                    <div class="ttu" style="margin-left: 50px">@Model.Ward - @Model.District - @Model.City (@Model.DiaChi)</div>
+                    
                </div>
-                <h5>Ghi chú:</h5>
-                <div class="mg">@Model.GhiChu</div>
+                <div>Ghi chú:</div>
+                <div class="mg ttu">@Model.GhiChu</div>
             </div>
             <div class="box-cart">
-                <div class="flct">
+                <div class="flspb ttu">
+                    <div>Hình thức thanh toán:</div>@Model.PayName
+                </div>
+                <div class="flspb ttu">
+                    <div>tổng sản phẩm:</div>@TongTien.ToString("N0") VND
+                </div>
+                <div class="flspb ttu">
                     <div>Voucher Giảm Giá:</div>-@Giam
                 </div>
-                <div class="flct">
-                    <div>Vận Chuyển:</div>@Model.Ship
+                <div class="flspb ttu bd-b">
+                    <div>Vận Chuyển:</div>20,000 VND
                 </div>
-                <div class="flct">
-                    <div>Hình thức thanh toán:</div>@Model.PayName
+                <div class="flspb pd ttu bd-t">
+                    <div>Tổng thanh toán:</div>@FinalTotal
                 </div>
             </div>
 
@@ -136,16 +142,20 @@
 </main>
 @section styles {
     <style>
+        .address-cart{
+            margin-top:10px;
+        }
         .body-cart .order-cart, .body-cart-order .address-cart {
             padding: 0;
         }
+
         .footer {
             display: none;
         }
-        .super_container {
-            background-color:#fff;
-        }
 
+        .super_container {
+            background-color: #fff;
+        }
     </style>
 }
 <script src="../js/btnquantity.js"></script>

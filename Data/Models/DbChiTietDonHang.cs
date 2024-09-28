@@ -11,6 +11,8 @@ namespace Data.Models
 		public int MaCTDH { get; set; }
 		[ForeignKey("DbDonHang")]
 		public int MaDh{  get; set; }
+		public int MaKh { get; set; }
+		public string? EmailKh { get; set; }
 		public int MaSp { get; set; }
 		public string? TenSp { get; set; }
 		public string? AnhSp { get; set; }

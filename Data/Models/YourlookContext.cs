@@ -53,6 +53,7 @@ namespace Data.Models
 		// sản phẩm yêu thích
 		public List<DbSanPham> GetFavoriteProducts(int maKh)
 		{
+			//lấy ra masp trong bảng yêu thích
 			var favoriteProductIds = DbFavoriteProducts
 				.Where(fp => fp.MaKh == maKh)
 				.Select(fp => fp.MaSp)
@@ -60,6 +61,19 @@ namespace Data.Models
 
 			return DbSanPhams
 				.Where(sp => favoriteProductIds.Contains(sp.MaSp))
+				.ToList();
+		}
+		//lịch sử đơn hàng
+		public List<DbSanPham> GetHistoryOrders(int maKh)
+		{
+			//lấy ra masp trong bảng chitiet donhang
+			var historyOrders=DbChiTietDonHangs
+				.Where(ho=>ho.MaKh==maKh)
+				.Select(ho=>ho.MaSp)
+				.ToList();
+
+			return DbSanPhams
+				.Where(sp=>historyOrders.Contains(sp.MaSp))
 				.ToList();
 		}
 		public virtual DbSet<DbAdd> DbAdds { get; set; }

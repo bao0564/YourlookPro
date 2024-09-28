@@ -19,8 +19,7 @@ namespace Data.Models
 
         public string? Addres { get; set; }
 
-
-        //[Required(ErrorMessage = "*")]
+        //public DateOnly? Birth { get; set; }
         public string? Sdt { get; set; }
 
         [Required(ErrorMessage = "*")]

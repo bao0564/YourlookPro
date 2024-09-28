@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis;
 using Microsoft.DotNet.Scaffolding.Shared.Messaging;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Diagnostics;
 using X.PagedList;
 using yourlook.Models;
@@ -37,20 +38,7 @@ namespace yourlook.Controllers
 					return db.DbKhachHangs.FirstOrDefault(x => x.MaKh == id);
 				}
 			}
-		//thông tin tài khoản 
-		public IActionResult UserDetail()
-        {
-            var email = HttpContext.Session.GetString("user");
-            if (email != null)
-            {
-                var user = GetEmailKhachHang(email);
-				return View(user);
-            }
-			else
-			{
-				return RedirectToAction("Login", "Access");
-			}
-        }
+		
 		//tìm từ khóa
 		public IActionResult KeyWord(int? page, string keyword)
 		{
@@ -72,48 +60,8 @@ namespace yourlook.Controllers
             PagedList<DbSanPham> lstsp = new PagedList<DbSanPham>(lst, pageNumber, pageSize);
             return View(lstsp);
 		}
-		//sản phẩm yêu thích
-		[HttpGet]		
-		public IActionResult FavoriteProduct()
-		{
-			var idkh = HttpContext.Session.GetInt32("userid");
-			if (idkh ==null)
-			{
-				return RedirectToAction("Login", "Access");
-			}
-			var favoriteProducts = db.GetFavoriteProducts(idkh.Value);
-			return View(favoriteProducts);
-		}
-
-        [HttpPost]		
-		public IActionResult FavoriteProduct(int masp)
-		{
-			var idkh = HttpContext.Session.GetInt32("userid");
-			if (idkh==null)
-			{
-				return Json(new { success = false, message = "Hãy đăng nhập để sử dụng thao tác này" });
-			}
-			var user = GetIdKhachHang(idkh.Value);
-			var isFvr = db.DbFavoriteProducts.FirstOrDefault(x => x.MaKh == user.MaKh && x.MaSp == masp);
-			if (isFvr == null) 
-			{
-				isFvr = new DbFavoriteProduct
-				{
-					MaSp = masp,
-					MaKh = user.MaKh,
-					CreatDate = DateTime.Now
-				};
-				db.DbFavoriteProducts.Add(isFvr);
-				db.SaveChanges();
-				return Json(new { success = true, message = "Đã thêm vào mục yêu thích" });
-			}
-			else
-			{
-				db.DbFavoriteProducts.Remove(isFvr);
-				db.SaveChanges();
-				return Json(new { success = true, message = "Đã xóa khỏi mục yêu thích" });
-			}
-		}
+		
+		//all sp
 		public IActionResult AllProduct(int? page)
 		{
 			int pageSize = 25;
@@ -147,6 +95,7 @@ namespace yourlook.Controllers
             PagedList<ViewAllDetail> lstsp = new PagedList<ViewAllDetail>(newlst, pageNumber, pageSize);
 			return View(lstsp);
 		}
+        //
         public IActionResult SellProduct(int? page)
         {
 			int pageSize = 25;
@@ -180,6 +129,7 @@ namespace yourlook.Controllers
             PagedList<ViewAllDetail> lstsp = new PagedList<ViewAllDetail>(newlst, pageNumber, pageSize);
 			return View(lstsp);
         }
+        //
 		public IActionResult NewProduct(int? page)
 		{
 			int pageSize = 25;
@@ -216,6 +166,7 @@ namespace yourlook.Controllers
             PagedList<ViewAllDetail> lstNew = new PagedList<ViewAllDetail>(newlst, pageNumber, pageSize);
 			return View(lstNew);
 		}
+        //
 		public IActionResult HotProduct(int? page)
 		{
 			int pageSize = 25;
@@ -249,6 +200,7 @@ namespace yourlook.Controllers
             PagedList<ViewAllDetail> lstHot = new PagedList<ViewAllDetail>(newlst, pageNumber, pageSize);
 			return View(lstHot);
 		}
+        //
 		public IActionResult UnderProduct(int? page)
 		{
 			int pageSize = 25;
@@ -282,6 +234,7 @@ namespace yourlook.Controllers
             PagedList<ViewAllDetail> lstNew = new PagedList<ViewAllDetail>(newlst, pageNumber, pageSize);
 			return View(lstNew);
 		}
+        //
 		public IActionResult ProductCategory(int? page)
 		{
             int pageSize = 15;
@@ -315,6 +268,7 @@ namespace yourlook.Controllers
             PagedList<ViewAllDetail> lstcatesp = new PagedList<ViewAllDetail>(newlst, pageNumber, pageSize);
             return View(lstcatesp);
         }
+        //
 		public IActionResult ProductTipe(int madm,int? page)
 		{
 			int pageSize = 25;
@@ -356,6 +310,7 @@ namespace yourlook.Controllers
 			PagedList<ViewAllDetail> lstprdbytipe = new PagedList<ViewAllDetail>(newLst, pageNumber,pageSize);
 			return View(lstprdbytipe);
 		}
+        //
 		public IActionResult ProductDetail(int masp)
 		{
 			var lstSanPham = db.DbSanPhams.SingleOrDefault(x => x.MaSp == masp);

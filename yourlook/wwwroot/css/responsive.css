@@ -55,8 +55,6 @@
 	.product_name a {
 		font-size: 17px;
 	}
-
-
 	.space-address a {
 		font-size: 1.1rem;
 		font-weight: 500;
@@ -517,7 +515,9 @@
 		margin: 0;
 	}
 	/*product*/
-
+	.footer .none .inf:nth-child(2n){
+		display:none;
+	}
 }
 
 	/************
@@ -645,6 +645,17 @@
 	.favorite {
 		left: 10px;
 	}
+	.timer li {
+		width: 50px;
+		height: 50px;
+	}
+	.timer_num {
+		font-size: 20px;
+		font-weight: 500;
+	}
+	.timer_unit {
+		margin-top:0;
+	}
 }
 
 	/************
@@ -716,6 +727,10 @@
 ************/
 
 @media only screen and (max-width: 880px) {
+	.order-history .voucher, .order-history .ship, .order-history .date-order {
+		font-size: 13px;
+		margin: 0 5px;
+	}
 	.box-inf-cl-s {
 		width: 100%;
 	}
@@ -831,6 +846,21 @@
 ************/
 
 @media only screen and (max-width: 768px) {
+
+	.deal_ofthe_week {
+		flex-direction:column;
+		gap:20px;
+	}
+
+	.deal_ofthe_week_img {
+		max-width: 100%;
+		min-width: 100%;
+	}
+
+	.deal_ofthe_week_col {
+		max-width: 100%;
+		min-width: 100%;
+	}
 	.box-cart-pay .pay-list, .box-cart-voucher .voucher-list {
 		max-height: 250px;
 	}
@@ -1022,7 +1052,12 @@
 	}
 }
 @media only screen and (max-width: 667px) {
-	
+	.order-history .voucher, .order-history .ship, .order-history .date-order {
+		font-size: 11px;
+	}
+	.order-history .payment-name{
+		display:none;
+	}
 	.prd-item {
 		max-width: 33.3%;
 		min-width: 33.3%;
@@ -1171,27 +1206,27 @@
 	}
 }
 
-	@media only screen and (max-width: 620px) {
-		.box-inf-cl-s {
-			padding: 0 5px;
-			width: 80%;
-		}
-
-		.grid_sorting_button {
-			padding: 20px
-		}
-
-		.space-address a {
-			font-size: 0.7rem;
-		}
-
-		.flex-cart .bdrdu {
-			font-size: 10px;
-		}
-		.order-cart h4{
-			font-size:19px;
-		}
+@media only screen and (max-width: 620px) {
+	.box-inf-cl-s {
+		padding: 0 5px;
+		width: 80%;
 	}
+
+	.grid_sorting_button {
+		padding: 20px
+	}
+
+	.space-address a {
+		font-size: 0.7rem;
+	}
+
+	.flex-cart .bdrdu {
+		font-size: 10px;
+	}
+	.order-cart h4{
+		font-size:19px;
+	}
+}
 	/************
 11. 575px
 ************/
@@ -1434,7 +1469,9 @@
 ************/
 
 	@media only screen and (max-width: 480px) {
-		
+		.order-history .product_price{
+			font-size:14px;
+		}
 		.best_sellers .container-flashsell {
 			max-width: 450px;
 		}
@@ -1782,5 +1819,8 @@
 		.box-inf-cl-s {
 			padding: 0 5px;
 			width: 80%;
+		}
+		.order-history .box-cart {
+			margin:0;
 		}
 	}

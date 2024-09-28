@@ -18,11 +18,14 @@ namespace Data.Models
         public string? Ward { get; set; }
         public string? DiaChi { get; set; }
         public decimal? TongTien { get; set; }
+        public decimal? TongTienThanhToan { get; set; }
         public int soluong {  get; set; }
         public int? PaymentId { get; set; }
         public string? PaymentName {  get; set; }
         public string? MaVoucher { get; set; }
         public string? ValueVoucher { get; set; }
+        public decimal? Giamgia { get; set; }
+        public decimal? Ship { get; set; }
         public string? GhiChu { get; set; }
         public bool ODSuccess { get; set; }
         public bool ODReadly { get; set; }
