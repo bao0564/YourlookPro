@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using X.PagedList;
+using yourlook.MenuKid;
 
 namespace yourlook.Areas.Admin.Controllers
 {
@@ -10,6 +11,13 @@ namespace yourlook.Areas.Admin.Controllers
     public class DanhMucController : Controller
     {
         YourlookContext db = new YourlookContext();
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        private readonly IUploadPhoto _uploadPhoto;
+        public DanhMucController (IUploadPhoto uploadPhoto, IWebHostEnvironment webHostEnvironment)
+        {
+            _uploadPhoto = uploadPhoto;
+            _webHostEnvironment = webHostEnvironment;
+        }
         //Danh Mục
         [Route("danhmuc")]
         public IActionResult DanhMuc(int? page)
@@ -21,7 +29,7 @@ namespace yourlook.Areas.Admin.Controllers
             }
             int pageSize = 10;
             int pageNumber = page ?? 1;
-            var lstDanhMuc = db.DbDanhMucs.AsNoTracking().OrderBy(x => x.MaDm);
+            var lstDanhMuc = db.DbDanhMucs.AsNoTracking().OrderByDescending(x => x.MaDm);
             PagedList<DbDanhMuc> lst = new PagedList<DbDanhMuc>(lstDanhMuc, pageNumber, pageSize);
             return View(lst);
         }
@@ -35,13 +43,17 @@ namespace yourlook.Areas.Admin.Controllers
         [Route("taodanhmuc")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult TaoDanhMuc(DbDanhMuc danhMuc)
+        public async Task<IActionResult> TaoDanhMuc(DbDanhMuc danhMuc,IFormFile FileAnh)
         {
             if (ModelState.IsValid)
             {
+                if (FileAnh != null && FileAnh.Length > 0)
+                {
+                    danhMuc.AnhDaiDien = await _uploadPhoto.uploadOnePhotosAsync(FileAnh, "img"); // Chỉ 1 ảnh đại diện
+                }
                 danhMuc.CreateDate = DateTime.Now;
                 db.DbDanhMucs.Add(danhMuc);
-                db.SaveChanges();
+                await db.SaveChangesAsync();
                 return RedirectToAction("DanhMuc");
             }
             return View(danhMuc);
@@ -57,14 +69,18 @@ namespace yourlook.Areas.Admin.Controllers
         [Route("suadanhmuc")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult SuaDanhMuc(DbDanhMuc danhMuc)
+        public async Task<IActionResult> SuaDanhMuc(DbDanhMuc danhMuc, IFormFile FileAnh)
 		{
             if (ModelState.IsValid)
             {
+                if (FileAnh != null && FileAnh.Length > 0)
+                {
+                    danhMuc.AnhDaiDien = await _uploadPhoto.uploadOnePhotosAsync(FileAnh, "img"); // Chỉ 1 ảnh đại diện
+                }
                 db.DbDanhMucs.Attach(danhMuc);
                 danhMuc.ModifiedDate = DateTime.Now;
                 db.Entry(danhMuc).State = EntityState.Modified;
-                db.SaveChanges();
+                await db.SaveChangesAsync();
                 return RedirectToAction("DanhMuc");
             }
             return View(danhMuc);

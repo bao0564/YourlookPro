@@ -3,6 +3,16 @@ using System.ComponentModel;
 
 namespace yourlook.MenuKid
 {
+	public interface IAds
+	{
+		DbAdd add(DbAdd dbAds);
+		DbAdd update(DbAdd dbAds);
+
+		DbAdd delete(string id);
+		DbAdd GetAds(string id);
+
+		IEnumerable<DbAdd> GetAllAds();
+	}
 	public class Ads : IAds
 	{
 		private readonly YourlookContext _context;

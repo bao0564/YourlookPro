@@ -2,7 +2,17 @@
 
 namespace yourlook.MenuKid
 {
-    public class Size : ISize
+	public interface ISize
+	{
+		DbSize add(DbSize dbSize);
+		DbSize update(DbSize dbSize);
+
+		DbSize delete(string sizeid);
+		DbSize GetSize(string sizeid);
+
+		IEnumerable<DbSize> GetAllSize();
+	}
+	public class Size : ISize
     {
         private readonly YourlookContext _context;
         public Size(YourlookContext context)

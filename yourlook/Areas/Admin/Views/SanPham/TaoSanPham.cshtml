@@ -64,9 +64,10 @@
                                 </div>
                                 <div class="col-6">
                                     <label class="control-label">Ảnh đại diện</label>
-                                    <input asp-for="AnhSp" type="file" class="form-control" name="AnhSpFile" />
+                                    <input id="Img-upload" asp-for="AnhSp" type="file" class="form-control" name="AnhSpFile" accept="image/*" />
                                     <span asp-validation-for="AnhSp" class="text-danger"></span>
                                 </div>
+
                                 <div class="col-12">
                                     <label class="control-label">Mô Tả </label>
                                     @Html.ValidationMessageFor(x => x.MotaSp, "", new { @class = "text-danger" })

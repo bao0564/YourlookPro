@@ -2,7 +2,17 @@
 
 namespace yourlook.MenuKid
 {
-    public class Page2 : IPage2
+	public interface IPage2
+	{
+		DbSanPham add(DbSanPham dbSanPham);
+		DbSanPham update(DbSanPham dbSanPham);
+
+		DbSanPham delete(string maSP);
+		DbSanPham GetSanPham(string maSP);
+
+		IEnumerable<DbSanPham> GetAllSanPhamPage2();
+	}
+	public class Page2 : IPage2
     {
         private readonly YourlookContext _context;
         public Page2(YourlookContext context)

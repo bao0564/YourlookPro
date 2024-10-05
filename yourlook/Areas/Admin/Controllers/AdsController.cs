@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using X.PagedList;
+using yourlook.MenuKid;
 
 namespace yourlook.Areas.Admin.Controllers
 {
@@ -11,6 +12,12 @@ namespace yourlook.Areas.Admin.Controllers
     public class AdsController : Controller
     {
         YourlookContext db=new YourlookContext();
+        private readonly IUploadPhoto _uploadPhoto;
+        public AdsController(IUploadPhoto uploadPhoto)
+        {
+            _uploadPhoto = uploadPhoto;
+        }
+
         [Route("ads")]
         public IActionResult Ads(int? page)
         {
@@ -21,7 +28,7 @@ namespace yourlook.Areas.Admin.Controllers
             }
             int pageSize = 10;
             int pageNumber = page ?? 1;
-            var lstAds = db.DbAdds.AsNoTracking().OrderBy(x => x.Id);
+            var lstAds = db.DbAdds.AsNoTracking().OrderByDescending(x => x.Id);
             PagedList<DbAdd> lst = new PagedList<DbAdd>(lstAds, pageNumber, pageSize);
             return View(lst);
         }
@@ -37,13 +44,17 @@ namespace yourlook.Areas.Admin.Controllers
         [Route("taoads")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult TaoAds(DbAdd ads)
+        public async Task<IActionResult> TaoAds(DbAdd ads, IFormFile FileAnh)
         {
             if (ModelState.IsValid)
             {
+                if(FileAnh !=null && FileAnh.Length > 0)
+                {
+                    ads.Img = await _uploadPhoto.uploadOnePhotosAsync(FileAnh, "logo");
+                }
                 ads.CreateDate = DateTime.Now;
                 db.DbAdds.Add(ads);
-                db.SaveChanges();
+                await db.SaveChangesAsync();
                 return RedirectToAction("Ads");
             }
             return View(ads);

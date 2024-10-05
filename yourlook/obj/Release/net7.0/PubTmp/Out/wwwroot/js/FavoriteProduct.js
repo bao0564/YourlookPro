@@ -3,7 +3,7 @@
         var prdid = $(this).data('id');
         var icon = $(this).find('i');
         $.ajax({
-            url: '/Home/FavoriteProduct/',
+            url: '/User/FavoriteProduct/',
             type: 'POST',
             data: { masp: prdid },
             success: function (response) {

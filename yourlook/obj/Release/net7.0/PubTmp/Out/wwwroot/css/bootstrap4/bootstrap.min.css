@@ -588,7 +588,7 @@ pre code {
 }
 @media (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 800px;
   }
 }
 @media (min-width: 992px) {
@@ -596,9 +596,9 @@ pre code {
     max-width: 960px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .container {
-    max-width: 1180px;
+      max-width: 1280px;
   }
 }
 .container-fluid {
@@ -3305,10 +3305,6 @@ tbody.collapse.show {
 .nav-pills .nav-link {
   border-radius: 0.25rem;
 }
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #007bff;
 }
 .nav-fill .nav-item {
   -ms-flex: 1 1 auto;

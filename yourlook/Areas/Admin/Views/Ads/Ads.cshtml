@@ -24,8 +24,7 @@
                             <th>STT</th>
                             <th>Tên </th>
                             <th>Ảnh</th>
-                            <th>Url</th>
-                            <th></th>
+                            <th>Hiển thị</th>
                             <th></th>
                         </tr>
                     </thead>
@@ -39,8 +38,20 @@
                                     <td>@prd.Id</td>
                                     <td>@prd.Name</td>
                                     <td><img src="@Url.Content("/logo/"+prd.Img)"/></td>
-                                    <td>@prd.Url</td>
-                                    <td>@prd.IsActive</td>
+                                    <td>
+                                        @if (@prd.IsActive)
+                                        {
+                                           <div style="display:flex;justify-content:center">
+                                                <div class="check-od"></div>
+                                           </div>
+                                        }
+                                        else
+                                        {
+                                            <div style="display:flex;justify-content:center">
+                                                <div class="check-od-none"></div>
+                                            </div>
+                                        }
+                                    </td>
                                     <td>
                                         <a href="@Url.Action("XoaAds", new { id = prd.Id})" onclick="deleteads(event)" style="color: #000;">Xóa</a>
                                         @* <a asp-action="suakhachhang" asp-route-makh="@prd.MaKh" style="color: black;">Sửa</a> *@

@@ -33,7 +33,6 @@ namespace yourlook.Controllers
                 Payments =pay,
                 Vouchers = voucher
             };
-
             return View(item);
 		}
         [AllowAnonymous]
@@ -236,15 +235,15 @@ namespace yourlook.Controllers
         [HttpPost]
 		public ActionResult Delete(int id)
 		{
-            var code = new { success = false, msg = "", code = -1, Count = 0 };
-            var cart = HttpContext.Session.GetJson<ViewShoppingCartItem>("Cart") ?? new ViewShoppingCartItem();
+            var code = new { success = false, msg = "", code = -1};
+            var cart = HttpContext.Session.GetJson<List<ShoppingCartItem>>("Cart") ?? new List<ShoppingCartItem>();
 			if (cart != null)
 			{ 
-				var checkproduct=cart.Items.FirstOrDefault(x=>x.ProductId == id);
+				var checkproduct=cart.FirstOrDefault(x=>x.ProductId == id);
 				if (checkproduct != null) { 
-					cart.Remove(id);
+					cart.Remove(checkproduct);
                     HttpContext.Session.SetJson("Cart", cart);
-                    code = new { success = true ,msg="Đã xóa sản phẩm",code=0,Count=cart.Items.Count};
+                    code = new { success = true ,msg="Đã xóa sản phẩm",code=0};
 				}
 			}
 			return Json(code);

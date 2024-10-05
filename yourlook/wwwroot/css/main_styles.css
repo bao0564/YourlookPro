@@ -369,8 +369,8 @@ section
 }
 
 .fa-login .box-login.box {
-	width: auto;
-	height: 450px;
+	min-width: 600px;
+	height: auto;
 }
 
 .close-login {

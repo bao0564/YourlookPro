@@ -1,0 +1,64 @@
+﻿@using Data.Models;
+@model DbKhachHang
+
+<div class="fa-login " id="fa-login">
+	<div class="creen-login">
+		<div class="box-login box">
+			<span class="close-login" onclick="closeFL()">✕</span>
+			<div class="login-left">
+				<div action="" id="dangnhap">
+					<div class="title">
+						<p class="login">Đăng Nhập</p>
+					</div>
+					<div class="sm-title">
+						Bạn đã có tài khoản.Hãy đăng nhập ở đây!
+					</div>
+					<div>Bằng:</div>
+					<div class="login-acc-with flct">
+						<form asp-controller="Access" asp-action="ExternalLogin" method="post">
+							<button type="submit" name="provider" value="Google"><img src="/icon/google.png" alt="" /></button>
+						</form>
+						<a><img src="/icon/Facebook.png" alt="" /></a>
+					</div>
+					<div>Hoặc</div>
+					@using (Html.BeginForm("Login", "Access", FormMethod.Post))
+					{
+						<div class="">
+							<div class="">
+								@Html.TextBoxFor(x => x.Email, new { @class = "input", placeholder = "Email/SĐT...", type = "text", required = "required", autofocus = "autofocus" })
+							</div>
+						</div>
+						<div class="">
+							<div class="">
+								@Html.TextBoxFor(x => x.Passwords, new { @class = "input", placeholder = "Mật Khẩu...", type = "text", required = "required", autofocus = "autofocus" })
+							</div>
+						</div>
+						@if (!ViewData.ModelState.IsValid)
+						{
+							<div class="text-danger" style="display:flex;justify-content:center">
+								@Html.ValidationSummary(true)
+							</div>
+						}
+						<div class="btn-login">
+							<button class="btn-login" type="submit">Đăng Nhập</button>
+						</div>
+					}
+					<div class="login-action">
+						<a href="" class="forgot-pass">Quên mật khẩu</a>
+					</div>
+				</div>
+			</div>
+			<div class="login-right">
+				<div class="box-login-right">
+					<img src="/logo/login.png" alt="" />
+					<div class="sm-title">
+						Bạn chưa có tài khoản.Hãy tạo ở đây!
+					</div>
+					<div class="btn-swich btn">
+						<button onclick="openFR()"><p>Đăng Ký Tài Khoản</p></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

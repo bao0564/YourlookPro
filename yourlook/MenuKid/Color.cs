@@ -2,7 +2,17 @@
 
 namespace yourlook.MenuKid
 {
-    public class Color : IColor
+	public interface IColor
+	{
+		DbColor add(DbColor dbColor);
+		DbColor update(DbColor dbColor);
+
+		DbColor delete(string colorid);
+		DbColor GetColor(string colorid);
+
+		IEnumerable<DbColor> GetAllColor();
+	}
+	public class Color : IColor
     {
         private readonly YourlookContext _context;
         public Color(YourlookContext context)

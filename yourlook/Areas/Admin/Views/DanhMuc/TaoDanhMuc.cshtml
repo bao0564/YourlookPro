@@ -14,7 +14,7 @@
                 <a asp-action="DanhMuc"><img style="height:20px" src="\icon\drop left.svg" /> </a>
             </div>
         </div>
-        @using (Html.BeginForm("TaoDanhMuc", "DanhMuc", FormMethod.Post, new { }))
+        @using (Html.BeginForm("TaoDanhMuc", "DanhMuc", FormMethod.Post, new { enctype = "multipart/form-data" }))
         {
             @Html.AntiForgeryToken()
             @Html.ValidationSummary(true)
@@ -26,7 +26,7 @@
                 </div>
                 <div class="mid-c">
                     <label class="control-label">Ảnh</label>
-                    <input type="file" asp-for="AnhDaiDien" class="form-control" />
+                    <input type="file" asp-for="AnhDaiDien" class="form-control" name="FileAnh" accept="image/*" />
                     <span asp-validation-for="AnhDaiDien" class="text-danger"></span>
                 </div>
                 <div class="mid-c">

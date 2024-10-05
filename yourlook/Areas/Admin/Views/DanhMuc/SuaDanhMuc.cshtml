@@ -14,9 +14,11 @@
                 <a asp-action="DanhMuc"><img style="height:20px" src="\icon\drop left.svg" /> </a>
             </div>
         </div>
-        <form method="post" asp-action="SuaDanhMuc">
+        @using (Html.BeginForm("SuaDanhMuc", "DanhMuc", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="MaDm" />
+            <input type="hidden" asp-for="CreateDate" />
             <div class="row">
                 <div class="col-6">
                     <label class="control-label">Tên Danh Mục</label>
@@ -25,41 +27,15 @@
                 </div>
                 <div class="col-6">
                     <label class="control-label">Ảnh</label>
-                    <input type="file" asp-for="AnhDaiDien" class="form-control" />
+                    <input type="file" asp-for="AnhDaiDien" name="FileAnh" class="form-control" />
                     <span asp-validation-for="AnhDaiDien" class="text-danger"></span>
                 </div>
-
-                <div class="col-6">
-                    <label asp-for="MaDmcha" class="control-label"></label>
-                    <input asp-for="MaDmcha" class="form-control" />
-                    <span asp-validation-for="MaDmcha" class="text-danger"></span>
-                </div>
-                <div class="col-6">
-                    <label asp-for="CreateDate" class="control-label"></label>
-                    <input asp-for="CreateDate" class="form-control" />
-                    <span asp-validation-for="CreateDate" class="text-danger"></span>
-                </div>
-                <div class="col-6">
-                    <label asp-for="CreateBy" class="control-label"></label>
-                    <input asp-for="CreateBy" class="form-control" />
-                    <span asp-validation-for="CreateBy" class="text-danger"></span>
-                </div>
-                <div class="col-6">
-                    <label asp-for="ModifiedDate" class="control-label"></label>
-                    <input asp-for="ModifiedDate" class="form-control" />
-                    <span asp-validation-for="ModifiedDate" class="text-danger"></span>
-                </div>
-                <div class="col-6">
-                    <label asp-for="ModifiedBy" class="control-label"></label>
-                    <input asp-for="ModifiedBy" class="form-control" />
-                    <span asp-validation-for="ModifiedBy" class="text-danger"></span>
-                </div>                
             </div>
             <div class="h-cp-dow">
                 <div class="bt-ar">
                     <input type="submit" value="Lưu Danh Mục" class=" btn-primary" />
                 </div>
             </div>
-        </form>
+        }
     </div>
 </div>

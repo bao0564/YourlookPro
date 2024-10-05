@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore.Internal;
 using X.PagedList;
 using yourlook.Areas.Admin.Models;
 using yourlook.Controllers;
+using yourlook.MenuKid;
 using yourlook.Models;
 
 namespace yourlook.Areas.Admin.Controllers
@@ -19,10 +20,12 @@ namespace yourlook.Areas.Admin.Controllers
     {
         YourlookContext db = new YourlookContext();
         private readonly IWebHostEnvironment _webHostEnvironment;
+        private readonly IUploadPhoto _uploadPhoto;
         private readonly ILogger<SanPhamController> _logger;
 
-        public SanPhamController(YourlookContext context, IWebHostEnvironment webHostEnvironment, ILogger<SanPhamController> logger)
+        public SanPhamController(YourlookContext context,IWebHostEnvironment webHostEnvironment,ILogger<SanPhamController> logger,IUploadPhoto uploadPhoto)
         {
+            _uploadPhoto = uploadPhoto;
             _webHostEnvironment = webHostEnvironment;
             _logger = logger;
         }
@@ -62,19 +65,9 @@ namespace yourlook.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                // xử lý tải ảnh đại diện
-                if (AnhSpFile != null && AnhSpFile.Length > 0)
-                {
-                    string uploadDir = Path.Combine(_webHostEnvironment.WebRootPath, "img");
-                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(AnhSpFile.FileName);
-                    string filePath = Path.Combine(uploadDir, fileName);
-
-                    using (var fileStream = new FileStream(filePath, FileMode.Create))
-                    {
-                        await AnhSpFile.CopyToAsync(fileStream);
-                    }
-
-                    sanPham.AnhSp = "" + fileName;
+				if (AnhSpFile != null && AnhSpFile.Length > 0)
+				{
+					sanPham.AnhSp = await _uploadPhoto.uploadOnePhotosAsync(AnhSpFile, "img"); // Chỉ 1 ảnh đại diện
 				}
 				var sp = new DbSanPham
 				{
@@ -194,46 +187,12 @@ namespace yourlook.Areas.Admin.Controllers
 					.Include(sp => sp.DbChiTietSanPhams)
 						.ThenInclude(ctsp => ctsp.Color)
 					.FirstOrDefault(sp => sp.MaSp == sanPham.MaSp);
-				if (sp == null)
-				{
-					return NotFound(); // Xử lý lỗi nếu không tìm thấy sản phẩm
-				}
-
+				
 				// Xử lý ảnh đại diện
-				if (AnhSpFile != null && AnhSpFile.Length > 0)
-				{
-					string uploadDir = Path.Combine(_webHostEnvironment.WebRootPath, "img");
-					string fileName = Guid.NewGuid().ToString() + Path.GetExtension(AnhSpFile.FileName);
-					string filePath = Path.Combine(uploadDir, fileName);
-
-					using (var fileStream = new FileStream(filePath, FileMode.Create))
-					{
-						await AnhSpFile.CopyToAsync(fileStream);
-					}
-					sp.AnhSp = fileName;
-
-					sp.DbImgs.Clear(); // Xóa ảnh cũ
-				}
-				// Cập nhật danh sách ảnh
-				if (!string.IsNullOrEmpty(Imgs))
-				{
-                    if (AnhSpFile == null || AnhSpFile.Length == 0)
-                    {
-                    }
-                    else
-                    {
-                        sp.DbImgs.Clear();
-                    }
-                    string[] imagePaths = Imgs.Split(';');
-					foreach (var imagePath in imagePaths)
-					{
-						sp.DbImgs.Add(new DbImg
-						{
-							MaSp = sp.MaSp,
-							Img = imagePath
-						});
-					}
-				}
+                if (AnhSpFile != null && AnhSpFile.Length > 0)
+                {
+                    sp.AnhSp = await _uploadPhoto.uploadOnePhotosAsync(AnhSpFile, "img"); // Chỉ 1 ảnh đại diện
+                }
 				// Cập nhật thông tin sản phẩm
 				sp.TenSp = sanPham.TenSp;
 				sp.MaDm = sanPham.MaDm;
@@ -248,6 +207,24 @@ namespace yourlook.Areas.Admin.Controllers
 				sp.IFeature = sanPham.IFeature;
 				sp.IHot = sanPham.IHot;
 				sp.ISale = sanPham.ISale;
+				// Cập nhật danh sách ảnh
+				if (!string.IsNullOrEmpty(Imgs))
+				{
+                    var OldImg=db.DbImgs.Where(x=>x.MaSp == sp.MaSp).ToList();
+                    if (OldImg != null)
+                    {
+                        db.DbImgs.RemoveRange(OldImg);
+                    }
+                    string[] imagePaths = Imgs.Split(';');
+					foreach (var imagePath in imagePaths)
+					{
+						sp.DbImgs.Add(new DbImg
+						{
+							MaSp = sp.MaSp,
+							Img = imagePath
+						});
+					}
+				}
 				// Xóa các size và màu cũ trong bảng DbChiTietSanPham
 				var oldDetails = db.DbChiTietSanPhams.Where(x => x.MaSp == sanPham.MaSp);
 				db.DbChiTietSanPhams.RemoveRange(oldDetails);
@@ -282,14 +259,20 @@ namespace yourlook.Areas.Admin.Controllers
         public IActionResult XoaSanPham(int masp)
         {
             TempData["Message"] = "";
-            var img=db.DbImgs.Find(masp);
+            var img = db.DbImgs.Where(x => x.MaSp == masp).ToList() ;
             var sanpham=db.DbSanPhams.Find(masp);
-            //var chitietsanpham=db.DbChiTietSanPhams.Find(masp);
-            if (img!=null && sanpham!=null)
+            var chitietsanpham = db.DbChiTietSanPhams.Where(x => x.MaSp == masp).ToList();
+            if (sanpham!=null )
             {
-                db.DbImgs.Remove(img);
+                if (img.Any())
+                {
+                    db.DbImgs.RemoveRange(img);
+                }
+                if(chitietsanpham.Any())
+                {
+                    db.DbChiTietSanPhams.RemoveRange(chitietsanpham);
+                }
                 db.DbSanPhams.Remove(sanpham);
-                //db.DbChiTietSanPhams.Remove(chitietsanpham);
                 db.SaveChanges();
             }
             TempData["Message"] = "Sản Phẩm Đã Được Xóa";

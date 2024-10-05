@@ -1762,6 +1762,10 @@
 			min-height: 135px;
 			max-height: 135px;
 		}
+		.product_image-2 img {
+			min-height: 135px;
+			max-height: 135px;
+		}
 		.best_sellers .container-flashsell {
 			max-width: 350px;
 		}
@@ -1824,3 +1828,9 @@
 			margin:0;
 		}
 	}
+@media (max-width: 375px) {
+	.product_image-2 img {
+		min-height: 120px;
+		max-height: 120px;
+	}
+}

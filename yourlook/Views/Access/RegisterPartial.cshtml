@@ -1,0 +1,77 @@
+﻿@using Data.Models;
+@model DbKhachHang
+
+<div class="fa-register">
+	<div class="creen-register">
+		<div class="box-register box">
+			<span class="close-register" onclick="closeFR()">✕</span>
+			<div class="register-left">
+				<div action="" id="dangky">
+					<div class="title">
+						<p class="register">Đăng Ký</p>
+					</div>
+					<div class="sm-title">
+						Bạn chưa có tài khoản.Hãy đăng ký ở đây!
+					</div>
+					<div>Bằng:</div>
+					<div class="register-acc-with flct">
+                        <form asp-controller="Access" asp-action="ExternalLogin" method="post">
+							<button type="submit" name="provider" value="Google"><img src="/icon/google.png" alt="" /></button>
+						</form>
+						<button><img src="/icon/Facebook.png" alt="" /></button>
+					</div>
+					<div>Hoặc</div>
+                    @using (Html.BeginForm("Register", "Access", FormMethod.Post, new { }))
+                    {
+                        <div class="flct" style="flex-direction:row;gap:10px">
+                            <div style="width:50%">
+                                @Html.ValidationMessageFor(model => model.TenKh, "", new { @class = "text-danger" })
+                                <div class="">
+                                    <input asp-for="TenKh" type="text" placeholder="Tên..." />
+                                </div>
+                            </div>
+                            <div style="width:50%">
+                                @Html.ValidationMessageFor(model => model.Sdt, "", new { @class = "text-danger" })
+                                <div class="">
+                                    <input asp-for="Sdt" type="text" placeholder="SĐT...">
+                                </div>
+                            </div>
+                        </div>
+                        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                        <div class="">
+                            <div class="">
+                                <input asp-for="Email" type="text" placeholder="Email..." />
+                            </div>
+                        </div>
+                        @Html.ValidationMessageFor(model => model.Passwords, "", new { @class = "text-danger" })
+                        <div class="">
+                            <div class="">
+                                <input asp-for="Passwords" type="text" placeholder="Mật Khẩu..." />
+                            </div>
+                        </div>
+                        @Html.ValidationMessageFor(model => model.ConfirmPasswords, "", new { @class = "text-danger" })
+                        <div class="">
+                            <div class="">
+                                <input asp-for="ConfirmPasswords" type="text" placeholder="Nhập lại mật khẩu của bạn..." />
+                            </div>
+                        </div>
+                        <div class="btn-login">
+                            <button type="submit" class="btn-login">Đăng Ký</button>
+                        </div>
+                    }
+				</div>
+			</div>
+			<div class="register-right">
+				<div class="box-register-right">
+					<img src="/logo/login.png" alt="" />
+					<div class="sm-title">
+						Bạn đã có tài khoản!
+					</div>
+					<div class="btn-swich btn">
+						<button onclick="openFL()"><p>Đăng Nhập</p></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

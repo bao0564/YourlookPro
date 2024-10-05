@@ -1,6 +1,7 @@
 ﻿using Data.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using yourlook.MenuKid;
 using yourlook.Models;
 
 namespace yourlook.Controllers
@@ -8,6 +9,12 @@ namespace yourlook.Controllers
     public class UserController : Controller
     {
         YourlookContext db=new YourlookContext();
+        private readonly IUploadPhoto _uploadPhoto;
+        public UserController( IUploadPhoto uploadPhoto)
+        {
+            _uploadPhoto = uploadPhoto;
+        }
+
         //thông tin tài khoản 
         public IActionResult UserDetail()
         {
@@ -31,14 +38,18 @@ namespace yourlook.Controllers
         }
         [HttpPost]
 		[ValidateAntiForgeryToken]
-		public IActionResult UpdateUserDetail(DbKhachHang khachhang)
+		public async Task<IActionResult> UpdateUserDetail(DbKhachHang khachhang,IFormFile FileAnh)
 		{
             if (ModelState.IsValid)
             {
+                if (FileAnh !=null && FileAnh.Length>0)
+                {
+                    khachhang.Img = await _uploadPhoto.uploadOnePhotosAsync(FileAnh, "img");
+                }
                 db.DbKhachHangs.Attach(khachhang);
                 khachhang.ModifiedDate= DateTime.Now;
                 db.Entry(khachhang).State= EntityState.Modified;
-                db.SaveChanges();
+                await db.SaveChangesAsync();
                 return RedirectToAction("UserDetail", "User");
             }
 			return View(khachhang);

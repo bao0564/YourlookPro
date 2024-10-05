@@ -241,7 +241,6 @@ E:\ShopYourLook\yourlook\yourlook\obj\Debug\net7.0\yourlook.GeneratedMSBuildEdit
 E:\ShopYourLook\yourlook\yourlook\obj\Debug\net7.0\yourlook.AssemblyInfoInputs.cache
 E:\ShopYourLook\yourlook\yourlook\obj\Debug\net7.0\yourlook.AssemblyInfo.cs
 E:\ShopYourLook\yourlook\yourlook\obj\Debug\net7.0\yourlook.csproj.CoreCompileInputs.cache
-E:\ShopYourLook\yourlook\yourlook\obj\Debug\net7.0\yourlook.MvcApplicationPartsAssemblyInfo.cs
 E:\ShopYourLook\yourlook\yourlook\obj\Debug\net7.0\yourlook.MvcApplicationPartsAssemblyInfo.cache
 E:\ShopYourLook\yourlook\yourlook\obj\Debug\net7.0\yourlook.RazorAssemblyInfo.cache
 E:\ShopYourLook\yourlook\yourlook\obj\Debug\net7.0\yourlook.RazorAssemblyInfo.cs

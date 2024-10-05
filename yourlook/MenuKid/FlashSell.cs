@@ -2,7 +2,17 @@
 
 namespace yourlook.MenuKid
 {
-    public class FlashSell : IFlashSell
+	public interface IFlashSell
+	{
+		DbSanPham add(DbSanPham dbSanPham);
+		DbSanPham update(DbSanPham dbSanPham);
+
+		DbSanPham delete(string maSP);
+		DbSanPham GetSanPham(string maSP);
+
+		IEnumerable<DbSanPham> GetAllSanPhamFlashSell();
+	}
+	public class FlashSell : IFlashSell
     {
         private readonly YourlookContext _context;
         public FlashSell(YourlookContext context)

@@ -4,7 +4,11 @@ E:\ShopYourLook\yourlook\yourlook\obj\Release\net7.0\PubTmp\Out\Data.runtimeconf
 E:\ShopYourLook\yourlook\yourlook\obj\Release\net7.0\PubTmp\Out\appsettings.Development.json
 E:\ShopYourLook\yourlook\yourlook\obj\Release\net7.0\PubTmp\Out\appsettings.json
 E:\ShopYourLook\yourlook\yourlook\obj\Release\net7.0\PubTmp\Out\libman.json
+E:\ShopYourLook\yourlook\yourlook\obj\Release\net7.0\PubTmp\Out\wwwroot\js\address.js
+E:\ShopYourLook\yourlook\yourlook\obj\Release\net7.0\PubTmp\Out\wwwroot\js\ChoosColorSize.js
+E:\ShopYourLook\yourlook\yourlook\obj\Release\net7.0\PubTmp\Out\wwwroot\js\findprd2.js
 E:\ShopYourLook\yourlook\yourlook\obj\Release\net7.0\PubTmp\Out\wwwroot\js\productnew-move.js
+E:\ShopYourLook\yourlook\yourlook\obj\Release\net7.0\PubTmp\Out\wwwroot\js\selectColol-Size.js
 E:\ShopYourLook\yourlook\yourlook\obj\Release\net7.0\PubTmp\Out\yourlook.dll
 E:\ShopYourLook\yourlook\yourlook\obj\Release\net7.0\PubTmp\Out\yourlook.runtimeconfig.json
 E:\ShopYourLook\yourlook\yourlook\obj\Release\net7.0\PubTmp\Out\yourlook.pdb

@@ -64,16 +64,6 @@ jQuery(document).ready(function($)
 
 	function setHeader()
 	{
-	// 	const scrollmenu = document.getElementById("header");
-    //     window.addEventListener("scroll", () => {
-    //       if (window.scrollY > 100) {
-    //         // Khi người dùng kéo chuột lên, thay đổi top của menu
-    //         scrollmenu.style.top = "-160px"; // Di chuyển menu lên khỏi màn hình
-    //       } else {
-    //         scrollmenu.style.top = "0"; // Khi người dùng kéo xuống, hiển thị menu ở đầu trang
-    //       }
-    //     });
-	// }
 		if(window.innerWidth < 992)
 		{
 			if($(window).scrollTop() > 100)
@@ -101,11 +91,11 @@ jQuery(document).ready(function($)
 			closeMenu();
 		}
 	}
-	/* 
+	 
 
-	3. Init Menu
+	//3. Init Menu
 
-	*/
+	
 
 	function initMenu()
 	{
@@ -325,7 +315,8 @@ jQuery(document).ready(function($)
     	var filterButton = $('.filter_button');
 
     	if($('.product-grid').length)
-    	{
+		{
+			//lọc giá sp
     		$('.product-grid').isotope({
     			itemSelector: '.product-item',
 	            getSortData: {
@@ -386,15 +377,67 @@ jQuery(document).ready(function($)
 		                queue: false
 		            }
 		        });
-	        });
+			});
+			
+
+			// Lọc sản phẩm theo màu sắc khi checkbox được chọn
+			$('.color-filter').on('change', function () {
+				var selectedColors = [];
+
+				// Thu thập tất cả các màu được chọn
+				$('.color-filter:checked').each(function () {
+					var color = $(this).siblings('p').text().toLowerCase().trim();
+					selectedColors.push(color);
+				});
+
+				// Nếu không chọn màu nào, hiển thị tất cả sản phẩm
+				if (selectedColors.length === 0) {
+					$('.product-grid').isotope({ filter: '*' });
+					return;
+				}
+
+				// Áp dụng bộ lọc Isotope
+				$('.product-grid').isotope({
+					filter: function () {
+						var $itemColors = $(this).find('.in-color-item').map(function () {
+							return $(this).text().toLowerCase().trim();
+						}).get();
+
+						// Kiểm tra nếu sản phẩm có chứa bất kỳ màu nào trong danh sách đã chọn
+						return selectedColors.some(function (color) {
+							return $itemColors.includes(color);
+						});
+					}
+				});
+			});
+			$('.size-filter').on('change', function () {
+				var selectedSizes = [];
+				$('.size-filter:checked').each(function () {
+					var size = $(this).siblings('p').text().toLowerCase().trim();
+					selectedSizes.push(size);
+				});
+				if (selectedSizes.length === 0) {
+					$('.product-grid').isotope({ filter: '*' });
+					return;
+				}
+				$('.product-grid').isotope({
+					filter: function () {
+						var itemSizes = $(this).find('.in-size-item').map(function () {
+							return $(this).text().toLowerCase().trim();
+						}).get();
+						return selectedSizes.some(function (size) {
+							return itemSizes.includes(size);
+						});
+					}
+				});
+			});
     	}
     }
+	
 
-    /* 
+	//7. Init Price Slider
 
-	7. Init Price Slider
-
-	*/
+	
 
     function initPriceSlider()
     {

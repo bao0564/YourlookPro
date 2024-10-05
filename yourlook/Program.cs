@@ -43,6 +43,7 @@ builder.Services.AddSession(options =>
 });
 
 //builder ViewComponent
+builder.Services.AddScoped<IUploadPhoto, UploadPhoto>();
 builder.Services.AddScoped<ISanPhamHot, SanPhamHot>();
 builder.Services.AddScoped<IFlashSell, FlashSell>();
 builder.Services.AddScoped<ICategory, Category>();
@@ -56,6 +57,10 @@ builder.Services.AddScoped<IPage3, Page3>();
 builder.Services.AddScoped<IPage4, Page4>();
 //builder.Services.AddScoped<>
 var app = builder.Build();
+
+//b? ?o?n này n?u ch? ch?y trên lap
+builder.Configuration.AddEnvironmentVariables();
+builder.Environment.EnvironmentName = "Production";  // Thi?t l?p môi tr??ng thành Production
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -71,6 +76,7 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseSession();
+//routing
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

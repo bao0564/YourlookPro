@@ -2,7 +2,17 @@
 
 namespace yourlook.MenuKid
 {
-    public class SanPhamNew : ISanPhamNew
+	public interface ISanPhamNew
+	{
+		DbSanPham add(DbSanPham dbSanPham);
+		DbSanPham update(DbSanPham dbSanPham);
+
+		DbSanPham delete(string maSP);
+		DbSanPham GetSanPham(string maSP);
+
+		IEnumerable<DbSanPham> GetAllSanPhamNew();
+	}
+	public class SanPhamNew : ISanPhamNew
     {
         private readonly YourlookContext _context;
         public SanPhamNew(YourlookContext context)
