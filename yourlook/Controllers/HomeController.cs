@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Diagnostics;
 using X.PagedList;
+using yourlook.Extension;
 using yourlook.Models;
 using static Microsoft.Extensions.Logging.EventSource.LoggingEventSource;
 
@@ -17,6 +18,8 @@ namespace yourlook.Controllers
 		//trang chủ 
         public IActionResult Index()
         {
+            var prdCart = HttpContext.Session.GetJson<List<ShoppingCartItem>>("Cart") ?? new List<ShoppingCartItem>();
+            ViewBag.CartItemCount= prdCart.Sum(i=>i.ProductQuantity);
 			var email = HttpContext.Session.GetString("user");
 			if(email != null)
 			{

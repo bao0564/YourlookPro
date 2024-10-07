@@ -41,6 +41,8 @@ COLOR PALETTE
 ***********/
 
 :root {
+	--White-1: #ccc /*Trắng đục*/;
+	--White-2:#f2f2f2;
 	--gray-a: #2f3640;
 	--gray-b: #535c68 /* #353b48*/;
 	--gray-d: #bdc3c7;
@@ -87,7 +89,10 @@ COLOR PALETTE
 	overflow-y:hidden;
 	overflow-x:auto;
 }
-.flscr::-webkit-scrollbar {
+.scr {
+	overflow: scroll;
+}
+.flscr::-webkit-scrollbar, .scr::-webkit-scrollbar {
 	display: none;
 }
 .bd-t{
@@ -215,7 +220,7 @@ p::selection
 h1{font-size: 72px;}
 h2{font-size: 40px;}
 h3{font-size: 28px;}
-h4{font-size: 24px;}
+h4{font-size: 22px;}
 h5{font-size: 16px;}
 h6{font-size: 14px;}
 h1, h2, h3, h4, h5, h6
@@ -2405,6 +2410,7 @@ section
 	justify-content:space-around;
 }
 .footer h4{
+	white-space:nowrap;
 	color: #000;
 }
 .footer .col-lg-4 ,.footer .col-lg-3,.footer .col-lg-2{
@@ -2436,7 +2442,12 @@ section
 	font-size: 25px ;
 }
 .footer li{
+	color:var(--White-1);
 	font-size: 1rem;
+	text-align:center;
+}
+.footer a {
+	color: var(--White-1);
 }
 .footer .cha{
 	line-height: 50px;
@@ -2512,6 +2523,7 @@ section
 	color: #fe4c50;
 }
 .inf h4{
+	margin-bottom:10px;
 	font-weight:600;
 }
 /* giỏ hàng */

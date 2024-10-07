@@ -21,7 +21,7 @@ namespace yourlook.Controllers
 		YourlookContext db = new YourlookContext();
 		public IActionResult Index()
 		{
-            var idkh = HttpContext.Session.GetInt32("userid");
+			var idkh = HttpContext.Session.GetInt32("userid");
             var userAdress=db.DbAddreses.Where(x=>x.MaKh==idkh).ToList();
             var pay=db.DbPayments.ToList();
             var voucher=db.DbVouchers.ToList();
@@ -39,7 +39,7 @@ namespace yourlook.Controllers
 		[HttpPost]
 		public IActionResult AddToCart(int masp,int quantity,int sizeid,int colorid)
 		{
-			var code = new { success = false, msg = "", code = -1};
+			var code = new { success = false, msg = ""};
 			var db = new YourlookContext();
 			var checkproduct = db.DbSanPhams.FirstOrDefault(x => x.MaSp == masp);
             var checkSize = db.DbSizes.FirstOrDefault(x => x.SizeId == sizeid);
@@ -74,7 +74,7 @@ namespace yourlook.Controllers
 				}
 				HttpContext.Session.SetJson("Cart", cart);
 
-				code = new { success = true, msg = "Sản phẩm đã được thêm vào giỏ hàng", code = 0};
+                code = new { success = true, msg = "Sản phẩm đã được thêm vào giỏ hàng"};
 			}
 			return Json(code);
 		}
@@ -142,7 +142,7 @@ namespace yourlook.Controllers
             return View(item);
         }
         [HttpPost]
-        public IActionResult PayOrder()
+        public IActionResult PayOrder(DbSanPham sanPham)
         {
             try
             {
@@ -176,12 +176,19 @@ namespace yourlook.Controllers
                     Giamgia = giamGiaValue,
                     Ship = orderInfor.Ship,
                     CreateDate = DateTime.Now
-                };
-                
+                };                
                 db.DbDonHangs.Add(order);
                 db.SaveChanges();
                 foreach (var item in selectedItems)
                 {
+                    //trừ số lượng tồn ,tăng số lượng bán
+                    var slprd= db.DbSanPhams.FirstOrDefault(sl=>sl.MaSp == item.ProductId);
+                    if (slprd!=null)
+                    {
+                        slprd.SoLuongSp -=item.ProductQuantity;
+                        slprd.LuotSold +=item.ProductQuantity;
+                    }
+                    db.DbSanPhams.Update(slprd);
                     var productOrder = new DbChiTietDonHang
 					{
 						MaKh = idkh.Value,
@@ -260,6 +267,12 @@ namespace yourlook.Controllers
                 return Json(new { Success = true });
             }
             return Json(new {Success=false});
+        }
+
+        [HttpGet]
+        public IActionResult ViewProductInCart()
+        {
+            return ViewComponent("ViewProductInCart");
         }
 
     }
