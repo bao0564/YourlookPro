@@ -259,13 +259,18 @@ namespace yourlook.Controllers
         [HttpPost]
         public ActionResult Update(int id, int quantity)
         {
-            var cart = HttpContext.Session.GetJson<ViewShoppingCartItem>("Cart") ?? new ViewShoppingCartItem();
-            if (cart != null)
+            var cart = HttpContext.Session.GetJson<List<ShoppingCartItem>>("Cart") ?? new List<ShoppingCartItem>();
+			if (cart != null)
             {
-                cart.UpdateQuantity(id, quantity);
-                HttpContext.Session.SetJson("Cart", cart);
-                return Json(new { Success = true });
-            }
+				var checkproduct = cart.FirstOrDefault(x => x.ProductId == id);
+				if (checkproduct != null)
+				{
+					checkproduct.ProductQuantity = quantity;
+					checkproduct.Total = checkproduct.ProductPrice * checkproduct.ProductQuantity;
+					HttpContext.Session.SetJson("Cart", cart);
+                    return Json(new { Success = true });
+				}
+			}
             return Json(new {Success=false});
         }
 

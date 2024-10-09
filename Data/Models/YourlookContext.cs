@@ -111,11 +111,11 @@ namespace Data.Models
         public virtual DbSet<DbFavoriteProduct> DbFavoriteProducts { get; set; }
 		public virtual DbSet<ThongKe> DbThongKes { get; set; }
 
-		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-			 => optionsBuilder.UseSqlServer("Data Source=ADMIN\\SQLEXPRESS;Initial Catalog=yourlook;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
-
 		//protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-		//	=> optionsBuilder.UseSqlServer("Data Source=SQL8004.site4now.net;Initial Catalog=db_aac03f_dbyourlook;User Id=db_aac03f_dbyourlook_admin;Password=Thanhmi@123;Encrypt=False;TrustServerCertificate=False;");
+		//	 => optionsBuilder.UseSqlServer("Data Source=ADMIN\\SQLEXPRESS;Initial Catalog=yourlook;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
+
+		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+			=> optionsBuilder.UseSqlServer("Data Source=SQL5108.site4now.net;Initial Catalog=db_aadbd7_dbyourlook;User Id=db_aadbd7_dbyourlook_admin;Password=Thanhmi@123;Encrypt=False;TrustServerCertificate=False;");
 
 	}
 }

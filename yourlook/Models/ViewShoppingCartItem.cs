@@ -28,7 +28,7 @@ namespace yourlook.Models
                 Items.Remove(checkprd);
             }
         }
-        public void UpdateQuantity(int id, int quantity)
+        public void Update(int id, int quantity)
         {
             var checkprd = Items.SingleOrDefault(x => x.ProductId == id);
             if (checkprd != null)

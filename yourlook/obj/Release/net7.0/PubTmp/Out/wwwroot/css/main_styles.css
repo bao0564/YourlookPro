@@ -46,7 +46,7 @@ COLOR PALETTE
 	--gray-a: #2f3640;
 	--gray-b: #535c68 /* #353b48*/;
 	--gray-d: #bdc3c7;
-	--font-1: "Fredoka One", Arial, sans-serif; /*price*/
+	--font-1: /*"Fredoka One",*/ Arial, sans-serif; /*price*/
 }
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900');
 

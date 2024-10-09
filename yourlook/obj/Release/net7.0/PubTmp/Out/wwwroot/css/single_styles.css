@@ -2,6 +2,19 @@
 	display: flex;
 	align-items: center;
 }
+/* ?n nút t?ng gi?m trên Chrome, Safari, Edge, và Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* ?n nút t?ng gi?m trên Firefox */
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+
 .star_rating {
 	display: inline-block;
 }

@@ -154,14 +154,6 @@
         $('#finaltotal').text(finaltotal.toLocaleString() + ' VND');
 
     }
-    // Cập nhật giá tiền
-    function updatePrice(element, quantity) {
-        var priceElement = element.closest('.flex-cart').find('.product_price');
-        var unitPrice = parseFloat(priceElement.data('price'));
-        var newPrice = unitPrice * quantity;
-        priceElement.text(newPrice.toLocaleString() + ' VND');
-    }
-
      //Hàm cập nhật số lượng sản phẩm trong giỏ hàng
     function Update(id, quantity) {
         $.ajax({
@@ -192,7 +184,7 @@
     $(document).off('click', '.plus-cart').on('click', '.plus-cart', function () {
         var quantityElement = $(this).siblings('.quantity_value-cart');
         var newQuantity = parseInt(quantityElement.text()) + 1;
-        var id = $(this).closest('.cart-container').find('.cart-checkbox').data('id');
+        var id = $(this).data('id');
         quantityElement.text(newQuantity);
         updatePrice($(this), newQuantity);
         calculateTotal();
@@ -204,13 +196,21 @@
         var quantityElement = $(this).siblings('.quantity_value-cart');
         var newQuantity = parseInt(quantityElement.text()) - 1;
         if (newQuantity > 0) {
-            var id = $(this).closest('.cart-container').find('.cart-checkbox').data('id');
+            var id = $(this).data('id');
             quantityElement.text(newQuantity);
             updatePrice($(this), newQuantity);
             calculateTotal();
             Update(id, newQuantity); // Cập nhật số lượng trong giỏ hàng
         }
     });
+    // Cập nhật giá tiền
+    function updatePrice(element, newquantity) {
+        var priceElement = element.closest('.cart-infor').find('.product_price');
+        var unitPrice = parseFloat(priceElement.data('price'));
+        var newPrice = unitPrice * newquantity;
+        priceElement.text(newPrice.toLocaleString() + ' VND');
+    }
+
 
     // Tính tổng tiền ban đầu khi tải trang
     calculateTotal();
